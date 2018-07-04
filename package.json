@@ -1,0 +1,17 @@
+{
+  "name": "foro-de-marcas",
+  "version": "1.0.0",
+  "description": "Sitio del plano del Foro de Marcas, 2018",
+  "repository": "https://github.com/josdirksen/d3dv",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Juantxo Cruz",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}

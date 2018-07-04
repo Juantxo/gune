@@ -1,0 +1,832 @@
+@charset "utf-8";
+
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+  Base styles: opinionated defaults
+  ========================================================================== */
+
+html.clusterGune {
+  color:#222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.clusterGune body{
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		font-weight: 200;
+		background-color:transparent;
+
+}
+
+
+::-moz-selection {
+  background:#b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background:#b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+  Bootstrap custom styles
+  ========================================================================== */
+
+
+.clusterGune .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: #9e005f;
+}
+
+/* ==========================================================================
+  Author's custom styles
+  ========================================================================== */
+
+/* COLORS */
+.clusterGune a{
+	color: #009E8E;
+}
+
+.clusterGune .blueBkg{
+	background-color: #009fdf;
+}
+.clusterGune .orangeBkg{
+	background-color: #e88604;
+}
+.clusterGune .purpleBkg{
+	background-color: #8e6aad;
+}
+.clusterGune .redBkg{
+	background-color: #df503e;
+}
+
+.clusterGune .blueColor{
+	color: #009fdf;
+	
+}
+.clusterGune .orangeColor{
+	color: #e88604;
+}
+.clusterGune .purpleColor{
+	color: #8e6aad;
+}
+.clusterGune .redColor{
+	color: #df503e;
+}
+/* type*/
+.font-weight--bold{
+	font-weight: 800
+}
+.style--italic{
+	font-style: italic;
+}
+
+.text-aling--left{
+	text-align: left;
+}
+.text-aling--right{
+	text-align: right;
+}
+.text-aling--center{
+	text-align: center;
+}
+.line-height--1{
+	line-height: 1
+}
+/*borders*/
+
+.border-bottom--2{
+	 border-bottom: 2px solid black;
+}
+
+/* colors*/
+.color--main{
+	color:#009E8E;
+}
+.color--gray10{
+	color: rgb(220,220,220);
+}
+.color--gray20{
+	color: rgb(211, 211, 211);
+}
+.color--gray30{
+	color: rgb(192, 192, 192);
+}
+.color--gray40{
+	color: rgb(169, 169, 169);
+}
+.color--gray50{
+	color: rgb(128, 128, 128);
+}
+.color--gray60{
+	color: rgb(105,105,105);
+}
+.color--gray100{
+	color: rgb(0,0,0);
+}
+
+/* INline list*/
+
+
+.inline-ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+.inline-ul li{
+	display: inline-block;
+	width: 12%;
+	vertical-align: top;
+	
+}
+
+/* block list*/
+
+.block-ul{
+	margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: block;
+  clear: both;
+  height: auto;
+  float: left;
+ }
+
+.block-ul li{
+	display: block;
+	clear: both;
+	width: 100%;
+	vertical-align: top;
+	
+}
+
+
+
+/* margins*/
+.margin-bottom--0{
+	margin-bottom: 0;
+}
+.margin-bottom--24{
+	margin-bottom: 24px;
+}
+.margin-top--8{
+	margin-top: 8px;
+}
+.margin-top--16{
+	margin-top: 16px;
+}
+.margin-top--24{
+	margin-top: 24px;
+}
+
+
+/* paddings*/
+.padding-box--regular{
+	padding: 18px;
+}
+
+
+
+
+html.clusterGune .withImage { 
+ background: url(../img/cover-low.jpg);
+ background-repeat: no-repeat;
+ background-position: center top;
+ background-attachment: fixed; 
+ background-size:100%
+}
+
+
+/* ==========================================================================
+  SIDE NAV
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+  Return to top
+   ========================================================================== */
+
+
+#return-to-top {
+  position: fixed;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+	background-image: url(../img/long-arrow-up-white-small.png);
+	background-repeat: no-repeat;
+	background-size: contain;  
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  color: #fff;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+	background-image: url(../img/long-arrow-up-gray-small.png);
+		background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;  
+
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+  Helper classes
+  ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+.clusterGune .mejora_hidden{
+  display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *  causes content to wrap 1 word per line:
+ *  https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *  `contenteditable` attribute is included anywhere else in the document.
+ *  Otherwise it causes space to appear at the top and bottom of elements
+ *  that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *  `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/************** 4GUNE TABLE **********************/
+
+.clusterGune .hidden-mobile{
+		display: none;
+	}
+	
+	
+.clusterGune .table-border--gray{
+	border: 1px solid #ced4da;
+}
+.clusterGune .table-border--white{
+	border: 1px solid white;
+}
+
+
+.clusterGune .table-head{
+	display: none
+}
+
+.clusterGune .cell{
+	overflow: auto;
+	border-bottom: 1px solid #ced4da;
+	margin: 4px 0 8px 0;
+}
+.clusterGune .cell.first-child{
+	border-bottom: none;
+	margin: : 4px 0 0px 0;
+	}
+.clusterGune .cell.first-child p{
+	margin-bottom:0;
+}
+.star-text--container{
+	display: inline-block;
+	float: left;
+	
+}
+.star-icon--container{
+	display: inline-block;
+	float: right;
+	
+}
+.clusterGune .icon-map-container{
+	margin: 0 0;
+	text-align: left
+	
+	}
+	
+.clusterGune .icon-map{
+	width:25%;
+}
+
+.clusterGune .star-icon--gray{
+	color: #ced4da;
+}
+.clusterGune .star-icon--green{
+	color: #009E8E;
+}
+
+
+.clusterGune .table-row-parent{
+	margin-bottom: 24px;
+}
+
+.clusterGune .table-row{
+		font-size: 12px;
+		-webkit-box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
+-moz-box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
+box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);	
+
+}
+.clusterGune .title-name{
+		font-size: 16px;
+		font-weight: 800;
+		color: #009E8E;
+		margin-bottom: 0;
+	}
+
+
+
+.clusterGune .univ-container{
+	width: 100%;
+	display: block;
+	overflow: auto;
+	margin: 4px auto;
+}
+
+.clusterGune .univ-name, .clusterGune .univ-logo{
+	width: 100%;
+	display: block;
+}
+
+.clusterGune .univ-logo{
+	margin: 16px auto;
+}
+.clusterGune .icon-univ-logo{
+	width: 30%;
+}
+
+.clusterGune .univ-links{
+	width: 100%;
+	display: block;
+	clear: both;
+	overflow: auto;
+	
+	
+}
+
+
+.clusterGune .univ-links-ver{
+	width: 48%;
+	float: left;
+	
+}
+.clusterGune .univ-links-web{
+	display: inline-block;
+	width: 48%;
+	text-align: right;
+	float: right;
+	
+}
+@media (min-width: 576px){
+
+	.clusterGune .cell{
+		display: block;
+		float: none; 
+	}
+
+	
+
+}
+	
+	
+
+@media (min-width: 768px){
+	
+}
+
+@media (min-width: 992px){
+	.clusterGune .hidden-mobile{
+		display: block;
+	}
+	
+	.clusterGune .hidden-screen{
+		display: none;
+	}
+	.clusterGune .table-border--gray{
+		border: none;
+		padding: 0;
+	}
+	.clusterGune .table-row-parent{
+		margin-bottom: 0px;
+		
+	}
+
+
+	.clusterGune .table-row{
+		display: block;
+		width: 100%;
+		display: flex;
+		-webkit-box-shadow: none;
+		-moz-box-shadow:none;
+		box-shadow:none;	
+	}
+
+
+		
+	.clusterGune .cell{
+		display: inline-block;
+		float: left; 
+		overflow: hidden;
+		box-sizing: border-box;		
+		padding: 8px;
+		border: 1px solid #ced4da;
+		flex: 1 1 1 1 1 1 1 1 1 1;
+	}
+	
+	.clusterGune .cell {
+	 margin-top: -1px;
+	 margin-left: -1px;
+	 position: relative;
+	 overflow: hidden;
+
+	}
+	.clusterGune .table-head{
+		display: block;
+		margin-top: 24px;
+	
+	}
+	
+	.clusterGune .table-head .cell{
+		background-color: #009E8E;
+		font-size: 12px;
+		
+	}
+
+	.clusterGune .type{
+		width: 20%;
+	}
+	.clusterGune .title{
+		width: 40%;
+	}
+	.clusterGune .star{
+		width: 5%;
+	}
+
+	.clusterGune .cell.first-child{
+		border-bottom: 1px solid #ced4da;
+		margin: : 4px 0 8px 0;
+	}
+	.clusterGune .cell.first-child p{
+		margin-bottom: 0
+	}
+
+	.clusterGune .univ-links-ver{
+		display: inline-block;
+		
+	}
+	.clusterGune .univ-links-web{
+		float: left;
+		
+	}
+	.clusterGune .star-icon--container{
+		display: block;
+		float: none
+		
+		
+	}
+	.clusterGune .star-icon{
+		font-size: 18px;
+		text-align: center;
+		display: block;
+		
+	}
+	.clusterGune .star-text--container{
+		float: none;
+	}
+	.clusterGune .icon-map-container{
+		margin: 0 auto;
+		text-align: center
+	
+	}
+	
+	.clusterGune .icon-map{
+		width:32%;
+	}
+
+	.clusterGune .univ-name{
+		width: 77%;
+		display: inline-block;
+	}
+	.clusterGune .univ-logo{
+		width: 20%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.clusterGune .univ-logo{
+		margin: 0;
+	}		
+	.clusterGune .icon-univ-logo{
+		width: 100%;
+	}
+
+	.clusterGune .table-outside-section{
+		padding-left: 20%;
+		padding-top: 16px;
+		padding-bottom: 32px;
+		font-size: 12px;
+	}
+	
+	.clusterGune .rotate-text--container{
+		line-height: 16px;
+		overflow-y: hidden;
+		padding-top: 204px;
+		vertical-align: bottom;
+	}
+
+	.clusterGune .rotate-text--text{
+		font-size: 12px;
+    	line-height: 126%;
+		bottom: 0;
+	    left: auto;
+	    top: auto;
+	    display: block;
+	    margin-bottom: 13px;
+	    margin-left: 7px;
+	    transform-origin: left top;
+	    -webkit-transform-origin: left top;
+	    -ms-transform-origin: left top;
+	    position: absolute;
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		white-space: nowrap;
+		margin: 0;
+		text-transform: none!important;
+	}
+
+
+}
+
+
+/************** TABLE KEYS **********************/
+.clusterGune .table-keys--key{
+	cursor: pointer;
+    transition: opacity 0.3s;
+   -webkit-transition: opacity 0.3s;	
+   opacity: 1;
+}
+
+.clusterGune .table-keys p{
+	opacity: 0.2;
+}
+
+.clusterGune .table-keys--key:hover{
+	opacity: 0.6;
+}
+
+
+.clusterGune p.table-key--active{
+	opacity: 1;
+	color: #000;
+}
+
+/* ==========================================================================
+  EXAMPLE Media Queries for Responsive Design.
+  These examples override the primary ('mobile first') styles.
+  Modify as content requires.
+  ==
+  ======================================================================== */
+
+@media only screen and (min-width: 576px) { }
+
+@media only screen and (min-width: 768px) { 
+	
+	.modal-dialog{
+	  max-width: 540px;
+	  margin: 0 auto;
+	}
+
+}
+
+@media only screen and (min-width: 992px) { }
+
+@media only screen and (min-width: 1200px) { }
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ 
+}
+
+/* ==========================================================================
+  Print styles.
+  Inlined to avoid the additional HTTP request:
+  https://www.phpied.com/delay-loading-your-print-css/
+  ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color:#000 !important; /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Chef:Juantxo Cruz
+	Contact: jcruz16 [at] gmail.com
+	Twitter: @juantxocruz
+	From: Madrid, Madrid, Spain
+
+
+# THANKS
+
+    Chef: Prodigioso Volcán
+	Twitter: @losdelvolcan
+	From: Madrid, Madrid, Spain
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
+
+
+# SITE
+
+	Last update:2018/05/04
+	Language: Spanish / Castellano 
+	Doctype:HTML5
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop

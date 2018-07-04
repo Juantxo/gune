@@ -1,0 +1,154 @@
+.line.one.dot.facturacion.levelFour,.line.three.path{
+    fill:none;
+    stroke-linecap:round;
+    stroke-miterlimit:3.864
+}
+.line.three.path{
+    stroke-linejoin:round;
+    stroke:#f69931;
+    stroke-width:4
+}
+.line.one.dot.facturacion.levelFour{
+    stroke:#4996c8;
+    stroke-width:3.366
+}
+.line.three.dot.facturacion.levelFour,.line.two.dot.facturacion.levelFour{
+    fill:none;
+    stroke-width:3.366;
+    stroke-linecap:round;
+    stroke-miterlimit:3.864
+}
+.line.two.dot.facturacion.levelFour{
+    stroke:#ed5d9a
+}
+.line.three.dot.facturacion.levelFour{
+    stroke:#f69931;
+    stroke-linejoin:round
+}
+.line.four.dot.facturacion.levelFour{
+    fill:none;
+    stroke:#801720;
+    stroke-width:3.198;
+    stroke-linecap:round;
+    stroke-miterlimit:3.864
+}
+.line.five.dot.facturacion.levelFour,.line.seven.dot.facturacion.levelFour{
+    fill:none;
+    stroke:#7fc04b;
+    stroke-width:3.366;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:3.864
+}
+.line.seven.dot.facturacion.levelFour{
+    stroke:#0c6e3c
+}
+.dot.facturacion.levelOne{
+    stroke-width:2
+}
+.dot.facturacion.levelOne,.dot.facturacion.levelThree,.dot.facturacion.levelTwo{
+    fill:#fff;
+    stroke:#000;
+    stroke-miterlimit:10
+}
+.dot.facturacion.levelTwo{
+    stroke-width:1.5
+}
+.dot.facturacion.levelThree{
+    stroke-width:1.125
+}
+.presencia.levelOne{
+    fill:#cccccb
+}
+.presencia.levelTwo{
+    fill:#d5856e
+}
+.presencia.levelThree{
+    fill:#d92f2e
+}
+.line.one.bkg{
+    fill:#4996c8
+}
+.white.bkg{
+    fill:#fff
+}
+.mapiColor{
+    fill:#7f7f7f
+}
+.line.two.bkg{
+    fill:#ed5d9a
+}
+.line.three.bkg{
+    fill:#f69931
+}
+.line.four.bkg{
+    fill:#801720
+}
+.line.five.bkg{
+    fill:#7fc04b
+}
+.line.six.bkg{
+    fill:#2c3980
+}
+.line.seven.bkg{
+    fill:#086e3b
+}
+.zonaVerde.bkg{
+    fill:#c3da81
+}
+.river.bkg{
+    fill:#bbe2ee
+}
+.grayDark{
+    fill:#545554
+}
+.st0{
+    font-family:&apos;
+    Dosis-Light&apos;
+}
+.st1{
+    font-size:7px
+}
+.st2{
+    fill:#fff
+}
+.st3{
+    font-family:&apos;
+    Dosis-Bold&apos;
+}
+.st4{
+    font-size:8.55px
+}
+.st5{
+    font-size:10.6875px
+}
+.st6{
+    fill:#d92f2e
+}
+.st7{
+    fill:#010101
+}
+.st8{
+    fill:#091c33
+}
+.st9{
+    fill:#fecb30
+}
+.st10{
+    fill:#ffe530
+}
+.st11{
+    fill:#ec342e
+}
+.st13{
+    fill:#801720
+}
+.st14{
+    fill:#c7c7c6
+}
+.st17{
+    fill:#545554
+}
+.st19{
+    fill:#ee533b
+}

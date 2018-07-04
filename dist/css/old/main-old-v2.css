@@ -1,0 +1,671 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color:#222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+		font-family: 'Dosis', Arial, Helvetica, sans-serif;
+
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background:#b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background:#b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background:#ccc;
+    color:#000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* type*/
+.style--italic{
+	font-style: italic;
+}
+
+.text-aling--left{
+	text-align: left;
+}
+.text-aling--right{
+	text-align: right;
+}
+.text-aling--center{
+	text-align: center;
+}
+.line-height--1{
+	line-height: 1
+}
+/*borders*/
+
+.border-bottom--2{
+	 border-bottom: 2px solid black;
+}
+
+/* colors*/
+.color--Red{
+	color:#da291c;
+}
+.color--gray10{
+	color: rgb(220,220,220);
+}
+.color--gray20{
+	color: rgb(211, 211, 211);
+}
+.color--gray30{
+	color: rgb(192, 192, 192);
+}
+.color--gray40{
+	color: rgb(169, 169, 169);
+}
+.color--gray50{
+	color: rgb(128, 128, 128);
+}
+.color--gray60{
+	color: rgb(105,105,105);
+}
+.color--gray100{
+	color: rgb(0,0,0);
+}
+
+.line-one--bkg{
+	background-color:#4996c8;
+}
+.line-two--bkg{
+	background-color:#ed5d9a;
+}
+.line-three--bkg{
+	background-color:#f69931;
+}
+.line-four--bkg{
+	background-color:#801720;
+}
+.line-five--bkg{
+	background-color:#7fc04b;
+}
+.line-six--bkg{
+	background-color:#2c3980;
+}
+.line-seven--bkg{
+	background-color:#086e3b;
+}
+/* INline list*/
+
+
+.inline-ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+.inline-ul li{
+	display: inline-block;
+	width: 12%;
+	vertical-align: top;
+	
+}
+
+
+.line.number{
+	font-weight: 800;
+	text-align: center;
+	color: white;
+    width: 24%;
+    margin: 0 auto 10px;
+    cursor: pointer;
+	transition: opacity .5s ease-out;  
+    
+   }
+ .line.all-lines{
+	text-decoration: underline;
+	text-align: center;
+	cursor: pointer;
+	transition: opacity .5s ease-out;  
+	 
+}  
+ .line.number:hover, .line.all-lines:hover{
+	 opacity: 0.8
+ }  
+
+
+/* margins*/
+.margin-bottom--0{
+	margin-bottom: 0;
+}
+.margin-top--8{
+	margin-top: 8px;
+}
+.margin-top--16{
+	margin-top: 16px;
+}
+.margin-top--24{
+	margin-top: 24px;
+}
+
+
+
+
+
+.line-active, .foro-active, .mapi-active{
+	opacity: 1;
+	display: block;
+}
+
+.line-inactive, .foro-inactive, .mapi-inactive{
+	opacity: 0;
+	display: none;
+}
+
+.line-button-active, .member-button-active{
+	opacity: 1;
+}
+.line-button-inactive, .member-button-inactive{
+	opacity: 0.4;
+}
+
+
+.dot.facturacion{
+	cursor: pointer;
+}
+
+/* ==========================================================================
+   Return to top
+      ========================================================================== */
+
+
+#return-to-top {
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+	background-image: url(../img/long-arrow-up-white-small.png);
+	background-repeat: no-repeat;
+	background-size: contain;   
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    color: #fff;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+	background-image: url(../img/long-arrow-up-gray-small.png);
+		background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;   
+
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/*
+
+.bg-long_arrow_up_white_small {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-long_arrow_up_gray_small {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -130px -10px;
+}
+
+.bg-long_arrow_up_black_small {
+    width: 100px; height: 100px;
+    background: url('css_sprites.png') -10px -130px;
+}
+
+*/
+
+
+
+
+
+
+
+/* ==========================================================================
+  Modal window
+   ========================================================================== */
+/*modal fullscreen */
+
+.modal.modal-fullscreen {
+  /* Maximize the main wrappers on the screen */
+  /* Make the parent wrapper of the modal box a full-width block */
+  /* Remove borders and effects on the content */
+  /**
+	 * /!\ By using this feature, you force the header and footer to be placed
+	 * in an absolute position. You must handle by yourself the margin of the
+	 * content.
+	 */
+}
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+  bottom: 8px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+.modal.modal-fullscreen .modal-dialog {
+  margin: 0 auto;
+  width: 100%;
+  animation-duration:0.6s;
+}
+.modal.modal-fullscreen .modal-content {
+  border: none;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inherit;
+  -moz-box-shadow: inherit;
+  -o-box-shadow: inherit;
+  box-shadow: inherit;
+  /* change bg color below */
+ /* background:#1abc9c; */
+}
+.modal.modal-fullscreen.force-fullscreen {
+  /* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+  padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+  top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  bottom: 0;
+}
+
+
+.modal-dialog{
+    max-width: 80%;
+    margin: 0 auto;
+       
+}
+
+
+/* Modal content*/
+.modal-body{
+	text-align: center;
+}
+.modal-footer{
+	margin: 0 auto;
+}
+.modal-dialog h4.title{
+	font-size: 1rem;
+}
+
+.modal-dialog .img--logo-member{
+	width: 30px;
+	height: auto;
+}
+.modal-dialog img.img--logo-original{
+	width: 40%;
+	height: auto;
+}
+
+.modal-dialog a {
+    color: #da291c;
+    text-decoration: underline;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.modal-dialog a:hover {
+    opacity: 0.8;
+}
+
+
+.modal-dialog .btn-primary:not(:disabled):not(.disabled).active{
+	text-decoration: none;
+	background-color:#da291c;
+    border-color: #da291c;	
+}
+
+
+/* ==========================================================================
+   TOOLTIP TEMPLATE
+   ========================================================================== */
+   
+   
+
+
+
+.foro-tooltip {
+    position: absolute;			
+    text-align: center;			
+    width: 160px;					
+    height: auto;					
+    padding: 8px;				
+    font-size: 12px;
+    font-weight: 800;		
+    background: #fff;
+	box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.20);     
+	border: 1px solid #e9ecef;		
+    border-radius: 16px;	
+    transition: opacity 0.3s;    		
+   }
+ 
+ .foro-tooltip-active{
+	opacity: 1;
+ }  
+  
+.foro-tooltip-inactive{
+	display:none;
+ }  
+    
+/* Modal content*/
+
+
+.foro-tooltip .tooltip-header .circle{
+	width: 56px;
+	height: 56px;
+	border-radius: 56px;
+	background-color: none;
+	margin: 0 auto;
+	display: block;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-size: contain;   
+	
+}
+.foro-tooltip h3{
+	font-size: 14px;
+	margin-top: 8px;
+}
+   
+   
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ==
+   ======================================================================== */
+
+@media only screen and (min-width: 576px) {  }
+
+@media only screen and (min-width: 768px) { 
+	
+	.modal-dialog{
+	    max-width: 540px;
+	    margin: 0 auto;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {  }
+
+@media only screen and (min-width: 1200px) {  }
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */ 
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color:#000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

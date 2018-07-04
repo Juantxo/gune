@@ -1,0 +1,2819 @@
+{
+
+
+	"industria_4": {
+
+		"ambitos": [{
+				"ambito": "Todas los \u00e1mbitos",
+				"ambito_id": 0,
+				"ambito_short_name": "todos"
+			},
+			{
+				"ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+				"ambito_id": 1,
+				"ambito_short_name": "Fabricaci\u00f3n Avanzada"
+			},
+			{
+				"ambito": "Realidad Virtual y Realidad aumentada",
+				"ambito_id": 2,
+				"ambito_short_name": "RV & RA"
+			},
+			{
+				"ambito": "Ciberseguridad",
+				"ambito_id": 3,
+				"ambito_short_name": "Ciberseguridad"
+			},
+			{
+				"ambito": "Cloud Computing y Edge Computing",
+				"ambito_id": 4,
+				"ambito_short_name": "Cloud computing"
+			},
+			{
+				"ambito": "Big Data: an\u00e1lisis, evaluaci\u00f3n y aplicaci\u00f3n",
+				"ambito_id": 5,
+				"ambito_short_name": "Big Data"
+			},
+			{
+				"ambito": "Internet of Things",
+				"ambito_id": 6,
+				"ambito_short_name": "Internet of Things"
+			},
+			{
+				"ambito": "Integraci\u00f3n de Sistemas IT",
+				"ambito_id": 7,
+				"ambito_short_name": "Sistemas IT"
+			},
+			{
+				"ambito": "Fabricaci\u00f3n aditiva",
+				"ambito_id": 8,
+				"ambito_short_name": "Fabricaci\u00f3n Aditiva"
+			},
+			{
+				"ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+				"ambito_id": 9,
+				"ambito_short_name": "Materiales & procesos"
+			},
+			{
+				"ambito": "Dise\u00f1o y/o optimizaci\u00f3n de modelos de negocio",
+				"ambito_id": 10,
+				"ambito_short_name": "Modelos de negocio"
+			}
+		],
+
+		"subambitos": [{
+				"subambito": "Dise\u00f1o, investigaci\u00f3n, implantaci\u00f3n comunicaci\u00f3n M2M",
+				"subambito_id": 1,
+				"sub_sort_name": "M2M",
+				"ambito_id": 1
+			},
+			{
+				"subambito": "Dise\u00f1o, investigaci\u00f3n de interfases persona-m\u00e1quina (HMI: human machine interface; Human in the loop)",
+				"subambito_id": 2,
+				"sub_sort_name": "HMI",
+				"ambito_id": 1
+			},
+			{
+				"subambito": "Programaci\u00f3n, simulaci\u00f3n y puesta en marcha de robots industriales inteligentes, conectadas, flexibles y reconfigurables",
+				"subambito_id": 3,
+				"sub_sort_name": "Robots ",
+				"ambito_id": 1
+			},
+			{
+				"subambito": "Monitorizaci\u00f3n de datos, an\u00e1lisis y su aplicaci\u00f3n en la fabricaci\u00f3n",
+				"subambito_id": 4,
+				"sub_sort_name": "Monitorizaci\u00f3n datos",
+				"ambito_id": 1
+			},
+			{
+				"subambito": "Entornos de fabricaci\u00f3n din\u00e1mica para su integraci\u00f3n \u00e1gil e inteligente",
+				"subambito_id": 5,
+				"sub_sort_name": "Fab. Din\u00e1mica",
+				"ambito_id": 1
+			},
+			{
+				"subambito": "Dise\u00f1o digital y sistemas virtuales de simulaci\u00f3n y control de procesos y planta",
+				"subambito_id": 6,
+				"sub_sort_name": "Sistemas virtuales",
+				"ambito_id": 2
+			},
+			{
+				"subambito": "Realidad virtual para optimizaci\u00f3n de dise\u00f1os",
+				"subambito_id": 7,
+				"sub_sort_name": "RV dise\u00f1o",
+				"ambito_id": 2
+			},
+			{
+				"subambito": "Realidad aumentada para el mantenimiento y control de planta",
+				"subambito_id": 8,
+				"sub_sort_name": "RV planta",
+				"ambito_id": 2
+			},
+			{
+				"subambito": "Realidad virtual para training de operaciones y formaci\u00f3n de operarios",
+				"subambito_id": 9,
+				"sub_sort_name": "RV operarios",
+				"ambito_id": 2
+			},
+			{
+				"subambito": "Realidad aumentada para asistencia y resoluci\u00f3n de incidencias",
+				"subambito_id": 10,
+				"sub_sort_name": "RA incidencias",
+				"ambito_id": 2
+			},
+			{
+				"subambito": "Prevenci\u00f3n y control de ataques y amenazas ",
+				"subambito_id": 11,
+				"sub_sort_name": "Prevenci\u00f3n ataques",
+				"ambito_id": 3
+			},
+			{
+				"subambito": "Detecci\u00f3n de amenazas mediante an\u00e1lisis de comportamiento",
+				"subambito_id": 12,
+				"sub_sort_name": "Detecci\u00f3n amenazas",
+				"ambito_id": 3
+			},
+			{
+				"subambito": "Microsegmentaci\u00f3n en el endpoint, microsegmentaci\u00f3n en datacenter",
+				"subambito_id": 13,
+				"sub_sort_name": "Microsegmentaci\u00f3n",
+				"ambito_id": 3
+			},
+			{
+				"subambito": "T\u00e9cnicas de aislamiento por virtualizaci\u00f3n de la red y correspondientes funciones operativas",
+				"subambito_id": 14,
+				"sub_sort_name": "Aislamiento de la red",
+				"ambito_id": 3
+			},
+			{
+				"subambito": "Aplicaci\u00f3n de t\u00e9cnicas de inteligencia artificial para combatir el cibercrimen",
+				"subambito_id": 15,
+				"sub_sort_name": "IA cibercrimen",
+				"ambito_id": 3
+			},
+			{
+				"subambito": "Virtualizaci\u00f3n de sistemas",
+				"subambito_id": 16,
+				"sub_sort_name": "Virtualizaci\u00f3n sist.",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Grandes almacenes de datos en la nube",
+				"subambito_id": 17,
+				"sub_sort_name": "Datos nube",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Computaci\u00f3n de altas prestaciones",
+				"subambito_id": 18,
+				"sub_sort_name": "Computaci\u00f3n",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Sistemas streaming",
+				"subambito_id": 19,
+				"sub_sort_name": "Streaming",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Comunicaciones entre sistemas",
+				"subambito_id": 20,
+				"sub_sort_name": "Comunicaciones",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Sistemas de informaci\u00f3n industriales",
+				"subambito_id": 21,
+				"sub_sort_name": "Informaci\u00f3n industrial",
+				"ambito_id": 4
+			},
+			{
+				"subambito": "Sistemas anal\u00edticos especializados y soluciones software ",
+				"subambito_id": 22,
+				"sub_sort_name": "Soluciones software",
+				"ambito_id": 5
+			},
+			{
+				"subambito": "T\u00e9cnicas de anal\u00edtica avanzada, Machine learning and deep learning",
+				"subambito_id": 23,
+				"sub_sort_name": "Deep Learning",
+				"ambito_id": 5
+			},
+			{
+				"subambito": "Estudio de la mejora del rendimiento con bases de datos NoSQL",
+				"subambito_id": 24,
+				"sub_sort_name": "NoSQL",
+				"ambito_id": 5
+			},
+			{
+				"subambito": "Computaci\u00f3n del altas prestaciones",
+				"subambito_id": 25,
+				"sub_sort_name": "Computaci\u00f3n",
+				"ambito_id": 5
+			},
+			{
+				"subambito": "Sens\u00f3rica, controles y sistemas embebidos",
+				"subambito_id": 26,
+				"sub_sort_name": "Sens\u00f3rica",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Networking, conectividad e interoperatividad de dispositivos inteligentes",
+				"subambito_id": 27,
+				"sub_sort_name": "Networking",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Gesti\u00f3n de Infraestructura",
+				"subambito_id": 28,
+				"sub_sort_name": "Infraestructuras",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Tecnolog\u00edas de habilitaci\u00f3n para IoT",
+				"subambito_id": 29,
+				"sub_sort_name": "Ihabitalizaci\u00f3n IoT",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Modelizaci\u00f3n y simulaci\u00f3n de IoT",
+				"subambito_id": 30,
+				"sub_sort_name": "Modelizaci\u00f3n IoT",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Acceso seguro a sensores y dispositivos de prestaciones reducidas",
+				"subambito_id": 31,
+				"sub_sort_name": "Sensores",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Integraci\u00f3n de nuevas tecnolog\u00edas de comunicaci\u00f3n en IoT",
+				"subambito_id": 32,
+				"sub_sort_name": "Integraci\u00f3n IoT",
+				"ambito_id": 6
+			},
+			{
+				"subambito": "Sistemas para la integraci\u00f3n vertical ",
+				"subambito_id": 33,
+				"sub_sort_name": "Integraci\u00f3n vertical",
+				"ambito_id": 7
+			},
+			{
+				"subambito": "Sistemas para la integraci\u00f3n horizontal: smart supply chain management, smart logistic, etc.",
+				"subambito_id": 34,
+				"sub_sort_name": "Integraci\u00f3n horizontal",
+				"ambito_id": 7
+			},
+			{
+				"subambito": "Integracion Inter-organizational",
+				"subambito_id": 35,
+				"sub_sort_name": "Integraci\u00f3n inter-org.",
+				"ambito_id": 7
+			},
+			{
+				"subambito": "Impresi\u00f3n 3D",
+				"subambito_id": 36,
+				"sub_sort_name": "Impresi\u00f3n 3D",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Fusi\u00f3n de lecho de polvo: Powder Bed Fusion (PBF)",
+				"subambito_id": 37,
+				"sub_sort_name": "Leche en polvo",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Modelado por deposici\u00f3n fundida: Fused Deposition Modeling (FDM)",
+				"subambito_id": 38,
+				"sub_sort_name": "FDM",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Material Jetting",
+				"subambito_id": 39,
+				"sub_sort_name": "Material Jetting",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Procesos de aporte directo (Direct Material Deposition - DMD)",
+				"subambito_id": 40,
+				"sub_sort_name": "DMD",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Integraci\u00f3n de procesos de Fabricaci\u00f3n Aditiva en M\u00e1quina Herramienta",
+				"subambito_id": 41,
+				"sub_sort_name": "M\u00e1quina herramienta",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Design for Additive Manufacturing",
+				"subambito_id": 42,
+				"sub_sort_name": "Additive Manufacturing",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "Mass & Taylored production",
+				"subambito_id": 43,
+				"sub_sort_name": "M&T production",
+				"ambito_id": 8
+			},
+			{
+				"subambito": "I+D sobre materiales",
+				"subambito_id": 44,
+				"sub_sort_name": "I+D materiales",
+				"ambito_id": 9
+			},
+			{
+				"subambito": "I+D de procesos de fabricaci\u00f3n eficientes para materiales avanzados",
+				"subambito_id": 45,
+				"sub_sort_name": "I+D procesos",
+				"ambito_id": 9
+			},
+			{
+				"subambito": "Servicios tecnol\u00f3gicos avanzados",
+				"subambito_id": 46,
+				"sub_sort_name": "Serv. Tecnol\u00f3gicos",
+				"ambito_id": 9
+			},
+			{
+				"subambito": "Gesti\u00f3n del ciclo de vida de producto para materiales avanzados y no avanzados",
+				"subambito_id": 47,
+				"sub_sort_name": "Ciclo vida producto",
+				"ambito_id": 9
+			},
+			{
+				"subambito": "Soluciones de fabricaci\u00f3n para productos modulares, actualizables, reconfigurables y desmontables",
+				"subambito_id": 48,
+				"sub_sort_name": "Productos modulares",
+				"ambito_id": 9
+			},
+			{
+				"subambito": "Redefinici\u00f3n de procesos, productos y servicios",
+				"subambito_id": 49,
+				"sub_sort_name": "Redefinici\u00f3n procesos",
+				"ambito_id": 10
+			},
+			{
+				"subambito": "Gesti\u00f3n de la propiedad intelectual",
+				"subambito_id": 50,
+				"sub_sort_name": "Propiedad intelectual",
+				"ambito_id": 10
+			}
+		]
+
+
+
+
+	},
+
+	"universidades": [{
+			"univ": "Universidad de Deusto",
+			"univ_id": 1,
+			"univ_url": "http://www.deusto.es/",
+			"univ_short_name": "deusto"
+		},
+		{
+			"univ": "UPV/EHU",
+			"univ_id": 2,
+			"univ_url": "http://www.ehu.eus/",
+			"univ_short_name": "upv"
+		},
+		{
+			"univ": "Mondragon Unibertsitatea",
+			"univ_id": 4,
+			"univ_url": "http://www.mondragon.edu/es/",
+			"univ_short_name": "mondragon"
+		},
+		{
+			"univ": "TECNUN",
+			"univ_id": 5,
+			"univ_url": "http://www.tecnun.es/",
+			"univ_short_name": "tecnun"
+		},
+		{
+			"univ": "IMH",
+			"univ_id": 3,
+			"univ_url": "http://www.imh.eus/es/",
+			"univ_short_name": "imh"
+		}
+	],
+
+	"direcciones": [{
+			"direccion_id": 5,
+			"direccion": "Etorbidea Universidades, 24006",
+			"cp": 48007,
+			"localidad": "Bilbo",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.272230, -2.939706",
+			"latitude": "43.272230",
+			"longitude": 2.939706
+		},
+		{
+			"direccion_id": 14,
+			"direccion": "Manuel Lardizabal Ibilbidea, 5",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.305917, -2.009477",
+			"latitude": "43.305917",
+			"longitude": 2.009477
+		},
+		{
+			"direccion_id": 4,
+			"direccion": "Barrio Sarriena, s/n",
+			"cp": 48940,
+			"localidad": "Leioa",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.332167, -2.967819",
+			"latitude": "43.332167",
+			"longitude": 2.967819
+		},
+		{
+			"direccion_id": 8,
+			"direccion": "Ingeniero Torres Quevedo Plaza, 1",
+			"cp": 48013,
+			"localidad": "Bilbo",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.262975, -2.949430",
+			"latitude": "43.262975",
+			"longitude": 2.94943
+		},
+		{
+			"direccion_id": 11,
+			"direccion": "Manuel Lardizabal Ibilbidea, 1",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.307328, -2.010842",
+			"latitude": "43.307328",
+			"longitude": 2.010842
+		},
+		{
+			"direccion_id": 6,
+			"direccion": "Europa Plaza, 1",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.309400, -2.009661",
+			"latitude": "43.309400",
+			"longitude": 2.009661
+		},
+		{
+			"direccion_id": 10,
+			"direccion": "Loramendi Kalea, 4",
+			"cp": 20500,
+			"localidad": "Arrasate",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.062343, -2.496928",
+			"latitude": "43.062343",
+			"longitude": 2.496928
+		},
+		{
+			"direccion_id": 9,
+			"direccion": "Jauregi Bailara, s/n",
+			"cp": 20120,
+			"localidad": "Hernani",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.276341, -1.994323",
+			"latitude": "43.276341",
+			"longitude": 1.994323
+		},
+		{
+			"direccion_id": 7,
+			"direccion": "Ibarra Zelaia Zelaigunea, 2",
+			"cp": 20560,
+			"localidad": "O\u00f1ati",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.035469, -2.417834",
+			"latitude": "43.035469",
+			"longitude": 2.417834
+		},
+		{
+			"direccion_id": 1,
+			"direccion": "Alameda de Recalde, 50",
+			"cp": 48008,
+			"localidad": "Bilbo",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.261079, -2.936132",
+			"latitude": "43.261079",
+			"longitude": 2.936132
+		},
+		{
+			"direccion_id": 19,
+			"direccion": "Uribitarte Kalea, 6",
+			"cp": 48001,
+			"localidad": "Bilbo",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.264358, -2.927384",
+			"latitude": "43.264.358",
+			"longitude": 2.927384
+		},
+		{
+			"direccion_id": 17,
+			"direccion": "Paseo Juan Avelino Barriola",
+			"cp": 20009,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.290501, -1.981308",
+			"latitude": "43.290501",
+			"longitude": 1.981308
+		},
+		{
+			"direccion_id": 12,
+			"direccion": "Manuel Lardizabal Ibilbidea, 13",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.304716, -2.010005",
+			"latitude": "43.304716",
+			"longitude": 2.010005
+		},
+		{
+			"direccion_id": 3,
+			"direccion": "Azkue auzoa, 1",
+			"cp": 20870,
+			"localidad": "Elgoibar",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.211199, -2.410122",
+			"latitude": "43.211199",
+			"longitude": 2.967819
+		},
+		{
+			"direccion_id": 13,
+			"direccion": "Manuel Lardizabal Ibilbidea, 3",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.306728, -2.010176",
+			"latitude": "43.306728",
+			"longitude": 2.010176
+		},
+		{
+			"direccion_id": 2,
+			"direccion": "Avenida de Tolosa, 72",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.306179, -2.008428",
+			"latitude": "43.306179",
+			"longitude": 2.008428
+		},
+		{
+			"direccion_id": 15,
+			"direccion": "Nieves Cano Kalea, 12",
+			"cp": 1006,
+			"localidad": "Gasteiz",
+			"provincia_id": 3,
+			"provincia": "Araba",
+			"lat_long": "42.839157, -2.674191",
+			"latitude": "42.839157",
+			"longitude": 2.674191
+		},
+		{
+			"direccion_id": 6,
+			"direccion": "Plaza Europa, 1 ",
+			"cp": 20018,
+			"localidad": "Donostia",
+			"provincia_id": 1,
+			"provincia": "Gipuzkoa",
+			"lat_long": "43.309400, -2.009661",
+			"latitude": "43.309400",
+			"longitude": 2.009661
+		},
+		{
+			"direccion_id": 4,
+			"direccion": "B\u00ba Sarriena s/n",
+			"cp": 48940,
+			"localidad": "Leioa",
+			"provincia_id": 2,
+			"provincia": "Bizkaia",
+			"lat_long": "43.332167, -2.967819",
+			"latitude": "43.332167",
+			"longitude": 2.967819
+		},
+		{
+			"direccion_id": 16,
+			"direccion": "Paseo de la Universidad, 7",
+			"cp": 1006,
+			"localidad": "Gasteiz",
+			"provincia_id": 3,
+			"provincia": "Araba",
+			"lat_long": "42.840745, -2.672288",
+			"latitude": "42.840745",
+			"longitude": 2.672288
+		}
+	],
+
+	"mejoras": [{
+			"id": 0,
+			"nombre": "Todas las mejoras",
+			"json": "total"
+		},
+		{
+			"id": 1,
+			"nombre": "I+D",
+			"json": "i_d"
+		},
+		{
+			"id": 2,
+			"nombre": "Producción",
+			"json": "produccion"
+		},
+		{
+			"id": 3,
+			"nombre": "Suministro y compras",
+			"json": "suministro_y_compras"
+		},
+		{
+			"id": 4,
+			"nombre": "Almacenamiento y logística",
+			"json": "almacenamiento_y_logistica"
+		},
+		{
+			"id": 5,
+			"nombre": "Marketing",
+			"json": "marketing"
+		},
+		{
+			"id": 6,
+			"nombre": "Ventas",
+			"json": "ventas"
+		},
+		{
+			"id": 7,
+			"nombre": "Servicios",
+			"json": "servicios"
+		},
+		{
+			"id": 8,
+			"nombre": "Administración",
+			"json": "administracion"
+		}
+	],
+
+	"capacidades": {
+		"capacidades_uno": [{
+				"id": 0,
+				"capacidad_uno": "total",
+				"parent_id": "null",
+				"json": "todas",
+				"capacidad_color": "#000000"
+			},
+			{
+				"id": 1,
+				"capacidad_uno": "Formación",
+				"parent_id": "0",
+				"json": "formacion",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 2,
+				"capacidad_uno": "Instalación y equipos",
+				"parent_id": "0",
+				"json": "instalacion_y_equipos",
+				"capacidad_color": "#e88604"
+			},
+			{
+				"id": 3,
+				"capacidad_uno": "Investigación",
+				"parent_id": "0",
+				"json": "investigacion",
+				"capacidad_color": "#8e6aad"
+			},
+			{
+				"id": 4,
+				"capacidad_uno": "Transferencia",
+				"parent_id": "0",
+				"json": "transferencia",
+				"capacidad_color": "#df503e"
+			}
+		],
+		"capacidades_dos": [{
+				"id": 1,
+				"capacidad_dos": "Doctorado",
+				"json": "doctorado",
+				"parent_id": 1,
+				"capacidad_uno": "Formación",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 2,
+				"capacidad_dos": "Formación contínua",
+				"json": "formacion_continua",
+				"parent_id": 1,
+				"capacidad_uno": "Formación",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 3,
+				"capacidad_dos": "Grado",
+				"json": "grado",
+				"parent_id": 1,
+				"capacidad_uno": "Formación",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 4,
+				"capacidad_dos": "Máster",
+				"json": "master",
+				"parent_id": 1,
+				"capacidad_uno": "Formación",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 5,
+				"capacidad_dos": "Otros",
+				"json": "otros_formacion",
+				"parent_id": 1,
+				"capacidad_uno": "Formación",
+				"capacidad_color": "#009fdf"
+			},
+			{
+				"id": 6,
+				"capacidad_dos": "Instalación singular",
+				"json": "instalacion_singular",
+				"parent_id": 2,
+				"capacidad_uno": "Instalación y equipos",
+				"capacidad_color": "#e88604"
+			},
+			{
+				"id": 7,
+				"capacidad_dos": "Laboratorio",
+				"json": "laboratorio",
+				"parent_id": 2,
+				"capacidad_uno": "Instalación y equipos",
+				"capacidad_color": "#e88605"
+			},
+			{
+				"id": 8,
+				"capacidad_dos": "Grupo/Equipo/Unidad",
+				"json": "grupo_equipo_unidad",
+				"parent_id": 3,
+				"capacidad_uno": "Investigación",
+				"capacidad_color": "#8e6aad"
+			},
+			{
+				"id": 9,
+				"capacidad_dos": "Dpto/División",
+				"json": "dpto_division",
+				"parent_id": 3,
+				"capacidad_uno": "Investigación",
+				"capacidad_color": "#8e6aad"
+			},
+			{
+				"id": 10,
+				"capacidad_dos": "Aulas",
+				"json": "aulas",
+				"parent_id": 4,
+				"capacidad_uno": "Transferencia",
+				"capacidad_color": "#df503e"
+			},
+			{
+				"id": 11,
+				"capacidad_dos": "Cátedra",
+				"json": "catedra",
+				"parent_id": 4,
+				"capacidad_uno": "Transferencia",
+				"capacidad_color": "#df503e"
+			},
+			{
+				"id": 12,
+				"capacidad_dos": "Laboratorio",
+				"json": "laboratorio",
+				"parent_id": 4,
+				"capacidad_uno": "Transferencia",
+				"capacidad_color": "#df503e"
+			},
+			{
+				"id": 13,
+				"capacidad_dos": "Otros",
+				"json": "otros_transferencia",
+				"parent_id": 4,
+				"capacidad_uno": "Transferencia",
+				"capacidad_color": "#df503e"
+			}
+		]
+
+
+
+	},
+
+	"titulos": [{
+			"cod": 1,
+			"titulo": "Grado en Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ingenier\u00eda Inform\u00e1tica",
+			"responsable": "I\u00f1aki V\u00e1zquez",
+			"email": "ivazquez@deusto.es",
+			"desc": "Dise\u00f1ar y desarrollar software. Consultor\u00eda tecnol\u00f3gica y funcional de sistemas de informaci\u00f3n. Pol\u00edticas y tecnolog\u00edas de seguridad en las redes y los sistemas de informaci\u00f3n. Gestionar redes de comunicaci\u00f3n, bases de datos y sistemas inform\u00e1ticos. Dirigir y gestionar proyectos de instalaciones y sistemas de informaci\u00f3n. Investigar y desarrollar planes de innovaci\u00f3n tecnol\u00f3gica. Poner en marcha proyectos empresariales innovadores relacionados con las tecnolog\u00edas de la informaci\u00f3n. ",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/ingenieria-informatica/programa"
+		},
+		{
+			"cod": 2,
+			"titulo": "Grado en Ingenier\u00eda Electr\u00f3nica Industrial y autom\u00e1tica",
+			"titulo_short_name": "Ing. Electr\u00f3nica Ind. y autom\u00e1tica",
+			"responsable": "Ignacio Angulo",
+			"email": "ignacio.angulo@deusto.es",
+			"desc": "Dise\u00f1ar productos y sistemas como dispositivos electr\u00f3nicos, neum\u00e1ticos, electromec\u00e1nicos, m\u00e1quinas y motores el\u00e9ctricos... para uso industrial y dom\u00e9stico.\u00a0Dise\u00f1ar e instalar redes industriales que conecten m\u00e1quinas con dispositivos. Instrumentar, automatizar y robotizar complejas plantas: refiner\u00edas, granjas solares, l\u00edneas de fabricaci\u00f3n, plantas el\u00e9ctricas... Desarrollar proyectos de oficina t\u00e9cnica, particularmente en la automatizaci\u00f3n de instalaciones industriales. Llevar a cabo proyectos de gesti\u00f3n e implantaci\u00f3n de calidad, de prevenci\u00f3n de riesgos y seguridad e higiene en el trabajo.",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/ingenieria-en-electronica-industrial-y-automatica-0/programa"
+		},
+		{
+			"cod": 3,
+			"titulo": "M\u00e1ster Universitario en Automatizaci\u00f3n, Electr\u00f3nica y Control Industrial",
+			"titulo_short_name": "Automatizaci\u00f3n, Electr\u00f3nica y Control Ind.",
+			"responsable": "Javier Garc\u00eda Zubia",
+			"email": "zubia@deusto.es",
+			"desc": "Competencias: Dise\u00f1ar, adaptar y optimizar instalaciones industriales automatizadas propias de la fabricaci\u00f3n avanzada que incorporen robots, manipuladores industriales, sistemas de visi\u00f3n artificial, as\u00ed como sensores y actuadores. Desarrollar aplicaciones inform\u00e1ticas en escenarios industriales de fabricaci\u00f3n avanzada. Dise\u00f1ar los sistemas electr\u00f3nicos necesarios para la implementaci\u00f3n de todos los elementos implicados en una planta industrial automatizada del \u00e1mbito de la fabricaci\u00f3n avanzada. Dise\u00f1ar, desarrollar e implementar estrategias de control autom\u00e1tico inteligente del \u00e1mbito de la fabricaci\u00f3n avanzada. ",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/masteres/estudios-masteres/master-universitario-en-automatizacion-electronica-y-control-industrial/programa"
+		},
+		{
+			"cod": 4,
+			"titulo": "Grado en Ingenier\u00eda en Tecnolog\u00edas Industriales",
+			"titulo_short_name": "Ingenier\u00eda Tecnolog\u00edas Ind. ",
+			"responsable": "Fernando Cortes",
+			"email": "fernando.cortes@deusto.es",
+			"desc": "Proyectar, calcular y dise\u00f1ar productos, estructuras, procesos e instalaciones. Dise\u00f1ar y ensayar m\u00e1quinas y motores t\u00e9rmicos, m\u00e1quinas hidr\u00e1ulicas, instalaciones de calor y fr\u00edo industrial. Realizar verificaci\u00f3n y control de instalaciones. Realizar investigaci\u00f3n, desarrollo e innovaci\u00f3n en productos y procesos. Gestionar t\u00e9cnica y econ\u00f3micamente proyectos, instalaciones, plantas, empresas y centros tecnol\u00f3gicos. Ejercer funciones de direcci\u00f3n general, direcci\u00f3n t\u00e9cnica y direcci\u00f3n de proyectos de I+D+i en empresas industriales.",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/ingenieria-en-tecnologias-industriales/programa"
+		},
+		{
+			"cod": 5,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Industrial",
+			"titulo_short_name": "Ingenier\u00eda Industrial",
+			"responsable": "Fernando Cort\u00e9s",
+			"email": "fernando.cortes@deusto.es",
+			"desc": "Elevados conocimientos t\u00e9cnicos para desarrollar proyectos de envergadura, capacitaci\u00f3n para dirigirlos.  Visi\u00f3n global de diferentes \u00e1mbitos de la actividad industrial, en donde se pueden citar los siguientes sectores: Siderurgia y metalurgia en general. Transformaciones qu\u00edmicas. Generaci\u00f3n y transporte de energ\u00eda. Industrias de construcci\u00f3n met\u00e1lica, mec\u00e1nica, el\u00e9ctrica y electr\u00f3nica. Construcciones industriales, hidr\u00e1ulicas y civiles. Industrias de automoci\u00f3n, aeron\u00e1utica, ferrocarril y tranv\u00edas. Astilleros y talleres de construcci\u00f3n naval.\n",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/masteres/estudios-masteres/ingenieria-industrial/programa"
+		},
+		{
+			"cod": 6,
+			"titulo": "M\u00e1ster Dual en Dise\u00f1o y Fabricaci\u00f3n en Automoci\u00f3n",
+			"titulo_short_name": "Dise\u00f1o y Fabricaci\u00f3n en Automoci\u00f3n",
+			"responsable": "Jon Garc\u00eda Barruetabe\u00f1a",
+			"email": "jgarcia.barruetabena@deusto.es",
+			"desc": "Este M\u00e1ster te formar\u00e1 como un/a ingeniero/a en automoci\u00f3n que domina tanto la gesti\u00f3n y definici\u00f3n del entorno productivo como el dise\u00f1o y la fabricaci\u00f3n de veh\u00edculos y componentes. As\u00ed, adquirir\u00e1s los conocimientos s\u00f3lidos en varios campos de la ingenier\u00eda como son: 1) Sistemas avanzados de gesti\u00f3n y producci\u00f3n (mejora de la eficiencia), 2) Nuevos materiales y procesos (aligeramiento de veh\u00edculo, reducci\u00f3n de consumo, aumento de la seguridad y el confort), 3) Tecnolog\u00edas actuales y de futuro utilizadas en veh\u00edculos y cu\u00e1les (nuevos sistemas de propulsi\u00f3n, interoperabilidad, reducci\u00f3n de las emisiones), 4) Herramientas de simulaci\u00f3n num\u00e9rica empleadas para el dise\u00f1o, c\u00e1lculo y fabricaci\u00f3n de veh\u00edculos y componentes.\nEsta formaci\u00f3n, se imparte en modalidad dual y representa un enfoque innovador y de futuro \u00fanico. La modalidad dual implica combinar el desarrollo y la adquisici\u00f3n de competencias tanto en la universidad como en la empresa.\nAdem\u00e1s del trabajo y las clases en la universidad, en el primer m\u00f3dulo te enfrentar\u00e1s a retos reales propuestos por empresas de automoci\u00f3n, trabajando desde el propio AIC, un centro \u00fanico de generaci\u00f3n de valor para el sector de automoci\u00f3n basado en un concepto de innovaci\u00f3n abierta. En el tercer m\u00f3dulo los alumnos del m\u00e1ster se trasladar\u00e1n a empresas o centros tecnol\u00f3gicos del sector para desarrollar una estancia a jornada completa. ",
+			"web": "https://www.deusto.es/cs/Satellite/deusto/en/masters/studies-masters/specialist-diploma-in-automotive-engineering/programa"
+		},
+		{
+			"cod": 7,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ingenier\u00eda Inform\u00e1tica",
+			"responsable": "Roberto Carballedo",
+			"email": "roberto.carballedo@deusto.es",
+			"desc": "Salidas Profesionales: Director de sistemas de informaci\u00f3n, Director de proyectos software, Arquitecto de software, Data Scientist y Big Data Analyst , Investigaci\u00f3n e innovaci\u00f3n",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/masteres/estudios-masteres/ingenieria-informatica-0/programa"
+		},
+		{
+			"cod": 8,
+			"titulo": "M\u00e1ster Universitario en Organizaci\u00f3n Industrial",
+			"titulo_short_name": "Organizaci\u00f3n Industrial",
+			"responsable": "Esther \u00c1lvarez",
+			"email": "esther.alvarez@deusto.es",
+			"desc": "Gesti\u00f3n avanzada de los procesos y las organizaciones industriales con objeto de mejorar su competitividad y crear valor para sus part\u00edcipes sociales desde una perspectiva integral",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/masteres/estudios-masteres/ingenieria-en-organizacion-industrial-0/programa"
+		},
+		{
+			"cod": 9,
+			"titulo": "Programa de doctorado en Ingenier\u00eda para la Sociedad de la Informaci\u00f3n y Desarrollo Sostenible",
+			"titulo_short_name": "Ing. para la Soc. de la Informaci\u00f3n y Des. Sost.",
+			"responsable": "Esther \u00c1lvarez",
+			"email": "esther.alvarez@deusto.es",
+			"desc": "Inteligencia Ambiental e Internet del Futuro. Aplicaci\u00f3n de TICs a la innovaci\u00f3n en la educaci\u00f3n. Procesado digital de se\u00f1ales biom\u00e9dicas. Seguridad e Inteligencia Computacional Aplicada, ICA. Transporte y movilidad inteligente . Gesti\u00f3n energ\u00e9tica integral, medioambiente, sostenibilidad y tecnolog\u00edas limpias. Ingenier\u00eda Industrial y Log\u00edstica.",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/masteres/estudios-masteres/ingenieria-para-la-sociedad-de-la-informacion-y-desarrollo-sostenible/programa?idPest=1340024396443"
+		},
+		{
+			"cod": 10,
+			"titulo": "Grado en Industria Digital",
+			"titulo_short_name": "Industria Digital",
+			"responsable": "Jonathan Ruiz de Garibay",
+			"email": "jonathan.garibay@deusto.es",
+			"desc": "El dise\u00f1o, despliegue, evaluaci\u00f3n y mantenimiento de proyectos integrales de digitalizaci\u00f3n de procesos en empresas industriales. El dise\u00f1o de sistemas de fabricaci\u00f3n y producci\u00f3n inteligentes y comunicados. La incorporaci\u00f3n de las tecnolog\u00edas de la informaci\u00f3n y la comunicaci\u00f3n en la empresa industrial como un elemento estrat\u00e9gico de mejora de competitividad.",
+			"web": "https://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/grado-dual-en-industria-digital/programa"
+		},
+		{
+			"cod": 11,
+			"titulo": "Doble grado en Ingenier\u00eda Electr\u00f3nica Industrial y Autom\u00e1tica + Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ing. Electr\u00f3nica Ind. y Autom. + Ing, Inform\u00e1tica",
+			"responsable": "Ignacio Angulo",
+			"email": "ignacio.angulo@deusto.es",
+			"desc": "Empresas de todas las \u00e1reas industriales, en especial aquellas con uso intensivo de las TIC. Empresas del sector TIC proveedoras de productos y servicios  al sector industrial. Departamentos t\u00e9cnicos de empresas industriales y de servicios. Ingenier\u00edas de proyectos. Industria de desarrollo tecnol\u00f3gico. Empresas de comercializaci\u00f3n e implantaci\u00f3n de productos y servicios del \u00e1mbito industrial y/o tecnol\u00f3gico. Consultor\u00eda, con doble vertiente industrial y tecnol\u00f3gica. ",
+			"web": "http://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/ingenieria-electronica-industrial-y-automatica--ingenieria-informatica/programa"
+		},
+		{
+			"cod": 12,
+			"titulo": "Doble Grado Ingenier\u00eda en Organizaci\u00f3n Industrial + Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ing. en Org. Ind. + Ing. Inform\u00e1tica",
+			"responsable": "Alberto de la Calle",
+			"email": "\u00a0acalle@deusto.es",
+			"desc": "Empresas de todas las \u00e1reas industriales con uso intensivo de las TIC. Empresas del sector TIC proveedoras de productos y servicios. Departamentos t\u00e9cnicos de empresas industriales y de servicios. Ingenier\u00edas de proyectos. Industria de desarrollo tecnol\u00f3gico. Empresas de comercializaci\u00f3n e implantaci\u00f3n de productos y servicios del \u00e1mbito industrial y/o tecnol\u00f3gico. Consultor\u00eda. ",
+			"web": "https://www.deusto.es/cs/Satellite/deusto/es/nuevos-estudiantes-de-grado/estudios-grados/ingenieria-en-organizacion-industrial--ingenieria-informatica/programa"
+		},
+		{
+			"cod": 13,
+			"titulo": "Programa de formaci\u00f3n continua en Industria 4.0",
+			"titulo_short_name": "Industria 4.0",
+			"responsable": "Pablo Garc\u00eda Bringas ",
+			"email": "pablo.garcia.bringas@deusto.es",
+			"desc": "Mediante este Programa de Industria 4.0 nos aproximamos al campo de este nuevo paradigma desde tres dimensiones de estudio: 1) Tecnolog\u00eda: las tecnolog\u00edas habilitadoras, el conjunto de conocimientos que hacen posible esta nueva industria, 2) Negocio: el impacto en proceso, producto y modelo de negocio que trae a la industria la digitalizaci\u00f3n de las f\u00e1bricas, y 3) Aplicaciones: casos de \u00e9xito de empresas e industrias colaboradoras del programa, que conjuntando Tecnolog\u00eda y Negocio han sabido embarcarse en proyectos de Industria 4.0 y sacarles rentabilidad.\nMejora tu proyecci\u00f3n profesional introduci\u00e9ndote en el futuro de las tecnolog\u00edas de fabricaci\u00f3n y producci\u00f3n digitales, Conoce la vanguardia en cuanto a tecnolog\u00edas y modelos productivos asociados al mundo de la Industria 4.0. Estructura modular: matriculaci\u00f3n por m\u00f3dulos a tu medida. Programa patrocinado por empresas referentes en el sector.\nLos profesores son expertos profesionales que ense\u00f1ar\u00e1n c\u00f3mo han aplicado los conceptos de la fabricaci\u00f3n, producci\u00f3n e industria inteligente en sus propias empresas\nPara ello seguir\u00e1n una metodolog\u00eda pr\u00e1ctica basada en casos y aplicaciones reales",
+			"web": "http://ingenieria.deusto.es/cs/Satellite/ingenieria/es/facultad-ingenieria/estudios-0/estudios-ingenieria-formacion-continua/programa-en-industria-4-0/programa?idPest=1340119398897"
+		},
+		{
+			"cod": 14,
+			"titulo": "Programa de formaci\u00f3n continua en Big Data y Business Intelligence",
+			"titulo_short_name": "Big Data y Business Intelligence",
+			"responsable": "Alex Ray\u00f3n",
+			"email": "alex.rayon@deusto.es",
+			"desc": "Ciclos completos de an\u00e1lisis de datos (extracci\u00f3n, gesti\u00f3n, procesamiento (ETL) y visualizaci\u00f3n) para ofrecer servicios de inteligencia de negocio a organizaciones, empresas y particulares.  Principales tecnolog\u00edas de an\u00e1lisis y procesamiento de grandes vol\u00famenes de datos, as\u00ed como otras herramientas para poner en valor los datos analizados y permitir as\u00ed a las organizaciones tomar decisiones con m\u00e1s conocimiento.",
+			"web": "https://www.deusto.es/cs/Satellite/deusto/es/universidad-deusto/programa-en-big-data-y-business-intelligence/presentacion-80/info-prog?idSeccion=1"
+		},
+		{
+			"cod": 15,
+			"titulo": "Deustotech",
+			"titulo_short_name": "Deustotech",
+			"responsable": "Diego L\u00f3pez de Ipi\u00f1a",
+			"email": "dipina@deusto.es",
+			"desc": "Realiza investigaci\u00f3n aplicada principalmente en el dominio de las Tecnolog\u00edas de la Informaci\u00f3n y Comunicaciones (TICs) dirigiendo su actividad investigadora hacia los \u00e1mbitos de conocimiento de Internet, la Inteligencia Computacional, la Energ\u00eda y el Medio Ambiente, la Salud y Calidad de Vida, la Movilidad y Log\u00edstica, y la Educaci\u00f3n.",
+			"web": "http://deustotech.deusto.es/cs/Satellite/ingenieria/es/deustotech"
+		},
+		{
+			"cod": 16,
+			"titulo": "Deustek",
+			"titulo_short_name": "Deustek",
+			"responsable": "Diego L\u00f3pez de Ipi\u00f1a",
+			"email": "dipina@deusto.es",
+			"desc": "Inteligencia ambiental y su uso para la creaci\u00f3n de espacios asistenciales inteligentes (AAL) en el contexto de las Smart Cities. Aplicaci\u00f3n de las TICs a la Innovaci\u00f3n en la Educaci\u00f3n. Internet del Futuro y sus pilares: Internet de los Servicios, Internet de los Contenidos y el Conocimiento (Web of Data, Analytics and Visualizations) e Internet de las Cosas.\n",
+			"web": "https://www.deusto.es/cs/Satellite/deustoresearch/es/inicio/centros-equipos-e-investigadores/equipos-de-investigacion/deustek/equipoinvestiga"
+		},
+		{
+			"cod": 17,
+			"titulo": "Deusto Smart Mobility",
+			"titulo_short_name": "Deusto Smart Mobility",
+			"responsable": "Asier Perallos",
+			"email": "perallos@deusto.es",
+			"desc": "Transporte y Movilidad Inteligente. Inteligencia artificial aplicada a la optimizaci\u00f3n de rutas / servicios y predicci\u00f3n de tr\u00e1fico. Comunicaciones vehiculares y sistemas cooperativos. Posicionamiento continuado y servicios basados en el posicionamiento. Aplicaci\u00f3n de TICs a la innovaci\u00f3n en la educaci\u00f3n\n",
+			"web": "http://www.deusto.es/cs/Satellite/deustoresearch/en/home/centres-teams-and-researchers/research-teams/deustotech-mobility-0/equipoinvestiga"
+		},
+		{
+			"cod": 18,
+			"titulo": "D4K Deusto for Knowledge",
+			"titulo_short_name": "D4K Deusto for Knowledge",
+			"responsable": "Pablo Garc\u00eda Bringas",
+			"email": "pablo.garcia.bringas@deusto.es",
+			"desc": "Inteligencia computacional aplicada",
+			"web": "http://www.deusto.es/cs/Satellite/deustoresearch/es/inicio/centros-equipos-e-investigadores/equipos-de-investigacion/d4k--deusto-for-knowledge/equipoinvestiga?idPest=1"
+		},
+		{
+			"cod": 19,
+			"titulo": "Industrial Management and Logistics",
+			"titulo_short_name": "Ind. Management and Logistics",
+			"responsable": "Esther \u00c1lvarez",
+			"email": "esther.alvarez@deusto.es",
+			"desc": "Optimizaci\u00f3n de procesos productivos y log\u00edstica y Gesti\u00f3n de la cadena de suministro sostenible. \n",
+			"web": "http://www.deusto.es/cs/Satellite/deustoresearch/en/inicio/centros-equipos-e-investigadores/equipos-de-investigacion/organizacion-industrial-y-logistica/equipoinvestiga"
+		},
+		{
+			"cod": 20,
+			"titulo": "Applied Mechanics",
+			"titulo_short_name": "Applied Mechanics",
+			"responsable": "Fernando Cort\u00e9s",
+			"email": "fernando.cortes@deusto.es",
+			"desc": " Applied Mechanics, Ruido en m\u00e1quina el\u00e9ctrica, Procesos industriales avanzados, Comportamiento de materiales avanzados\n",
+			"web": "http://www.deusto.es/cs/Satellite/deustoresearch/es/inicio/centros-equipos-e-investigadores/equipos-de-investigacion/applied-mechanics/equipoinvestiga"
+		},
+		{
+			"cod": 21,
+			"titulo": "DeustoFabLab",
+			"titulo_short_name": "DeustoFabLab",
+			"responsable": "Szilard Kados",
+			"email": "szilard.kados@deusto.es",
+			"desc": "Es un centro de creatividad, innovaci\u00f3n y desarrollo para el dise\u00f1o de nuevos productos, servicios y experiencias",
+			"web": "http://ingenieria.deusto.es/cs/Satellite/ingenieria/es/deustofablab"
+		},
+		{
+			"cod": 22,
+			"titulo": "LabsLand",
+			"titulo_short_name": "LabsLand",
+			"responsable": "Javier Garc\u00eda Zubia",
+			"email": "zubia@deusto.es",
+			"desc": "LabsLand conecta colegios y universidades con laboratorios reales disponibles en otro lugar en Internet. Un laboratorio real puede ser un peque\u00f1o robot con arduino en Europa, un laboratorio de cinem\u00e1tica en Brasil o un laboratorio de radioactividad en Australia. Son laboratorios reales, no simulaciones: los laboratorios existen f\u00edsicamente y los estudiantes de estos colegios y universidades acceden a ellos.",
+			"web": "https://about.labsland.com/web/es/"
+		},
+		{
+			"cod": 23,
+			"titulo": "Aula Eroski",
+			"titulo_short_name": "Aula Eroski",
+			"responsable": "Alex Ray\u00f3n",
+			"email": "alex.rayon@deusto.es",
+			"desc": "LabsLand conecta colegios y universidades con laboratorios reales disponibles en otro lugar en Internet. ",
+			"web": "No disponible"
+		},
+		{
+			"cod": 24,
+			"titulo": "Etxe Tar",
+			"titulo_short_name": "Etxe Tar",
+			"responsable": "Pablo Garc\u00eda Bringas",
+			"email": "pablo.garcia.bringas@deusto.es",
+			"desc": "Desarrollo de actividades formativas, divulgativas y de generaci\u00f3n y transferencia de conocimiento en el \u00e1mbito de la digitalizaci\u00f3n de la industria",
+			"web": "No disponible"
+		},
+		{
+			"cod": 25,
+			"titulo": "C\u00e1tedra Deusto en Industria Digital",
+			"titulo_short_name": "Industria Digital",
+			"responsable": "Pablo Garc\u00eda Bringas",
+			"email": "pablo.garcia.bringas@deusto.es",
+			"desc": "Desarrollo de talento especializado para aplicaci\u00f3n directa de conocimiento al sector industrial, a trav\u00e9s de actividades formativas, divulgativas y de generaci\u00f3n y transferencia de conocimiento en el \u00e1mbito de la digitalizaci\u00f3n de la industria. Esta C\u00e1tedra se suma a otros proyectos impulsados por Deusto en materia de Industria 4.0, o transformaci\u00f3n digital, una oportunidad de primer nivel para el impulso de la competitividad industrial del Pa\u00eds Vasco.",
+			"web": "No disponible"
+		},
+		{
+			"cod": 26,
+			"titulo": "M\u00e1ster Universitario en Modelizaci\u00f3n e Investigaci\u00f3n Matem\u00e1tica, Estad\u00edstica y Computaci\u00f3n",
+			"titulo_short_name": "Modelizaci\u00f3n Matem\u00e1tica, Estad\u00edstica y Computaci\u00f3n",
+			"responsable": "Carlos Gorria",
+			"email": "carlos.gorria@ehu.eus",
+			"desc": "Centros tecnol\u00f3gicos; investigaci\u00f3n; dise\u00f1o y programaci\u00f3n de software; log\u00edstica, distribuci\u00f3n y optimizaci\u00f3n de procesos, industriales; control de calidad; an\u00e1lisis de riesgos en el sector de banca y seguros; procesamiento de datos y estad\u00edstica; sector de energ\u00eda",
+			"web": "https://www.ehu.eus/es/web/mastermodelizacionmatematica/aurkezpena"
+		},
+		{
+			"cod": 27,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Qu\u00edmica",
+			"titulo_short_name": "Ing. Qu\u00edmica",
+			"responsable": "Ana Guadalupe Gayubo Cazorla",
+			"email": "anaguadalupe.gayubo@ehu.eus",
+			"desc": "Desarrollar, mejorar y optimizar procesos, operar en plantas de producci\u00f3n, etc., en la industria qu\u00edmica y de procesos.",
+			"web": "https://www.ehu.eus/es/web/ingenieria-procesos-quimicos/aurkezpena"
+		},
+		{
+			"cod": 28,
+			"titulo": "M\u00e1ster Universitario en Nuevos Materiales",
+			"titulo_short_name": "Nuevos Materiales",
+			"responsable": "M\u00aa Luisa Fern\u00e1ndez-Gubieda",
+			"email": "malu.gubieda@ehu.eus",
+			"desc": "Caracterizaci\u00f3n, propiedades y aplicaciones de Nuevos Materiales, en campos tan diversos como los biomateriales, nanomateriales, materiales inteligentes, materiales para laenerg\u00eda, la electr\u00f3nica, cat\u00e1lisis etc.",
+			"web": "http://www.ehu.eus/es/web/nuevosmateriales/aurkezpena"
+		},
+		{
+			"cod": 29,
+			"titulo": "Grupo de Espectroscopia",
+			"titulo_short_name": "Espectroscopia",
+			"responsable": "Emilio Cocinero Perez",
+			"email": "emiliojose.cocinero@ehu.eus",
+			"desc": "Accurate structural characterization of biomolecules and molecules of astrophysical interest and its molecular interactions by state-of-the-art spectroscopic techniques in the gas phase.  Different methodologies ranging from the microwave spectroscopy, laser spectroscopy and computational modelling.\n",
+			"web": "http://grupodeespectroscopia.es/MW/"
+		},
+		{
+			"cod": 30,
+			"titulo": "Grupo de Autom\u00e1tica Experimental",
+			"titulo_short_name": "Autom\u00e1tica Experimental",
+			"responsable": "Victor Echevarria Ecenarro",
+			"email": "victor.etxebarria@ehu.eus",
+			"desc": "Sistemas avanzados de fisica experimental, instrumentaci\u00f3n y control en sentido amplio, con \u00e9nfasis en dispositivos, experimentos o sistemas con inter\u00e9s combinado cient\u00edfico, tecnol\u00f3gico e industrial. Dos l\u00edneas principales est\u00e1n actualmente activas. La primera se refiere a investigaci\u00f3n en ciencia y tecnolog\u00eda de aceleradores de part\u00edculas. La segunda l\u00ednea activa se refiere a desarrollo de nuevos sensores y actuadores basados en nuevos materiales y principios",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/grupo-de-automatica-experimental-gaudee"
+		},
+		{
+			"cod": 31,
+			"titulo": "Dise\u00f1o en Electr\u00f3nica Digital",
+			"titulo_short_name": "Dise\u00f1o en Electr\u00f3nica Digital",
+			"responsable": "Ines del Campo",
+			"email": "ines.delcampo@ehu.eus",
+			"desc": "Dise\u00f1o de sistemas en un chip (SoCs) adaptativos sobre dispositivos reconfigurables (FPGAs) para aplicaciones en tiempo real. Modelado de sistemas din\u00e1micos complejos. ",
+			"web": "http://www.ehu.eus/es/web/gded/aurkezpena"
+		},
+		{
+			"cod": 32,
+			"titulo": "Cristales L\u00edquidos",
+			"titulo_short_name": "Cristales L\u00edquidos",
+			"responsable": "Cesar Folcia Basa",
+			"email": "cesar.folcia@ehu.eus",
+			"desc": "Propiedades \u00f3pticas (birrefringencia, actividad \u00f3ptica) en s\u00f3lidos y su relaci\u00f3n con la estructura cristalina. Por otra parte, se investigan las estructuras y las propiedades \u00f3pticas lineales y no lineales (generaci\u00f3n de segundo arm\u00f3nico) de nuevos materiales cristales l\u00edquidos para aplicaciones en electr\u00f3nica molecular, evaluando su potencial utilidad.",
+			"web": "http://www.ehu.eus/es/web/fmc/taldeak"
+		},
+		{
+			"cod": 33,
+			"titulo": "Complejos polim\u00e9ricos de metales de transici\u00f3n. Qu\u00edmica de polioxometalatos",
+			"titulo_short_name": "Qu\u00edmica de polioxometalatos",
+			"responsable": "Juan Manuel Gutierrez Zorrilla",
+			"email": "juanma.zorrilla@ehu.eus",
+			"desc": "Complejos 1d, 2d y 3d con ligandos puentes (oxalato y derivados dicarbox\u00edlicos) y ligandos perif\u00e9ricos nitrogenados con propiedades magn\u00e9ticas. Estudio de la interacci\u00f3n magn\u00e9tica entre iones de metales de transici\u00f3n a trav\u00e9s de ligandos puentes arom\u00e1ticos. S\u00edntesis de compuestos mono- y bidimensionales de coordinaci\u00f3n y su procesamiento como nanomateriales. Interacci\u00f3n de nucleobases y derivados con sistemas de dimensionalidad variable metal-oxalato. Extrapolaci\u00f3n de los resultados a sistemas de inter\u00e9s biol\u00f3gico. Qu\u00edmica de polioxometalatos.",
+			"web": "http://www.ehu.eus/es/web/ufimamia/ikerketa-ildoak"
+		},
+		{
+			"cod": 34,
+			"titulo": "Sistemas multifuncionales h\u00edbridos para aplicaciones fot\u00f3nicas, teragnosis y energ\u00eda",
+			"titulo_short_name": "Aplicaciones fot\u00f3nicas, teragnosis y energ\u00eda",
+			"responsable": "I\u00f1igo Maria Lopez Arbeloa",
+			"email": "inigo.lopezarbeloa@ehu.eus",
+			"desc": "Por completar",
+			"web": "https://www.ehu.eus/es/web/ztf-fct/grupos-investigacion-qui"
+		},
+		{
+			"cod": 35,
+			"titulo": "Quantum Information, Science an Technology (QUINST) ",
+			"titulo_short_name": "Quantum Information, Science an Technology",
+			"responsable": "Juan Gonzalo Muga Francisco",
+			"email": "\u00a0jg.muga@ehu.eus",
+			"desc": "Quantum and Atom Optics (Trapped ions, Dynamics and control of cold atoms\u2026). Quantum Information (Quantum Simulations, Bound Entanglement...). Condensed matter (Spintronics, Superconducting qubits and Circuit QED...). Foundations of Quantum Mechanics (Quantum Zeno Effect, Bell Inequalities and Local Hidden Variable Models...). Quantum Technologies (Quantum metrology and atomic clocks). Ultracold atoms (Quantum Gases, Optical lattices...).",
+			"web": "http://www.ehu.eus/en/web/quinst/home"
+		},
+		{
+			"cod": 36,
+			"titulo": "Grupo de Investigaci\u00f3n en Metalurgia F\u00edsica y Transformaciones de Fase en Materiales Avanzados",
+			"titulo_short_name": "Metalurgia F\u00edsica",
+			"responsable": "Jose Maria San Juan Nu\u00f1ez",
+			"email": "jose.sanjuan@ehu.eus",
+			"desc": "Investigaci\u00f3n y desarrollo de Aleaciones con Memoria de Forma (SMA) Avanzadas, para aplicaciones de alta tecnolog\u00eda. Investigaci\u00f3n a escala micro/nano m\u00e9trica de las Aleaciones con Memoria de Forma (SMA), para su aplicaci\u00f3n en Micro Electro-Mechanical Systems MEMS.  Materiales Intermet\u00e1licos Estructurales y Funcionales para altas temperaturas, orientados a aplicaciones en Energ\u00eda, Aeronautica y Aeroespacial. Estudios e investigaci\u00f3n fundamental sobre las Transformaciones de Fase en Materiales Avanzados.  Aplicaci\u00f3n de las t\u00e9cnicas de Microscop\u00eda Electr\u00f3nica de \u00faltima generaci\u00f3n al estudio de Materiales Avanzados.",
+			"web": "http://www.science.eus/?q=node/1185"
+		},
+		{
+			"cod": 37,
+			"titulo": "Grupo de S\u00edntesis Asim\u00e9trica, Qu\u00edmica Sostenible y Procesos Biomim\u00e9ticos",
+			"titulo_short_name": "S\u00edntesis Asim\u00e9trica, Qu\u00edmica Sostenible y Procesos Biomim\u00e9ticos",
+			"responsable": "Jose Luis Vicario Hernando",
+			"email": "joseluis.vicario@ehu.eus",
+			"desc": "Cat\u00e1lisis y Organocat\u00e1lisis. Metodolog\u00edas en S\u00edntesis Asim\u00e9trica. Aplicaciones a la obtenci\u00f3n de productos de alto valor a\u00f1adido. Dise\u00f1o de nuevos inductores y catalizadores quirales. Reacciones de Cicloadici\u00f3n. Uso de la Tensi\u00f3n Anular. \n",
+			"web": "https://www.ehu.eus/es/web/gsa/home"
+		},
+		{
+			"cod": 38,
+			"titulo": "Grado en Ingenier\u00eda Inform\u00e1tica de Gesti\u00f3n y Sistemas de Informaci\u00f3n",
+			"titulo_short_name": "Ing. Inform\u00e1tica de Gesti\u00f3n y Sist. de Informaci\u00f3n",
+			"responsable": "Bego\u00f1a Blanco",
+			"email": "begona.blanco@ehu.eus",
+			"desc": "Concepci\u00f3n, dise\u00f1o, desarrollo y despliegue de soluciones inform\u00e1ticas adaptadas a las necesidades de las organizaciones, as\u00ed como para especificar, planificar, dirigir y gestionar proyectos en el \u00e1mbito de la Ingenier\u00eda Inform\u00e1tica. Determinar las necesidades inform\u00e1ticas de gesti\u00f3n y de sistemas de informaci\u00f3n de una organizaci\u00f3n o empresa para integrar soluciones de las TIC en los procesos empresariales atendiendo a aspectos de seguridad y cumplimiento de la legislaci\u00f3n vigente.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-informatica-de-gestion-y-sistemas-de-informacion-bizkaia"
+		},
+		{
+			"cod": 39,
+			"titulo": "Grado en Ingenier\u00eda en Electr\u00f3nica Industrial y Autom\u00e1tica",
+			"titulo_short_name": "Ing. Electr\u00f3nica Ind. y Autom\u00e1tica",
+			"responsable": "Aitor Garrido",
+			"email": "aitor.garrido@ehu.eus",
+			"desc": "Dise\u00f1ar circuitos electr\u00f3nicos, desarrollar sistemas electr\u00f3nicos que introduzcan mejoras en la instrumentaci\u00f3n y automatizaci\u00f3n de los procesos productivos, y tambi\u00e9n dise\u00f1ar, analizar y desarrollar sistemas de control de procesos industriales.\n",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-electronica-industrial-y-automatica-bizkaia"
+		},
+		{
+			"cod": 40,
+			"titulo": "M\u00e1ster de Ingenier\u00eda de Control, Automatizaci\u00f3n y Rob\u00f3tica",
+			"titulo_short_name": "M\u00e1ster de Ing. de Control, Automatizaci\u00f3n y Rob\u00f3tica",
+			"responsable": "Fernando Artaza",
+			"email": "fernando.artaza@ehu.eus",
+			"desc": "Dise\u00f1o, implementaci\u00f3n, operaci\u00f3n y mantenimiento de sistemas autom\u00e1ticos de supervisi\u00f3n, control y gesti\u00f3n de procesos productivos en los que se requieran altas prestaciones de comportamiento din\u00e1mico, ahorro energ\u00e9tico, reducci\u00f3n de contaminaci\u00f3n o eficiencia y seguridad. ",
+			"web": "https://www.ehu.eus/es/web/ingenieriadecontrol/aurkezpena"
+		},
+		{
+			"cod": 41,
+			"titulo": "Grado en Ingenier\u00eda en Tecnolog\u00eda Industrial",
+			"titulo_short_name": "Ing. Tecnolog\u00eda Ind.",
+			"responsable": "Jos\u00e9 F\u00e9lix Mi\u00f1ambres",
+			"email": "josefelix.minanbres@ehu.eus",
+			"desc": "Visi\u00f3n integral de los procesos industriales de producci\u00f3n al objeto de implementarlos y mejorarlos, incidiendo en los principales activos de la empresa; empleados, materiales, equipos de producci\u00f3n, energ\u00eda, aspectos financieros y econ\u00f3micos\u2026 Se trata en definitiva de incrementar la productividad y competitividad de las organizaciones.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-tecnologia-industrial"
+		},
+		{
+			"cod": 42,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Industrial",
+			"titulo_short_name": "Ing. Ind.",
+			"responsable": "Eduardo Roj\u00ed",
+			"email": "eduardo.roji@ehu.eus",
+			"desc": "En el dise\u00f1o de la titulaci\u00f3n se ha tenido en cuenta la formaci\u00f3n recibida en el Grado en Ingenier\u00eda en Tecnolog\u00eda Industrial de la Escuela T\u00e9cnica Superior de Ingenier\u00eda de Bilbao, siendo su continuaci\u00f3n para obtener el t\u00edtulo de M\u00e1ster que habilita para ejercer la profesi\u00f3n regulada antes mencionada. Adem\u00e1s, este M\u00e1ster tambi\u00e9n es de inter\u00e9s para las personas graduadas en otras ingenier\u00edas especialistas del \u00e1rea industrial y, en su caso, de ingenier\u00edas afines como energ\u00e9tica, materiales, organizaci\u00f3n industrial, con los complementos de formaci\u00f3n correspondientes.\nEl alumnado egresado del M\u00e1ster en Ingenier\u00eda Industrial, al igual que los actuales ingenieros e ingenieras Industriales egresadas de la Escuela T\u00e9cnica Superior de Ingenier\u00eda de Bilbao, cuenta con un amplio respaldo empresarial y social, encontrando empleo encajado con relativa facilidad, seg\u00fan lo demuestran las encuestas que se realizan bienalmente al alumnado egresado. El tejido empresarial del entorno del Centro, que cuenta con muchas PYMES, pero tambi\u00e9n con empresas de implantaci\u00f3n internacional, valora muy positivamente la formaci\u00f3n de estas personas tituladas. La nueva formaci\u00f3n, que parte de la s\u00f3lida base actual, permite adem\u00e1s reforzar algunas \u00e1reas gracias a la inclusi\u00f3n de especialidades cerradas, lo que les permitir\u00e1 conocer en mayor profundidad las \u00e1reas tradicionales de la Ingenier\u00eda Industrial.",
+			"web": "https://www.ehu.eus/es/web/masteringenieriaindustrial/aurkezpena"
+		},
+		{
+			"cod": 43,
+			"titulo": "Grado en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Ignacio Marcos",
+			"email": "ignacio.marcos@ehu.eus",
+			"desc": "Dise\u00f1ar, calcular, ensayar, construir, instalar y hacer funcionar m\u00e1quinas y dispositivos mec\u00e1nicos, y estructuras e instalaciones industriales, tales como, m\u00e1quinas de elevaci\u00f3n y transporte, m\u00e1quina-herramienta, instalaciones energ\u00e9ticas, frigor\u00edficas, etc. Organizar y dirigir tareas de producci\u00f3n, operaci\u00f3n y mantenimiento, y gestionar las actividades con la puesta en el mercado de los productos.",
+			"web": "https://www.ehu.eus/es/web/guest/grado-ingenieria-mecanica-bizkaia"
+		},
+		{
+			"cod": 44,
+			"titulo": "Grado en Ingenier\u00eda El\u00e9ctrica",
+			"titulo_short_name": "Ing. El\u00e9ctrica",
+			"responsable": "Ana Iraolagoitia",
+			"email": "ana.iraolagoitia@ehu.eus",
+			"desc": "Dise\u00f1o, construcci\u00f3n, fabricaci\u00f3n e instalaci\u00f3n de m\u00e1quinas, instalaciones o sistemas el\u00e9ctricos empleados en las actividades de generaci\u00f3n, transporte, distribuci\u00f3n y consumo de energ\u00eda el\u00e9ctrica. La integraci\u00f3n de las energ\u00edas renovables en este campo es uno de los retos de la ingenier\u00eda el\u00e9ctrica. Circuitos el\u00e9ctricos de alto voltaje dise\u00f1ar sistemas de generaci\u00f3n, distribuci\u00f3n y conversi\u00f3n de la energ\u00eda el\u00e9ctrica, para alimentar y activar equipos, redes de electricidad de edificios y ciudades, entre otros.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-electrica-bizkaia"
+		},
+		{
+			"cod": 45,
+			"titulo": "M\u00e1ster en Ingenier\u00eda en Organizaci\u00f3n Industrial",
+			"titulo_short_name": "Ing.Organizaci\u00f3n Ind.",
+			"responsable": "Ernesto Cilleruelo",
+			"email": "ernesto.cilleruelo@ehu.eus",
+			"desc": "Funciones de responsabilidad en la planificaci\u00f3n de la producci\u00f3n, gesti\u00f3n de compras, direcci\u00f3n de equipos, planificaci\u00f3n y monitorizaci\u00f3n de proyectos. Funciones de calidad y de Marketing. En el \u00e1rea de innovaci\u00f3n y desarrollo tecnol\u00f3gico, las personas tituladas son particularmente apreciadas por su preparaci\u00f3n dual, t\u00e9cnica-gesti\u00f3n. ",
+			"web": "https://www.ehu.eus/es/web/mastereningenieriaenorganizacionindustrial/aurkezpena"
+		},
+		{
+			"cod": 46,
+			"titulo": "Grado en Ingenier\u00eda en Organizaci\u00f3n Industrial",
+			"titulo_short_name": "Ing.Organizaci\u00f3n Ind.",
+			"responsable": "Francisco S\u00e1nchez",
+			"email": "francisco.sanchez@ehu.eus",
+			"desc": "Conocimientos b\u00e1sicos de la ingenier\u00eda industrial orientados al mundo empresarial en \u00e1reas directamente vinculadas a la producci\u00f3n y las operaciones: calidad, compras, comercial, log\u00edstica, producci\u00f3n, procesos, finanzas, mantenimiento, gesti\u00f3n de la innovaci\u00f3n, gesti\u00f3n de proyectos, recursos humanos, etc.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-organizacion-industrial"
+		},
+		{
+			"cod": 47,
+			"titulo": "M\u00e1ster en Ingenier\u00eda de telecomunicaci\u00f3n",
+			"titulo_short_name": "Ing. de telecomunicaci\u00f3n",
+			"responsable": "Enrique Amezua San Martin",
+			"email": "enrique.amezua@ehu.eus",
+			"desc": "En el dise\u00f1o de la titulaci\u00f3n se ha tenido en cuenta la formaci\u00f3n recibida por los titulados en el Grado en Ingenier\u00eda en Tecnolog\u00eda de Telecomunicaci\u00f3n egresados de la Escuela T\u00e9cnica Superior de Ingenier\u00eda de Bilbao, siendo su continuaci\u00f3n para que estos titulados obtengan el t\u00edtulo de M\u00e1ster que habilita para ejercer la profesi\u00f3n regulada antes mencionada.\nLos egresados del M\u00e1ster en Ingenier\u00eda de Telecomunicaci\u00f3n, al igual que los actuales Ingenieros de Telecomunicaci\u00f3n egresados de la Escuela T\u00e9cnica Superior de Ingenier\u00eda de Bilbao, cuentan con un amplio respaldo empresarial y social, encontrando empleo encajado con relativa facilidad, seg\u00fan lo demuestran las encuestas que se realizan bienalmente a estos egresados. El tejido empresarial del entorno del Centro, que cuenta con muchas PYMES, pero tambi\u00e9n con empresas de implantaci\u00f3n internacional, valora muy positivamente la formaci\u00f3n de estos titulados. La nueva formaci\u00f3n, que parte de la s\u00f3lida base actual, permite adem\u00e1s reforzar algunas \u00e1reas gracias a la inclusi\u00f3n de especialidades cerradas, lo que les permitir\u00e1 conocer en mayor profundidad las \u00e1reas tradicionales de la Ingenier\u00eda de Telecomunicaci\u00f3n.",
+			"web": "https://www.ehu.eus/es/web/masteringenieriatelecomunicacion/aurkezpena"
+		},
+		{
+			"cod": 48,
+			"titulo": "Grado en Ingenier\u00eda en Tecnolog\u00eda de Telecomunicaci\u00f3n",
+			"titulo_short_name": "Ing.Tecnolog\u00eda de Telecomunicaci\u00f3n",
+			"responsable": "I\u00f1aki Eizmendi\u00a0",
+			"email": "inaki.eizmendi@ehu.eus",
+			"desc": "Dise\u00f1ar sistemas telem\u00e1ticos dirigidos al entretenimiento y los servicios multimedia, tambi\u00e9n para implementar sistemas de comunicaciones orientados a la telefon\u00eda, la aeron\u00e1utica o la telecomunicaci\u00f3n, o para el desarrollo de los equipos necesarios en \u00e9stas y otras aplicaciones.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-tecnologia-de-telecomunicacion"
+		},
+		{
+			"cod": 49,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda de Materiales Avanzados",
+			"titulo_short_name": "Ing. de Materiales Avanzados",
+			"responsable": "Jos\u00e9 Tom\u00e1s San Jos\u00e9 Lombera",
+			"email": "josetomas.sanjose@ehu.eus",
+			"desc": "Ingenier\u00eda de los Materiales el estudio de su estructura/propiedades, pasando por su obtenci\u00f3n/fabricaci\u00f3n y, finalmente, su utilizaci\u00f3n/selecci\u00f3n/dise\u00f1o. ",
+			"web": "https://www.ehu.eus/es/web/masteringenieriamaterialesavanzados/aurkezpena"
+		},
+		{
+			"cod": 50,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Oscar Altuzarra Maestre",
+			"email": "oscar.altuzarra@ehu.eus",
+			"desc": "Dise\u00f1o, estudio, an\u00e1lisis, fabricaci\u00f3n y mantenimiento de sistemas mec\u00e1nicos, y su finalidad es desarrollar productos y servicios. ",
+			"web": "https://www.ehu.eus/es/web/ingenieriamecanica/aurkezpena"
+		},
+		{
+			"cod": 51,
+			"titulo": "Programa de Doctorado en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Programa de Doctorado en Ing. Mec\u00e1nica",
+			"responsable": "Carlos Angulo Duque",
+			"email": "carlos.angulo@ehu.eus",
+			"desc": "Cinem\u00e1tica te\u00f3rica y computacional de mecanismos y robots paralelos. Aplicaciones industriales de sistemas mec\u00e1nicos y de rob\u00f3tica paralela COMPMECH. Dise\u00f1o y an\u00e1lisis mec\u00e1nico ADM. Fabricaci\u00f3n de alto rendimiento FABRICACI\u00d3N. Modelizaci\u00f3n y din\u00e1mica experimental de sistemas estructurales GIU-10/14. Nuevas t\u00e9cnicas de optimizaci\u00f3n aplicadas a estructuras, componentes y sistemas de transporte terrestre y a\u00e9reo TOAT. Sostenibilidad en materiales y elementos de edificaci\u00f3n. ",
+			"web": "http://www.ehu.eus/es/web/doctoradoingenieriamecanica/aurkezpena"
+		},
+		{
+			"cod": 52,
+			"titulo": "Sostenibilidad integral en sistemas de edificaci\u00f3n y sus materiales",
+			"titulo_short_name": "Sostenibilidad  Sist. de edificaci\u00f3n y sus materiales",
+			"responsable": "Jos\u00e9 Tom\u00e1s San Jos\u00e9 Lombera",
+			"email": "josetomas.sanjose@ehu.eus",
+			"desc": "Ciencia del material denominado \"pastas basadas en cemento\". Hormigones especiales. Rehabilitaci\u00f3n estructural.  Industrializaci\u00f3n edificatoria. Sostenibilidad energ\u00e9tica de los principales sistemas constructivos del edificio.  Edificio en su totalidad y entornos pr\u00f3ximos. ",
+			"web": "https://www.ehu.eus/es/web/scm/definizioa-eta-helburua"
+		},
+		{
+			"cod": 53,
+			"titulo": "Grupo de Control, Integraci\u00f3n y Sistemas (GCIS)",
+			"titulo_short_name": "Control, Integraci\u00f3n y Sist. (GCIS)",
+			"responsable": "Esperanza Diaz Tajada",
+			"email": "esperanza.diaz@ehu.eus",
+			"desc": "Smart and flexible automation production systems. Intelligent Manufacturing. Advanced Control Robotics. Applications in Bioengineering. ",
+			"web": "http://ehu-gcis.org/"
+		},
+		{
+			"cod": 54,
+			"titulo": "Grupo de Investigaci\u00f3n en Electr\u00f3nica Aplicada (APERT)",
+			"titulo_short_name": "Electr\u00f3nica Aplicada",
+			"responsable": "Jos\u00e9 Luis Mart\u00edn Gonz\u00e1lez",
+			"email": "joseluis.martin@ehu.eus",
+			"desc": "Circuitos Reconfigurables y Systems-on-Programmable-Chip. La investigaci\u00f3n en esta l\u00ednea est\u00e1 orientada al estudio y al desarrollo de sistemas digitales optimizados para l\u00f3gica reconfigurable. Para ello se emplean FPGAs de nueva generaci\u00f3n y de alta capacidad con el fin de integrar estos sistemas en un \u00fanico circuito integrado. Con el objetivo de contribuir a la mejora de los niveles de seguridad (safety) y confiabilidad en los sistemas electr\u00f3nicos, son objeto de intensiva investigaci\u00f3n las T\u00e9cnicas de Reconfiguraci\u00f3n Parcial y las t\u00e9cnicas de tolerancia a fallos (SEUs). Los resultados obtenidos en estas investigaciones son de aplicaci\u00f3n horizontal en el dise\u00f1o electr\u00f3nico.",
+			"web": "https://www.ehu.eus/es/web/apert/inicio"
+		},
+		{
+			"cod": 55,
+			"titulo": "Grupo de Fabricaci\u00f3n de Alto Rendimiento: Procesos de arranque de viruta avanzados",
+			"titulo_short_name": "Procesos de arranque de viruta avanzados",
+			"responsable": "Norberto L\u00f3pez de La Calle Marcaide",
+			"email": "norberto.lzlacalle@ehu.eus",
+			"desc": "Mecanizado: Optimizaci\u00f3n de procesos de fabricaci\u00f3n por arranque de viruta (CAD/CAM), mejora de tiempos de proceso, de la integridad superficial de las piezas y aumento de la productividad mediante la optimizaci\u00f3n de condiciones de corte. \n",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/errendimendu-handiko-fabrikazio-taldea"
+		},
+		{
+			"cod": 56,
+			"titulo": "Fabricaci\u00f3n de Alto Rendimiento: Electroerosi\u00f3n",
+			"titulo_short_name": "Electroerosi\u00f3n",
+			"responsable": "Jos\u00e9 Antonio S\u00e1nchez Galindez",
+			"email": "\u00a0joseantonio.sanchez@ehu.eus",
+			"desc": "Electroerosi\u00f3n por penetraci\u00f3n o SEDM y, por otro, la electroerosi\u00f3n por hilo o WEDM. En WEDM. Mejora de la precisi\u00f3n de trayectorias complejas para firtree.",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/errendimendu-handiko-fabrikazio-taldea"
+		},
+		{
+			"cod": 57,
+			"titulo": "Fabricaci\u00f3n de Alto Rendimiento: L\u00e1ser",
+			"titulo_short_name": "L\u00e1ser",
+			"responsable": "Aitzol Lamikiz Mentxaka",
+			"email": "aitzol.lamikiz@ehu.eus",
+			"desc": "Fabricaci\u00f3n y reparacion de piezas mediante aporte l\u00e1ser(LMD); caracterizaci\u00f3n y optimizacion de parametros de proceso. Impresi\u00f3n 3D de materiales met\u00e1licos(SLM). Tratamiento de superficies mediante l\u00e1ser, caracterizaci\u00f3n y optimizacion de proceso. Modelizaci\u00f3n de procesos.",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/errendimendu-handiko-fabrikazio-taldea"
+		},
+		{
+			"cod": 58,
+			"titulo": "Fabricaci\u00f3n de Alto Rendimiento: Tecnolog\u00edas para Ensamblaje Aeron\u00e1utico 4.0",
+			"titulo_short_name": "Tecnolog\u00edas para Ensamblaje Aeron\u00e1utico 4.0",
+			"responsable": "Franck Andr\u00e9s Girot Mata",
+			"email": "frank.girot@ehu.eus",
+			"desc": "Mecanizado: Optimizaci\u00f3n de procesos de fabricaci\u00f3n por arranque de viruta (CAD/CAM), mejora de tiempos de proceso, de la integridad superficial de las piezas y aumento de la productividad mediante la optimizaci\u00f3n de condiciones de corte. Objetivo: aumentar la vida \u00fatil de las herramientas y la reducir el impacto ambiental producido por dichos procesos.\nLaser: Fabricaci\u00f3n y reparacion de piezas mediante aporte l\u00e1ser(LMD); caracterizaci\u00f3n y optimizacion de parametros de proceso. Impresi\u00f3n 3D de materiales met\u00e1licos(SLM). Tratamiento de superficies mediante l\u00e1ser, caracterizaci\u00f3n y optimizacion de proceso. Modelizaci\u00f3n de procesos.\nRectificado: An\u00e1lisis de desgaste en muelas superabrasivas de nitruro de boro c\u00fabico electrodepositado y en muelas convencionales de al\u00famina vitrificada. Otra l\u00ednea es el estudio de diferentes t\u00e9cnicas de diamantado de muelas, ya sea rotativo o fijo, con diferentes sistemas de lubricaci\u00f3n.\nElectroerosi\u00f3n: Electroerosi\u00f3n por penetraci\u00f3n o SEDM y, por otro, la electroerosi\u00f3n por hilo o WEDM. En WEDM. Mejora de la precisi\u00f3n de trayectorias complejas para firtree.",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/errendimendu-handiko-fabrikazio-taldea#main-data"
+		},
+		{
+			"cod": 59,
+			"titulo": "Ferrocarril del Futuro",
+			"titulo_short_name": "Ferrocarril del Futuro",
+			"responsable": "Ernesto Garcia Vadillo",
+			"email": "ernesto.garciavadillo@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 60,
+			"titulo": "Optimizaci\u00f3n de Estructuras y elementos mec\u00e1nicos",
+			"titulo_short_name": "Optimizaci\u00f3n de Estructuras y elementos mec\u00e1nicos",
+			"responsable": "Javier Canales Abaitua",
+			"email": "javier.canales@ehu.eus",
+			"desc": "El \u00e1mbito de trabajo es el dise\u00f1o \u00f3ptimo estructural tanto de elementos mec\u00e1nicos como de estructuras de edificaci\u00f3n. Se plantean diferentes tipos de optimizaci\u00f3n: la optimizaci\u00f3n con variables de tama\u00f1o (espesores de placas, \u00e1reas de secci\u00f3n rectas, etc.), de forma (curvatura de contornos, etc.), y de topolog\u00eda (distribuci\u00f3n del material, etc.). La aplicaci\u00f3n de estas t\u00e9cnicas al dise\u00f1o permite mejoras sustanciales en el rendimiento de los productos as\u00ed como un abaratamiento de los costes, al ofrecer un aprovechamiento m\u00e1s eficaz del material, concretamente buscando optimizar alg\u00fan aspecto del dise\u00f1o: peso, coste, comportamiento din\u00e1mico, etc. Tambi\u00e9n se realizan c\u00e1lculos avanzados de estructuras de uso industrial (hormig\u00f3n, met\u00e1licas, mixtas, cimentaciones especiales, etc.), as\u00ed como estudios de refuerzo estructural.",
+			"web": "https://www.ehu.eus/es/web/enpresa/eskaintza-orokorra?p_cod_idioma=es&p_cod_proceso=ikertu&p_tipo=group&p_cod=372&p_option=1"
+		},
+		{
+			"cod": 61,
+			"titulo": "I2T (Investigaci\u00f3n e Ingenier\u00eda Telem\u00e1tica)",
+			"titulo_short_name": "I2T",
+			"responsable": "Eduardo Jacob",
+			"email": "eduardo.jacob@ehu.es",
+			"desc": "Sistemas de transporte inteligentes (Railway and Maritime communications architectures). Servicios distribuidos y seguros (Internet and electronic voting systems). Sistemas Avanzados de Telecomunicaci\u00f3n (Research on AAA and Security in Ethernet, Metro & Carrier Ethernet). ",
+			"web": "http://i2t.ehu.eus/"
+		},
+		{
+			"cod": 62,
+			"titulo": "NQAS (Network Quality & Assurance)",
+			"titulo_short_name": "NQAS",
+			"responsable": "Eva Ibarrola Armendariz",
+			"email": "\neva.ibarrola@ehu.eus",
+			"desc": "QoS analysis and management. Security in data networks. Knowledge Management & Digital Enterprise. New technologies and transmission systems. Information Systems.",
+			"web": "http://det.bi.ehu.es/NQAS/?members"
+		},
+		{
+			"cod": 63,
+			"titulo": "Centro de Fabricaci\u00f3n Avanzada Aeron\u00e1utica. CFAA. ",
+			"titulo_short_name": "Centro de Fabricaci\u00f3n Avanzada Aeron\u00e1utica",
+			"responsable": "Luis Norberto L\u00f3pez de Lacalle",
+			"email": "norberto.lzlacalle@ehu.eus",
+			"desc": "Desarrollo de tecnolog\u00edas de fabricaci\u00f3n aplicables en corto espacio de tiempo a los procesos de las empresas socias del proyecto, y a la industria del entorno en general. Acercar los niveles de desarrollo tecnol\u00f3gico habitualmente de la esfera universitaria (MRL, Manufacturing Readiness Level 2 a 5) a los niveles de puesta a punto de tecnolog\u00edas en entornos suficientemente representativos (MRL, 6-8) que se acercan a la necesidad de producci\u00f3n de las empresas. La aplicabilidad del conocimiento es especialmente buscada a lo largo y durante toda la vida de este proyecto y centro.",
+			"web": "http://www.ehu.eus/es/web/CFAA"
+		},
+		{
+			"cod": 64,
+			"titulo": "Aula Aeron\u00e1utica",
+			"titulo_short_name": "Aula Aeron\u00e1utica",
+			"responsable": "Javier Canales",
+			"email": "javier.canales@ehu.eus",
+			"desc": "Adem\u00e1s de formar a las/os futuras/os ingenieras/os en las tecnolog\u00edas m\u00e1s avanzadas sobre estructuras y propulsi\u00f3n de aeronaves, el Aula Aeron\u00e1utica tiene como objetivo llevar a cabo proyectos de investigaci\u00f3n y desarrollo tecnol\u00f3gico en los campos del dise\u00f1o aeron\u00e1utico y de sus soportes inform\u00e1ticos. Adem\u00e1s de los alumnas/os de la Escuela que participan anualmente en los cursos, el Aula organiza simult\u00e1neamente seminarios de formaci\u00f3n continua y reciclaje de profesionales de la ingenier\u00eda, dirigidos a las empresas que forman parte del Cluster de Aeron\u00e1utica, y otros proyectos de investigaci\u00f3n en el campo del dise\u00f1o aeron\u00e1utico.",
+			"web": "https://www.ehu.eus/es/web/ingeniaritza-bilbo/aeronautika-gela"
+		},
+		{
+			"cod": 65,
+			"titulo": "Aula M\u00e1quina Herramienta",
+			"titulo_short_name": "Aula M\u00e1quina Herramienta",
+			"responsable": "Aitzol Lamikiz",
+			"email": "aitzol.lamikiz@ehu.eus",
+			"desc": "El Aula M\u00e1quina Herramienta desarrolla un plan de formaci\u00f3n avanzada sobre dise\u00f1o, control y uso de la m\u00e1quina herramienta, incluyendo un seminario de 230 horas de dedicaci\u00f3n y pr\u00e1cticas en cooperaci\u00f3n en empresas del sector. El Aula est\u00e1 abierta a la colaboraci\u00f3n con otros centros de formaci\u00f3n, investigaci\u00f3n y empresas. Por tanto se consolida como una herramienta efectiva para la formaci\u00f3n de las/os alumnas/os de la Escuela de Ingenier\u00eda de Bilbao en el esp\u00edritu de la innovaci\u00f3n de este sector tan importante para la econom\u00eda vasca y como plataforma para abrir l\u00edneas de colaboraci\u00f3n entre la escuela, sus departamentos y las empresas del sector de la m\u00e1quina herramienta y sus principales sectores usuarios, es decir, automoci\u00f3n, aeron\u00e1utica, energ\u00eda, etc.",
+			"web": "https://www.ehu.eus/es/web/ingeniaritza-bilbo/makina-erreminta-gela"
+		},
+		{
+			"cod": 66,
+			"titulo": "Grado en Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ing. Inform\u00e1tica",
+			"responsable": "Alexander Mendiburu",
+			"email": "alexander.mendiburu@ehu.eus",
+			"desc": "Desarrollo de aplicaciones inform\u00e1ticas (empresa, salud, ocio, comunicaciones...). Dise\u00f1o y gesti\u00f3n de sistemas empotrados. Administraci\u00f3n de sistemas complejos de c\u00f3mputo o de grandes bases de datos. Dise\u00f1o de sistemas multimedia, de animaci\u00f3n y videojuegos. Dise\u00f1o y gesti\u00f3n de recursos y sistemas inform\u00e1ticos. Creaci\u00f3n y gesti\u00f3n de empresas innovadoras en el \u00e1rea de las nuevas tecnolog\u00edas y las comunicaciones. Investigaci\u00f3n tras completar los estudios de m\u00e1ster.\n",
+			"web": "https://www.ehu.eus/es/web/guest/grado-ingenieria-informatica"
+		},
+		{
+			"cod": 67,
+			"titulo": "M\u00e1ster en ingenier\u00eda inform\u00e1tica",
+			"titulo_short_name": "Ing. inform\u00e1tica",
+			"responsable": "Alexander Mendiburu",
+			"email": "alexander.mendiburu@ehu.eus",
+			"desc": "La Facultad de Inform\u00e1tica de la UPV/EHU imparte el M\u00e1ster en Ingenier\u00eda Inform\u00e1tica como continuaci\u00f3n del Grado en Ingenier\u00eda Inform\u00e1tica. Es un M\u00e1ster de car\u00e1cter profesional que sigue las recomendaciones del Ministerio en su resoluci\u00f3n de 8 de junio de 2009 (http://www.boe.es/boe/dias/2009/08/04/pdfs/BOE-A-2009-12977.pdf) para el ejercicio de la profesi\u00f3n.\nAunque el ejercicio profesional de la Ingenier\u00eda Inform\u00e1tica no est\u00e1 regulado, existen las citadas recomendaciones para los t\u00edtulos oficiales en el \u00e1mbito de la Ingenier\u00eda Inform\u00e1tica. Tambi\u00e9n es de inter\u00e9s mencionar que muchas universidades espa\u00f1olas est\u00e1n ofreciendo ya este t\u00edtulo de M\u00e1ster en Ingenier\u00eda Inform\u00e1tica seg\u00fan esas recomendaciones.\nEste M\u00e1ster ha sido evaluado favorablemente por la ANECA con fecha de 3-III-2014.",
+			"web": "http://www.ehu.eus/es/web/iim/aurkezpena"
+		},
+		{
+			"cod": 68,
+			"titulo": "M\u00e1ster en Ingenier\u00eda Computacional y Sistemas Inteligentes",
+			"titulo_short_name": "Ing. Computacional y Sist. Inteligentes",
+			"responsable": "Yosu Yurramendi",
+			"email": "yosu.yurramendi@ehu.eus",
+			"desc": "Matem\u00e1ticas avanzadas para la inform\u00e1tica (computaci\u00f3n cient\u00edfica, criptograf\u00eda, etc.), Sistemas Inteligentes (inteligencia artificial, miner\u00eda de datos, 'big data', 'data science', control inteligente), Visualizaci\u00f3n y Sistemas Multimedia (computaci\u00f3n gr\u00e1fica, modelado, animaci\u00f3n, visualizaci\u00f3n, realidad virtual, s\u00edntesis de imagen).",
+			"web": "http://www.ehu.eus/es/web/kisa/aurkezpena"
+		},
+		{
+			"cod": 69,
+			"titulo": "M\u00e1ster en Ingenier\u00eda de Sistemas Empotrados",
+			"titulo_short_name": "Ing. de Sist. Empotrados",
+			"responsable": "Amaya Ibarra Lasa",
+			"email": "a.ibarra@ehu.eus",
+			"desc": "Sistema que incluye todos los circuitos electr\u00f3nicos (procesadores, memorias, etc..), es decir el hardware, los programas o software y los elementos mec\u00e1nicos necesarios para una aplicaci\u00f3n concreta, obteni\u00e9ndose un producto final de altas prestaciones a un coste relativamente bajo.",
+			"web": "http://www.ehu.eus/es/web/mise/aurkezpena"
+		},
+		{
+			"cod": 70,
+			"titulo": "M\u00e1ster Erasmus Mundus - Language and Communication Technology",
+			"titulo_short_name": "Language and Communication Technology",
+			"responsable": "Arantza Diaz de Ilarraza Sanchez",
+			"email": "a.diazdeilarraza@ehu.eus",
+			"desc": "Professionals in Language engineering, Language industry and Information and communication technology (ICT) and related fields. Design of multilingual language applications for companies and institutions. Development of electronic linguistic resources (dictionaries, thesauri, ontologies, lexical databases, linguistic corpora). Development of computer-assisted learning systems, e-learning, Development of online linguistic resources.\n2. Machine translation or Speech processing specialist.\n3. Research in NLP-related areas: machine translation, sentiment analysis, statistical language modeling, computational linguistics, text mining, ...).\n4. Research in companies such as Google, Microsoft, IBM...\n",
+			"web": "http://www.ehu.eus/es/web/EM_HAPLAP/aurkezpena"
+		},
+		{
+			"cod": 71,
+			"titulo": "ALDAPA (Algorithms, Data mining and Parallelism)",
+			"titulo_short_name": "Algorithms, Data mining and Parallelism",
+			"responsable": "Javier Muguerza",
+			"email": "j.muguerza@ehu.eus",
+			"desc": "1. Algoritmos de aprendizaje supervisado con capacidades explicativas. El grupo dise\u00f1a y trabaja con algoritmos de aprendizaje que pueden afrontar problemas que requieren de una explicaci\u00f3n de la clasificaci\u00f3n realizada, adem\u00e1s de una eficiente clasificaci\u00f3n. 2. Modelado del comportamiento basado en aprendizaje autom\u00e1tico. Modelado autom\u00e1tico del comportamiento al \u00e1mbito de la interacci\u00f3n web (Web Mining, Adaptive Web, People with restrictions, Sheltered social network) en diversos \u00e1mbitos: turismo, usuarios con discapacidades cognitivas y/o f\u00edsicas. 3. Computaci\u00f3n paralela. sistemas paralelos de diversa \u00edndole (clusters de computaci\u00f3n distribuida, multiprocesadores de memoria compartida, tarjetas gr\u00e1ficas o GPU, etc. 4. Computaci\u00f3n fisiol\u00f3gica. tratamiento autom\u00e1tico de se\u00f1ales fisiol\u00f3gicas (ECG, EEG, sudoraci\u00f3n, etc.) utilizando t\u00e9cnicas de aprendizaje autom\u00e1tico para el desarrollo de modelos de ayuda a personas con necesidades especiales. ",
+			"web": "http://www.aldapa.eus/"
+		},
+		{
+			"cod": 72,
+			"titulo": "DSG (Distributed Systems Group)",
+			"titulo_short_name": "DSG (Distributed Systems Group)",
+			"responsable": "Mikel Larrea",
+			"email": "mikel.larrea@ehu.eus",
+			"desc": "Research lines: Distributed fault-tolerant systems, Mobile systems, Dynamic distributed systems, Wireless sensor networks, and Decentralized and scalable systems\n",
+			"web": "http://www.dsg.eus/"
+		},
+		{
+			"cod": 73,
+			"titulo": "ERABAKI (Sistemas de Ayuda a la Toma de Decisiones e Inform\u00e1tica M\u00e9dica)",
+			"titulo_short_name": "ERABAKI",
+			"responsable": "Juan Manuel Pikatza",
+			"email": " jm.pikatza@ehu.eus",
+			"desc": "Grupo multidisciplinario que realiza actividades de I+D+I en el \u00e1mbito de los Sistemas de Ayuda a la Toma de Decisiones y la Inform\u00e1tica M\u00e9dica. Sus miembros son miembros de los departamentos de Lenguajes y Sistemas Inform\u00e1ticos y Pediatr\u00eda de la UPV/EHU y de los Hospitales Universitarios de Donostia, Cruces y Basurto. Algunas de sus principales l\u00edneas: M\u00e9todos de clasificaci\u00f3n basados en Mapas Cognitivos Difusos, sistemas de inferencia difusa, algoritmos gen\u00e9ticos y redes neuronales; M\u00e9todos de verificaci\u00f3n formal de procesos;Aprendizaje basado en miner\u00eda de textos y de datos; Conexi\u00f3n con Historiales Cl\u00ednicos Electr\u00f3nicos e informaci\u00f3n complementaria a las gu\u00edas cl\u00ednicas; M\u00e9todos y procesos de captura, elaboraci\u00f3n, implementaci\u00f3n y gesti\u00f3n del conocimiento cl\u00ednico contenido en gu\u00edas, etc.",
+			"web": "http://www.erabaki.info/index.php/es/"
+		},
+		{
+			"cod": 74,
+			"titulo": "ISG (Intelligent Systems Group)",
+			"titulo_short_name": "ISG (Intelligent Systems Group)",
+			"responsable": "Jos\u00e9 Antonio Lozano ",
+			"email": "ja.lozano@ehu.eus",
+			"desc": "Machine Learning, Optimization, and High Performance Computing",
+			"web": "http://www.sc.ehu.es/ccwbayes/"
+		},
+		{
+			"cod": 75,
+			"titulo": "IXA (Tecnolog\u00edas del lenguaje)",
+			"titulo_short_name": "IXA (Tecnolog\u00edas del lenguaje)",
+			"responsable": "Arantza D\u00edaz",
+			"email": "a.diazdeilarraza@ehu.eus",
+			"desc": "Investiga en el \u00e1rea del procesamiento del lenguaje natural y trabaja desde hace 25 a\u00f1os en el desarrollo de recursos y herramientas de car\u00e1cter general y amplia cobertura para el tratamiento del euskara, castellano e ingl\u00e9s escrito. Actualmente sus l\u00edneas de investigaci\u00f3n se centran en el tratamiento sem\u00e1ntico-pragm\u00e1tico para: la correferencia, la detecci\u00f3n de eventos, enlace entre eventos, estructura discursiva...;\ntraducci\u00f3n autom\u00e1tica; extracci\u00f3n de informaci\u00f3n en general y especialmente en el dominio m\u00e9dico; terminolog\u00eda y lexicograf\u00eda; aplicaciones de NLP en la ense\u00f1anza (aprendizaje de idiomas, formaci\u00f3n);\nsimplificaci\u00f3n de textos. ",
+			"web": "http://www.ehu.eus/ehusfera/ixa/"
+		},
+		{
+			"cod": 76,
+			"titulo": "LOREA (Logic and Reasoning Group)",
+			"titulo_short_name": "LOREA (Logic and Reasoning Group)",
+			"responsable": "Paqui Lucio ",
+			"email": "paqui.lucio@ehu.eus",
+			"desc": "L\u00edneas de investigaci\u00f3n: Sistemas L\u00f3gicos y su aplicaci\u00f3n a la inform\u00e1tica. Especificaci\u00f3n, transformaci\u00f3n y verificaci\u00f3n de programas. Satisfaci\u00f3n de restricciones. Razonamiento autom\u00e1tico. Aprendizaje autom\u00e1tico. Programaci\u00f3n funcional. Programaci\u00f3n l\u00f3gica. Transformaci\u00f3n de grafos. Teor\u00eda de bases de datos\n",
+			"web": "http://www.ehu.eus/es/web/lorea"
+		},
+		{
+			"cod": 77,
+			"titulo": "ONEKIN (Web Engineering Research Group)",
+			"titulo_short_name": "ONEKIN (Web Engineering Research Group)",
+			"responsable": "Oscar D\u00edaz ",
+			"email": "oscar.diaz@ehu.eus",
+			"desc": "A research group mainly focused on the study of Portal/Portlet engineering issues: Portal/Portlet Engineering, Web Application Engineering, Software Product Line Development (SPL), Document Engineering\nSemantic Web Engineering, Component Based development (CBSE), XML applications, Active databases, etc.",
+			"web": "http://www.onekin.org/"
+		},
+		{
+			"cod": 78,
+			"titulo": "REMIS (Red sobre Experimentaci\u00f3n y Medici\u00f3n en Ingenier\u00eda de Software)",
+			"titulo_short_name": "REMIS",
+			"responsable": "Javier Dolado ",
+			"email": "javier.dolado@ehu.eus",
+			"desc": "Esta red est\u00e1 formada por un grupo de docentes e investigadores de diferentes universidades con inter\u00e9s espec\u00edfico en la gesti\u00f3n cuantitativa del software. Se cre\u00f3 a partir de una Acci\u00f3n Especial CICYT, teniendo la primera reuni\u00f3n constituyente el 23 de octubre de 1998. El grupo est\u00e1 abierto a toda persona o instituci\u00f3n con inter\u00e9s en los temas propios de la red. El objetivo principal del grupo de trabajo es el de obtener conocimiento cient\u00edfico en todos los aspectos relacionados con los procesos, recursos, productos y proyectos de ingenier\u00eda de software.",
+			"web": "http://www.sc.ehu.es/jiwdocoj/remis/remis.htm"
+		},
+		{
+			"cod": 79,
+			"titulo": "Grado en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Ugutz Garitaonaindia Antsoategi",
+			"email": "ugutz.garitaonaindia@ehu.eus",
+			"desc": "Te habilitar\u00e1 para la profesi\u00f3n de Ingenier\u00eda T\u00e9cnica Industrial, en la especialidad de mec\u00e1nica, que es la que se encarga de dise\u00f1ar, estudiar, construir, instalar y hacer funcionar m\u00e1quinas y dispositivos mec\u00e1nicos, estructuras e instalaciones industriales, tales como m\u00e1quinas de elevaci\u00f3n y transporte, m\u00e1quina herramienta, instalaciones energ\u00e9ticas, frigor\u00edficas, etc. Adem\u00e1s, te capacitar\u00e1 para organizar y dirigir tareas de producci\u00f3n, operaci\u00f3n y mantenimiento.\nContamos con la colaboraci\u00f3n de m\u00e1s de 250 empresas del entorno en las que podr\u00e1s realizar pr\u00e1cticas voluntarias que contribuir\u00e1n a tu formaci\u00f3n integral.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-mecanica-gipuzkoa"
+		},
+		{
+			"cod": 80,
+			"titulo": "Grado en Ingenier\u00eda El\u00e9ctrica",
+			"titulo_short_name": "Ing. El\u00e9ctrica",
+			"responsable": "Ugutz Garitaonaindia Antsoategi",
+			"email": "ugutz.garitaonaindia@ehu.eus",
+			"desc": "Sistemas el\u00e9ctricos de alta y baja tensi\u00f3n. Dise\u00f1o y control de m\u00e1quinas el\u00e9ctricas.  Sistemas de generaci\u00f3n tradicionales y renovables; todo ello utilizando laboratorios dotados con el m\u00e1s moderno equipamiento.\n",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-electrica-gipuzkoa"
+		},
+		{
+			"cod": 81,
+			"titulo": "Grado en Ingenier\u00eda en Electr\u00f3nica Industrial y Autom\u00e1tica",
+			"titulo_short_name": "Ing.Electr\u00f3nica Ind. y Autom\u00e1tica",
+			"responsable": "Ugutz Garitaonaindia Antsoategi",
+			"email": "ugutz.garitaonaindia@ehu.eus",
+			"desc": "Dise\u00f1ar circuitos electr\u00f3nicos, desarrollar sistemas electr\u00f3nicos que introduzcan\u00a0mejoras en la instrumentaci\u00f3n y automatizaci\u00f3n\u00a0de los procesos productivos, y tambi\u00e9n dise\u00f1ar, analizar y desarrollar sistemas de\u00a0control de procesos industriales.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-electronica-industrial-y-automatica-bizkaia"
+		},
+		{
+			"cod": 82,
+			"titulo": "Doble Grado en Ingenier\u00eda Mec\u00e1nica y Ingenier\u00eda en Electr\u00f3nica Industrial y Autom\u00e1tica",
+			"titulo_short_name": "Doble Ing. Mec\u00e1nica y Ing.Electr\u00f3nica Ind. y Autom\u00e1tica",
+			"responsable": "Ugutz Garitaonaindia Antsoategi",
+			"email": "ugutz.garitaonaindia@ehu.eus",
+			"desc": "Dise\u00f1o de m\u00e1quinas, motores, mecanismos y sistemas mec\u00e1nicos\u00a0por lo que est\u00e1 muy ligada a los sistemas de producci\u00f3n industrial. Control y automatizaci\u00f3nde dichos sistemas para que sean m\u00e1s r\u00e1pidos, seguros y eficientes corresponde al \u00e1mbito de la ingenier\u00eda electr\u00f3nica industrial y autom\u00e1tica.",
+			"web": "https://www.ehu.eus/es/doble-grado-en-ingenieria-mecanica-e-ingenieria-electronica-industrial-y-automatica"
+		},
+		{
+			"cod": 83,
+			"titulo": "M\u00e1ster Universitario en Sistemas de Transporte.",
+			"titulo_short_name": "Sist. de Transporte.",
+			"responsable": "Miriam Pe\u00f1alba Otaduy",
+			"email": "miriam.penalba@ehu.eus",
+			"desc": "Gesti\u00f3n de sistemas inteligentes de transporte as\u00ed como en el desarrollo e implementaci\u00f3n de las herramientas tecnol\u00f3gicas que dan soporte a dichos sistemas.\u00a0",
+			"web": "http://www.ehu.eus/es/web/mastersistemastransporte/aurkezpena"
+		},
+		{
+			"cod": 84,
+			"titulo": "M\u00e1ster Universitario en Control en Redes El\u00e9ctricas Inteligentes y Generaci\u00f3n Distribuida",
+			"titulo_short_name": "Control en Redes El\u00e9ctricas Inteligentes",
+			"responsable": "Haritza Camblong Ruiz",
+			"email": "aritza.camblong@ehu.es",
+			"desc": "Dise\u00f1o, integraci\u00f3n y an\u00e1lisis de los sistemas de control de los principales componentes de las REI.  Dise\u00f1adores, responsables de proyecto o de mantenimiento, o investigadores, en el sector de la energ\u00eda el\u00e9ctrica, pero tambi\u00e9n en otros sectores como el del transporte o el de la m\u00e1quina herramienta.",
+			"web": "http://www.ehu.eus/es/web/smartgrids/aurkezpena"
+		},
+		{
+			"cod": 85,
+			"titulo": "Programa de Doctorado en Ingenier\u00eda de Materiales Renovables",
+			"titulo_short_name": "Ing. de Materiales Renovables",
+			"responsable": "Arantxa Eceiza",
+			"email": "arantxa.eceiza@ehu.eus",
+			"desc": "El objetivo del programa es impulsar la investigaci\u00f3n de excelencia y responder a la creciente demanda de investigadores competentes con formaci\u00f3n espec\u00edfica, capacitados para potenciar la innovaci\u00f3n y el avance tecnol\u00f3gico en sectores relacionados con el desarrollo de materiales de fuentes renovables. La tem\u00e1tica del doctorado se adecua perfectamente a la intensa actividad de investigaci\u00f3n en los campos de la biorefiner\u00eda de la biomasa y de los nuevos materiales de fuentes renovables que desarrollan los equipos de investigaci\u00f3n que soportan el programa.",
+			"web": "http://www.ehu.eus/es/web/doctoradoingenieriamaterialesrenovables/aurkezpena"
+		},
+		{
+			"cod": 86,
+			"titulo": "Grado en Ingenier\u00eda de Energ\u00edas Renovables (Eibar)",
+			"titulo_short_name": "Ing. de Energ\u00edas Renovables (Eibar)",
+			"responsable": "Mirari Antxustegi",
+			"email": "subdir.oacademica.euiti-ei@ehu.eus",
+			"desc": "Desarrollo de proyectos de tecnolog\u00eda para las energ\u00edas renovables. Mantenimiento de equipos: parques e\u00f3licos, huertos solares\u2026 Optimizaci\u00f3n y gesti\u00f3n de instalaciones. Evaluaci\u00f3n del potencial de los recursos energ\u00e9ticos renovables. An\u00e1lisis del impacto medioambiental, econ\u00f3mico y social de las energ\u00edas renovables. Gesti\u00f3n y auditor\u00edas energ\u00e9ticas. Desarrollo de sistemas el\u00e9ctricos y electr\u00f3nicos aut\u00f3nomos y su conexi\u00f3n a red. I+D+i\n",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-energias-renovables"
+		},
+		{
+			"cod": 87,
+			"titulo": "Materiales + Tecnolog\u00edas (GMT)",
+			"titulo_short_name": "Materiales + Tecnolog\u00edas (GMT)",
+			"responsable": "Arantxa Eceiza",
+			"email": "arantxa.eceiza@ehu.eus",
+			"desc": "\u00c1rea Qu\u00edmica: Composites, Nanomaterials, Biomaterials, Biomaterials from renewable resources.\n\u00c1rea de Mec\u00e1nica: Nuevos m\u00e9todos de ensayo de materiales composites\n\u2022 Fractura interlaminar de laminados composites\n\u2022 Comportamiento mec\u00e1nico de laminadoscomposites multidireccionales\n\u2022 Estudio de laminados biestables con curvaturas higrot\u00e9rmicas de curado\n\u2022 An\u00e1lisis de tensiones de borde en laminados composites\u2022 Estudio de formulaciones h\u00edbridas para el M\u00e9todo de los Elementos Finitos y su aplicaci\u00f3n en laminados composites.",
+			"web": "http://www.ehu.eus/es/web/gmt/home"
+		},
+		{
+			"cod": 88,
+			"titulo": "Sistemas inteligentes y energ\u00eda.",
+			"titulo_short_name": "Sist. inteligentes y energ\u00eda.",
+			"responsable": "Xabier Ostolaza Zamora",
+			"email": "xabier.ostolaza@ehu.es",
+			"desc": "Redes inteligentes y Energ\u00eda renovable. Control de procesos de soldadura por arco el\u00e9ctrico y plasma. L\u00ednea emergente: Obtenci\u00f3n de modelos y simulaciones de muy elevada dimensi\u00f3n, y aplicaci\u00f3n de t\u00e9cnicas Fuzzy\n",
+			"web": "http://www.ehu.eus/es/web/sie/hasiera"
+		},
+		{
+			"cod": 89,
+			"titulo": "Imagen y An\u00e1lisis de movimiento",
+			"titulo_short_name": "Imagen y An\u00e1lisis de movimiento",
+			"responsable": "Josu Maiora Oria",
+			"email": "j.maiora@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 90,
+			"titulo": "Grado en Ingenier\u00eda Inform\u00e1tica",
+			"titulo_short_name": "Ing. Inform\u00e1tica",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "1) Analizar, dise\u00f1ar, desarrollar e implantar sistemas inform\u00e1ticos, 2) Evaluar, optimizar, mantener y administrar sistemas inform\u00e1ticos, 3) Asesorar y formar a usuarios finales, 4) Participar en proyectos inform\u00e1ticos y crear empresas de desarrollo de producto o servicio inform\u00e1tico.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-en-informatica/"
+		},
+		{
+			"cod": 91,
+			"titulo": "Grado en Ingenier\u00eda en Sistemas de Telecomunicaci\u00f3n",
+			"titulo_short_name": "Ing. Sist. de Telecomunicaci\u00f3n",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "Tecnolog\u00edas sin hilo (Wifi, Bluetooth, Zigbee). Dise\u00f1o y validaci\u00f3n com\u00fan de infraestructuras de telecomunicaci\u00f3n (TDT, distribuci\u00f3n de se\u00f1ales, radio, telefon\u00eda, datos). Dise\u00f1o de sistemas programadores mediante microprocesadores. Dise\u00f1o y configuraci\u00f3n de redes (LAN, WAN, VPN) procesamiento digital de audio y v\u00eddeo.",
+			"web": "https://www.mondragon.edu/es/grado-ingenieria-sistemas-telecomunicacion"
+		},
+		{
+			"cod": 92,
+			"titulo": "Grado en Ingenier\u00eda Electr\u00f3nica Industrial",
+			"titulo_short_name": "Ing. Electr\u00f3nica Ind.",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "Los titulados en Ingenier\u00eda en Electr\u00f3nica Industrial ser\u00e1n capaces de: 1) Dise\u00f1ar, materializar, realizar la puesta a punto y la industrializaci\u00f3n de equipos electr\u00f3nicos, cumpliendo los requerimientos t\u00e9cnicos, econ\u00f3micos, de calidad y de seguridad establecidos en las especificaciones, 2) Abordar el dise\u00f1o, el control y la automatizaci\u00f3n de procesos industriales mediante la integraci\u00f3n del hardware y el software con el fin de optimizar el funcionamiento de las diferentes unidades que componen el sistema productivo, 3) Dise\u00f1ar las instalaciones , productos y sistemas electr\u00f3nicos que cumplan las normas de seguridad y calidad exigidas por la legislaci\u00f3n vigente, 4) Realizar labores de organizaci\u00f3n, direcci\u00f3n y supervisi\u00f3n del mantenimiento de equipos electr\u00f3nicos de los sistemas productivos.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-en-electronica-industrial/"
+		},
+		{
+			"cod": 93,
+			"titulo": "M\u00e1ster Universitario en Sistemas Embebidos",
+			"titulo_short_name": "Sist. Embebidos",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "El objetivo principal del t\u00edtulo es formar profesionales capaces de innovar, dise\u00f1ar, desarrollar, evaluar y mantener productos basados en sistemas embebidos garantizando la fiabilidad a lo largo de su ciclo de vida. Dirigido a alumnos en posesi\u00f3n de T\u00edtulos universitarios oficiales de los \u00e1mbitos de la Electr\u00f3nica, Inform\u00e1tica y Telecomunicaciones.",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-en-sistemas-embebidos/"
+		},
+		{
+			"cod": 94,
+			"titulo": "Grado en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "El Grado en Ingenier\u00eda Mec\u00e1nica te capacitar\u00e1 para: 1) Redactar y desarrollar proyectos de dise\u00f1o, fabricaci\u00f3n, montaje, optimizaci\u00f3n, exploraci\u00f3n y conservaci\u00f3n de equipos mec\u00e1nicos, procesos de fabricaci\u00f3n y plantas industriales, 2) Realizar mediciones, c\u00e1lculos, valoraciones, tasaciones, peritaciones, estudios, informes, planos de labores y otros trabajos an\u00e1logos, 3) Manejar con acierto y rigor las especificaciones, reglamentos y normas de obligado cumplimiento en tu \u00e1mbito de trabajo, 4) Desarrollar tu profesi\u00f3n con un fuerte bagaje t\u00e9cnico en mec\u00e1nica; y con aptitudes personales tales como la iniciativa personal, la capacidad de trabajar en equipo y la capacidad de afrontar nuevos retos, dispuesto/a a desempe\u00f1ar tu actividad profesional en entornos globales y deslocalizados.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-mecanica/"
+		},
+		{
+			"cod": 95,
+			"titulo": "Grado en Ingenier\u00eda en Ecotecnolog\u00edas en Procesos Industriales",
+			"titulo_short_name": "Ing. Ecotecnolog\u00edas en Procesos Ind. ",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "1) Dise\u00f1ar, implantar y optimizar procesos de fabricaci\u00f3n que sean sostenibles y tanto t\u00e9cnica como econ\u00f3mica y medioambientalmente. 2)Dise\u00f1ar productos competitivos atendiendo a su ciclo de vida, desde la producci\u00f3n de la materia prima hasta la retirada del mercado. 3) Seleccionar el material id\u00f3neo para cada producto, atendiendo a la relaci\u00f3n entre el procesado y las propiedades finales. 4) Implementar m\u00e9todos y sistemas de reducci\u00f3n, reutilizaci\u00f3n y reciclado de recursos, as\u00ed como tecnolog\u00edas para tratamiento de suelo, agua y aire.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/ingenieria-en-ecotecnologia-en-procesos-industriales/"
+		},
+		{
+			"cod": 96,
+			"titulo": "M\u00e1ster Universitario en Ingenier\u00eda Industrial",
+			"titulo_short_name": "Ing. Ind.",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "1) Ingenier\u00eda de Proyectos, 2) Direcci\u00f3n Industrial, 3) Investigaci\u00f3n y Desarrollo de Nuevas Tecnolog\u00edas, 4) Dise\u00f1o de M\u00e1quinas, Estructuras e Instalaciones, 5) Gesti\u00f3n de Calidad, 6) Direcci\u00f3n de Producci\u00f3n y 7) Gesti\u00f3n del Mantenimiento de Sistemas Industriales\n",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-ingenieria-industrial/"
+		},
+		{
+			"cod": 97,
+			"titulo": "Grado en ingenier\u00eda de la energ\u00eda",
+			"titulo_short_name": "Ing. de la energ\u00eda",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "1) Analizar, dise\u00f1ar, mantener e integrar equipamientos e instalaciones en el \u00e1mbito de la generaci\u00f3n de energ\u00eda, transporte, distribuci\u00f3n y consumo, teniendo en cuenta la sostenibilidad del entorno y el impacto medioambiental, 2) Supervisi\u00f3n y mantenimiento de centrales y redes energ\u00e9ticas, poniendo especial atenci\u00f3n en las energ\u00edas renovables, 3) Coordinar empresas e instituciones de gran consumo energ\u00e9tico, 4) Administrar la compraventa de productos y servicios energ\u00e9ticos de diferentes departamentos de la empresa, comunic\u00e1ndose de manera efectiva con proveedores internacionales, 5) Gestionar la innovaci\u00f3n, detectando nuevas oportunidades y traslad\u00e1ndolas al mercado, 6) Auditar y certificar productos, servicios y procesos y 7) Gestionar proyectos y personas, planificando tareas relacionadas con la energ\u00eda.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/ingenieria-de-la-energia/"
+		},
+		{
+			"cod": 98,
+			"titulo": "M\u00e1ster Universitario en Energ\u00eda y Electr\u00f3nica de Potencia",
+			"titulo_short_name": "Energ\u00eda y Electr\u00f3nica de Potencia",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "El objetivo principal del t\u00edtulo es formar profesionales altamente cualificados en el estudio y an\u00e1lisis espec\u00edfico de aplicaciones de la electr\u00f3nica de potencia (generaci\u00f3n de energ\u00eda, renovables, aplicaciones industriales, tracci\u00f3n, etc...); en el estudio y an\u00e1lisis espec\u00edfico de convertidores electr\u00f3nicos de potencia (dise\u00f1o, modelado, control y an\u00e1lisis); y en el estudio y an\u00e1lisis espec\u00edfico de m\u00e1quinas el\u00e9ctricas (dise\u00f1o, modelado, control y an\u00e1lisis). Dirigido a alumnos en posesi\u00f3n de t\u00edtulos universitarios oficiales de la Electricidad, Electr\u00f3nica Industrial, y Autom\u00e1tica y Electr\u00f3nica (sin complementos) y diferentes t\u00edtulos de la rama de ingenier\u00eda y arquitectura y de la rama de ciencias (con complementos).",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-en-energia-y-electronica-de-potencia/"
+		},
+		{
+			"cod": 99,
+			"titulo": "M\u00e1ster Universitario en Dise\u00f1o Estrat\u00e9gico de Productos y Servicios",
+			"titulo_short_name": "Dise\u00f1o Estrat\u00e9gico de Productos y Servicios",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "1) Dise\u00f1ador/a UX, 2) Dise\u00f1ador/a de servicios, 3) Dise\u00f1ador/a de producto, 4) Consultor/a en dise\u00f1o estrat\u00e9gico, 5) Responsable de marketing estrat\u00e9gico, y 6) Investigador en centros de I+D+i\n",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-en-diseno-estrategico-de-productos-y-servicios/"
+		},
+		{
+			"cod": 100,
+			"titulo": "M\u00e1ster Universitario en Innovaci\u00f3n Empresarial y Direcci\u00f3n de Proyectos.",
+			"titulo_short_name": "Innovaci\u00f3n Empresarial y Direcci\u00f3n de Proyectos.",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "Puestos de trabajo: \u2022Director de la Oficina de Proyectos (PMO). \u2022Director de Innovaci\u00f3n. \u2022Director de Nuevos Negocios. \u2022Director de Negocio (Gerente). \u2022Director Tecnol\u00f3gico o de Investigaci\u00f3n.\n",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-en-innovacion-empresarial-y-direccion-de-proyectos/"
+		},
+		{
+			"cod": 101,
+			"titulo": "M\u00e1ster Universitario en Tecnolog\u00edas Biom\u00e9dicas",
+			"titulo_short_name": "Tecnolog\u00edas Biom\u00e9dicas",
+			"responsable": "Bea Guere\u00f1u",
+			"email": "masteruni.mgep@mondragon.edu",
+			"desc": "Actividades que pueden desarrollar: \u2022Redactar, gestionar y dirigir proyectos de Ingenier\u00eda Biom\u00e9dica, desde la detecci\u00f3n de nuevas oportunidades hasta su implantaci\u00f3n en el mercado. \u2022Dise\u00f1ar, desarrollar e implementar productos, equipos, procesos y servicios en el \u00e1mbito de Ingenier\u00eda Biom\u00e9dica. \u2022Gestionar la instalaci\u00f3n y mantenimiento tanto de equipamientos m\u00e9dicos como de instalaciones hospitalarias. \u2022Gestionar y garantizar la calidad de productos, equipos, procesos y servicios en el \u00e1mbito de la Ingenier\u00eda Biom\u00e9dica. \u2022Comercializar productos, equipos, procesos y servicios de Ingenier\u00eda Biom\u00e9dica. \u2022Formar personas de diferentes \u00e1mbitos transmitiendo conocimientos, actitudes y habilidades de Ingenier\u00eda Biom\u00e9dica.\n",
+			"web": "http://www.mondragon.edu/es/estudios/master/master-universitario-en-tecnologias-biomedicas/"
+		},
+		{
+			"cod": 102,
+			"titulo": "Grado en Ingenier\u00eda en Dise\u00f1o Industrial y Desarrollo de Producto",
+			"titulo_short_name": "Ing.Dise\u00f1o Ind. y Desarrollo de Producto",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "Salidas profesionales: \u2022Dise\u00f1ador en el departamento de desarrollo de producto \u2022Dise\u00f1ador integrante del departamento de innovaci\u00f3n. \u2022Dise\u00f1ador en el departamento de marketing y comunicaci\u00f3n. \u2022Dise\u00f1ador en un gabinete de Dise\u00f1o Industrial. \u2022Dise\u00f1ador freelance o emprendedor formando su propia empresa. \n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-en-diseno-industrial-y-desarrollo-de-producto/"
+		},
+		{
+			"cod": 103,
+			"titulo": "Grado en Ingenier\u00eda en Organizaci\u00f3n Industrial",
+			"titulo_short_name": "Ing. Organizaci\u00f3n Ind.",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "Responsabilidades: \u2022Diferentes \u00e1reas funcionales de una empresa, como producci\u00f3n, compras, distribuci\u00f3n, calidad y mantenimiento \u2022Innovaci\u00f3n de producto, de proceso y de la gesti\u00f3n de la organizaci\u00f3n, contribuyendo as\u00ed al reto de la innovaci\u00f3n y sostenibilidad social, ambiental y econ\u00f3mica.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-en-organizacion-industrial/"
+		},
+		{
+			"cod": 104,
+			"titulo": "Grado en Ingenier\u00eda Biom\u00e9dica",
+			"titulo_short_name": "Ing. Biom\u00e9dica",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "Funciones profesionales: \u2022Dise\u00f1ar, desarrollar y mantener productos, equipos, procesos y servicios, garantizando su calidad en los siguientes \u00e1mbitos: \u2022Equipamiento de diagn\u00f3stico (esc\u00e1neres, ec\u00f3grafos, \u201clab on a chip\u201d\u2026). \u2022Equipamiento de tratamiento y rehabilitaci\u00f3n (desfibriladores, implantes, brazos rob\u00f3ticos\u2026). \u2022Equipamiento para la mejora de la calidad de vida (teleasistencia, telemonitorizaci\u00f3n\u2026). \u2022Equipamiento para la mejora del rendimiento deportivo (puls\u00f3metros, monitorizaci\u00f3n, nuevos materiales\u2026). \u2022Dirigir proyectos de Ingenier\u00eda Biom\u00e9dica desde la detecci\u00f3n de oportunidades hasta su implantaci\u00f3n en el mercado. \u2022Gestionar y optimizar instalaciones sanitarias. \u2022Formar personas sobre productos e instalaciones en los diferentes campos de la Ingenier\u00eda Biom\u00e9dica.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-biomedica/"
+		},
+		{
+			"cod": 105,
+			"titulo": "Grado en Ingenier\u00eda Mecatr\u00f3nica",
+			"titulo_short_name": "Ing. Mecatr\u00f3nica",
+			"responsable": "Josune Benito",
+			"email": "jbenito@mondragon.edu",
+			"desc": "El graduado/a en Ingenier\u00eda Mecatr\u00f3nica de Mondragon Unibertsitatea se distingue por su visi\u00f3n multidisciplinar, facilitando una perspectiva m\u00e1s integradora para el desarrollo de productos, sistemas o procesos industriales. Se ocupa de desarrollar, montar, mantener y optimizar productos, sistemas, m\u00e1quinas, instalaciones o procesos industriales.\n",
+			"web": "http://www.mondragon.edu/es/estudios/grados/grado-en-ingenieria-mecatronica/"
+		},
+		{
+			"cod": 106,
+			"titulo": "M\u00e1ster Universitario en Desarrollo y Gesti\u00f3n de Proyectos de Innovaci\u00f3n (Berrimet)",
+			"titulo_short_name": "Proyectos de Innovaci\u00f3n (Berrimet)",
+			"responsable": "Agurtzane Martinez",
+			"email": "amartinez@mondragon.edu",
+			"desc": "El m\u00e1ster ofrece la posibilidad de desarrollar competencias relacionadas con la creaci\u00f3n e implementaci\u00f3n de proyectos \u00a0de innovaci\u00f3n en instituciones educativas. Trabajar\u00e1s sobre \u00e1mbitos, oportunidades y estrategias de intervenci\u00f3n y validaci\u00f3n.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/educacion/master-en-desarrollo-y-gestion-de-proyectos-de-innovacion-didactico-metodologica-en-instituciones-educativas-berrimet"
+		},
+		{
+			"cod": 107,
+			"titulo": "M\u00e1ster en Innovaci\u00f3n empresarial y direcci\u00f3n de proyectos MIP-online",
+			"titulo_short_name": "Proyectos MIP-online",
+			"responsable": "Noemi Zabaleta ",
+			"email": "nzabaleta@mondragon.edu",
+			"desc": "El objetivo principal del m\u00e1ster es proporcionar las competencias necesarias para asumir responsabilidades de gesti\u00f3n , y a partir de la adquisici\u00f3n de una visi\u00f3n integral y sist\u00e9mica de las organizaciones.Est\u00e1 dirigido a profesionales que busquen un complemento a su formaci\u00f3n t\u00e9cnica en innovaci\u00f3n y direcci\u00f3n de proyectos.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/gestion-organizacion-industrial/master-innovacion-empresarias-direccion-de-proyectos-mip-online/"
+		},
+		{
+			"cod": 108,
+			"titulo": "MBA-M\u00e1ster Universitario en Direcci\u00f3n de Empresas",
+			"titulo_short_name": "MBA-Direcci\u00f3n de Empresas",
+			"responsable": "Nekane Errazti",
+			"email": "nerrasti@mondragon.edu",
+			"desc": "El MBA-M\u00e1ster Universitario en Direcci\u00f3n de Empresas de Mondragon Unibertsitatea busca dinamizar el talento y las capacidades directivas y de gesti\u00f3n, tanto de profesionales en activo o desempleados como de j\u00f3venes posgraduados. Su objetivo general es dotar a los participantes de las competencias necesarias para gestionar y liderar las organizaciones y empresas en entornos inciertos y contextos globales.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/direccion-gestion-empresas-organizaciones/mba-master-universitario-en-direccion-de-empresas/"
+		},
+		{
+			"cod": 109,
+			"titulo": "M\u00e1ster en Direcci\u00f3n de Producci\u00f3n MDP",
+			"titulo_short_name": "Direcci\u00f3n de Producci\u00f3n MDP",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "Es un programa orientado a profesionales en activo que quieran desarrollar su carrera profesional en el \u00e1mbito de la gesti\u00f3n de la producci\u00f3n, mejorando sus capacidades y habilidades en dicho \u00e1mbito. El Programa M\u00e1ster en Direcci\u00f3n de Producci\u00f3n persigue, a trav\u00e9s de un proceso de ense\u00f1anza-aprendizaje innovador, la captaci\u00f3n en metodolog\u00edas, t\u00e9cnicas y herramientas referentes en la Gesti\u00f3n Industrial, especialmente en el \u00e1mbito de la Direcci\u00f3n de la Producci\u00f3n.\nY con los objetivos claros de 1) Aportar a los profesionales en ejercicio una visi\u00f3n integral de la Gesti\u00f3n Industrial en los nuevos entornos competitivos, centr\u00e1ndose y afianzando las claves de la Direcci\u00f3n de Producci\u00f3n y 2) \nDesarrollar la capacidad necesaria para implantar las metodolog\u00edas, herramientas y t\u00e9cnicas propias de una empresa excelente y desarrollarlas eficazmente.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/gestion-organizacion-industrial/master-en-direccion-de-produccion-mdp"
+		},
+		{
+			"cod": 110,
+			"titulo": "M\u00e1ster Executive en direcci\u00f3n de operaciones - Direcci\u00f3n industrial",
+			"titulo_short_name": "Executive en direcci\u00f3n de operaciones",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "El m\u00e1ster executive en direcci\u00f3n de operaciones industriales tiene como objetivo, capacitar a los directivos o gestores a dise\u00f1ar un modelo de direcci\u00f3n industrial, adecuado a las necesidades estr\u00e1tegicas de la empresa. El programa MDO ha sido dise\u00f1ado con el objetivo de formar y capacitar a profesionales en el \u00e1mbito de la direcci\u00f3n operativa. A este fin, el proceso de ense\u00f1anza-aprendizaje interdisciplinar establecido permite la capacitaci\u00f3n de los asistentes en todos los \u00e1mbitos de la gesti\u00f3n industrial.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/gestion-organizacion-industrial/masterexecutive-en-direccion-de-operaciones"
+		},
+		{
+			"cod": 111,
+			"titulo": "M\u00e1ster en Automatizaci\u00f3n Industrial",
+			"titulo_short_name": "Automatizaci\u00f3n Ind.",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "Mondragon Unibertsitatea, en colaboraci\u00f3n con importantes empresas, lanza este M\u00e1ster para responder a una exigente demanda del mercado en el \u00e1mbito de la Automatizaci\u00f3n Industrial. El objetivo principal de este M\u00e1ster es proporcionar a los participantes el conocimiento y las habilidades pr\u00e1cticas necesarias para poder integrar en las empresas los diferentes elementos de la Automatizaci\u00f3n Industrial.\n",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/electronica-energia/master-automatizacion-industrial"
+		},
+		{
+			"cod": 112,
+			"titulo": "M\u00e1ster Profesional en Energ\u00eda El\u00e9ctrica",
+			"titulo_short_name": "Energ\u00eda El\u00e9ctrica",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "El M\u00e1ster Profesional en Energ\u00eda El\u00e9ctrica est\u00e1 dirigido a profesionales que requieran formaci\u00f3n sobre convertidores de potencia, m\u00e1quinas el\u00e9ctricas, sistemas de almacenamiento, tracci\u00f3n el\u00e9ctrica, energ\u00edas renovables y la red el\u00e9ctrica. El programa formativo pretende capacitar a los asistentes para dise\u00f1ar y desarrollar soluciones de electr\u00f3nica de potencia y accionamientos el\u00e9ctricos en aplicaciones tales como; industria, generaci\u00f3n de energ\u00eda mediante fuentes renovables, red el\u00e9ctrica, tracci\u00f3n, etc. Los contenidos impartidos est\u00e1n actualizados y alineados con los avances tecnol\u00f3gicos m\u00e1s innovadores y vanguardistas, con objeto de mostrar las nuevas tendencias y obtener una visi\u00f3n integral del \u00e1mbito de la energ\u00eda.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/electronica-energia/master-profesional-en-energia-electrica"
+		},
+		{
+			"cod": 113,
+			"titulo": "Master en Ciberseguridad",
+			"titulo_short_name": "Ciberseguridad",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "El Master en Ciberseguridad pretende dar respuesta a una exigente demanda del mercado de profesionales formados en el \u00e1mbito de la seguridad de la informaci\u00f3n (IT) y la seguridad en entornos industriales (OT). El objetivo principal de este m\u00e1ster es proporcionar a los participantes el conocimiento, habilidades pr\u00e1cticas y competencias necesarias para poder integrar en las empresas los diferentes elementos de la ciberseguridad. El programa formativo capacita a los asistentes a actuar proactivamente ante los problemas emergentes en seguridad, planteando distintas respuestas alternativas y anticipando posibles resultados, que permitan seleccionar la respuesta m\u00e1s efectiva ante las amenazas de seguridad m\u00e1s actuales.\n",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/informatica-telecomunicaciones-sistemas-empotrados/master-en-ciberseguridad"
+		},
+		{
+			"cod": 114,
+			"titulo": "M\u00e1ster en Seguridad Inform\u00e1tica (Online)",
+			"titulo_short_name": "Seguridad Inform\u00e1tica (Online)",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "Programa de postgrado en el que adquirir\u00e1s las habilidades necesarias para proteger redes, sistemas y procesos ante ataques, y actuar de forma determinante ante cualquier incidente de seguridad. El M\u00e1ster se puede realizar en dos cursos acad\u00e9micos. El M\u00e1ster en Seguridad Inform\u00e1tica persigue, a trav\u00e9s de un proceso de ense\u00f1anza-aprendizaje innovador, la capacitaci\u00f3n en metodolog\u00edas, t\u00e9cnicas y herramientas referentes en la Seguridad de la Informaci\u00f3n. El programa formativo capacita a los asistentes a actuar proactivamente ante los problemas emergentes en seguridad, planteando distintas respuestas alternativas y anticipando posibles resultados, que permitan seleccionar la respuesta m\u00e1s efectiva ante las amenazas de seguridad m\u00e1s actuales. \n",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/informatica-telecomunicaciones-sistemas-empotrados/master-en-seguridad-informatica-online/"
+		},
+		{
+			"cod": 115,
+			"titulo": "M\u00e1ster en Aplicaciones M\u00f3viles",
+			"titulo_short_name": "Aplicaciones M\u00f3viles",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "Este m\u00e1ster est\u00e1 dirigido a profesionales del \u00e1mbito de las nuevas tecnolog\u00edas y j\u00f3venes que deseen adquirir conocimientos te\u00f3ricos y pr\u00e1cticos sobre el desarrollo y construcci\u00f3n de las aplicaciones m\u00f3viles con una m\u00faltiple y completa orientaci\u00f3n en todos sus niveles: desarrollo, dise\u00f1o y estrat\u00e9gico. Se adquieren conocimientos te\u00f3ricos y pr\u00e1cticos sobre el desarrollo y construcci\u00f3n de las aplicaciones m\u00f3viles con una m\u00faltiple y completa orientaci\u00f3n en todos sus niveles: desarrollo, dise\u00f1o y estrat\u00e9gico.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/informatica-telecomunicaciones-sistemas-empotrados/master-en-aplicaciones-moviles/"
+		},
+		{
+			"cod": 116,
+			"titulo": "MBA Executive",
+			"titulo_short_name": "MBA Executive",
+			"responsable": "Gentzane Aldekoa",
+			"email": "galdekoa@mondragon.edu",
+			"desc": "El Executive MBA est\u00e1 dise\u00f1ado para alcanzar los siguientes objetivos: 1) Aportar a los participantes un enfoque integral y sist\u00e9mico de las empresas y la gesti\u00f3n empresarial en todas sus \u00e1reas relevantes.\nImpulsar la innovaci\u00f3n y el cambio como actitud personal y profesional del directivo en un entorno globalizado, 2) Desarrollar desde una perspectiva \u00e9tica y responsable, la capacidad de liderazgo integrando las competencias y habilidades directivas necesarias para ello, 3) Actualizar y reforzar los conceptos que permiten gestionar las diferentes funciones de la organizaci\u00f3n, teniendo en cuenta la diversidad de contextos internacionales y culturales.",
+			"web": "https://www.mondragon.edu/cursos/es/tematicas/direccion-gestion-empresas-organizaciones/mba-executive/"
+		},
+		{
+			"cod": 117,
+			"titulo": "Comportamiento Mec\u00e1nico y Dise\u00f1o de producto",
+			"titulo_short_name": "Comportamiento Mec\u00e1nico y Dise\u00f1o de produc.",
+			"responsable": "Roberto Uribeetxeberria",
+			"email": "ruribeetxeberria@mondragon.edu",
+			"desc": "El grupo de Dise\u00f1o y Mec\u00e1nica Estructural de Mondragon Unibertsitatea es un grupo de investigaci\u00f3n que se sustenta b\u00e1sicamente en dos \u00e1reas de conocimiento: Mec\u00e1nica Aplicada y Dise\u00f1o Mec\u00e1nico. El objetivo estrat\u00e9gico del grupo de investigaci\u00f3n es la generaci\u00f3n y transferencia de conocimiento para la optimizaci\u00f3n de la eficiencia y el comportamiento mec\u00e1nico en elementos y sistemas mec\u00e1nicos: 1) Elementos de uni\u00f3n (uniones atornilladas, uniones soldadas,\u2026) y 2) Elementos y sistemas de transmisi\u00f3n y frenado (husillos, transmisiones, frenos, freno-embragues,\u2026), 3) Componentes y sistemas de m\u00e1quinas t\u00e9rmicas sometidas a condiciones extremas de temperatura (componentes de motor Stirling, common rail, \u00e1labes de turbinas,\u2026)\nL\u00edneas de especializaci\u00f3n: Especializaci\u00f3n en Fatiga Termomec\u00e1nica a altas temperaturas y Fatiga en Uniones Soldadas (origen termomec\u00e1nico)  y Especializaci\u00f3n en la caracterizaci\u00f3n y optimizaci\u00f3n de elementos de m\u00e1quina\n",
+			"web": "https://www.mondragon.edu/es/investigacion/ingenieria-tecnologia/grupos-investigacion-transferencia/-/mu-inv-mapping/grupo/diseno-y-mecanica-estructural"
+		},
+		{
+			"cod": 118,
+			"titulo": "Ciencia, Tecnolog\u00eda Y Procesos De Transformaci\u00f3n De Materiales",
+			"titulo_short_name": "Transformaci\u00f3n De Materiales",
+			"responsable": "Roberto Uribeetxeberria",
+			"email": "ruribeetxeberria@mondragon.edu",
+			"desc": "En el nombre de la l\u00ednea de investigaci\u00f3n est\u00e1n incluidas dos palabras clave de su actividad investigadora: Procesos y Materiales. La generaci\u00f3n de conocimiento para el desarrollo y optimizaci\u00f3n de ambos como un conjunto es el n\u00facleo central de la actividad cient\u00edfico-tecnol\u00f3gica del grupo, sin perder de vista la funcionalidad del material conformado y su aumento de valor a\u00f1adido, siendo clave la cercan\u00eda a las empresas del entorno.\nDesde un punto de vista operativo, la actividad del grupo se organiza de forma matricial. En un eje est\u00e1n el dominio de las diferentes tecnolog\u00edas y \u00e1reas de conocimiento, como son los materiales met\u00e1licos (Aleaciones de Al, Mg, Ti, Aceros, \u2026), la deformaci\u00f3n de materiales en forma de chapa (conformado superpl\u00e1stico, microdeformaci\u00f3n, hidroconformado, embutici\u00f3n profunda en caliente, perfilado flexible con calentamiento local, \u2026), la transformaci\u00f3n de materiales masivos  (thixoconformado, sinterizado, forja en caliente, fusi\u00f3n, \u2026) y la monitorizaci\u00f3n, modelizaci\u00f3n y control de materiales y procesos. En el otro eje est\u00e1n los sectores a los que se transfiere ese conocimiento, como son el de automoci\u00f3n, el aeron\u00e1utico, el de bienes y servicios, el de salud (implantes), etc.\n",
+			"web": "https://www.mondragon.edu/es/investigacion/ingenieria-tecnologia/grupos-investigacion-transferencia/-/mu-inv-mapping/grupo/procesos-avanzados-de-conformado-de-materiales"
+		},
+		{
+			"cod": 119,
+			"titulo": "Sistemas Embebidos, Sistemas Inteligentes para Sistemas Industriales y Sistemas de Informaci\u00f3n",
+			"titulo_short_name": "Sist. Ind. y Sist. de Informaci\u00f3n",
+			"responsable": "Roberto Uribeetxeberria",
+			"email": "ruribeetxeberria@mondragon.edu",
+			"desc": "Mondragon Unibertsitatea desarrolla un modelo de investigaci\u00f3n colaborativa que se basa en el alineamiento de la investigaci\u00f3n- con la participaci\u00f3n en colaboraci\u00f3n de los tres agentes clave: universidad, centros tecnol\u00f3gicos y de innovaci\u00f3n y empresas, estas \u00faltimas a trav\u00e9s de sus unidades de I+D+i. \nLos grupos de investigaci\u00f3n de Mondragon Unibertsitatea, tienen como finalidad la generaci\u00f3n de conocimiento y su transferencia con el objetivo de mejorar la posici\u00f3n competitiva de las empresas y organizaciones, contribuyendo al desarrollo y la mejora de sus productos, procesos o servicios.",
+			"web": "https://www.mondragon.edu/es/investigacion/ingenieria-tecnologia/grupos-investigacion-transferencia"
+		},
+		{
+			"cod": 120,
+			"titulo": "Sistemas electr\u00f3nicos de potencia aplicados al control de la energ\u00eda el\u00e9ctrica",
+			"titulo_short_name": "Sist. electr\u00f3nicos de potencia control energ\u00eda el\u00e9c.",
+			"responsable": "Roberto Uribeetxeberria",
+			"email": "ruribeetxeberria@mondragon.edu",
+			"desc": "The Mondragon University Electric Energy research group focuses its activities in energy management, for applications such us distributed generation (generation, transmission and distribution), traction (rail and naval) and electronic devices (elevation, industrial processes, etc..). The research lines are connected to the fields of power electronics and electrical machines, two of the basic components of most of the electronic devices under study. Hence, a detailed analysis of the final application allows a complete and balanced design and development of the electronic devices.\n",
+			"web": "https://www.mondragon.edu/es/investigacion/ingenieria-tecnologia/grupos-investigacion-transferencia/-/mu-inv-mapping/grupo/sistemas-electronicos-de-potencia-aplicados-al-control-de-la-energia-electrica"
+		},
+		{
+			"cod": 121,
+			"titulo": "Procesos de Dise\u00f1o y Gesti\u00f3n Industrial",
+			"titulo_short_name": "Procesos de Dise\u00f1o y Gesti\u00f3n Ind.",
+			"responsable": "Roberto Uribeetxeberria",
+			"email": "ruribeetxeberria@mondragon.edu",
+			"desc": "Mondragon Unibertsitatea desarrolla un modelo de investigaci\u00f3n colaborativa que se basa en el alineamiento de la investigaci\u00f3n- con la participaci\u00f3n en colaboraci\u00f3n de los tres agentes clave: universidad, centros tecnol\u00f3gicos y de innovaci\u00f3n y empresas, estas \u00faltimas a trav\u00e9s de sus unidades de I+D+i. \nLos grupos de investigaci\u00f3n de Mondragon Unibertsitatea, tienen como finalidad la generaci\u00f3n de conocimiento y su transferencia con el objetivo de mejorar la posici\u00f3n competitiva de las empresas y organizaciones, contribuyendo al desarrollo y la mejora de sus productos, procesos o servicios.",
+			"web": "https://www.mondragon.edu/es/investigacion/ingenieria-tecnologia/grupos-investigacion-transferencia"
+		},
+		{
+			"cod": 122,
+			"titulo": "Grado de Tecnolog\u00edas Industriales",
+			"titulo_short_name": "Tecnolog\u00edas A82",
+			"responsable": "Nere Gil-Negrete ",
+			"email": "ngil(at)tecnun.es",
+			"desc": "La formaci\u00f3n en Ingenier\u00eda en Tecnolog\u00edas Industriales tiene como objeto dotar a los reci\u00e9n titulados de conocimientos, t\u00e9cnicas, habilidades y actitudes propios de las ramas mec\u00e1nica, el\u00e9ctrica y electr\u00f3nica de la Ingenier\u00eda T\u00e9cnica Industrial, y se resume en los siguientes objetivos generales: 1) Conseguir graduados que resuelvan problemas multidisciplinares con iniciativa, capacidad de toma de decisi\u00f3n, creatividad y razonamiento cr\u00edtico. 2) Educar personas capaces de transmitir conocimientos, habilidades y destrezas en el campo de la Ingenier\u00eda T\u00e9cnica Industrial que le habiliten para dirigir grupos de trabajo, 3) Formar profesionales capaces de concebir, organizar, y dirigir empresas de producci\u00f3n y servicios, as\u00ed como otras instituciones en todas sus \u00e1reas funcionales y dimensiones: t\u00e9cnica, organizativa, financiera y humana, con una fuerte dimensi\u00f3n emprendedora y de innovaci\u00f3n, etc.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-en-tecnologias-industriales/inicio.html"
+		},
+		{
+			"cod": 123,
+			"titulo": "Grado de Ingenier\u00eda El\u00e9ctrica",
+			"titulo_short_name": "Ing. El\u00e9ctrica",
+			"responsable": "I\u00f1aki Sanchi Seuma",
+			"email": "isancho(at)tecnun.es",
+			"desc": "La/El graduada/o en Ingenier\u00eda El\u00e9ctrica adquiere un conjunto de conocimientos cient\u00edficos y tecnol\u00f3gicos que le permiten poder tener una visi\u00f3n de concepto a la hora de realizar el dise\u00f1o de un equipo, m\u00e1quina, sistema, componente, o proceso tanto industrial como operativo. Se trata de un graduado con una cierta especializaci\u00f3n en el dise\u00f1o de los sistemas el\u00e9ctricos de cualquier m\u00e1quina, as\u00ed como en otras m\u00e1quinas de naturaleza el\u00e9ctrica, como pueden ser los motores. La/El graduada/o en Ingenier\u00eda El\u00e9ctrica podr\u00e1 dise\u00f1ar instalaciones el\u00e9ctricas de generaci\u00f3n de energ\u00eda: solar, e\u00f3lica, t\u00e9rmica, maremotriz, hidr\u00e1ulica, etc\u2026, de transformaci\u00f3n y de transporte. Podr\u00e1 trabajar en el dise\u00f1o de equipos de menor consumo energ\u00e9tico. Podr\u00e1 dirigir equipos t\u00e9cnicos, ser jefe de proyectos, jefe de producto, pudiendo realizar tareas que combinan la labor de gesti\u00f3n con la t\u00e9cnica. Podr\u00e1 trabajar en centros tecnol\u00f3gicos, cenytros de investigaci\u00f3n en empresas de cierto tama\u00f1o. As\u00ed mismo podr\u00e1s montar su propia empresa de ingenier\u00eda el\u00e9ctrica.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-electrica/inicio"
+		},
+		{
+			"cod": 124,
+			"titulo": "Grado de Ingenier\u00eda Electr\u00f3nica Industrial",
+			"titulo_short_name": "Ing. Electr\u00f3nica Ind.",
+			"responsable": "I\u00f1aki Sanchi Seuma",
+			"email": "isancho(at)tecnun.es",
+			"desc": "La/El graduada/o en Ingenier\u00eda El\u00e9ctr\u00f3nica adquiere un conjunto de conocimientos cient\u00edficos y tecnol\u00f3gicos que le permiten poder tener una visi\u00f3n de concepto a la hora de realizar el dise\u00f1o de un equipo, m\u00e1quina, sistema, componente, o proceso tanto industrial como operativo. Se trata de un graduado con una cierta especializaci\u00f3n en el dise\u00f1o, desarrollo y mejora de procesos tanto industriales como de servicios. Podr\u00e1s automatizar procesos de fabricaci\u00f3n, mejorando la fiabilidad de lo fabricado, y la productividad.\nAs\u00ed mismo podr\u00e1 dise\u00f1ar  y desarrollar sistemas electr\u00f3nicos de control de m\u00e1quinas, equipos e instalaciones como los de un avi\u00f3n, autob\u00fas, cami\u00f3n, tren, lavadora, central t\u00e9rmica, f\u00e1brica de papel, de alimentaci\u00f3n, etc\u2026\nY como no, participar en el dise\u00f1o de ordenadores, robot o aut\u00f3matas de diferentes caracter\u00edsticas, desde los juguetes de los ni\u00f1os, hasta los macrorobots para manipulaci\u00f3n de sustancias t\u00f3xicas o desactivaci\u00f3n de explosivos, pasando por lo microrobots para cirug\u00eda.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-en-electronica-industrial/inicio"
+		},
+		{
+			"cod": 125,
+			"titulo": "Grado de Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Jorge Gonz\u00e1lez Prada",
+			"email": "jgprada(at)tecnun.es",
+			"desc": "La/El graduada/o en Ingenier\u00eda Mec\u00e1nica adquiere un conjunto de conocimientos cient\u00edficos y tecnol\u00f3gicos que le permiten poder tener una visi\u00f3n de concepto a la hora de realizar el dise\u00f1o de un equipo, m\u00e1quina, sistema, componente, o proceso tanto industrial como operativo.\nSe trata de un graduado con una cierta especializaci\u00f3n en el dise\u00f1o, concepci\u00f3n, redise\u00f1o, mejora de elementos, componentes, partes o sistemas mec\u00e1nicos que forman parte de equipos, m\u00e1quinas o dispositivos.\nAdem\u00e1s de la formaci\u00f3n en competencias t\u00e9cnicas, el graduado en ingenier\u00eda mec\u00e1nica adquiere otro tipo de competencias que le permiten ser una persona con habilidades creativas, innovadoras, emprendedoras, con facilidad para el trabajo en equipo y la comunicaci\u00f3n. La formaci\u00f3n en Ingenier\u00eda Mec\u00e1nica tiene como objeto dotar a los reci\u00e9n titulados de los conocimientos, t\u00e9cnicas, habilidades y aptitudes propios de la profesi\u00f3n.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-mecanica/inicio"
+		},
+		{
+			"cod": 126,
+			"titulo": "Grado de Ingenier\u00eda de Sistemas de Telecomunicaci\u00f3n",
+			"titulo_short_name": "Ing. de Sist. de Telecomunicaci\u00f3n",
+			"responsable": "Guillermo Bist\u00e9 Garc\u00eda",
+			"email": "gbistue(at)tecnun.es",
+			"desc": "Las/os graduadas/os en  ingenier\u00eda en sistemas de comunicaci\u00f3n tendr\u00edan un claro protagonismo en el \u00e1mbito de las TICs. La forma de gestionar la gran cantidad de informaci\u00f3n que se transmite, es de vital importancia en la actualidad. Dicho nivel de informaci\u00f3n aumentar\u00e1 progresivamente en el futuro, por lo que ingenieros que sean capaces de dise\u00f1ar los sistemas de comunicaci\u00f3n, gestionarlos y mejorarlos, ser\u00e1n personas de un gran aporte a la sociedad. Otro campo donde podr\u00e1s desarrollar tu futuro profesional si te decantas por el grado de sistemas de comunicaci\u00f3n es el sector de los sistemas telem\u00e1ticos y dom\u00f3ticos. De esta forma controlar tu casa mediente un sistema telem\u00e1tico, no es cosa del futuro sino de un presente que llama a la puerta.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-en-sistemas-de-telecomunicacion/inicio"
+		},
+		{
+			"cod": 127,
+			"titulo": "Grado en Ingenier\u00eda en Electr\u00f3nica de Comunicaci\u00f3n",
+			"titulo_short_name": "Ing.Electr\u00f3nica de Comunicaci\u00f3n",
+			"responsable": "Guillermo Bist\u00e9 Garc\u00eda",
+			"email": "gbistue(at)tecnun.es",
+			"desc": "Como graduada/o en ingenier\u00eda en electr\u00f3nica de comunicaciones realizaras trabajos y proyectos en los que tendr\u00e1s que dise\u00f1ar y construir dispositivos wireless. De esta forma te convertir\u00e1s en un experto en sistemas avanzados de telefon\u00eda m\u00f3vil, dispositivos GPS, comunicaciones \u00f3pticas mediante laser ,redes de sensores que permitan evitar accidentes, reducci\u00f3n del consumo para el ahorro energ\u00e9tico,.\u2026etc. Adem\u00e1s de la formaci\u00f3n en competencias t\u00e9cnicas, el graduado en ingenier\u00eda electr\u00f3nica de comunicaci\u00f3n adquiere otro tipo de competencias que le permiten ser una persona con habilidades creativas, innovadoras, emprendedoras, con facilidad para el trabajo en equipo y la comunicaci\u00f3n.",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-en-electronica-de-comunicaciones/inicio.html"
+		},
+		{
+			"cod": 128,
+			"titulo": "Grado en Ingenier\u00eda en Organizaci\u00f3n Industrial",
+			"titulo_short_name": "Ing.Organizaci\u00f3n Ind.",
+			"responsable": "Carmen Jaca",
+			"email": "cjaca(at)tecnun.es",
+			"desc": "Como graduada/o en ingenier\u00eda en organizaci\u00f3n industrial, ser\u00e1s experto en organizaci\u00f3n y capaz de utilizar diferentes tecnolog\u00edas, entre ellas los sistemas de informaci\u00f3n, para mejorar las productividades de una empresa. Te dar\u00e1 igual planificar , controlar y mejorar un proceso de fabricaci\u00f3n de envases, que mejorar el proceso de reparto de pizzas en la cuidad de Roma. Los conocimientos necesarios que debes aplicar no son tan diferentes. Por otro lado, tus competencias t\u00e9cnicas combinadas con tu perfil negociador, te permitir\u00e1n desempe\u00f1ar tareas de gesti\u00f3n comercial o de compras, especialmente en empresas industriales.\nParticipar\u00e1s en proyectos de implantaci\u00f3n de nuevas plantas productivas, mejora de la organizaci\u00f3n de almacenes, mejoras de la distribuci\u00f3n de una planta, mejoras en la calidad de los procesos, etc. Podr\u00e1s desempe\u00f1ar tareas de direcci\u00f3n de unidades de negocio, e incluso de direcci\u00f3n General y Gerencia de empresas, preferentemente industriales, aunque tambi\u00e9n del sector de la log\u00edstica",
+			"web": "http://www4.tecnun.es/grado-en-ingenieria-en-organizacion-industrial/inicio"
+		},
+		{
+			"cod": 129,
+			"titulo": "M\u00e1ster Ingenier\u00eda de Telecomunicaci\u00f3n",
+			"titulo_short_name": "Ing. de Telecomunicaci\u00f3n",
+			"responsable": "I\u00f1igo Gutierrez",
+			"email": "ingutierrez@tecnun.es",
+			"desc": "Proyecci\u00f3n profesional: \u2022Consultor\u00edas e ingenier\u00edas del sector de la telecomunicaci\u00f3n. \u2022Dise\u00f1o electr\u00f3nico de sistemas de telecomunicaci\u00f3n. \u2022Gesti\u00f3n de redes y servicios. \u2022Investigaci\u00f3n b\u00e1sica y aplicada en el \u00e1mbito de la telecomunicaci\u00f3n. \u2022Gesti\u00f3n de personas y proyectos de telecomunicaci\u00f3n. \u2022Unidades de I+D+i empresariales.\n",
+			"web": "http://www.tecnun.es/master-universitario-en-ingenieria-de-telecomunicacion/home"
+		},
+		{
+			"cod": 130,
+			"titulo": "M\u00e1ster Ingenier\u00eda Biom\u00e9dica",
+			"titulo_short_name": "Ing. Biom\u00e9dica",
+			"responsable": "I\u00f1igo Gutierrez",
+			"email": "ingutierrez@tecnun.es",
+			"desc": "Proyecci\u00f3n profesional: El MIB proporciona a los alumnos un perfil  laboral polivalente que abarca \u00e1mbitos diversos desde la direcci\u00f3n y gesti\u00f3n de proyectos y equipos multidisciplinares al desarrollo y ejecuci\u00f3n de proyectos tanto industriales como de investigaci\u00f3n. Pueden llevar a cabo su trayectoria profesional en empresas y centros tecnol\u00f3gicos del sector salud, hospitales y cualquier tipo de instituci\u00f3n sanitaria.",
+			"web": "http://www.tecnun.es/master-universitario-en-ingenieria-biomedica/home"
+		},
+		{
+			"cod": 131,
+			"titulo": "Programa enfocado sobre la Industria 4.0 para profesionales",
+			"titulo_short_name": "Programa enfocado sobre la Industria 4.0",
+			"responsable": "I\u00f1igo Gutierrez",
+			"email": "ingutierrez@tecnun.es",
+			"desc": "El programa Tecnun TEC quiere situar al profesional de la ingenier\u00eda en la vanguardia de la t\u00e9cnica, la innovaci\u00f3n y el conocimiento aplicado en el mercado actual, influyendo directamente en el desarrollo de la persona y de la empresa. Los cursos son de corta duraci\u00f3n con el objetivo de trasmitir el bagaje intelectual adquirido tanto en Tecnun como en CEIT-IK4. Los objetivos de los cursos TECNUN TEC son: 1) Actualizaci\u00f3n y puesta al d\u00eda de conocimientos, 2) Alta aplicabilidad y transferencia directa al puesto de trabajo y 3) Generaci\u00f3n de espacios de inspiraci\u00f3n empresarial.",
+			"web": "http://www4.tecnun.es/tec/presentacion.html"
+		},
+		{
+			"cod": 132,
+			"titulo": "M\u00e1ster de Ingenier\u00eda Industrial",
+			"titulo_short_name": "Ingenier\u00eda Industrial",
+			"responsable": "I\u00f1igo Gutierrez",
+			"email": "ingutierrez@tecnun.es",
+			"desc": "Proyecci\u00f3n profesional: \u2022Automoci\u00f3n, m\u00e1quinas y fabricaci\u00f3n.\n\u2022Electricidad, electr\u00f3nica industrial y control de sistemas. \u2022Construcci\u00f3n, instalaciones y plantas industriales. \u2022Gesti\u00f3n de las personas, de la producci\u00f3n y de la empresa.\n",
+			"web": "http://www.tecnun.es/master-universitario-en-ingenieria-industrial/home"
+		},
+		{
+			"cod": 133,
+			"titulo": "M\u00e1ster de Direcci\u00f3n de Producci\u00f3n de Empresas de Automoci\u00f3n",
+			"titulo_short_name": "Direcci\u00f3n de Prod. de Empresas de Automoci\u00f3n",
+			"responsable": "I\u00f1igo Gutierrez",
+			"email": "ingutierrez@tecnun.es",
+			"desc": "Proyecci\u00f3n profesional: \u2022Desarrollar nuevos modelos productivos que ajusten la demanda y la producci\u00f3n de forma r\u00e1pida y eficiente. \u2022Hacer un uso sostenible y racional de los recursos materiales. \u2022Emplear los avances cient\u00edficos y t\u00e9cnicos del sector. \u2022Garantizar el desarrollo profesional de todos los trabajadores.\n",
+			"web": "http://www.tecnun.es/master-universitario-en-direccion-de-produccion/home"
+		},
+		{
+			"cod": 134,
+			"titulo": "Wireless Instruments",
+			"titulo_short_name": "Wireless Instruments",
+			"responsable": "Daniel Valderas G\u00e1zquez",
+			"email": "dvalderas@tecnun.es",
+			"desc": "Estudio de se\u00f1ales electromagn\u00e9ticas y al desarrollo de dispositivos con conectividad inal\u00e1mbrica. Sus \u00e1reas de experiencia son el dise\u00f1o de sensores RFID, sensores inal\u00e1mbricos sin chip, an\u00e1lisis de se\u00f1ales corporales y el estudio del acoplamiento magn\u00e9tico, backscatering y radar.",
+			"web": "https://www.tecnun.es/departamentos/ingenieria-electrica-y-electronica/investigacion/wireless-instruments"
+		},
+		{
+			"cod": 135,
+			"titulo": "Principios Matem\u00e1ticos de Informaci\u00f3n",
+			"titulo_short_name": "Principios Matem\u00e1ticos de Informaci\u00f3n",
+			"responsable": "Pedro Crespo",
+			"email": "crespo@tecnun.es",
+			"desc": "Busca contribuir a las tecnolog\u00edas de comunicaci\u00f3n para redes celulares, ad-hoc, computaci\u00f3n y redes de sensores, tanto cableadas como inal\u00e1mbricas. Su investigaci\u00f3n se centra en la Teor\u00eda de la informaci\u00f3n e informaci\u00f3n cu\u00e1ntica, las comunicaciones, el procesamiento estad\u00edstico de la se\u00f1al y la matem\u00e1tica aplicada.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-biomedica-y-ciencias/investigacion/principios-matematicos-de-la-informacion-y-comunicaciones"
+		},
+		{
+			"cod": 136,
+			"titulo": "Mejora Sostenible",
+			"titulo_short_name": "Mejora Sostenible",
+			"responsable": "Elisabeth Viles D\u00edez",
+			"email": "eviles@tecnun.es",
+			"desc": "L\u00edneas de investigaci\u00f3n: Econom\u00eda circular: Cierre de los ciclos de materia y energ\u00eda en las empresas para el logro de la regulaci\u00f3n ambiental y el desarrollo sostenible. <U+25FE>Mejora y sostenibilidad de sistemas productivos: Medici\u00f3n, an\u00e1lisis y mejora sostenible de sistemas productivos <U+25FE>Direcci\u00f3n de personas: Evaluar, diagnosticar y definir planes de acci\u00f3n para mejorar la direcci\u00f3n de personas en entornos industriales.\n",
+			"web": "http://www.tecnun.es/departamentos/organizacion-industrial/investigacion/mejora-sostenible"
+		},
+		{
+			"cod": 137,
+			"titulo": "Gesti\u00f3n de Crisis y Resiliencia",
+			"titulo_short_name": "Gesti\u00f3n de Crisis y Resiliencia",
+			"responsable": "Jose Maria Sarriegi",
+			"email": "jmsarriegi@tecnun.es",
+			"desc": "El grupo Tecnun Resilience se centra en el desarrollo del proceso de resiliencia de cualquier sistema. Su principal objetivo es el desarrollo de proyectos en colaboraci\u00f3n con otras ciudades y empresas europeas con la finalidad de aumentar el nivel de resiliencia y atajar de forma eficiente eventos tanto previstos como imprevisto a corto y largo plazo. Los investigaci\u00f3n se centra, de esta forma, en Infraestructuras cr\u00edticas, Cambio Clim\u00e1tico y Resiliencia Cibern\u00e9tica.",
+			"web": "http://www.tecnun.es/departamentos/organizacion-industrial/investigacion/resiliencia"
+		},
+		{
+			"cod": 138,
+			"titulo": "Circuitos Electr\u00f3nicos y Sensores",
+			"titulo_short_name": "Circuitos Electr\u00f3nicos y Sensores",
+			"responsable": "Roc Berenguer",
+			"email": "rberenguer@tecnun.es",
+			"desc": "El \u00e1rea Communication Integrated Circuits (COMMIC) desarrolla proyectos de investigaci\u00f3n en el campo de la electr\u00f3nica a alta frecuencia, tanto en radiofrecuencia como en ondas milim\u00e9tricas. El grupo tambi\u00e9n cuenta con una l\u00ednea de investigaci\u00f3n dedicada al dise\u00f1o de sensores e interfaces de sensores de bajo consumo, tanto anal\u00f3gicos como de mixed-signal.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-electrica-y-electronica/investigacion/communication-integrated-circuits"
+		},
+		{
+			"cod": 139,
+			"titulo": "Laboratorio de Electr\u00f3nica",
+			"titulo_short_name": "Lab. de Electr\u00f3nica",
+			"responsable": "Daniel Valderas G\u00e1zquez",
+			"email": "dvalderas@tecnun.es",
+			"desc": "Se dedica al estudio de se\u00f1ales electromagn\u00e9ticas y al desarrollo de dispositivos con conectividad inal\u00e1mbrica. Sus \u00e1reas de experiencia son el dise\u00f1o de sensores RFID, sensores inal\u00e1mbricos sin chip, an\u00e1lisis de se\u00f1ales corporales y el estudio del acoplamiento magn\u00e9tico, backscatering y radar.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-electrica-y-electronica/investigacion/wireless-instruments"
+		},
+		{
+			"cod": 140,
+			"titulo": "Laboratorio de Dise\u00f1o",
+			"titulo_short_name": "Lab. de Dise\u00f1o",
+			"responsable": "Paz Morer",
+			"email": "pmorer@tecnun.es",
+			"desc": "El \u00e1rea de Dise\u00f1o Industrial facilita la ense\u00f1anza del dise\u00f1o a trav\u00e9s de experiencias activas, colaborativas y con una orientaci\u00f3n profesional. El equipo formado por profesores, alumnos e industria, estudia y resuelve problemas reales de dise\u00f1o.\nEsta \u00e1rea colabora con la industria y otras instituciones acad\u00e9micas en el desarrollo de proyectos por lo que los estudiantes pueden familiarizarse con las herramientas, los equipos y el software utilizado en cada una de las fases.\nAdem\u00e1s, desarrolla el dise\u00f1o desde CAD hasta Fabricaci\u00f3n Aditiva y peque\u00f1as series y se encarga de la visualizaci\u00f3n de la comunicaci\u00f3n de los conceptos de dise\u00f1o.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-mecanica-y-materiales/investigacion/diseno-industrial"
+		},
+		{
+			"cod": 141,
+			"titulo": "Laboratorio de Rob\u00f3tica y Autom\u00e1tica",
+			"titulo_short_name": "Lab. de Rob\u00f3tica y Autom\u00e1tica",
+			"responsable": "Nere Gil Negrete",
+			"email": "ngil@tecnun.es",
+			"desc": "El \u00e1rea de M\u00e1quinas y Veh\u00edculos busca la formaci\u00f3n espec\u00edfica en las \u00e1reas de automoci\u00f3n, dise\u00f1o mec\u00e1nico y de m\u00e1quinas. Participa activamente en proyectos tecnol\u00f3gicos y de investigaci\u00f3n junto a entidades externas, aportando sus conocimientos t\u00e9cnicos y experiencia en el campo. Fruto de esta colaboraci\u00f3n ofrece a los alumnos la posibilidad de realizar pr\u00e1cticas as\u00ed como proyectos fin de grado o fin de m\u00e1ster.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-mecanica-y-materiales/investigacion/maquinas-y-vehiculos"
+		},
+		{
+			"cod": 142,
+			"titulo": "Laboratorio de fabricaci\u00f3n",
+			"titulo_short_name": "Lab. de fabricaci\u00f3n",
+			"responsable": "Mikel Arizmendi",
+			"email": "marizmendi@tecnun.es",
+			"desc": "El \u00e1rea de Fabricaci\u00f3n se dedica a la caracterizaci\u00f3n, el an\u00e1lisis, la modelaci\u00f3n, la monitorizaci\u00f3n y el diagn\u00f3stico autom\u00e1tico de los procesos de fabricaci\u00f3n por arranque de viruta.\nEste grupo de trabajo cuenta con una amplia experiencia en participaci\u00f3n de proyectos de investigaci\u00f3n industrial, trabajando de forma conjunta con empresas y centros tecnol\u00f3gicos.",
+			"web": "http://www.tecnun.es/departamentos/ingenieria-mecanica-y-materiales/investigacion/area-de-fabricacion"
+		},
+		{
+			"cod": 143,
+			"titulo": "M\u00e1ster in Digital Manufacturing",
+			"titulo_short_name": "Digital Manufacturing",
+			"responsable": "Naiara Vidal",
+			"email": "naiara@imh.eus",
+			"desc": "El M\u00e1ster universitario Digital Manufacturing de la Escuela Universitaria de Ingenier\u00eda Dual del IMH (centro adscrito a la Universidad del Pa\u00eds Vasco/Euskal Herriko Unibertsitatea) es oficial y se desarrolla en el modelo dual. El programa est\u00e1 dise\u00f1ado en estrecha colaboraci\u00f3n con empresas puntesras de la Industria 4.0., que participan tanto en la definici\u00f3n de contenidos como en la impartici\u00f3n de los mismos, contando con prestigiosos profesores y profesionales de diferentes entidades, referentes en sus campos de conocimiento.",
+			"web": "http://www.imh.eus/es/alumnos/master-universitario\nhttps://drive.google.com/file/d/1rbET_hHySDZKH8HAGVXBiNcZN-cJIwac/view"
+		},
+		{
+			"cod": 144,
+			"titulo": "Especialista universitario en Proyectos de anal\u00edtica predictiva de datos para la industria 4.0",
+			"titulo_short_name": "Proyectos de anal\u00edtica predictiva de datos 4.0",
+			"responsable": "Naiara Vidal",
+			"email": "naiara@imh.eus",
+			"desc": "En este t\u00edtulo propio se trabaja sobre una\nvisi\u00f3n m\u00e1s, integrando diferentes perfiles\nclave implicados en la gesti\u00f3n y\ndesarrollo de proyectos de anal\u00edtica\npredictiva de datos que se concretar\u00e1n\npara obtener un contexto m\u00e1s real de\nnegocio, espec\u00edficamente el de las\nempresas manufactureras dentro de su\ntransformaci\u00f3n hacia la Industria 4.0.\nLas competencias adquiridas en el t\u00edtulo les facilitar\u00e1n una especializaci\u00f3n o reorientaci\u00f3n de su perfil profesional como responsable o experto dentro de los proyectos objetivo del t\u00edtulo.",
+			"web": "https://drive.google.com/file/d/1YDxMGIjX-NtrhkX86NSO1ca8lWT8AO2h/view"
+		},
+		{
+			"cod": 145,
+			"titulo": "Programaci\u00f3n de sistemas de VISI\u00d3N ARTIFICIAL",
+			"titulo_short_name": "Programaci\u00f3n de Sist. de visi\u00f3n artificial",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Conocer la estructura de un sistemas de visi\u00f3n artificial. Aprender a realizar el programa de visi\u00f3n artificial . Aprender a ejecutar el programa en una estaci\u00f3n f\u00edsica.",
+			"web": "http://www.imh.eus/es/trabajadores-desempleados/formacion-para-el-empleo/cursos/mantenimiento-y-montaje/catalogo/contacto"
+		},
+		{
+			"cod": 146,
+			"titulo": "Visi\u00f3n artificial con Sherlock",
+			"titulo_short_name": "Visi\u00f3n artificial con Sherlock",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 147,
+			"titulo": "Impresi\u00f3n 3D",
+			"titulo_short_name": "Impresi\u00f3n 3D",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Capacitar al usuario en las tareas de impresi\u00f3n con impresoras 3D ( FDM ). Conocer los conceptos b\u00e1sicos de tecnolog\u00eda de fabricaci\u00f3n aditiva. Capacitar en la utilizaci\u00f3n de software para la impresi\u00f3n 3D. Capacitar en la utilizaci\u00f3n de una impresora 3D",
+			"web": "http://www.imh.eus/es/trabajadores-desempleados/formacion-para-el-empleo/cursos/diseno/catalogo/impresion-3d"
+		},
+		{
+			"cod": 148,
+			"titulo": "Especialista universitario en Fabricaci\u00f3n Aditiva",
+			"titulo_short_name": "Fabricaci\u00f3n Aditiva",
+			"responsable": "Itziar Egiguren",
+			"email": "ingeniaritza.ehu@imh.eus",
+			"desc": "Con el objetivo de formar profesionales con cualificaci\u00f3n avanzada en las tecnolog\u00edas m\u00e1s novedosas de la Fabricaci\u00f3n Aditiva. Formaci\u00f3n basada en casos (Dise\u00f1o, fabricaci\u00f3n y posprocesado). 40% te\u00f3rico 60% pr\u00e1ctico. Grupos de 3 a 6 personas. Formaci\u00f3n pr\u00e1ctica en las 8 tecnolog\u00edas de la Fabricaci\u00f3n\nAditiva. Formaci\u00f3n en los mismos centros donde se encuentran las tecnolog\u00edas e instalaciones de \u00faltima generaci\u00f3n.",
+			"web": "https://drive.google.com/file/d/1UFd1h5qa88ESmKTUaK95Q01F8sCKyn9L/view"
+		},
+		{
+			"cod": 149,
+			"titulo": "Introducci\u00f3n a la medici\u00f3n sin contacto mediante l\u00e1ser (programa M3)",
+			"titulo_short_name": "Programa M3",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "El alumno debe de ser capaz de encender y calibrar la m\u00e1quina m3 gage. Realizar programas pieza, bien mediante la nube de puntos o el fichero cad  3d . El alumno debe de ser capaz de alinear y extraer elementos geom\u00e9tricos de la \u201cnube   de puntos\u201d. Verificar y emitir informe pieza.",
+			"web": "http://www.imh.eus/es/trabajadores-desempleados/formacion-para-el-empleo/cursos/metrologia/catalogo/introduccion-a-la-medicion-sin-contacto-mediante-laser-programa-m3"
+		},
+		{
+			"cod": 150,
+			"titulo": "CAE elementos finitos. SW Simulation",
+			"titulo_short_name": "CAE elementos finitos. SW Simulation",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Realizar los c\u00e1lculos de dimensionado analizando el comportamiento de los mecanismos que intervienen en las m\u00e1quinas. Aplicar f\u00f3rmulas establecidas, en funci\u00f3n de las solicitaciones y especificaciones t\u00e9cnicas requeridas. Analizar los resultados obtenidos en el an\u00e1lisis.",
+			"web": "http://www.imh.eus/es/trabajadores-desempleados/formacion-para-el-empleo/cursos/diseno/catalogo/cae-elementos-finitos"
+		},
+		{
+			"cod": 151,
+			"titulo": "CAE elementos finitos. NX NASTRAN",
+			"titulo_short_name": "CAE elementos finitos. NX NASTRAN",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "El objetivo del curso ser\u00e1 especializar al alumno en t\u00e9cnicas de mallado, condicionamiento, soluci\u00f3n y postprocesado de problemas reales en diversos \u00e1mbitos de la Ingenier\u00eda.",
+			"web": "http://www.imh.eus/es/trabajadores-desempleados/formacion-para-el-empleo/cursos/diseno/catalogo/cae-elementos-finitos-nx-nastran"
+		},
+		{
+			"cod": 152,
+			"titulo": "Grupo en Industria 4.0 (ASMAOLA)",
+			"titulo_short_name": "Grupo en Industria 4.0 (ASMAOLA)",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 153,
+			"titulo": "Taller que agrupa y aplica tecnolog\u00edas 4.0 (en desarrollo)",
+			"titulo_short_name": "Tecnolog\u00edas 4.0 (en desarrollo)",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 154,
+			"titulo": "Plataforma did\u00e1ctica de simulaci\u00f3n de tecnolog\u00edas 4.0 (en desarrollo)",
+			"titulo_short_name": "Simulaci\u00f3n de tecnolog\u00edas 4.0 (en desarrollo)",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 155,
+			"titulo": "Instalaciones para la fabricaci\u00f3n aditiva",
+			"titulo_short_name": "Instalaciones para la fabricaci\u00f3n aditiva",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 156,
+			"titulo": "M\u00e1ster Universitario en Qu\u00edmica y Pol\u00edmeros",
+			"titulo_short_name": "Qu\u00edmica y Pol\u00edmeros",
+			"responsable": "Marian Iriarte Ormazabal",
+			"email": "marian.iriarte@ehu.eus",
+			"desc": "Dise\u00f1a un nuevo marco que de lugar a una formaci\u00f3n de los estudiantes dirigida, en estos \u00e1mbitos, tanto hacia la investigaci\u00f3n acad\u00e9mica como a la aplicada a campos profesionales, como la industria, el comercio, la ense\u00f1anza o la administraci\u00f3n, con especial \u00e9nfasis en la interdisciplinariedad que caracteriza a la ciencia moderna en general y la Qu\u00edmica en particular. Concretamente en este M\u00e1ster se ofrece al estudiante una visi\u00f3n completa sobre la s\u00edntesis, caracterizaci\u00f3n, producci\u00f3n industrial, procesado de materiales, as\u00ed como otra serie de aspectos de m\u00e1s actualidad como las implicaciones de la nanotecnolog\u00eda en el \u00e1mbito de los pol\u00edmeros, la problem\u00e1tica medioambiental a ellos ligada, sus aplicaciones en Medicina y otros \u00e1mbitos emergentes, etc. La otra especialidad ofrecida en el M\u00e1ster se fundamenta en el conocimiento desarrollado por Grupos de investigaci\u00f3n de la Facultad de Qu\u00edmica de Donostia/San Sebasti\u00e1n en \u00e1reas de impacto social y econ\u00f3mico como el Medio Ambiente, la Cat\u00e1lisis, la Biotecnolog\u00eda, la Qu\u00edmica Verde, la Quimiometr\u00eda, y los Compuestos Organomet\u00e1licos. La mayor\u00eda de ellos tiene que ver con el concepto de sostenibilidad, considerado como un objetivo prioritario en las sociedades modernas.",
+			"web": "http://www.ehu.eus/es/web/masterqaymp/aurkezpena"
+		},
+		{
+			"cod": 157,
+			"titulo": "Polymat: Tecnolog\u00eda de Pol\u00edmeros y Reolog\u00eda",
+			"titulo_short_name": "Polymat: Tecnolog\u00eda de Pol\u00edmeros y Reolog\u00eda",
+			"responsable": "Jose Ramon Leiza",
+			"email": "jrleiza@ehu.es",
+			"desc": "POLYMAT es un instituto de investigaci\u00f3n que proporciona soporte al sector industrial por medio de un programa de investigaci\u00f3n multidisciplinar en el campo de los pol\u00edmeros. Adem\u00e1s, la experiencia tecnol\u00f3gica e investigadora unida a laboratorios perfectamente equipados hacen de POLYMAT el socio ideal.",
+			"web": "https://www.ehu.eus/es/web/polymat/the-institute\nhttp://www.polymat.eu"
+		},
+		{
+			"cod": 158,
+			"titulo": "Advanced Multiphasic Polymers, AMP",
+			"titulo_short_name": "Advanced Multiphasic Polymers, AMP",
+			"responsable": "Alejandro J. M\u00fcller",
+			"email": "alejandrojesus.muller@ehu.es",
+			"desc": "Research activities: Morphological studies. Thermal analysis: DSC, TGA, cone microcalorimetry. Nucleation and crystallization kinetics of polymeric materials determined by polarized light optical microscopy and DSC. Self-nucleation of polymers. Confined crystallization of polymer chains: within blends, block copolymers, random copolymers, hybrid materials and nanocomposites. SSA: Successive Self-nucleation and Annealing",
+			"web": "https://www.ehu.eus/eu/web/dcytp/advanced-multiphasic-polymers-amp-group"
+		},
+		{
+			"cod": 159,
+			"titulo": "Grupo de Magnetismo y Materiales Magn\u00e9ticos",
+			"titulo_short_name": "Magnetismo y Materiales Magn\u00e9ticos",
+			"responsable": "M\u00aa Luisa Fern\u00e1ndez-Gubieda",
+			"email": "alu.gubieda@ehu.eus",
+			"desc": "El principal objetivo del grupo es la preparaci\u00f3n y caracterizaci\u00f3n de materiales magn\u00e9ticos con posibles aplicaciones tecnol\u00f3gicas. Actualmente las l\u00edneas de investigaci\u00f3n en las que estamos trabajando son: 1) Materiales magn\u00e9ticos nanoestructurados, 2) Nanopart\u00edculas magn\u00e9ticas y 3) Materiales magn\u00e9ticos activos.",
+			"web": "https://www.ehu.eus/es/web/enpresa/-/gmmm"
+		},
+		{
+			"cod": 160,
+			"titulo": "Grado en Ingenier\u00eda Inform\u00e1tica de Gesti\u00f3n y Sistemas de Informaci\u00f3n",
+			"titulo_short_name": "Ing. Inform\u00e1tica de Gesti\u00f3n y Sist. de Informaci\u00f3n",
+			"responsable": "Javier Sancho Saiz",
+			"email": "director.eui-vi@ehu.eus",
+			"desc": "Concepci\u00f3n, dise\u00f1o, desarrollo y despliegue de soluciones inform\u00e1ticas adaptadas a las necesidades de las organizaciones, as\u00ed como para especificar, planificar, dirigir y gestionar proyectos. Aprender\u00e1s a determinar las necesidades inform\u00e1ticas de gesti\u00f3n y de sistemas de informaci\u00f3n para integrar soluciones de las TIC en los procesos empresariales, atendiendo a aspectos de seguridad y cumplimiento de la legislaci\u00f3n vigente.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-informatica-de-gestion-y-sistemas-de-informacion-alava"
+		},
+		{
+			"cod": 161,
+			"titulo": "Grado en Ingenier\u00eda en Electr\u00f3nica Industrial y Autom\u00e1tica",
+			"titulo_short_name": "Ing.Electr\u00f3nica Ind. y Autom\u00e1tica",
+			"responsable": "Javier Sancho Saiz",
+			"email": "subdir.oacademica.eui-vi@ehu.es",
+			"desc": "Dise\u00f1ar circuitos electr\u00f3nicos, desarrollar sistemas que introduzcan mejoras en la instrumentaci\u00f3n y automatizaci\u00f3n de los procesos productivos, y de dise\u00f1ar y analizar sistemas de control de procesos industriales.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-electronica-industrial-y-automatica-alava"
+		},
+		{
+			"cod": 162,
+			"titulo": "Grado en Ingenier\u00eda en Automoci\u00f3n",
+			"titulo_short_name": "Ing.Automoci\u00f3n",
+			"responsable": "Javier Sancho Saiz",
+			"email": "subdir.oacademica.eui-vi@ehu.eus",
+			"desc": "Actividades relacionadas con el proyecto, c\u00e1lculo, dise\u00f1o, an\u00e1lisis, construcci\u00f3n, puesta en marcha y operaci\u00f3n de\u00a0equipos e instalaciones\u00a0dentro del campo de la industria en general y, en particular, de la\u00a0industria de la automoci\u00f3n. Ser\u00e1s capaz de\u00a0liderar y dirigir\u00a0proyectos, trabajar en entornos multidisciplinares, y tambi\u00e9n organizar y planificar\u00a0empresas.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-automocion"
+		},
+		{
+			"cod": 163,
+			"titulo": "Grado en Ingenier\u00eda Mec\u00e1nica",
+			"titulo_short_name": "Ing. Mec\u00e1nica",
+			"responsable": "Javier Sancho Saiz",
+			"email": "subdir.oacademica.eui-vi@ehu.es",
+			"desc": "Dise\u00f1ar, estudiar, construir, instalar y hacer funcionar m\u00e1quinas y dispositivos mec\u00e1nicos, estructuras e instalaciones industriales, tales como m\u00e1quinas de elevaci\u00f3n y transporte, m\u00e1quina-herramienta, instalaciones energ\u00e9ticas, frigor\u00edficas, etc. Adem\u00e1s, te capacitar\u00e1 para organizar y dirigir tareas de producci\u00f3n, operaci\u00f3n y mantenimiento.",
+			"web": "https://www.ehu.eus/es/grado-ingenieria-mecanica-alava"
+		},
+		{
+			"cod": 164,
+			"titulo": "Curso de experto en dise\u00f1o aeron\u00e1utico",
+			"titulo_short_name": "Curso de experto en dise\u00f1o aeron\u00e1utico",
+			"responsable": "I\u00f1aki Ochoa de Eribe",
+			"email": "i.ochoadeeribe@ehu.es",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 165,
+			"titulo": "CAE: Curso avanzado de Ingenier\u00eda, C\u00e1lculo y Simulaci\u00f3n num\u00e9rica por elementos finitos ",
+			"titulo_short_name": "Ingenier\u00eda, C\u00e1lculo y Simulaci\u00f3n num\u00e9rica",
+			"responsable": "Vanesa Garcia Marina",
+			"email": "vanessa.garcia@ehu.eus",
+			"desc": "Se pretende cubrir de forma natural el salto existente entre la docencia reglada y el acceso a la empresa. El curso ofrece un tipo de especialidad inexistente hoy en di\u00b4a en las escuelas docentes. Las empresas invierten mucho tiempo y recursos propios en poner en marcha formaciones internas que bien se pueden suplir con una oferta laboral experta en dichos medios. El curso, de cara\u00b4cter de Estudio Complementario, tiene como objetivo el formar a ingenieros/as en el campo de la simulacio\u00b4n nume\u00b4rica. El curso esta\u00b4 orientado a recie\u00b4n licenciados/as de ingenieri\u00b4a que quieran profundizar sus estudios en dicho campo.",
+			"web": "https://www.ehu.eus/documents/3049902/3985769/TripticoPublicidadCursoCAE2017_1.pdf/edfbdf76-5e96-47d8-b365-c7145439a83b"
+		},
+		{
+			"cod": 166,
+			"titulo": "Fundamentos t\u00e9cnicos de CFD para energ\u00eda e\u00f3lica",
+			"titulo_short_name": "Fundamentos t\u00e9cnicos de CFD para energ\u00eda e\u00f3lica",
+			"responsable": "Unai Fernandez Gamiz",
+			"email": "unai.fernandez@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 167,
+			"titulo": "PLM Teamcenter. Formaci\u00f3n en Sistemas de Gesti\u00f3n para desarrollo de producto PLM Teamcenter",
+			"titulo_short_name": "PLM Teamcenter",
+			"responsable": "Jos\u00e9 Manuel L\u00f3pez Guede",
+			"email": "jm.lopez@ehu.es",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 168,
+			"titulo": "Posgrado de M\u00e1quina herramienta y Procesos avanzados de fabricaci\u00f3n",
+			"titulo_short_name": "PosM\u00e1quina herramienta y Procesos avanzados ",
+			"responsable": "NO DISPONIBLE",
+			"email": "NO DISPONIBLE",
+			"desc": "El t\u00edtulo de Especialista de Universidad en M\u00e1quina-herramienta y Procesos avanzados de fabricaci\u00f3n asume el reto de formar profesionales que cuenten con cualificaci\u00f3n en las t\u00e9cnicas m\u00e1s avanzadas de ingenier\u00eda de fabricaci\u00f3n mec\u00e1nica y dise\u00f1o de m\u00e1quina-herramienta, dentro de la idea de evoluci\u00f3n tecnol\u00f3gica y mejora continua. El programa formativo se divide en dos semestres claramente diferenciados en cuanto a la obtenci\u00f3n de distintas capacidades. De esta forma, en un primer momento se adquieren los conocimientos te\u00f3ricos de aplicaci\u00f3n pr\u00e1ctica a problemas reales del sector de la M\u00e1quina-herramienta mediante metodolog\u00eda basada en la impartici\u00f3n de seminarios. En el segundo semestre se llevan a cabo pr\u00e1cticas en empresas y centros tecnol\u00f3gicos fabricantes o usuarios de m\u00e1quinas-herramienta, donde el alumnado debe desarrollar un proyecto industrial.",
+			"web": "http://www.ehu.eus/es/web/titulospropios/especialista-universidad-maquina-herramienta-procesos-avanzados-fabricacion"
+		},
+		{
+			"cod": 169,
+			"titulo": "M\u00e1ster en Geoinform\u00e1tica y An\u00e1lisis Geoespacial",
+			"titulo_short_name": "Geoinform\u00e1tica y An\u00e1lisis Geoespacial",
+			"responsable": "Aitor Bastarrika Izagirre",
+			"email": "aitor.bastarrika@ehu.eus",
+			"desc": "Conocer las herramientas de edici\u00f3n, an\u00e1lisis y difusi\u00f3n de datos geoespaciales, empleando el entorno de los SIG. Adquirir las habilidades pr\u00e1cticas que se requieren en el desarrollo de aplicaciones geoestad\u00edsticas en diversas \u00e1reas de ciencias de la tierra y su aplicaci\u00f3n en un SIG. Comprender la utilidad e importancia de los SIG en la gesti\u00f3n de informaci\u00f3n territorial. Ser capaz de realizar el dise\u00f1o y composici\u00f3n de documentaci\u00f3n cartogr\u00e1fica y su posterior difusi\u00f3n mediante productos mapas 2D, 3D y publicaci\u00f3n Web mediante lenguajes de programaci\u00f3n Web. Conocer herramientas de programaci\u00f3n para la automatizaci\u00f3n de tareas geoespaciales y creaci\u00f3n de aplicaciones SIG. Conocer y practicar habilidades esenciales de gesti\u00f3n de proyectos, como la gesti\u00f3n de los datos y la informaci\u00f3n y la identificaci\u00f3n de elementos cr\u00edticos entre otros, mediante la utilizaci\u00f3n de herramientas y m\u00e9todos de gesti\u00f3n de proyectos. ",
+			"web": "http://www.ehu.eus/es/web/geoinformatica"
+		},
+		{
+			"cod": 170,
+			"titulo": "Expresi\u00f3n Grafica y Proyectos de Ingenier\u00eda",
+			"titulo_short_name": "Expresi\u00f3n Grafica y Proyectos de Ingenier\u00eda",
+			"responsable": "Rikardo Minguez Gabi\u00f1a",
+			"email": "rikardo.minguez@ehu.eus",
+			"desc": "Dise\u00f1o de Elementos Industriales, Ecodise\u00f1o, Geometr\u00eda Computacional, T\u00e9cnicas de Prototipado R\u00e1pido, T\u00e9cnicas \u00d3pticas de adquisici\u00f3n de Geometr\u00eda, Verificaci\u00f3n Dimensional (GD&T), Retro-ingenier\u00eda o Ingenier\u00eda Inversa, Gesti\u00f3n del Ciclo de Vida del Producto, y Gesti\u00f3n y Direcci\u00f3n de Proyectos.",
+			"web": "http://www.ehu.eus/es/web/agip/home"
+		},
+		{
+			"cod": 171,
+			"titulo": "Ingenier\u00eda de Sistemas y Autom\u00e1tica",
+			"titulo_short_name": "Ing. de Sist. y Autom\u00e1tica",
+			"responsable": "Fernando Artaza Fano",
+			"email": "fernando.artaza@ehu.eus",
+			"desc": "El Departamento de Ingenier\u00eda de Sistemas y Autom\u00e1tica es el encargado de la docencia y la investigaci\u00f3n en los campos de automatizaci\u00f3n, control de procesos, rob\u00f3tica, fabricaci\u00f3n flexible, inform\u00e1tica industrial e instrumentaci\u00f3n para el control. Se centra en campos como el Control de procesos, Automatizaci\u00f3n Industrial, Rob\u00f3tica, Supervisi\u00f3n y ajuste de controladores y otros donde se aplican teor\u00edas y t\u00e9cnicas entre las que podemos destacar: Control \u00d3ptimo, Control Predictivo, Control Robusto, Control no lineal, control inteligente entre otros.",
+			"web": "http://www.ehu.eus/es/web/isa/home"
+		},
+		{
+			"cod": 172,
+			"titulo": "T.F.M Technology, Foresight and Management: mapas conceptuales y de conocimiento, identificaci\u00f3n de tecnolog\u00edas emergentes, prospectiva, elaboraci\u00f3n de itinerarios tecnol\u00f3gicos o roadmpas, sistemas de gesti\u00f3n I+D+i",
+			"titulo_short_name": "Technology, Foresight and Management",
+			"responsable": "Rosa Mar\u00eda R\u00edo-Belver",
+			"email": "rosamaria.rio@ehu.es",
+			"desc": "TFM is focused on data processing and data analysis, application of statistical methods, cluster analysis, multivariate statistical analysis, Delphi method, data-mining, tech-mining and techniques that combine both strategy and technology, such as technology roadmap. Their assimilation and their subsequent transfer provide the basis for making projects and offering companies the following consulting services: 1) Maps of Knowledge and Maps of Science, 2) Recognition of Emerging Technologies or New Technologies that have not been applied in its field yet, 3) Foresight, 4) Innovation Consulting. Implementation of R&D and Innovation Management system, 5) Consultancy Services regarding the Implementation of Competitive Intelligence System, and 6) Consultancy Services for Developing  Roadmaps.",
+			"web": "https://sites.google.com/site/tfmresearch/"
+		},
+		{
+			"cod": 173,
+			"titulo": "Computaci\u00f3n Distribuida",
+			"titulo_short_name": "Computaci\u00f3n Distribuida",
+			"responsable": "Ismael Etxeberria Agiriano",
+			"email": "ismael.etxeberria@ehu.eus",
+			"desc": "Por completar",
+			"web": "https://www.ehu.eus/es/web/ccia-kzaa/home"
+		},
+		{
+			"cod": 174,
+			"titulo": "Inteligencia Artificial",
+			"titulo_short_name": "Inteligencia Artificial",
+			"responsable": "Ismael Etxeberria Agiriano",
+			"email": "ismael.etxeberria@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 175,
+			"titulo": "Ciberseguridad",
+			"titulo_short_name": "Ciberseguridad",
+			"responsable": "Isidro Calvo Gordillo ",
+			"email": "isidro.calvo@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 176,
+			"titulo": "Internet of Things",
+			"titulo_short_name": "Internet of Things",
+			"responsable": "Jos\u00e9 Manuel L\u00f3pez Guede",
+			"email": "jm.lopez@ehu.es",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 177,
+			"titulo": "Rob\u00f3tica Colaborativa, Sistemas Aut\u00f3nomos",
+			"titulo_short_name": "Rob\u00f3tica Colaborativa, Sist. Aut\u00f3nomos",
+			"responsable": "Jos\u00e9 Manuel L\u00f3pez Guede",
+			"email": "jm.lopez@ehu.es",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 178,
+			"titulo": "Big Data",
+			"titulo_short_name": "Big Data",
+			"responsable": "Jos\u00e9 Manuel L\u00f3pez Guede",
+			"email": "jm.lopez@ehu.es",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 179,
+			"titulo": "Aplicaciones biom\u00e9dicas: exo-esceletos",
+			"titulo_short_name": "Aplicaciones biom\u00e9dicas: exo-esceletos",
+			"responsable": "Ekaitz Zulueta Guerrero",
+			"email": "ekaitz.zulueta@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 180,
+			"titulo": "Control del calidad mediante visi\u00f3n artificial",
+			"titulo_short_name": "Control del calidad mediante visi\u00f3n artificial",
+			"responsable": "Jes\u00fas Mar\u00eda Larra\u00f1aga Lesaca",
+			"email": "jesusmaria.larranaga@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 181,
+			"titulo": "Trazabilidad mediante RFID",
+			"titulo_short_name": "Trazabilidad mediante RFID",
+			"responsable": "Jes\u00fas Mar\u00eda Larra\u00f1aga Lesaca",
+			"email": "jesusmaria.larranaga@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 182,
+			"titulo": "Laboratorio de calibraci\u00f3n de sensores meteorol\u00f3gicos",
+			"titulo_short_name": "Lab. de calibraci\u00f3n de sensores meteorol\u00f3gicos",
+			"responsable": "Jos\u00e9 Antonio Sainz G\u00f3mez",
+			"email": "ja.sainz@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 183,
+			"titulo": "Ingenier\u00eda mec\u00e1nica",
+			"titulo_short_name": "Ing. mec\u00e1nica",
+			"responsable": "Ana Isabel Boyano Murillo",
+			"email": "ana.boyano@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 184,
+			"titulo": "Mec\u00e1nica de fluidos computacional",
+			"titulo_short_name": "Mec\u00e1nica de fluidos computacional",
+			"responsable": "Unai Fernandez Gamiz",
+			"email": "unai.fernandez@ehu.eus",
+			"desc": "Por completar",
+			"web": "No disponible"
+		},
+		{
+			"cod": 185,
+			"titulo": "Microscop\u00eda: Caracterizaci\u00f3n de Pol\u00edmeros",
+			"titulo_short_name": "Microscop\u00eda: Caracterizaci\u00f3n de Pol\u00edmeros",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "La microscop\u00eda es una de las t\u00e9cnicas actuales m\u00e1s empleadas, y de mejores resultados, a la hora de realizar una caracterizaci\u00f3n morfol\u00f3gica, superficial, estructural, y en el caso de las dispersiones, coloidal de los pol\u00edmeros. Por ello, la finalidad de este Servicio es proporcionar el equipamiento, la asistencia t\u00e9cnica y la formaci\u00f3n especializada necesaria para caracterizar los materiales mediante la microscop\u00eda. Las principales prestaciones consisten en el estudio morfol\u00f3gico de los materiales polim\u00e9ricos multicomponente y de los pol\u00edmeros semicristalinos, y en la determinaci\u00f3n de tama\u00f1os de part\u00edcula de dispersiones coloidales. Tambi\u00e9n es posible un an\u00e1lisis tanto cualitativo como cuantitativo de los distintos compuestos que forman las fases de un material multicomponente. ",
+			"web": "http://www.ehu.eus/es/web/sgiker/mikroskopia-polimeroak-aurkezpena"
+		},
+		{
+			"cod": 186,
+			"titulo": "Facilidad L\u00e1ser",
+			"titulo_short_name": "Facilidad L\u00e1ser",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Consta de un completo conjunto de l\u00e1seres de nanosegundos (l\u00e1seres de exc\u00edmeros, Nd:YAG, diversos sistemas de colorante sintonizables en el VIS-UV, etc.) y de un sistema de pulsos ultracortos. Este laser de femtosegundos consiste en un oscilador  y un amplificador regenerativo de Ti:zafiro cuya salida es un tren de pulsos de 40 fs. y 2 mJ. (se pueden alcanzar fluencias de unos 1014W/cm2 mediante focalizaciones moderadas). Adem\u00e1s, el equipo de femtosegundos incluye un OPA  con una salida sintonizable en el rango 240-2100 nm. (a corto plazo se prev\u00e9n extensiones del sistema que permitir\u00e1n la sintonizaci\u00f3n hasta 200 nm.). La Facilidad L\u00e1ser dispone tambi\u00e9n de los instrumentos necesarios para realizar experimentos de espectroscopia en jets supers\u00f3nicos, ablaci\u00f3n l\u00e1ser de metales, PLD, etc.\nAdem\u00e1s del equipamiento disponible, la Facilidad L\u00e1ser ofrece un servicio de asesor\u00eda general sobre los l\u00e1seres y sus aplicaciones.",
+			"web": "http://www.ehu.eus/es/web/sgiker/laser-tresna-aurkezpena"
+		},
+		{
+			"cod": 187,
+			"titulo": "Geocronolog\u00eda y Geoqu\u00edmica Isot\u00f3pica",
+			"titulo_short_name": "Geocronolog\u00eda y Geoqu\u00edmica Isot\u00f3pica",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "El Servicio realiza an\u00e1lisis elementales e isot\u00f3picos de productos naturales y sint\u00e9ticos para investigadores de instituciones p\u00fablicas y privadas. Los principales campos de aplicaci\u00f3n de los an\u00e1lisis son principalmente: 1) La geocronolog\u00eda y geoqu\u00edmica de rocas, minerales y materiales afines, y 2) La contaminaci\u00f3n ambiental (variaciones en la composici\u00f3n del agua, atm\u00f3sfera, sedimentos, etc.).",
+			"web": "http://www.ehu.eus/es/web/sgiker/geokronologia-eta-geokimika-isotopikoa-aurkezpena"
+		},
+		{
+			"cod": 188,
+			"titulo": "Macroconducta - Mesoestructura - Nanotecnolog\u00eda",
+			"titulo_short_name": "Macroconducta - Mesoestructura - Nanotecnolog\u00eda",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Su Misi\u00f3n es por tanto contribuir a la optimizaci\u00f3n de (micro)tecnolog\u00edas de fabricaci\u00f3n y de piezas realizadas con materiales multicomponentes, ofertando servicios que abarcan desde el nivel nano de los materiales hasta su macroestructura. Est\u00e1 orientado al an\u00e1lisis a escala meso-micro-macro de materiales en relaci\u00f3n con los procesos de producci\u00f3n empleados, esto es, a la caracterizaci\u00f3n de las relaciones conducta final-estructura de materiales teniendo en cuenta las variables de proceso utilizadas. El Servicio dispone de varias Unidades: Microscop\u00edas; Comportamiento viscoel\u00e1stico, el\u00e9ctrico, reol\u00f3gico y din\u00e1mica molecular; An\u00e1lisis t\u00e9rmico; An\u00e1lisis mec\u00e1nico; y Preparaci\u00f3n de muestras - asociada al resto de Unidades. ",
+			"web": "http://www.ehu.eus/es/web/sgiker/makroportaera-mesoegitura-nanoteknologia-aurkezpena"
+		},
+		{
+			"cod": 189,
+			"titulo": "Medidas Magn\u00e9ticas",
+			"titulo_short_name": "Medidas Magn\u00e9ticas",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Laboratorio de medidas magn\u00e9ticas compuesto de magnet\u00f3metros (Faraday y SQUID) y Espectr\u00f3metros de Resonancia de Spin Electr\u00f3nica (Bandas X y Q). ",
+			"web": "http://www.ehu.eus/es/web/sgiker/neurri-magnetikoak-aurkezpena"
+		},
+		{
+			"cod": 190,
+			"titulo": "Microscop\u00eda Electr\u00f3nica y Microan\u00e1lisis de Materiales",
+			"titulo_short_name": "Microscop\u00eda Electr\u00f3nica y Microan\u00e1lisis Materiales",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Infraestructura adecuada para la\u00a0 caracterizaci\u00f3n microstructural de materiales tanto en muestra masiva (microscop\u00eda electr\u00f3nica de barrido y microan\u00e1lisis) como en muestra delgada (microscop\u00eda electr\u00f3nica de trasmisi\u00f3n y microan\u00e1lisis).",
+			"web": "http://www.ehu.eus/es/web/sgiker/mikroskopia-elektronikoa-eta-materialen-mikroanalisia-aurkezpena"
+		},
+		{
+			"cod": 191,
+			"titulo": "Rayos X: Mol\u00e9culas y Materiales",
+			"titulo_short_name": "Rayos X: Mol\u00e9culas y Materiales",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "La Unidad de An\u00e1lisis de Mol\u00e9culas y Materiales, contempla el estudio estructural de materiales org\u00e1nicos e inorg\u00e1nicos, en forma de monocristales o de muestra policristalina, bajo un amplio intervalo de condiciones. todos los aspectos del estudio de una estructura cristalina a partir de datos de difracci\u00f3n: la selecci\u00f3n y montaje de la muestra, estudios previos de simetr\u00eda, recogida de datos de difracci\u00f3n, la resoluci\u00f3n o identificaci\u00f3n estructural y el an\u00e1lisis de los resultados obtenidos. Estudios estructurales partiendo de datos de difracci\u00f3n de materiales policristalinos",
+			"web": "http://www.ehu.eus/es/web/sgiker/x-izpiak-molekulak-eta-materialak-aurkezpena"
+		},
+		{
+			"cod": 192,
+			"titulo": "Rayos X: Rocas y Minerales",
+			"titulo_short_name": "Rayos X: Rocas y Minerales",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "An\u00e1lisis mineral\u00f3gico y geoqu\u00edmico de rocas, minerales, suelos, materiales industriales y de construcci\u00f3n, restos de inter\u00e9s arqueol\u00f3gico y paleontol\u00f3gico.",
+			"web": "http://www.ehu.eus/es/web/sgiker/x-izpiak-arrokak-eta-mineralak-aurkezpena"
+		},
+		{
+			"cod": 193,
+			"titulo": "Espectroscopia Fotoelectr\u00f3nica de Rayos X (XPS)",
+			"titulo_short_name": "Espectroscopia Fotoelectr\u00f3nica de Rayos X (XPS)",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "An\u00e1lisis de superficies, tanto de muestras s\u00f3lidas como de muestras en polvo. XPS es una t\u00e9cnica no destructiva que proporciona informaci\u00f3n sobre los elementos presentes en la superficie as\u00ed como sobre su estado de oxidaci\u00f3n y/o situaciones del entorno (coordinaci\u00f3n). Estudios de distribuci\u00f3n de elementos en funci\u00f3n de la profundidad de la muestra, de manera destructiva (depth profile, que alcanza mayor profundidad) o no destructiva (XPS con resoluci\u00f3n angular).",
+			"web": "http://www.ehu.eus/es/web/sgiker/espektroskopia-fotoelektronikoa-xps-aurkezpena"
+		},
+		{
+			"cod": 194,
+			"titulo": "Resonancia Magn\u00e9tica Nuclear (RMN)",
+			"titulo_short_name": "Resonancia Magn\u00e9tica Nuclear (RMN)",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Estudio estructural de mol\u00e9culas org\u00e1nicas y organomet\u00e1licas, biomol\u00e9culas, materiales, aditivos, trazas, etc\u2026 mediante la determinaci\u00f3n cualitativa y cuantitativa de sus componentes. Asimismo, es posible abordar el estudio de procesos de din\u00e1micos, cambios estructurales con la temperatura, etc\u2026.en dichos materiales.",
+			"web": "http://www.ehu.eus/es/web/sgiker/erresonantzia-magnetiko-nuklearra-emn-aurkezpena"
+		},
+		{
+			"cod": 195,
+			"titulo": "Radiois\u00f3topos",
+			"titulo_short_name": "Radiois\u00f3topos",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Instalaci\u00f3n autorizada por el Consejo de Seguridad Nuclear, destinada a la manipulaci\u00f3n de fuentes radiactivas no encapsuladas con fines de investigaci\u00f3n y de docencia y registrada como Instalaci\u00f3n Radiactiva de Tercera Categor\u00eda IR/BI-87/88 (IRA-1535). La principal misi\u00f3n del Servicio es asegurar que todas aquellas actividades docentes o de investigaci\u00f3n que impliquen el uso de radiaciones ionizantes se lleven a cabo con las m\u00e1ximas garant\u00edas de seguridad y protecci\u00f3n, tanto para el personal como para los bienes materiales y el medio ambiente, y siempre dentro del \u00e1mbito legal establecido.",
+			"web": "https://www.ehu.eus/es/web/sgiker/erradioisotopoak-aurkezpena"
+		},
+		{
+			"cod": 196,
+			"titulo": "Servicio Central de An\u00e1lisis (Unidad de Bizkaia)",
+			"titulo_short_name": "Servicio Central de An\u00e1lisis",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "La utilizaci\u00f3n de un Servicio General facilita significativamente la gesti\u00f3n y el uso de las t\u00e9cnicas anal\u00edticas disponibles. Este Servicio General surgi\u00f3 con una vocaci\u00f3n de apoyo a la investigaci\u00f3n, estando a disposici\u00f3n de la propia Universidad, de Instituciones P\u00fablicas y de las Empresas. La infraestructura que posee permite resolver una gran variedad de problemas en el campo de la investigaci\u00f3n y del desarrollo tecnol\u00f3gico.",
+			"web": "http://www.ehu.eus/es/web/sgiker/bizkaiko-analisirako-zerbitzu-zentrala-aurkezpena"
+		},
+		{
+			"cod": 197,
+			"titulo": "Laboratorio Singular de Multiespectroscop\u00edas Acopladas (Raman-LASPEA)",
+			"titulo_short_name": "Lab. Singular de Multiespectroscop\u00edas Acopladas",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Analizar tanto compuestos org\u00e1nicos como inorg\u00e1nicos (s\u00f3lidos, disoluciones, pastas, geles, films, etc.) as\u00ed como la escasa o nula preparaci\u00f3n de la muestra (t\u00e9cnicas no destructivas o microinvasivas)",
+			"web": "http://www.ehu.eus/es/web/sgiker/multiespektroskopia-akoplatuen-laborategi-berezia-aurkezpena"
+		},
+		{
+			"cod": 198,
+			"titulo": "Inform\u00e1tica Aplicada a la Investigaci\u00f3n (C\u00e1lculo Cient\u00edfico)",
+			"titulo_short_name": "Inform\u00e1tica Aplicada a la Investigaci\u00f3n",
+			"responsable": "I\u00f1aki Echeverria",
+			"email": "inaki.echeverriaehu.eus",
+			"desc": "Recursos de computaci\u00f3n propios con potentes clusters de computaci\u00f3n, pol\u00edticas de actualizaci\u00f3n y distribuci\u00f3n de recursos computacionales, y evaluar\u00e1 la idoneidad de los avances que se producir\u00e1n en la inform\u00e1tica y el HPC (High Performance Computing)",
+			"web": "http://www.ehu.eus/es/web/sgiker/ikerketari-aplikatutako-informatika-kalkulu-zientifikoa-aurkezpena"
+		},
+		{
+			"cod": 199,
+			"titulo": "Grado en Ciencia y Tecnolog\u00eda de los Alimentos",
+			"titulo_short_name": "Ciencia y Tecnolog\u00eda de los Alimentos",
+			"responsable": "Manoli Igartua Olaechea",
+			"email": "manoli.igartua@ehu.eus ",
+			"desc": "Formar\u00e1 para analizar las materias primas, composici\u00f3n y procesos tecnol\u00f3gicos y biotecnol\u00f3gicos implicados en el dise\u00f1o, la elaboraci\u00f3n, transformaci\u00f3n, envasado, almacenamiento y distribuci\u00f3n de alimentos.\nIndustria alimentaria",
+			"web": "https://www.ehu.eus/es/grado-ciencia-y-tecnologia-alimentos"
+		},
+		{
+			"cod": 200,
+			"titulo": "Grado en Ciencias Ambientales",
+			"titulo_short_name": "Ciencias Ambientales",
+			"responsable": "Manoli Igartua Olaechea",
+			"email": "manoli.igartua@ehu.eus ",
+			"desc": "Capaz de analizar y desarrollar actuaciones destinadas a la\u00a0prevenci\u00f3n y protecci\u00f3n ambiental\u00a0con una\u00a0visi\u00f3n integral, que incluya factores t\u00e9cnicos, cient\u00edficos, econ\u00f3micos, jur\u00eddicos y sociales",
+			"web": "https://www.ehu.eus/es/grado-ciencias-ambientales"
+		},
+		{
+			"cod": 201,
+			"titulo": "Grado en Farmacia",
+			"titulo_short_name": "Farmacia",
+			"responsable": "Manoli Igartua Olaechea",
+			"email": "manoli.igartua@ehu.eus ",
+			"desc": "Formar\u00e1 como profesional sanitario, m\u00e1ximo experto en la producci\u00f3n, conservaci\u00f3n y dispensaci\u00f3n de medicamentos y en el impacto que tienen \u00e9stos en la salud del ser humano.\nCapacitar\u00e1 para la investigaci\u00f3n cient\u00edfica, la b\u00fasqueda de nuevos compuestos, y para el dise\u00f1o y fabricaci\u00f3n de nuevos f\u00e1rmacos para el tratamiento y erradicaci\u00f3n de las enfermedades m\u00e1s importantes.",
+			"web": "https://www.ehu.eus/es/grado-farmacia"
+		},
+		{
+			"cod": 202,
+			"titulo": "M\u00e1ster en An\u00e1lisis Forense",
+			"titulo_short_name": "An\u00e1lisis Forense",
+			"responsable": "Ram\u00f3n  Barrio Diez-Caballero",
+			"email": "r.barrio@ehu.eus",
+			"desc": "El M\u00e1ster proporciona una formaci\u00f3n multidisciplinar en el campo de las t\u00e9cnicas de an\u00e1lisis forense. Dicha formaci\u00f3n capacitar\u00e1 al alumnado en el manejo de las diferentes t\u00e9cnicas y metodolog\u00edas anal\u00edticas forenses, en los campos del An\u00e1lisis F\u00edsico-Qu\u00edmico, la Microbiolog\u00eda, la Gen\u00e9tica, la Antropolog\u00eda o la Entomolog\u00eda.",
+			"web": "https://www.ehu.eus/es/web/masteranalisisforense/aurkezpena"
+		},
+		{
+			"cod": 203,
+			"titulo": "M\u00e1ster en Calidad y Seguridad Alimentaria",
+			"titulo_short_name": "Calidad y Seguridad Alimentaria",
+			"responsable": "Maria Dolores Guill\u00e9n",
+			"email": "mariadolores.guillen@ehu.eus",
+			"desc": "El objetivo general de este M\u00e1ster es que los alumnos/as que lo cursen adquieran conocimientos, aptitudes y destrezas en el \u00e1mbito de la Calidad y Seguridad Alimentaria, que les permita incorporarse  al Trabajo de Investigaci\u00f3n en Universidades o en Centros de Investigaci\u00f3n P\u00fablicos o Privados, o de Control y Planificaci\u00f3n en Departamentos de Control de Alimentos de la Administraci\u00f3n, o a departamentos de I+D+I de las empresas.\nAlimentos y materiales de envasado.",
+			"web": "https://www.ehu.eus/es/web/mastercalidadseguridadalimentaria/harremanetarako"
+		},
+		{
+			"cod": 204,
+			"titulo": "M\u00e1ster en Enolog\u00eda Innovadora",
+			"titulo_short_name": "Enolog\u00eda Innovadora",
+			"responsable": "Francisco Jose Perez Elortondo",
+			"email": "franciscojose.perez@ehu.eus",
+			"desc": "El master en Enolog\u00eda Innovadora de la UPV/EHU aporta una visi\u00f3n muy actualizada del perfil profesional en el sector vitivin\u00edcola. Se trata de una perspectiva m\u00e1s interdisciplinar, valorando especialmente su papel como coordinador de las actividades de la bodega que permita una estrategia de posicionamiento en un mercado cada d\u00eda m\u00e1s cambiante y complejo.",
+			"web": "https://www.ehu.eus/es/web/enologiainnovadora/aurkezpena"
+		},
+		{
+			"cod": 205,
+			"titulo": "M\u00e1ster en Microbiolog\u00eda y Salud",
+			"titulo_short_name": "Microbiolog\u00eda y Salud",
+			"responsable": "Javier Garaizar",
+			"email": "javier.garaizar@ehu.eus",
+			"desc": "Formaci\u00f3n avanzada en Microbiolog\u00eda y en \u00e1reas relacionadas, como la Parasitolog\u00eda y la Inmunolog\u00eda, tanto a nivel de adquisici\u00f3n de conocimientos sobre los microorganismos y habilidades de laboratorio, como de actitudes y el \"saber ser\" de un profesional de la Microbiolog\u00eda, que le capacite en investigaci\u00f3n, con el objetivo de afrontar un programa de doctorado o incorporarse al mundo laboral en \u00e1reas de responsabilidad.\nDestrezas m\u00ednimas para trabajar en diversas t\u00e9cnicas para el trabajo y el estudio de los microorganismos en el laboratorio.",
+			"web": "https://www.ehu.eus/es/web/microbiologiaysalud/harremanetarako"
+		},
+		{
+			"cod": 206,
+			"titulo": "M\u00e1ster en Nutrici\u00f3n y Salud",
+			"titulo_short_name": "Nutrici\u00f3n y Salud",
+			"responsable": "Maria Puy Portillo Baquedano",
+			"email": "mariapuy.portillo@ehu.eus",
+			"desc": "Formaci\u00f3n especializada centrada en formar profesionales capacitados para la investigaci\u00f3n en las vertientes m\u00e1s punteras e innovadoras del campo de la nutrici\u00f3n.\nformar profesionales capaces de aplicar los conocimientos sobre nutrici\u00f3n humana, diferenciar las caracter\u00edsticas nutricionales de colectivos espec\u00edficos, identificar las alteraciones propias de la patolog\u00eda nutricional e integrarlas en la nutrici\u00f3n cl\u00ednica, as\u00ed como factores que influyen en la nutrici\u00f3n, analizar y evaluar riesgos alimentarios y elaborar estrategias para mejorar la salud de los individuos y comunidades a trav\u00e9s de la alimentaci\u00f3n, as\u00ed como establecer pautas de alimentaci\u00f3n saludables.",
+			"web": "https://www.ehu.eus/es/web/masternutricionysalud/aurkezpena"
+		},
+		{
+			"cod": 207,
+			"titulo": "M\u00e1ster en Qu\u00edmica sint\u00e9tica e Industrial",
+			"titulo_short_name": "Qu\u00edmica sint\u00e9tica e Ind.",
+			"responsable": "Nuria Sotomayor Anduiza",
+			"email": "nuria.sotomayor@ehu.eus",
+			"desc": "Aprender a construir mol\u00e9culas y materiales con la funcionalidad qu\u00edmica, m\u00e9dica o f\u00edsica requerida, estudiar sus estructuras y sus propiedades, y hacerlo con procedimientos poderosos, selectivos, eficaces y limpios; ese es el objetivo de este m\u00e1ster orientado hacia la Qu\u00edmica Sint\u00e9tica e Industrial y el de los doctorados de las tres universidades, que lo tienen como periodo formativo.",
+			"web": "https://www.ehu.eus/es/web/masterquimicasinteticaindustrial/aurkezpena"
+		},
+		{
+			"cod": 208,
+			"titulo": "An\u00e1lisis Matricial y Aplicaciones",
+			"titulo_short_name": "An\u00e1lisis Matricial y Aplicaciones",
+			"responsable": "Ion Zaballa Tejada\u00a0",
+			"email": "ion.zaballa@ehu.eus",
+			"desc": "Estudio de la estructura de sistemas de control y matrices\nPerturbaci\u00f3n espectral de matrices y sistemas lineales\nDesarrollos con MATLAB",
+			"web": "https://www.ehu.eus/es/web/gama/hasiera"
+		},
+		{
+			"cod": 209,
+			"titulo": "Gen\u00f3mica bacteriana y bioinform\u00e1tica",
+			"titulo_short_name": "Gen\u00f3mica bacteriana y bioinform\u00e1tica",
+			"responsable": "Javier Garaizar",
+			"email": "javier.garaizar@ehu.eus",
+			"desc": "Gen\u00f3mica bacteriana y epidemiolog\u00eda molecular\nMetagen\u00f3mica ambiental ",
+			"web": "https://www.ehu.eus/es/web/fungalpathogen/home"
+		},
+		{
+			"cod": 210,
+			"titulo": "BIOMICs Research Group",
+			"titulo_short_name": "BIOMICs Research Group",
+			"responsable": "Marian M. de Pancorbo",
+			"email": "marianpancorbo@gmail.com",
+			"desc": "Genetics & Epigenetics\nTests de diagn\u00f3stico gen\u00e9tico in vitro\nMicrotechnologies\nNuevas tecnolog\u00edas para el diagnostico y prevenci\u00f3n de enfermedades como el c\u00e1ncer y enfermedades cardiovasculares, paneles de marcadores gen\u00e9ticos para detecci\u00f3n de intolerancias alimentarias y nuevos dispositivos para an\u00e1lisis de identificaci\u00f3n gen\u00e9tica en el \u00e1mbito forense. \nPolymer Microfluidic Components, Paper Microfluidics, Surface Engineering, Cells in Chips, Sensors and Actuators in Microfluidics and Integrated Microsystems.",
+			"web": "https://biomicsresearchgroup.wixsite.com/biomics"
+		},
+		{
+			"cod": 211,
+			"titulo": "FosfaFluoroQu\u00edmica",
+			"titulo_short_name": "FosfaFluoroQu\u00edmica",
+			"responsable": "Francisco Palacios Gambra",
+			"email": "francisco.palacios@ehu.eus",
+			"desc": "Qu\u00edmica Org\u00e1nica Sint\u00e9tica. \nDise\u00f1o y s\u00edntesis de inhibidores enzim\u00e1ticos. \nDesarrollo de nuevos principios activos de f\u00e1rmacos. ",
+			"web": "https://www.ehu.eus/es/web/pfq/hasiera"
+		},
+		{
+			"cod": 212,
+			"titulo": "METABOLOMIPs",
+			"titulo_short_name": "METABOLOMIPs",
+			"responsable": "Ram\u00f3n J. Barrio Diez-Caballero",
+			"email": "r.barrio@ehu.eus",
+			"desc": "Dispositivos de an\u00e1lisis (bio)qu\u00edmico empleando anticuerpos pl\u00e1sticos basados en nuevos nanomateriales polim\u00e9ricos de reconocimiento molecular\nDesarrollo de nuevas metodolog\u00edas anal\u00edticas para el estudio de biomarcadores",
+			"web": "https://www.ehu.eus/es/web/metabolomip/hasiera"
+		},
+		{
+			"cod": 213,
+			"titulo": "Nutrici\u00f3n y Obesidad",
+			"titulo_short_name": "Nutrici\u00f3n y Obesidad",
+			"responsable": "Maria Puy Portillo Baquedano",
+			"email": "mariapuy.portillo@ehu.eus",
+			"desc": "Ingredientes funcionales y su aplicaci\u00f3n en diferentes patolog\u00edas (obesidad, esteatosis hep\u00e1tica, resistencia a la insulina)\nBiomarcadores de diagn\u00f3stico, prognosis y tratamiento\nObesidad infantil\nPatrones de alimentaci\u00f3n\n",
+			"web": "http://www.nutricionyobesidad.com/"
+		},
+		{
+			"cod": 214,
+			"titulo": "PharmaNanoGene: Grupo de Farmacocin\u00e9tica, Nanotecnolog\u00eda y Terapia G\u00e9nica",
+			"titulo_short_name": "PharmaNanoGene",
+			"responsable": "Alicia Rodr\u00edguez Gasc\u00f3n",
+			"email": "alicia.rodriguez@ehu.eus",
+			"desc": "Desarrollo de vectores no virales para terapia g\u00e9nica\nNanoencapsulaci\u00f3n de f\u00e1rmacos para mejorar sus propiedades biofarmac\u00e9uticas\nEvaluaci\u00f3n farmacocin\u00e9tica/farmacodin\u00e1mica de agentes antimicrobianos\nFarmacocin\u00e9tica precl\u00ednica y cl\u00ednica\nEvaluaci\u00f3n de la farmacoterapia y Atenci\u00f3n Farmac\u00e9utica\nMedicamentos biol\u00f3gicos: biosimilares\n",
+			"web": "https://www.ehu.eus/es/web/pharmananogene/hasiera"
+		},
+		{
+			"cod": 215,
+			"titulo": "PROCAYSEAL: Procesado Calidad y Seguridad Alimentaria",
+			"titulo_short_name": "Calidad y Seguridad Alimentaria",
+			"responsable": "Maria Dolores Guill\u00e9n Loren",
+			"email": "mariadolores.guillen@ehu.eus",
+			"desc": "Aromas de humo y Ahumado de alimentos. Hidrocarburos Arom\u00e1ticos Polic\u00edclicos (HAPs). Grasas y aceites comestibles: caracterizaci\u00f3n, autentificaci\u00f3n, estabilidad oxidativa, componentes saludables y seguridad. Proceso de fritura y reacci\u00f3n de Maillard. Antioxidantes: eficacia, riesgos y seguridad. Formulas infantiles. Digesti\u00f3n gastrointestinal in vitro. Desarrollo de metodolog\u00edas anal\u00edticas innovadoras.",
+			"web": "https://www.ehu.eus/es/web/procayseal/home"
+		},
+		{
+			"cod": 216,
+			"titulo": "Desarrollo de medicamentos para la industria Farmac\u00e9utica",
+			"titulo_short_name": "Medicamentos para la industria Farmac\u00e9utica",
+			"responsable": "Jose Luis Pedraz",
+			"email": "joseluis.pedraz@ehu.eus",
+			"desc": "TECNALIA cuenta con la\u00a0\u00fanica plataforma a nivel nacional que cubre el proceso completo de desarrollo de un medicamento, desde su formulaci\u00f3n, validaci\u00f3n anal\u00edtica y fabricaci\u00f3n de lotes piloto hasta el ensayo cl\u00ednico.",
+			"web": "https://www.tecnalia.com/es/servicios-tecnologicos/laboratorios/laboratorio-desarrollo-farmaceutico/laboratorio-desarrollo-farmaceutico.htm"
+		},
+		{
+			"cod": 217,
+			"titulo": "Laboratorio de Referencia para el an\u00e1lisis de gluten a nivel europeo",
+			"titulo_short_name": "Lab. de an\u00e1lisis de gluten a nivel europeo",
+			"responsable": "Edurne Sim\u00f3n Magro",
+			"email": "edurne.simon@ehu.eus",
+			"desc": "Este Laboratorio fue el primero de la Comunidad Aut\u00f3noma Vasca en estar acreditado por ENAC bajo la norma ISO 17025, para la determinaci\u00f3n cuantitativa de gluten en alimentos, aditivos y productos de parafarmacia. ",
+			"web": "https://www.ehu.eus/es/web/laboratorio_gluten/home"
+		},
+		{
+			"cod": 218,
+			"titulo": "Medidas anal\u00edticas en liberaci\u00f3n controlada de f\u00e1rmacos",
+			"titulo_short_name": "Liberaci\u00f3n controlada de f\u00e1rmacos",
+			"responsable": "Ram\u00f3n J. Barrio ",
+			"email": "r.barrio@ehu.eus",
+			"desc": "El grupo de investigaci\u00f3n METABOLOMIPs mantiene dos l\u00edneas de investigaci\u00f3n orientadas al campo de los m\u00e9todos cromatogr\u00e1ficos acoplados a espectrometr\u00eda de masas y a la utilizaci\u00f3n de materiales polim\u00e9ricos biomim\u00e9ticos para aplicaciones en Qu\u00edmica Anal\u00edtica. i+Med Biotechnology for Health es una empresa especializada en la investigaci\u00f3n, el dise\u00f1o y la fabricaci\u00f3n de nuevos productos en el campo de la ingenier\u00eda biom\u00e9dica -nanohidrogeles para una liberaci\u00f3n controlada de sustancias activas, recubrimientos biocompatibles o sensores.",
+			"web": "No disponible"
+		},
+		{
+			"cod": 219,
+			"titulo": "NANBIOSIS \u2013 ICTS 3D Bioprinting",
+			"titulo_short_name": "NANBIOSIS \u2013 ICTS 3D Bioprinting",
+			"responsable": "Jos\u00e9 Luis Pedraz Mu\u00f1oz",
+			"email": "joseluis.pedraz@ehu.eus",
+			"desc": "NANBIOSIS es una de las 29 ICTS recientemente reconocidas por el Consejo de Pol\u00edtica Cient\u00edfica, Tecnol\u00f3gica e Innovaci\u00f3n (CPCTI del MINECO). NANBIOSIS ofrece servicios completos para la producci\u00f3n y caracterizaci\u00f3n de nanomateriales, biomateriales y sistemas en biomedicina. NANBIOSIS consta de 27 unidades coordinadas.",
+			"web": "http://www.nanbiosis.es/portfolio/u10-drug-formulation/"
+		},
+		{
+			"cod": 220,
+			"titulo": "NANBIOSIS \u2013 ICTS Confocal Microscopy Unit",
+			"titulo_short_name": "NANBIOSIS \u2013 ICTS Confocal Microscopy Unit",
+			"responsable": "Jos\u00e9 Luis Pedraz Mu\u00f1oz",
+			"email": "joseluis.pedraz@ehu.eus",
+			"desc": "NANBIOSIS es una de las 29 ICTS recientemente reconocidas por el Consejo de Pol\u00edtica Cient\u00edfica, Tecnol\u00f3gica e Innovaci\u00f3n (CPCTI del MINECO). NANBIOSIS ofrece servicios completos para la producci\u00f3n y caracterizaci\u00f3n de nanomateriales, biomateriales y sistemas en biomedicina. NANBIOSIS consta de 27 unidades coordinadas.",
+			"web": "http://www.nanbiosis.es/portfolio/u10-drug-formulation/"
+		},
+		{
+			"cod": 221,
+			"titulo": "NANBIOSIS \u2013 ICTS Equipment of biopharmaceutical characterization",
+			"titulo_short_name": "NANBIOSIS \u2013 ICTS Equipment of biopharm. char.",
+			"responsable": "Jos\u00e9 Luis Pedraz Mu\u00f1oz",
+			"email": "joseluis.pedraz@ehu.eus",
+			"desc": "NANBIOSIS es una de las 29 ICTS recientemente reconocidas por el Consejo de Pol\u00edtica Cient\u00edfica, Tecnol\u00f3gica e Innovaci\u00f3n (CPCTI del MINECO). NANBIOSIS ofrece servicios completos para la producci\u00f3n y caracterizaci\u00f3n de nanomateriales, biomateriales y sistemas en biomedicina. NANBIOSIS consta de 27 unidades coordinadas.",
+			"web": "http://www.nanbiosis.es/portfolio/u10-drug-formulation/"
+		},
+		{
+			"cod": 222,
+			"titulo": "Planta piloto para industria alimentaria",
+			"titulo_short_name": "Planta piloto para industria alimentaria",
+			"responsable": "Ana Isabel N\u00e1jera Ortigosa",
+			"email": "anaisabel.najera@ehu.eus ",
+			"desc": "La Planta Alimentaria dispone de equipamiento para simular a peque\u00f1a escala los procesos de producci\u00f3n de la industria alimentaria, como por ejemplo: liofilizador, autoclave, cuarto fr\u00edo, abatidor de temperatura, horno multifunci\u00f3n, congelador de placas, heladora, prensa para la extracci\u00f3n de aceite, etc.",
+			"web": "www.ehu.eus/es/web/farmaziafakultatea/eraikina-eta-ingurunea/-/asset_publisher/uTs0/content/planta_alimentaria"
+		}
+	]
+
+
+}

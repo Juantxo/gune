@@ -1,0 +1,621 @@
+{
+
+
+
+
+
+
+
+	"ambitos": [{
+			"id": 0,
+			"parent_id": null,
+			"subambito": "null",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": null,
+			"ambito": "4GUNE",
+			"ambito_short_name": "4GUNE"
+		},
+		{
+			"id": 1,
+			"parent_id": 0,
+			"subambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 2,
+			"parent_id": 0,
+			"subambito": "Realidad Virtual y Realidad aumentada",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 3,
+			"parent_id": 0,
+			"subambito": "Ciberseguridad",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 4,
+			"parent_id": 0,
+			"subambito": "Cloud Computing y Edge Computing",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 5,
+			"parent_id": 0,
+			"subambito": "Big Data: análisis, evaluación y aplicación",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 5,
+			"ambito": "Big Data: análisis, evaluación y aplicación",
+			"ambito_short_name": "Big Data"
+		},
+		{
+			"id": 6,
+			"parent_id": 0,
+			"subambito": "Internet of Things",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 7,
+			"parent_id": 0,
+			"subambito": "Integración de Sistemas IT",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 7,
+			"ambito": "Integración de Sistemas IT",
+			"ambito_short_name": "Sistemas IT"
+		},
+		{
+			"id": 8,
+			"parent_id": 0,
+			"subambito": "Fabricación aditiva",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 9,
+			"parent_id": 0,
+			"subambito": "Materiales y procesos de fabricación avanzados",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 10,
+			"parent_id": 0,
+			"subambito": "Diseño y/o optimización de modelos de negocio",
+			"subambito_short_name": "null",
+			"subambito_id": "null",
+			"ambito_id": 10,
+			"ambito": "Diseño y/o optimización de modelos de negocio",
+			"ambito_short_name": "Modelos de negocio"
+		},
+		{
+			"id": 11,
+			"parent_id": 1,
+			"subambito": "Diseño, investigación, implantación comunicación M2M",
+			"subambito_short_name": "M2M",
+			"subambito_id": "1",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 12,
+			"parent_id": 1,
+			"subambito": "Diseño, investigación de interfases persona-máquina (HMI: human machine interface; Human in the loop)",
+			"subambito_short_name": "HMI",
+			"subambito_id": "2",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 13,
+			"parent_id": 1,
+			"subambito": "Programación, simulación y puesta en marcha de robots industriales inteligentes, conectadas, flexibles y reconfigurables",
+			"subambito_short_name": "Robots ",
+			"subambito_id": "3",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 14,
+			"parent_id": 1,
+			"subambito": "Monitorización de datos, análisis y su aplicación en la fabricación",
+			"subambito_short_name": "Monitorización datos",
+			"subambito_id": "4",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 15,
+			"parent_id": 1,
+			"subambito": "Entornos de fabricación dinámica para su integración ágil e inteligente",
+			"subambito_short_name": "Fabricación Dinámica",
+			"subambito_id": "5",
+			"ambito_id": 1,
+			"ambito": "Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+			"ambito_short_name": "Fabricación Avanzada"
+		},
+		{
+			"id": 16,
+			"parent_id": 2,
+			"subambito": "Diseño digital y sistemas virtuales de simulación y control de procesos y planta",
+			"subambito_short_name": "Sistemas virtuales",
+			"subambito_id": "6",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 17,
+			"parent_id": 2,
+			"subambito": "Realidad virtual para optimización de diseños",
+			"subambito_short_name": "RV diseño",
+			"subambito_id": "7",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 18,
+			"parent_id": 2,
+			"subambito": "Realidad aumentada para el mantenimiento y control de planta",
+			"subambito_short_name": "RV planta",
+			"subambito_id": "8",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 19,
+			"parent_id": 2,
+			"subambito": "Realidad virtual para training de operaciones y formación de operarios",
+			"subambito_short_name": "RV operarios",
+			"subambito_id": "9",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 20,
+			"parent_id": 2,
+			"subambito": "Realidad aumentada para asistencia y resolución de incidencias",
+			"subambito_short_name": "RA incidencias",
+			"subambito_id": "10",
+			"ambito_id": 2,
+			"ambito": "Realidad Virtual y Realidad aumentada",
+			"ambito_short_name": "RV & RA"
+		},
+		{
+			"id": 21,
+			"parent_id": 3,
+			"subambito": "Prevención y control de ataques y amenazas ",
+			"subambito_short_name": "Prevención ataques",
+			"subambito_id": "11",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 22,
+			"parent_id": 3,
+			"subambito": "Detección de amenazas mediante análisis de comportamiento",
+			"subambito_short_name": "Detección amenazas",
+			"subambito_id": "12",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 23,
+			"parent_id": 3,
+			"subambito": "Microsegmentación en el endpoint, microsegmentación en datacenter",
+			"subambito_short_name": "Microsegmentación",
+			"subambito_id": "13",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 24,
+			"parent_id": 3,
+			"subambito": "Técnicas de aislamiento por virtualización de la red y correspondientes funciones operativas",
+			"subambito_short_name": "Aislamiento de la red",
+			"subambito_id": "14",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 25,
+			"parent_id": 3,
+			"subambito": "Aplicación de técnicas de inteligencia artificial para combatir el cibercrimen",
+			"subambito_short_name": "IA cibercrimen",
+			"subambito_id": "15",
+			"ambito_id": 3,
+			"ambito": "Ciberseguridad",
+			"ambito_short_name": "Ciberseguridad"
+		},
+		{
+			"id": 26,
+			"parent_id": 4,
+			"subambito": "Virtualización de sistemas",
+			"subambito_short_name": "Virtualización sist.",
+			"subambito_id": "16",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 27,
+			"parent_id": 4,
+			"subambito": "Grandes almacenes de datos en la nube",
+			"subambito_short_name": "Datos nube",
+			"subambito_id": "17",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 28,
+			"parent_id": 4,
+			"subambito": "Computación de altas prestaciones",
+			"subambito_short_name": "Computación",
+			"subambito_id": "18",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 29,
+			"parent_id": 4,
+			"subambito": "Sistemas streaming",
+			"subambito_short_name": "Streaming",
+			"subambito_id": "19",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 30,
+			"parent_id": 4,
+			"subambito": "Comunicaciones entre sistemas",
+			"subambito_short_name": "Comunicaciones",
+			"subambito_id": "20",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 31,
+			"parent_id": 4,
+			"subambito": "Sistemas de información industriales",
+			"subambito_short_name": "Información industrial",
+			"subambito_id": "21",
+			"ambito_id": 4,
+			"ambito": "Cloud Computing y Edge Computing",
+			"ambito_short_name": "Cloud computing"
+		},
+		{
+			"id": 32,
+			"parent_id": 5,
+			"subambito": "Sistemas analíticos especializados y soluciones software ",
+			"subambito_short_name": "Soluciones software",
+			"subambito_id": "22",
+			"ambito_id": 5,
+			"ambito": "Big Data: análisis, evaluación y aplicación",
+			"ambito_short_name": "Big Data"
+		},
+		{
+			"id": 33,
+			"parent_id": 5,
+			"subambito": "Técnicas de analítica avanzada, Machine learning and deep learning",
+			"subambito_short_name": "Deep Learning",
+			"subambito_id": "23",
+			"ambito_id": 5,
+			"ambito": "Big Data: análisis, evaluación y aplicación",
+			"ambito_short_name": "Big Data"
+		},
+		{
+			"id": 34,
+			"parent_id": 5,
+			"subambito": "Estudio de la mejora del rendimiento con bases de datos NoSQL",
+			"subambito_short_name": "NoSQL",
+			"subambito_id": "24",
+			"ambito_id": 5,
+			"ambito": "Big Data: análisis, evaluación y aplicación",
+			"ambito_short_name": "Big Data"
+		},
+		{
+			"id": 35,
+			"parent_id": 5,
+			"subambito": "Computación del altas prestaciones",
+			"subambito_short_name": "Computación",
+			"subambito_id": "25",
+			"ambito_id": 5,
+			"ambito": "Big Data: análisis, evaluación y aplicación",
+			"ambito_short_name": "Big Data"
+		},
+		{
+			"id": 36,
+			"parent_id": 6,
+			"subambito": "Sensórica, controles y sistemas embebidos",
+			"subambito_short_name": "Sensórica",
+			"subambito_id": "26",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 37,
+			"parent_id": 6,
+			"subambito": "Networking, conectividad e interoperatividad de dispositivos inteligentes",
+			"subambito_short_name": "Networking",
+			"subambito_id": "27",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 38,
+			"parent_id": 6,
+			"subambito": "Gestión de Infraestructura",
+			"subambito_short_name": "Infraestructuras",
+			"subambito_id": "28",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 39,
+			"parent_id": 6,
+			"subambito": "Tecnologías de habilitación para IoT",
+			"subambito_short_name": "Ihabitalización IoT",
+			"subambito_id": "29",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 40,
+			"parent_id": 6,
+			"subambito": "Modelización y simulación de IoT",
+			"subambito_short_name": "Modelización IoT",
+			"subambito_id": "30",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 41,
+			"parent_id": 6,
+			"subambito": "Acceso seguro a sensores y dispositivos de prestaciones reducidas",
+			"subambito_short_name": "Sensores",
+			"subambito_id": "31",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 42,
+			"parent_id": 6,
+			"subambito": "Integración de nuevas tecnologías de comunicación en IoT",
+			"subambito_short_name": "Integración IoT",
+			"subambito_id": "32",
+			"ambito_id": 6,
+			"ambito": "Internet of Things",
+			"ambito_short_name": "Internet of Things"
+		},
+		{
+			"id": 43,
+			"parent_id": 7,
+			"subambito": "Sistemas para la integración vertical ",
+			"subambito_short_name": "Integración vertical",
+			"subambito_id": "33",
+			"ambito_id": 7,
+			"ambito": "Integración de Sistemas IT",
+			"ambito_short_name": "Sistemas IT"
+		},
+		{
+			"id": 44,
+			"parent_id": 7,
+			"subambito": "Sistemas para la integración horizontal: smart supply chain management, smart logistic, etc.",
+			"subambito_short_name": "Integración horizontal",
+			"subambito_id": "34",
+			"ambito_id": 7,
+			"ambito": "Integración de Sistemas IT",
+			"ambito_short_name": "Sistemas IT"
+		},
+		{
+			"id": 45,
+			"parent_id": 7,
+			"subambito": "Integracion Inter-organizational",
+			"subambito_short_name": "Integración inter-org.",
+			"subambito_id": "35",
+			"ambito_id": 7,
+			"ambito": "Integración de Sistemas IT",
+			"ambito_short_name": "Sistemas IT"
+		},
+		{
+			"id": 46,
+			"parent_id": 8,
+			"subambito": "Impresión 3D",
+			"subambito_short_name": "Impresión 3D",
+			"subambito_id": "36",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 47,
+			"parent_id": 8,
+			"subambito": "Fusión de lecho de polvo: Powder Bed Fusion (PBF)",
+			"subambito_short_name": "Leche en polvo",
+			"subambito_id": "37",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 48,
+			"parent_id": 8,
+			"subambito": "Modelado por deposición fundida: Fused Deposition Modeling (FDM)",
+			"subambito_short_name": "FDM",
+			"subambito_id": "38",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 49,
+			"parent_id": 8,
+			"subambito": "Material Jetting",
+			"subambito_short_name": "Material Jetting",
+			"subambito_id": "39",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 50,
+			"parent_id": 8,
+			"subambito": "Procesos de aporte directo (Direct Material Deposition - DMD)",
+			"subambito_short_name": "DMD",
+			"subambito_id": "40",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 51,
+			"parent_id": 8,
+			"subambito": "Integración de procesos de Fabricación Aditiva en Máquina Herramienta",
+			"subambito_short_name": "Máquina herramienta",
+			"subambito_id": "41",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 52,
+			"parent_id": 8,
+			"subambito": "Design for Additive Manufacturing",
+			"subambito_short_name": "Additive Manufacturing",
+			"subambito_id": "42",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 53,
+			"parent_id": 8,
+			"subambito": "Mass & Taylored production",
+			"subambito_short_name": "M&T production",
+			"subambito_id": "43",
+			"ambito_id": 8,
+			"ambito": "Fabricación aditiva",
+			"ambito_short_name": "Fabricación Aditiva"
+		},
+		{
+			"id": 54,
+			"parent_id": 9,
+			"subambito": "I+D sobre materiales",
+			"subambito_short_name": "I+D materiales",
+			"subambito_id": "44",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 55,
+			"parent_id": 9,
+			"subambito": "I+D de procesos de fabricación eficientes para materiales avanzados",
+			"subambito_short_name": "I+D procesos",
+			"subambito_id": "45",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 56,
+			"parent_id": 9,
+			"subambito": "Servicios tecnológicos avanzados",
+			"subambito_short_name": "Serv. Tecnológicos",
+			"subambito_id": "46",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 57,
+			"parent_id": 9,
+			"subambito": "Gestión del ciclo de vida de producto para materiales avanzados y no avanzados",
+			"subambito_short_name": "Ciclo vida producto",
+			"subambito_id": "47",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 58,
+			"parent_id": 9,
+			"subambito": "Soluciones de fabricación para productos modulares, actualizables, reconfigurables y desmontables",
+			"subambito_short_name": "Productos modulares",
+			"subambito_id": "48",
+			"ambito_id": 9,
+			"ambito": "Materiales y procesos de fabricación avanzados",
+			"ambito_short_name": "Materiales & procesos"
+		},
+		{
+			"id": 59,
+			"parent_id": 10,
+			"subambito": "Redefinición de procesos, productos y servicios",
+			"subambito_short_name": "Redefinición procesos",
+			"subambito_id": "49",
+			"ambito_id": 10,
+			"ambito": "Diseño y/o optimización de modelos de negocio",
+			"ambito_short_name": "Modelos de negocio"
+		},
+		{
+			"id": 60,
+			"parent_id": 10,
+			"subambito": "Gestión de la propiedad intelectual",
+			"subambito_short_name": "Propiedad intelectual",
+			"subambito_id": "50",
+			"ambito_id": 10,
+			"ambito": "Diseño y/o optimización de modelos de negocio",
+			"ambito_short_name": "Modelos de negocio"
+		}
+	]
+
+}
