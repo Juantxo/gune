@@ -122,7 +122,7 @@
 							</div>
 				         </div>
 					      
-				         <div class="row table-keys" id="table-keys">
+				         <div class="row table-keys list-active" id="table-keys"> 
 					         
 				            <div class="col-sm">
 					            
@@ -226,7 +226,7 @@
 				            <div class="col-sm-12 col-md-6 col-lg-12">
 				               <div class="tree-row" id="tree_container">
 					               
-					               Here comes the tree
+					               
 				               </div>
 				
 				            </div><!-- col-sm table-head -->
@@ -279,86 +279,74 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	      
-	      
-      
-      <div class="container hidden">
-         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-12">
-               <div class="table-row table-border--gray padding-box--regular">
-                  <div class="cell type first-child">
-                     <p><i class="fa">&#xf111;</i> <span>Máster</span></p>
-                     <div class='icon-map-container hidden-mobile'>&nbsp;<img class='icon-map' src="../../img/icons/icon-bizkaia.svg" /></div>
+         <!-- / modal container -->
+         <div class="modal fade modal-fullscreen footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+            <div class="modal-dialog animated fadeInDown">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <p><i class="fa" id="capacidad_color">&#xf111;</i> <span id="capacidad_dos">Máster</span></p>
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                   </div>
-                  <div class="cell title">
-                     <p class="title-name"><span>Gestión económica y social para el desarrollo de la economía solidaria</span></p>
+                  <div class="modal-body">
+				  	<p class="title-name" id="titulo_name"><span>Gestión económica y social para el desarrollo de la economía solidaria</span></p>
                      <div class="univ-container">
                         <div class="univ-name">
-                           <p class="margin-bottom--0"><i class="fa">&#xf19c;</i><span> Universidad de Deusto</span></p>
-                           <p class="margin-bottom--0"><i class="fa">&#xf19d;</i><span> Facultad de Ingeniería</span></p>
-                           <p class="hidden-screen"><i class="fa">&#xf041;</i>&nbsp;Etorbidea Universidades, 24006, 48014 Bilbao, Vizcaya.</p>
+                           <p class="margin-bottom--0"><i class="fa">&#xf19c;</i><span id="univ_name">&nbsp;Universidad de Deusto</span></p>
+                           <p class="margin-bottom--0"><i class="fa">&#xf19d;</i><span id="univ_centro">&nbsp;Facultad de Ingeniería</span></p>
+                           <p class="margin-bottom--0" id="email_info"></p>
+                           <p><i class="fa">&#xf041;</i>&nbsp;<span id="titulo_direccion">Etorbidea Universidades, 24006, 48014 Bilbao, Vizcaya.</span> </p>
 
                         </div>
                         <div class="univ-logo">
-                           <img class='icon-univ-logo' src="../../img/univ/deusto-color.png" />
+                           <a id="univ_url" href="#link" target="_blank"><img id="univ_logo" class='icon-univ-logo' src="../../img/univ/deusto-color.png" /></a>
                         </div>
                      </div>
-                     <div class="univ-links">
-                        <span class="univ-links-ver hidden-mobile"><i class="fa">&#xf0d7;</i><a href="javascript:void(0);">&nbsp;Ver más</a></span>
-                        <span class="univ-links-web"><i class="fa">&#xf13d;</i><a href="http://www.ehu.eus/" target="_blank">&nbsp;Sitio web</a></span>
-                     </div>
-                  </div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">I+D</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Producción</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Suministros y compras</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Almacenamiento y logística</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Marketing</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Ventas</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Servicios</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell star"><span class="star-text--container hidden-screen">Administración</span><span class="star-icon--container"><i class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-               </div>
-               <div class="table-outside-section hidden-mobile">
-	               <p>Elevados conocimientos técnicos para desarrollar proyectos de envergadura, capacitación para dirigirlos. Visión global de diferentes ámbitos de la actividad industrial, en donde se pueden citar los siguientes sectores: Siderurgia y metalurgia en general. Transformaciones químicas. Generación y transporte de energía. Industrias de construcción metálica, mecánica, eléctrica y electrónica. Construcciones industriales, hidráulicas y civiles. Industrias de automoción, aeronáutica, ferrocarril y tranvías. Astilleros y talleres de construcción naval.</p>
-	               <p><i class="fa">&#xf041;</i>&nbsp;Etorbidea Universidades, 24006, 48014 Bilbao, Vizcaya.</p>
-	               
-               </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12">
-               <div class="table-row table-border--gray padding-box--regular">
-                  <div class="cell type">1</div>
-                  <div class="cell title">2</div>
-                  <div class="cell star">3</div>
-                  <div class="cell star">4</div>
-                  <div class="cell star">5</div>
-                  <div class="cell star">6</div>
-                  <div class="cell star">7</div>
-                  <div class="cell star">8</div>
-                  <div class="cell star">9</div>
-                  <div class="cell star">10</div>
-               </div>
-			   <div class="table-outside-section hidden-mobile">Extra</div>
 
-            </div>
-            
-         </div>
-      </div>
+                  <div class="cell-modal star"><span class="star-text--container">I+D</span><span class="star-icon--container"><i id="modal_star_id" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Producción</span><span class="star-icon--container"><i id="modal_star_produccion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Suministros y compras</span><span class="star-icon--container"><i id="modal_star_suministros" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Almacenamiento y logística</span><span class="star-icon--container"><i id="modal_star_almacenamiento" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Marketing</span><span class="star-icon--container"><i id="modal_star_marketing" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Ventas</span><span class="star-icon--container"><i id="modal_star_ventas" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Servicios</span><span class="star-icon--container"><i id="modal_star_servicios" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Administración</span><span class="star-icon--container"><i id="modal_star_administracion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+
+	                          
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                     <a id="titulo_url" href="#link" class="btn btn-primary active" role="button" target="_blank" id="modal_foro_info">Más info</a>
+                  </div>
+               </div>
+               <!-- /.modal-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	      
+	      
+
+      
+      
+      
+      
+      
+      
+      
+      
       <script src="../../js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

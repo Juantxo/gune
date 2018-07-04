@@ -107,9 +107,9 @@
 	}
 	/**** --- NEST DATA: data nest for tree ***/
 
-	function nest_data(data){
+	function nest_tree_data(data){
         
-        let nested_data = d3.nest()
+        let nested_tree_data = d3.nest()
             .key(function(d) {
                 return d.centro;
             })
@@ -125,7 +125,20 @@
             // rollup takes the array of values for each group and it produces a value based on that array
             .entries(data);
         
-        return nested_data;     
+        return nested_tree_data;     
+		
+	}
+	function nest_list_data (data){
+		
+		let nested_list_data = d3.nest()
+            .key(function(d) {
+                return d["cod"];
+            })
+            .entries(data)
+            .sort(function(a,b) { return d3.ascending(a.values[0].capacidad_dos,b.values[0].capacidad_dos); });
+            
+        return nested_list_data;    
+		
 		
 	}
 	
@@ -426,6 +439,7 @@
 	
 	/*** --- Check class to fill star ---*/
 	function addClass_to_star(d, val){
+		// console.log('addClass_to_star', d);
 		let values_counter = check_mejoras(d);
 		let theClass = 'star-icon--gray';
 		
@@ -521,9 +535,8 @@
 	
 	
 	
-	function get_results_numbers(data, dictionary){
+	function get_results_numbers(data){
 		// console.log('get_results_numbers', data);
-		let dic = dictionary;
 		let dataL = data.length;
 		let result_numbers = {
 			
@@ -535,7 +548,7 @@
 		};
 		
 			
-		function count_mejoras_obj(prop, values, dic){
+		function count_mejoras_obj(prop, values){
 			// console.log('count_mejoras_obj', values);
 			let temp_obj = result_numbers[prop].mejoras;
 			
@@ -572,22 +585,22 @@
 					case "Transferencia":
 						result_numbers['transferencia']["number"]++; // pinta TODOS los títulos en los que exista presencia de alguna mejora.
 						result_numbers['total']["number"]++;
-						result_numbers['transferencia'].mejoras = count_mejoras_obj('transferencia', data[i].values[0], dic);
+						result_numbers['transferencia'].mejoras = count_mejoras_obj('transferencia', data[i].values[0]);
 						break;
 					case "Formación":
 						result_numbers['formacion']["number"]++;
 						result_numbers['total']["number"]++;
-						result_numbers['formacion'].mejoras = count_mejoras_obj('formacion', data[i].values[0], dic);
+						result_numbers['formacion'].mejoras = count_mejoras_obj('formacion', data[i].values[0]);
 						break;
 					case "Investigación":
 						result_numbers['investigacion']["number"]++;
 						result_numbers['total']["number"]++;
-						result_numbers['investigacion'].mejoras = count_mejoras_obj('investigacion', data[i].values[0], dic);
+						result_numbers['investigacion'].mejoras = count_mejoras_obj('investigacion', data[i].values[0]);
 						break;
 					case "Instalaciones y equipos":
 						result_numbers['instalaciones_y_equipos']["number"]++;
 						result_numbers['total']["number"]++;
-						result_numbers['instalaciones_y_equipos'].mejoras = count_mejoras_obj('instalaciones_y_equipos', data[i].values[0], dic);
+						result_numbers['instalaciones_y_equipos'].mejoras = count_mejoras_obj('instalaciones_y_equipos', data[i].values[0]);
 						break;
 					default:
 						return '';	
@@ -658,34 +671,29 @@
 		
 		console.log('draw_table select_values', data, select_values, dic);
 		
-		let nested_data = d3.nest()
-            .key(function(d) {
-                return d["cod"];
-            })
-            .entries(data)
-            .sort(function(a,b) { return d3.ascending(a.values[0].capacidad_dos,b.values[0].capacidad_dos); });
+		let nested_list_data = nest_list_data(data);
 		
-		// let nested_data_length = nested_data.length;	
+		// let nested_list_data_length = nested_list_data.length;	
 		
-		// console.log('draw_table nested_data', nested_data, nested_data.length);
+		// console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
 		
 		//console.log('draw_table results_partial', results_partial);
 		let select_info = get_the_select_info(select_values, dic); 
 		
-		// let values_counter = check_mejoras(nested_data[0]);
+		// let values_counter = check_mejoras(nested_list_data[0]);
 		let table_container = d3.select('#table_container');
 		
 		// actions
 		//
 		// Global result_partials
-		results_partial = get_results_numbers(nested_data, dic);
+		results_partial = get_results_numbers(nested_list_data);
 		draw_result_numbers(results_partial, select_values, dic.mejoras);
 		
 		table_container.selectAll("*").remove().exit();
 		
 		let table_main = table_container
 			.selectAll('div')
-			.data(nested_data)
+			.data(nested_list_data)
 			.enter()
 			.append('div')			
 			.attr('class', 'col-sm-12 col-md-6 col-lg-12 table-row-parent')
@@ -694,7 +702,9 @@
 				return addAttrDataName_to_row(d.values[0].capacidad_uno);
 				
 			});
-		
+
+
+				
 		table_main
 			.html(function(d, i){
 				// console.log('d', d);
@@ -706,7 +716,7 @@
 				let icon_url = url_img + 'icons/icon-' + get_dictionary_property(dic.direcciones, "direccion_id", d.values[0].direccion_id, "provincia").toLowerCase();
 				let centro = d.values[0].centro;
 				let email = getEmailInfo(titulo_obj);
-				let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", d.values[0].direccion_id);// falta
+				let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", d.values[0].direccion_id);
 				let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
 				let univ_obj = get_dictionary_obj(dic.universidades, "univ_id", d.values[0].univ_id);
 				let univ = univ_obj.univ;
@@ -767,30 +777,57 @@
 	/**** --- TABLE KEYS controller: table-keys  ***/
 	
 	
+	function disable_table_keys(){
+		console.log('disable_table_keys tree_counter');
+
+		let keys = d3.selectAll('.table-keys--key');
+		let keys_container = d3.select('#table-keys');
+		
+				keys.each(function(d,i){
+					d3.select(this.parentNode.parentNode).classed("table-key--active", true);
+					console.log(d3.select(this.parentNode.parentNode));
+				});
+		
+		keys_container.classed("list-active", false);
+
+		
+	}
 	function  init_table_keys(){
 		
-		//console.log('wellcome from init_table_keys');
+		console.log('wellcome from init_table_keys');
 		let keys = d3.selectAll('.table-keys--key');
+		let keys_container = d3.select('#table-keys');
+		keys_container.classed("list-active", true);
 		
-		keys.on('click', function(){
-			// console.log('init_table_keys', this.id, this.parentNode.parentNode);
-			let key_id = this.id;
-			let parent = this.parentNode.parentNode;
-			let table_rows = d3.selectAll('.table-row-parent').filter(function(d){
-				let attr_name = d3.select(this).attr('data-name');
-				//console.log("d", d, d3.select(this).attr('data-name'));
-				return attr_name === key_id;
-			});
-			// console.log('init_table_keys table_rows', table_rows);
-			d3.select(parent).classed("table-key--active", d3.select(parent).classed("table-key--active") ? false : true);
 			
-			if(!d3.select(parent).classed("table-key--active")){
-				// console.log('table-key--active', "active");
-				table_rows.classed('hidden', true);
-			}else{
-				table_rows.classed('hidden', false);
+		keys.on('click', function(){
+
+			if(!tree_counter){
+				console.log('init_table_keys', this.id, this.parentNode.parentNode);
+				let key_id = this.id;
+				let parent = this.parentNode.parentNode;
+				let table_rows = d3.selectAll('.table-row-parent').filter(function(d){
+					let attr_name = d3.select(this).attr('data-name');
+					//console.log("d", d, d3.select(this).attr('data-name'));
+					return attr_name === key_id;
+				});
+				// console.log('init_table_keys table_rows', table_rows);
+				d3.select(parent).classed("table-key--active", d3.select(parent).classed("table-key--active") ? false : true);
+				
+				if(!d3.select(parent).classed("table-key--active")){
+					// console.log('table-key--active', "active");
+					table_rows.classed('hidden', true);
+				}else{
+					table_rows.classed('hidden', false);
+				}
+				
+				
+				
 			}
+			
+			
 		});
+		
 		
 	};
 
@@ -837,13 +874,22 @@
 			
 		}
 	}
-	function draw_collapsible_tree(data, dic){
+	function draw_collapsible_tree(data, select_values, dic){
 		
         var guneTree = {
             'key': "4GUNE",
-            "values": nest_data(data)
+            "values": nest_tree_data(data)
 
         };
+        
+        var guneList = nest_list_data(data);
+		results_partial = get_results_numbers(guneList);
+		
+		console.log('draw_collapsible_tree results_partial', results_partial);
+		draw_result_numbers(results_partial, select_values, dic.mejoras);
+        
+        
+        // here we are
         console.log('guneTree:: ', guneTree, dic);
 
 		
@@ -1159,11 +1205,95 @@
                     update(d);
 
                 }
+                if(d.depth === 3){
+	              /*  
+				let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", d.values[0].direccion_id);// falta
+				let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
+				let web_info = checkWebInfo(titulo_obj.web);
+				let descripcion = titulo_obj.desc;
+				*/
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                console.log('d tree', d);
+	                let cod = +d.data.key;
+	                let all_values = d.data.values[0];
+	                let titulo = get_dictionary_obj(dic.titulos, "cod", cod);
+					let univ = get_dictionary_obj(dic.universidades, "univ_id", all_values.univ_id);
+
+	                
+	                // variables
+					let capacidad_dos = all_values.capacidad_dos;
+					let capacidad_color = get_capacidad_color(all_values.capacidad_uno);
+					let titulo_name = titulo.titulo;
+					let titulo_email = titulo.email;
+					let univ_centro = all_values.centro;
+					let titulo_responsable = titulo.responsable;
+					let titulo_web =  titulo.web.indexOf('http') != -1 ? titulo.web : "javascript:void(0);";
+					let univ_name = univ.univ;
+					let univ_url = univ.univ_url;
+					let email_info = getEmailInfo(titulo);
+					let univ_logo = url_img + 'univ/'+ univ.univ_short_name +"-color@2x.png";
+					let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", all_values.direccion_id);
+					let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
+						
+					
+					let modal_star_id = d3.select('#modal_star_id').classed("star-icon--green", all_values.i_d === 1 ? true : false);
+					let modal_star_produccion = d3.select('#modal_star_produccion').classed("star-icon--green", all_values.produccion === 1 ? true : false);
+					let modal_star_suministros = d3.select('#modal_star_suministros').classed("star-icon--green", all_values.suministro_y_compras === 1 ? true : false);
+					let modal_star_almacenamiento = d3.select('#modal_star_almacenamiento').classed("star-icon--green", all_values.almacenamiento_y_logistica === 1 ? true : false);
+					let modal_star_marketing = d3.select('#modal_star_marketing').classed("star-icon--green", all_values.marketing === 1 ? true : false);
+					let modal_star_ventas = d3.select('#modal_star_ventas').classed("star-icon--green", all_values.ventas === 1 ? true : false);
+					let modal_star_servicios = d3.select('#modal_star_servicios').classed("star-icon--green", all_values.servicios === 1 ? true : false);
+					let modal_star_administracion = d3.select('#modal_star_administracion').classed("star-icon--green", all_values.administracion === 1 ? true : false);
+	                
+	                 console.log('d tree', all_values, univ);
+	                 
+	                 // assign
+	                 d3.select('#capacidad_dos').html(capacidad_dos);
+	                 d3.select('#capacidad_color').style("color", capacidad_color);
+	                 d3.select('#titulo_name').html(titulo_name);
+	                 d3.select('#univ_name').html(univ_name);
+	                 d3.select('#univ_centro').html(univ_centro);
+	                 // d3.select('#titulo_responsable').html(titulo_responsable);
+	                 d3.select('#email_info').html(email_info);
+	                 d3.select('#univ_url').attr('href', univ_url);
+	                 d3.select('#univ_logo').attr('src', univ_logo);
+	                 d3.select('#titulo_url').attr('href', titulo_web);
+	                 d3.select('#titulo_direccion').html(ubicacion);
+	                 
+	                 
+	                 
+	                 
+	                 // modal window
+	                $("#myModalFullscreen").modal();
+                }
             }
         } // --> update source ends
 		
 		
 	};
+
+/*
+						tab.classed("hidden", tab.classed("hidden") ? false : true);
+
+	
+                  <div class="cell-modal star"><span class="star-text--container">I+D</span><span class="star-icon--container"><i id="modal_star_id" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Producción</span><span class="star-icon--container"><i id="modal_star_produccion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Suministros y compras</span><span class="star-icon--container"><i id="modal_star_suministros" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Almacenamiento y logística</span><span class="star-icon--container"><i id="modal_star_almacenamiento" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Marketing</span><span class="star-icon--container"><i id="modal_star_marketing" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Ventas</span><span class="star-icon--container"><i id="modal_star_ventas" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Servicios</span><span class="star-icon--container"><i id="modal_star_servicios" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  <div class="cell-modal star"><span class="star-text--container">Administración</span><span class="star-icon--container"><i id="modal_star_administracion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+	
+	
+*/	
+	
 
 
 
@@ -1177,10 +1307,10 @@
 		console.log('init_overall_tree mejora_filter', mejora_filter);
 		
 		
-		//results_partial = get_results_numbers(nested_data, dic);
+		//results_partial = get_results_numbers(nested_list_data);
 		// draw_result_numbers(results_partial, values, dic.mejoras);
-		
-		draw_collapsible_tree(mejora_filter, dic);
+		disable_table_keys();
+		draw_collapsible_tree(mejora_filter, values, dic);
 		
 		
 		
@@ -1224,7 +1354,7 @@
 
 		let element = document.getElementById('ambito_select');
 		element.dispatchEvent(new Event("change")); 
-
+		
 		init_table_keys();
 		
 	}
