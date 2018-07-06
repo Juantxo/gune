@@ -191,14 +191,14 @@
 		const dic_subambitos = dic.industria_4.subambitos;
 		const dic_mejoras = dic.mejoras;
 		
-		const ambito_select = d3.select('#ambito_select').on('change',onchange);
-		const subambito_select = d3.select('#subambito_select').on('change',onchange);
-		const mejora_select = d3.select('#mejora_select').on('change',onchange_mejora); // now doing nothing! only log values
+			const ambito_select = d3.select('#ambito_select').on('change',onchange);
+			const subambito_select = d3.select('#subambito_select').on('change',onchange);
+			const mejora_select = d3.select('#mejora_select').on('change',onchange_mejora); // now doing nothing! only log values
 			
 					
-		selectValues = null;
-		let select_subambito = null;
-		let select_mejora = null;
+			selectValues = null;
+			let select_subambito = null;
+			let select_mejora = null;
 
 		// console.log('build_selects', ambito_select, subambito_select, mejora_select);
 		
