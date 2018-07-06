@@ -16,7 +16,7 @@
 
 	    
     };
-	
+    
 	/**** --- FILTERING DATA --- ***/
 
 	
@@ -191,14 +191,14 @@
 		const dic_subambitos = dic.industria_4.subambitos;
 		const dic_mejoras = dic.mejoras;
 		
-			const ambito_select = d3.select('#ambito_select').on('change',onchange);
-			const subambito_select = d3.select('#subambito_select').on('change',onchange);
-			const mejora_select = d3.select('#mejora_select').on('change',onchange_mejora); // now doing nothing! only log values
+		const ambito_select = d3.select('#ambito_select').on('change',onchange);
+		const subambito_select = d3.select('#subambito_select').on('change',onchange);
+		const mejora_select = d3.select('#mejora_select').on('change',onchange_mejora); // now doing nothing! only log values
 			
 					
-			selectValues = null;
-			let select_subambito = null;
-			let select_mejora = null;
+		selectValues = null;
+		let select_subambito = null;
+		let select_mejora = null;
 
 		// console.log('build_selects', ambito_select, subambito_select, mejora_select);
 		
@@ -265,7 +265,7 @@
 				// SELECT ON CHANGE: TREE
 			if(tree_counter){
 				selectValues = updateSelect();
-				console.log('tree_counter ON CHANGE selectValues', selectValues);
+				//console.log('tree_counter ON CHANGE selectValues', selectValues);
 				draw_title_selector(get_the_select_info(selectValues, dic));
 
 				init_overall_tree(data, selectValues, dic);
@@ -333,7 +333,7 @@
 					//console.log('selectValues   ::: ',selectValues, dic_ambitos, select_subambito);
 					
 					let temp = filter_data(data, selectValues);
-					console.log('temp   ::: ',temp);
+					//console.log('temp   ::: ',temp);
 					activate_keys();
 					// document.getElementById('mejora_select').options[0].selected = 'selected';
 					mejora_select.property('value', select_mejora);
@@ -349,11 +349,12 @@
 										// filtra los valores que queremos mostrar según el selector de mejoras
 					let element = document.getElementById('mejora_select');
 					element.dispatchEvent(new Event("change")); 
+					
 
 					
 				//}			
 					
-					
+	
 				
 				
 			} // if(!tree_counter) ENDS
@@ -628,12 +629,11 @@
 		
 	};
 	
-	
 	function draw_result_numbers(d, select_val, dic){
-		// console.log('draw_result_numbers', d, select_val, dic);
+		//console.log('draw_result_numbers', d, select_val, dic);
 		
 		let temp_option = get_dictionary_property(dic, 'id', +select_val.mejora, 'json')
-		// console.log('draw_result_numbers temp_option', temp_option);
+		//console.log('draw_result_numbers temp_option', temp_option, select_val);
 		if(temp_option && temp_option === "total"){
 			let results_total = d3.select('#results_total').html(d.total.number);
 			let results_formacion = d3.select('#results_formacion').html(d.formacion.number);
@@ -648,6 +648,16 @@
 			let results_transferencia = d3.select('#results_transferencia').html(d.transferencia.mejoras[temp_option]);
 			let results_instalaciones_y_equipos = d3.select('#results_instalaciones_y_equipos').html(d.instalaciones_y_equipos.mejoras[temp_option]);
 			let results_investigacion = d3.select('#results_investigacion').html(d.investigacion.mejoras[temp_option]);
+			
+			// modal window if no results
+			if(d.total.mejoras[temp_option] === 0){
+				//console.log('From where?', tree_counter);
+				d3.select("#tree_container").selectAll("*").remove().exit();
+				$("#NoDataModalFullscreen").modal();
+			}
+			
+			
+
 			
 		}
 	};
@@ -703,7 +713,7 @@
 		
 		// let nested_list_data_length = nested_list_data.length;	
 		
-		console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
+		//console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
 		
 		//console.log('draw_table results_partial', results_partial);
 		let select_info = get_the_select_info(select_values, dic); 
@@ -779,14 +789,14 @@
 	                        '<span class="univ-links-web">' + web_info + ' target="_blank">&nbsp;Sitio web</a></span>'+
 	                     '</div>'+
 	                  '</div>'+
-	                  '<div class="cell star star_i_d"><span class="star-text--container hidden-screen">I+D</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "i_d")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_produccion"><span class="star-text--container hidden-screen">Producción</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "produccion")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_suministro_y_compras"><span class="star-text--container hidden-screen">Suministros y compras</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "suministro_y_compras")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_almacenamiento_y_logistica"><span class="star-text--container hidden-screen">Almacenamiento y logística</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "almacenamiento_y_logistica")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_marketing"><span class="star-text--container hidden-screen">Marketing</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "marketing")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_ventas"><span class="star-text--container hidden-screen">Ventas</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "ventas")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_servicios"><span class="star-text--container hidden-screen">Servicios</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "servicios")  + '">&#xf005;</i></span></div>'+
-	                  '<div class="cell star star_administracion"><span class="star-text--container hidden-screen">Administración</span><span class="star-icon--container"><i class="fa star-icon ' + addClass_to_star(d, "administracion")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_i_d"><span class="star-text--container hidden-screen">I+D</span><span class="star-icon--container"><i data-star="I+D" class="fa star-icon ' + addClass_to_star(d, "i_d")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_produccion"><span class="star-text--container hidden-screen">Producción</span><span class="star-icon--container"><i data-star="Producción" class="fa star-icon ' + addClass_to_star(d, "produccion")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_suministro_y_compras"><span class="star-text--container hidden-screen">Suministros y compras</span><span class="star-icon--container"><i data-star="Suministro y compras" class="fa star-icon ' + addClass_to_star(d, "suministro_y_compras")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_almacenamiento_y_logistica"><span class="star-text--container hidden-screen">Almacenamiento y logística</span><span class="star-icon--container"><i data-star="Almacenamiento y logística" class="fa star-icon ' + addClass_to_star(d, "almacenamiento_y_logistica")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_marketing"><span class="star-text--container hidden-screen">Marketing</span><span class="star-icon--container"><i data-star="Marketing" class="fa star-icon ' + addClass_to_star(d, "marketing")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_ventas"><span class="star-text--container hidden-screen">Ventas</span><span class="star-icon--container"><i data-star="Ventas" class="fa star-icon ' + addClass_to_star(d, "ventas")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_servicios"><span class="star-text--container hidden-screen">Servicios</span><span class="star-icon--container"><i data-star="Servicios" class="fa star-icon ' + addClass_to_star(d, "servicios")  + '">&#xf005;</i></span></div>'+
+	                  '<div class="cell star star_administracion"><span class="star-text--container hidden-screen">Administración</span><span class="star-icon--container"><i data-star="Administración" class="fa star-icon ' + addClass_to_star(d, "administracion")  + '">&#xf005;</i></span></div>'+
 	               '</div>'+
 	               '<div class="table-outside-section hidden-mobile hidden" id="more_' + i + '">'+
 	               		'<p><i class="fa">&#xf0eb;</i>&nbsp;' + select_info.ambito + ' | ' + select_info.subambito + ' | ' + '<span class="mejora_name">' + select_info.mejora + '</span></p>'+
@@ -795,6 +805,9 @@
 		               
 	               '</div>';
 			});
+			
+			
+
 
 				
 	}
@@ -905,7 +918,6 @@
 		draw_result_numbers(results_partial, select_values, dic.mejoras);
         
         
-        // here we are
         //console.log('guneTree:: ', guneTree, dic);
 
 		
@@ -1294,21 +1306,6 @@
 		
 	};
 
-/*
-						tab.classed("hidden", tab.classed("hidden") ? false : true);
-
-	
-                  <div class="cell-modal star"><span class="star-text--container">I+D</span><span class="star-icon--container"><i id="modal_star_id" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Producción</span><span class="star-icon--container"><i id="modal_star_produccion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Suministros y compras</span><span class="star-icon--container"><i id="modal_star_suministros" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Almacenamiento y logística</span><span class="star-icon--container"><i id="modal_star_almacenamiento" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Marketing</span><span class="star-icon--container"><i id="modal_star_marketing" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Ventas</span><span class="star-icon--container"><i id="modal_star_ventas" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Servicios</span><span class="star-icon--container"><i id="modal_star_servicios" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-                  <div class="cell-modal star"><span class="star-text--container">Administración</span><span class="star-icon--container"><i id="modal_star_administracion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
-	
-	
-*/	
 	
 
 
@@ -1323,8 +1320,6 @@
 		//console.log('init_overall_tree mejora_filter', mejora_filter);
 		
 		
-		//results_partial = get_results_numbers(nested_list_data);
-		// draw_result_numbers(results_partial, values, dic.mejoras);
 		disable_table_keys();
 		if(mejora_filter.length){
 			draw_collapsible_tree(mejora_filter, values, dic);
@@ -1332,7 +1327,7 @@
 			d3.select("#tree_container").selectAll("*").remove().exit();
 			$("#NoDataModalFullscreen").modal();
 
-			console.log('NO DATA');
+			// console.log('NO DATA');
 		}
 		
 		
@@ -1341,9 +1336,59 @@
 
 
 
+//div class="cell star star_i_d" ><span class="star-text--container hidden-screen">I+D</span><span class="star-icon--container"><i data-star="I+D" class="fa star-icon ' + addClass_to_star(d, "i_d")  + '">&#xf005;</i></span></div>'+
 
+// here
 	
+	function init_star_tooltip(){
+		
+		let green_star = d3.selectAll('.star-icon--green');
+		let tooltip = d3.select("#star_tooltip");
+		
+		//console.log('green_star',green_star);
+		
+		
+		green_star.on("mouseover", function() {
+			let el = d3.select(this);
+			let temp = d3.select(this.dataset)._groups[0][0].star;
+							
+			console.log('d', temp);
+            tooltip.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            tooltip.html(temp)
+                .style("left", (d3.event.pageX -40) + "px")		
+                .style("top", (d3.event.pageY - 60) + "px");	
+            })					
+        .on("mouseout", function() {		
+            tooltip.transition()		
+                .duration(200)		
+                .style("opacity", 0);	
+        });			
+			
+			
+		/*
+		var x = document.getElementsByTagName("BODY")[0].addEventListener('mouseover', function(e) {
+			// do nothing if the target does not have the class drawnLine
+				if (e.target.classList.contains("star-icon--green")) {
+					//console.log('e.target', e.target.dataset.star );
+					let tooltip = d3.select("#star_tooltip");
+					tooltip.transition()		
+						.duration(200)		
+						.style("opacity", .9);		
+					
+					tooltip.html(e.target.dataset.star)	
+						.style("position", "absolute")
+						.style("left", (e.pageX) + "px")		
+						.style("top", (e.pageY - 28) + "px");;	
+				}
+		});
 
+		*/
+
+
+
+	}
 
 
 	
@@ -1354,7 +1399,7 @@
 				
 				if(e.target.id.indexOf("link_") > -1){
 					
-					
+					console.log('e.target.dataset', e.target.dataset);
 					let el = e.target;
 					let temp = el.id.split('_')[1];
 					
@@ -1379,7 +1424,8 @@
 		element.dispatchEvent(new Event("change")); 
 		
 		init_table_keys();
-		
+
+
 	}
 	
 	
@@ -1419,13 +1465,13 @@
 	
     let init = function(error, gune, dic) {
 		
-		console.log('hello from D3', gune, dic);
+		//console.log('hello from D3', gune, dic);
 		if (error) throw error;
 		
 	    build_selects(gune, dic);
 		init_table();
 	    init_ver_mas();
-		
+		init_star_tooltip();
 		// here pasar a pill tabs la data y select values para iniciar tree
 	    init_pill_tabs(gune, dic);
 

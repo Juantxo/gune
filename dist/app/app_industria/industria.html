@@ -156,7 +156,7 @@
 				            <div class="col-sm text-aling--center">
 					            
 					            <p class="margin-bottom--0"><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
-					            <p><small>Ordenados por el tipo de capacidad.</small></p>
+					            <p><small>Ordenados por el tipo de capacidad. Las fases con la estrella verde quieren decir que puedo mejorar esa fase en mi industria.</small></p>
 							</div>
 				         </div>
 					      
@@ -215,8 +215,7 @@
 					  
 
 				      <!-- / TABLE HEAD -->
-				      
-				      <div class="container table-head">
+				      <div class="container table-head" id="table_head">
 				         <div class="row">
 				            <div class="col-sm-12 col-md-6 col-lg-12">
 				               <div class="table-row table-border--gray padding-box--regular">
@@ -347,6 +346,8 @@
                   <div class="cell-modal star"><span class="star-text--container">Ventas</span><span class="star-icon--container"><i id="modal_star_ventas" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
                   <div class="cell-modal star"><span class="star-text--container">Servicios</span><span class="star-icon--container"><i id="modal_star_servicios" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
                   <div class="cell-modal star"><span class="star-text--container">Administración</span><span class="star-icon--container"><i id="modal_star_administracion" class="fa star-icon star-icon--gray">&#xf005;</i></span></div>
+                  
+                  <p><small>Las fases con la estrella verde quieren decir que puedo mejorar esa fase en mi industria.</small></p>
 
 	                          
                   </div>
@@ -385,7 +386,10 @@
          </div>
        
 
-
+         <!-- / tooltip start container -->
+         <div id="star_tooltip" class="star-tooltip">
+         </div>
+	      
 
 
 

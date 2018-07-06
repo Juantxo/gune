@@ -12,6 +12,7 @@
   Base styles: opinionated defaults
   ========================================================================== */
 
+
 html.clusterGune {
   color:#222;
   font-size: 1em;
@@ -625,6 +626,20 @@ html.clusterGune.withImage {
 	font-size: 14px;
 	margin: 8px auto;
 }
+
+/************** 4GUNE star tooltip **********************/
+
+
+.clusterGune .star-tooltip{
+	opacity: 0;
+	border: 1px solid #ced4da;
+	background-color: white;
+	padding: 8px;
+	z-index: 100;
+	position: absolute;
+	
+}
+
 /************** 4GUNE TABLE **********************/
 
 .clusterGune .hidden-mobile{
@@ -681,6 +696,7 @@ html.clusterGune.withImage {
 }
 .clusterGune .star-icon--green{
 	color: #009E8E;
+	cursor: pointer;
 }
 
 
