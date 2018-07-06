@@ -111,14 +111,52 @@
       </div>
       
 
+
+				      <!-- / TABLE HEADLINE AMBITO SUBAMBITO MEJORA -->
+				      <div class="container text-aling--center">
+					      
+				         <div class="row">
+					         
+				            <div class="col-sm">
+					            <h1 class="title-ambito" id="title_ambito">Fabricación avanzada</h1>
+					            <h2 class="title-subambito" id="title_subambito">Diseño, investigación, implantación comunicación M2M</h2>
+					            <h2 class="title-mejora" id="title_mejora">Todas las mejoras</h2>
+					        
+							
+							
+							
+							
+							</div>
+					         
+					         
+				         </div>
+				      </div>          
+					      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				      <!-- / TABLE keys -->
 				      <div class="container">
 					      
 				         <div class="row" id="table-results">
 					         
-				            <div class="col-sm">
+				            <div class="col-sm text-aling--center">
 					            
-					            <p><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
+					            <p class="margin-bottom--0"><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
+					            <p><small>Ordenados por el tipo de capacidad.</small></p>
 							</div>
 				         </div>
 					      
@@ -134,17 +172,16 @@
 					            <p class="table-key--active"><small><i class="fa purpleColor">&#xf111;</i> <span id="investigacion" class="table-keys--key">Investigación (<span id="results_investigacion"></span>)</span></small></p>
 							</div>
 							
-							
+				            <div class="col-sm">
+					            
+					            <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia (<span id="results_transferencia"></span>)</span></small></p>
+							</div>
 				            <div class="col-sm">
 					            
 					            <p class="table-key--active"><small><i class="fa orangeColor">&#xf111;</i> <span id="instalaciones_y_equipos" class="table-keys--key">Instalaciones y equipos (<span id="results_instalaciones_y_equipos"></span>)</span></small></p>
 							</div>
 					         
 					         
-				            <div class="col-sm">
-					            
-					            <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia (<span id="results_transferencia"></span>)</span></small></p>
-							</div>
 				         </div>
 				      </div>          
 					      
@@ -279,7 +316,7 @@
 
 
 
-         <!-- / modal container -->
+         <!-- / modal container INFO -->
          <div class="modal fade modal-fullscreen footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
             <div class="modal-dialog animated fadeInDown">
                <div class="modal-content">
@@ -319,12 +356,34 @@
                   </div>
                </div>
                <!-- /.modal-content -->
+            </div>
+         </div>
+       
 
 
 
 
+         <!-- / modal container NO TREE DATA -->
+         <div class="modal fade modal-fullscreen footer-to-bottom" id="NoDataModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+            <div class="modal-dialog animated fadeInDown">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <p><i class="fa fa-info-circle"></i> <span>Información</span></p>
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  </div>
+                  <div class="modal-body">
+				  	<p class="title-name"><span>Los sentimos, no existen resultados con la selección deseada.</span></p>
+				  	<p class="title-name"><span>Pruebe con otra consulta.</span></p>
+                 </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  </div>
+               </div>
+               <!-- /.modal-NO TREE DATA -->
 
-
+            </div>
+         </div>
+       
 
 
 

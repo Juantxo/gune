@@ -44,7 +44,7 @@
 
 		//console.log('data ambito_filter', ambito_filter);
 		//console.log('data subambito_filter', subambito_filter);
-		// console.log('data presencia_filter', presencia_filter);
+		//console.log('data presencia_filter', presencia_filter);
 		return presencia_filter;
 		
 		
@@ -55,7 +55,7 @@
 	// USED ON TREE NOT IN LIST
 	function filter_mejora(data, values){
 		
-		console.log('filter_mejora', data, values);
+		//console.log('filter_mejora', data, values);
 		
 		let mejora_filter = data.filter(function(d){
 			
@@ -186,7 +186,7 @@
 	
 	function build_selects(data, dic){
 		
-		console.log('building selects.....');
+		//console.log('building selects.....');
 		const dic_ambitos = dic.industria_4.ambitos;
 		const dic_subambitos = dic.industria_4.subambitos;
 		const dic_mejoras = dic.mejoras;
@@ -232,11 +232,12 @@
 
 		function onchange_mejora(){
 			
+			
 			if(!tree_counter){
 			
 				selectValues = updateSelect();
 				draw_result_numbers(results_partial, selectValues, dic_mejoras);
-				console.log('onchange_mejora !tree_counter selectValues', selectValues);
+				//console.log('onchange_mejora !tree_counter selectValues', selectValues);
 
 				let ambito_id = this.value; // string
 				let option_obj = get_dictionary_obj(dic_mejoras, 'id', +ambito_id);
@@ -256,12 +257,17 @@
 				d3.selectAll('.mejora_name').html(function(d){
 					return option_name;
 				});
+				
+				draw_title_selector(get_the_select_info(selectValues, dic));
+				
 				return '';
 			}
 				// SELECT ON CHANGE: TREE
 			if(tree_counter){
 				selectValues = updateSelect();
 				console.log('tree_counter ON CHANGE selectValues', selectValues);
+				draw_title_selector(get_the_select_info(selectValues, dic));
+
 				init_overall_tree(data, selectValues, dic);
 					
 			}// if(tree_counter) ENDS
@@ -274,14 +280,14 @@
 		
 		function onchange(){
 
-				console.log('enter onchange....');
+				//console.log('enter onchange....');
 				selectValues = updateSelect();
 				select_subambito = selectValues.subambito - 1; 
-				console.log('selectValues',selectValues, select_subambito);
+				//console.log('selectValues',selectValues, select_subambito);
 				
 				
 				if(this.dataset.select === "parent_select" ){
-					console.log('enter onchange parent select....');
+					// console.log('enter onchange parent select....');
 					// console.log('this.dataset.select', this.dataset.select);
 					// console.log('onchange this.value', this.value);
 					let ambito_id = get_industry_obj(this.value, dic_ambitos)[0].ambito_id;
@@ -297,7 +303,7 @@
 						.enter()
 						.append('option')
 						.each(function(d, i){
-							console.log('dd, ii', d, i);
+							//console.log('dd, ii', d, i);
 							
 							if( d.subambito_id === +select_subambito + 1){
 								d3.select(this).attr('selected', 'selected');
@@ -305,7 +311,7 @@
 						})	
 	
 						.attr('value', function(d){ 
-							console.log('d.subambito_id', d.subambito_id, d); 
+							//console.log('d.subambito_id', d.subambito_id, d); 
 							return d.subambito_id ? d.subambito_id : '';
 						})
 						.text(function (d) { 
@@ -318,23 +324,29 @@
 				
 			// SELECT ON CHANGE: LIST
 			if(!tree_counter){
-				console.log('enter onchange NO TREE....');
+				//console.log('enter onchange NO TREE....');
 
 				//if(this.dataset.select != "mejora_select" ){
 					selectValues = updateSelect();
 					select_mejora = +selectValues.mejora;
 					select_subambito = +selectValues.subambito;
-					console.log('selectValues   ::: ',selectValues, dic_ambitos, select_subambito);
+					//console.log('selectValues   ::: ',selectValues, dic_ambitos, select_subambito);
 					
 					let temp = filter_data(data, selectValues);
-					//console.log('temp   ::: ',temp);
+					console.log('temp   ::: ',temp);
 					activate_keys();
 					// document.getElementById('mejora_select').options[0].selected = 'selected';
 					mejora_select.property('value', select_mejora);
 					subambito_select.property('value', select_subambito);
-					console.log('mejora_select.property(value)', mejora_select.property('value'), subambito_select.property('value'));
+					//console.log('mejora_select.property(value)', mejora_select.property('value'), subambito_select.property('value'));
+					
+					
 					draw_table(temp, selectValues, dic);
-					// filtra los valores que queremos mostrar según el selector de mejoras
+										
+					
+					
+					
+										// filtra los valores que queremos mostrar según el selector de mejoras
 					let element = document.getElementById('mejora_select');
 					element.dispatchEvent(new Event("change")); 
 
@@ -350,7 +362,9 @@
 				// SELECT ON CHANGE: TREE
 			if(tree_counter){
 				selectValues = updateSelect();
-				console.log('tree_counter ON CHANGE selectValues', selectValues);
+				draw_title_selector(get_the_select_info(selectValues, dic));
+
+				//console.log('tree_counter ON CHANGE selectValues', selectValues);
 				init_overall_tree(data, selectValues, dic);
 					
 			}// if(tree_counter) ENDS
@@ -638,7 +652,21 @@
 		}
 	};
 	
+	function draw_title_selector(select_obj){
+		
+		d3.select('#title_ambito').html(arguments[0].ambito);
+		d3.select('#title_subambito').html(arguments[0].subambito);
+		d3.select('#title_mejora').html(arguments[0].mejora);
+		//console.log('select_obj', select_obj);
+		return '';
+		
+	}
 	
+
+
+
+
+
 
 	
 	
@@ -653,7 +681,7 @@
 		selection.ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
 		selection.subambito = get_dictionary_property(dic_subambitos, "subambito_id", +values.subambito, "subambito");
 		selection.mejora = get_dictionary_property(dic_mejoras, "id", +values.mejora, "nombre");
-		// console.log('get_the_select_info level_val', selection);
+		//console.log('get_the_select_info level_val', selection);
 		return selection;
 		
 		
@@ -669,13 +697,13 @@
 		// select_values: los valores seleccionados en los selects - {ambito: "0", subambito: "0", mejora: "6"}  - 
 		// dic: el diccionario completo
 		
-		console.log('draw_table select_values', data, select_values, dic);
+		//console.log('draw_table select_values', data, select_values, dic);
 		
 		let nested_list_data = nest_list_data(data);
 		
 		// let nested_list_data_length = nested_list_data.length;	
 		
-		// console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
+		console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
 		
 		//console.log('draw_table results_partial', results_partial);
 		let select_info = get_the_select_info(select_values, dic); 
@@ -690,6 +718,7 @@
 		draw_result_numbers(results_partial, select_values, dic.mejoras);
 		
 		table_container.selectAll("*").remove().exit();
+		
 		
 		let table_main = table_container
 			.selectAll('div')
@@ -778,14 +807,14 @@
 	
 	
 	function disable_table_keys(){
-		console.log('disable_table_keys tree_counter');
+		// console.log('disable_table_keys tree_counter');
 
 		let keys = d3.selectAll('.table-keys--key');
 		let keys_container = d3.select('#table-keys');
 		
 				keys.each(function(d,i){
 					d3.select(this.parentNode.parentNode).classed("table-key--active", true);
-					console.log(d3.select(this.parentNode.parentNode));
+					//console.log(d3.select(this.parentNode.parentNode));
 				});
 		
 		keys_container.classed("list-active", false);
@@ -794,7 +823,7 @@
 	}
 	function  init_table_keys(){
 		
-		console.log('wellcome from init_table_keys');
+		//console.log('wellcome from init_table_keys');
 		let keys = d3.selectAll('.table-keys--key');
 		let keys_container = d3.select('#table-keys');
 		keys_container.classed("list-active", true);
@@ -831,20 +860,6 @@
 		
 	};
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	
 	/**** --- DRAW COLLAPSIBLE TREE  ***/
@@ -876,6 +891,7 @@
 	}
 	function draw_collapsible_tree(data, select_values, dic){
 		
+		console.log('draw_collapsible_tree', data.length);
         var guneTree = {
             'key': "4GUNE",
             "values": nest_tree_data(data)
@@ -885,12 +901,12 @@
         var guneList = nest_list_data(data);
 		results_partial = get_results_numbers(guneList);
 		
-		console.log('draw_collapsible_tree results_partial', results_partial);
+		//console.log('draw_collapsible_tree results_partial', results_partial);
 		draw_result_numbers(results_partial, select_values, dic.mejoras);
         
         
         // here we are
-        console.log('guneTree:: ', guneTree, dic);
+        //console.log('guneTree:: ', guneTree, dic);
 
 		
 
@@ -962,7 +978,7 @@
             // Assigns the x and y position for the nodes
             var treeData = treemap(root);
 
-            console.log('treeData', treeData);
+            //console.log('treeData', treeData);
 
             // Compute the new tree layout.
             var nodes = treeData.descendants(),
@@ -1298,19 +1314,26 @@
 
 
 	function init_overall_tree(data, values, dic){
-		console.log('init_overall_tree', data, values);
+		//console.log('init_overall_tree', data, values);
 
 		let subambito_filter = filter_data(data, values);
 		// console.log('init_overall_tree temp', subambito_filter);
 		let mejora_filter = filter_mejora(subambito_filter, values);
 
-		console.log('init_overall_tree mejora_filter', mejora_filter);
+		//console.log('init_overall_tree mejora_filter', mejora_filter);
 		
 		
 		//results_partial = get_results_numbers(nested_list_data);
 		// draw_result_numbers(results_partial, values, dic.mejoras);
 		disable_table_keys();
-		draw_collapsible_tree(mejora_filter, values, dic);
+		if(mejora_filter.length){
+			draw_collapsible_tree(mejora_filter, values, dic);
+		}else{
+			d3.select("#tree_container").selectAll("*").remove().exit();
+			$("#NoDataModalFullscreen").modal();
+
+			console.log('NO DATA');
+		}
 		
 		
 		
@@ -1350,7 +1373,7 @@
 	}
 	
 	function init_table(){
-		console.log('init_table.....');
+		//console.log('init_table.....');
 
 		let element = document.getElementById('ambito_select');
 		element.dispatchEvent(new Event("change")); 
@@ -1370,7 +1393,7 @@
 			tree_counter = false;
 
 			
-			console.log('pill_list_tab', tree_counter);
+			//console.log('pill_list_tab', tree_counter);
 			init_table();
 
 			
@@ -1380,8 +1403,8 @@
 		pill_tree_tab.on('click', function(){
 			
 			tree_counter = true;
-			console.log('pill_tree_tab', tree_counter);
-			console.log('pill_tree_tab.on select_values', selectValues);
+			//console.log('pill_tree_tab', tree_counter);
+			//console.log('pill_tree_tab.on select_values', selectValues);
 			init_overall_tree(data, selectValues, dic);
 
 			
@@ -1396,7 +1419,7 @@
 	
     let init = function(error, gune, dic) {
 		
-		// console.log('hello from D3', gune, dic);
+		console.log('hello from D3', gune, dic);
 		if (error) throw error;
 		
 	    build_selects(gune, dic);

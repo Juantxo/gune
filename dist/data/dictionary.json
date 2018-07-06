@@ -367,6 +367,68 @@
 
 	},
 
+	"centros": [{
+			"centro_id": 1,
+			"centro": "Escuela de Ingeniería de Gipuzkoa",
+			"centro_corto": "Ingeniería Gipuzkoa"
+		},
+		{
+			"centro_id": 2,
+			"centro": "Escuela de Ingeniería de Vitoria-Gasteiz",
+			"centro_corto": "Ingeniería Vitoria-Gasteiz"
+		},
+		{
+			"centro_id": 3,
+			"centro": "Escuela de Ingenieros",
+			"centro_corto": "Ingenieros"
+		},
+		{
+			"centro_id": 4,
+			"centro": "Escuela Politécnica Superior ",
+			"centro_corto": "Politécnica Superior "
+		},
+		{
+			"centro_id": 5,
+			"centro": "Escuela Técnica Superior de Ingeniería de Bilbao",
+			"centro_corto": "ETSI de Ingeniería de Bilbao"
+		},
+		{
+			"centro_id": 6,
+			"centro": "Facultad de Ciencia y Tecnología",
+			"centro_corto": "Ciencia y Tecnología"
+		},
+		{
+			"centro_id": 7,
+			"centro": "Facultad de Farmacia",
+			"centro_corto": "Farmacia"
+		},
+		{
+			"centro_id": 8,
+			"centro": "Facultad de Informática",
+			"centro_corto": "Informática"
+		},
+		{
+			"centro_id": 9,
+			"centro": "Facultad de Ingeniería",
+			"centro_corto": "Ingeniería"
+		},
+		{
+			"centro_id": 10,
+			"centro": "Facultad De Química",
+			"centro_corto": "Química"
+		},
+		{
+			"centro_id": 11,
+			"centro": "Instituto de Máquina-Herramienta",
+			"centro_corto": "Máquina-Herramienta"
+		},
+		{
+			"centro_id": 12,
+			"centro": "Otros",
+			"centro_corto": "Otros"
+		}
+	],
+
 	"universidades": [{
 			"univ": "Universidad de Deusto",
 			"univ_id": 1,

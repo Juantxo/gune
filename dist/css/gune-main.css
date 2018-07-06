@@ -452,8 +452,16 @@ html.clusterGune.withImage {
 
 }
 
-
-
+.clusterGune .title-ambito{
+	color: 	#808080;
+	font-size: 1em;
+	font-weight: 900;
+}
+.clusterGune .title-subambito, .clusterGune .title-mejora{
+	color: #009E8E;
+	font-size: 1.4em;
+	font-weight: 900;
+}
 
 /*social icons*/
 
