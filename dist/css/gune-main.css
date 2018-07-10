@@ -92,6 +92,12 @@ textarea {
 	background-color: #9e005f;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #9e005f;
+    border-color: #9e005f;
+}    
+    
 /* ==========================================================================
   Author's custom styles
   ========================================================================== */
@@ -423,7 +429,10 @@ html.clusterGune.withImage {
     
 }
 .clusterGune .nav_container a:hover{
-	opacity: 0.9
+	opacity: 0.7;
+	    background: #9e005f;
+
+	
 }
 .clusterGune .ambitos-logo{
 	width: 40px;
@@ -967,6 +976,41 @@ box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
 	color: #000;
 }
 
+
+
+
+
+
+
+/************** 4GUNE DICCIONARIOS **********************/
+
+.clusterGune h1.green-container {
+    background: #009E8E;
+    padding: 8px 16px;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+.clusterGune h1 span.icon-image{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+
+.clusterGune h1 span.icon_ambito_1{
+    background-image:  url(../img/ambitos/icon_1@2x.png);
+	
+}
+
+
+
+
+/**/
 /* ==========================================================================
   EXAMPLE Media Queries for Responsive Design.
   These examples override the primary ('mobile first') styles.

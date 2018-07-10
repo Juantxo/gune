@@ -17,6 +17,37 @@
 
     };
 
+
+	/**** --- NEST DATA: data nest for tree ***/
+
+	function nest_tree_data(data){
+        
+        let nested_tree_data = d3.nest()
+            .key(function(d) {
+                return d.centro;
+            })
+            //.key(function(d) { return d.capacidad_uno; })
+            .key(function(d) {
+                return d.capacidad_dos;
+            })
+            .key(function(d) {
+                return d.cod;
+            })
+
+            //.rollup(function(v) { return v.length; }) 
+            // rollup takes the array of values for each group and it produces a value based on that array
+            .entries(data);
+        
+        return nested_tree_data;     
+		
+	}
+
+
+
+
+
+
+
     /**** --- NEST DATA: data nest for list ***/
 
     function nest_list_data(data) {
@@ -96,10 +127,10 @@
         return temp;
     }
 
-	function init_filter_counter(data, select_values, dic){
-		console.log('init_filter_counter', data, select_values, dic);
+	function get_filter_data(data, select_values, dic){
+		//console.log('get_filter_data', data, select_values, dic);
 		let selection_names = get_the_select_info(select_values, dic);
-		console.log('init_filter_counter selection_names', selection_names);
+		//console.log('get_filter_data selection_names', selection_names);
 		
 		let c1_obj = data.filter(function(d, i){
 			
@@ -107,7 +138,7 @@
 			else { return d; }
 			
 		});
-		console.log('init_filter_counter c1_obj', c1_obj);
+		//console.log('get_filter_data c1_obj', c1_obj);
 		
 		let c2_obj = c1_obj.filter(function(d, i){
 			
@@ -116,7 +147,7 @@
 			
 		});
 		
-		console.log('init_filter_counter c2_obj', c2_obj);
+		//console.log('get_filter_data c2_obj', c2_obj);
 		
 		let a1_obj = c2_obj.filter(function(d, i){
 			
@@ -124,15 +155,18 @@
 			else { return d; }
 			
 		});
-				console.log('init_filter_counter a1_obj', a1_obj);
+		
 		let a2_obj = a1_obj.filter(function(d, i){
 			
-			if(d.presencia != 0 ){ return d; } 
+				if(d.presencia != 0 ){ return d; } 
 			
 		});
-				console.log('init_filter_counter a2_obj', a2_obj);
+
+
+			
+				//console.log('get_filter_data a2_obj', a2_obj);
 		
-		//Para contador y árbol		
+		//Para contador y árbol	 -- COUNT DATA and TREE DATA for nest	
 		return a2_obj;
 		
 	}
@@ -143,7 +177,13 @@
 		let nest_data_counter =  nest_list_data(d);
 		let nest_data_counter_l = nest_data_counter.length;
 		let results_total = d3.select('#results_total').html(nest_data_counter_l);
-		console.log('draw_counter nest_data_counter', nest_data_counter);
+		
+		
+		if(!nest_data_counter_l){
+			$("#NoDataModalFullscreen").modal(); //TODO
+		}		
+
+		//console.log('draw_counter nest_data_counter', nest_data_counter);
 	}
     /**** --- BUILD SELECTS ***/
 
@@ -225,18 +265,33 @@
 
             } //  --> if ends
 
-            console.log('onchange capacidad_dos_obj', capacidad_dos_obj);
+            //console.log('onchange capacidad_dos_obj', capacidad_dos_obj);
 
 
             show_selected_titles(selectValues, dic);
             draw_title_selector(get_the_select_info(selectValues, dic));
 			init_counter(data,selectValues, dic);
+			
+			if(tree_counter){
+				selectValues = updateSelect();
+				//draw_title_selector(get_the_select_info(selectValues, dic));
+				//console.log('tree_counter ON CHANGE selectValues', selectValues);
+				init_overall_tree(data, selectValues, dic);
+					
+			}// if(tree_counter) ENDS
+			
 
-            console.log('selectValues', selectValues);
+            //console.log('selectValues', selectValues);
+            
+            
+            
+            
 
 
 
-        }
+        }//  --> Onchange ends
+        
+        
 
 
     }
@@ -259,13 +314,13 @@
         let a1 = select_values.ambito;
 
         let select_values_names = get_the_select_info(select_values, dic);
-        console.log('show_selected_titles c1, c2, a1', c1, c2, a1, select_values_names);
+        // console.log('show_selected_titles c1, c2, a1', c1, c2, a1, select_values_names);
 
 
         let capacidades = get_capacidad_obj(select_values, dic.capacidades.capacidades_dos);
         let capacidadesL = capacidades.length;
         var j = 0;
-        console.log('capacidades', capacidades);
+        //console.log('capacidades', capacidades);
         let all_rows = d3.selectAll('.table-row-parent');
         let c1_rows;
         let c2_rows;
@@ -352,7 +407,7 @@
         selection.capacidad_uno = +values.capacidad_uno != 0 ? get_dictionary_property(dic_capacidad_uno, "id", +values.capacidad_uno, "capacidad_uno") : 'Todas las capacidades';
         selection.capacidad_dos = +values.capacidad_dos != 0 ? get_dictionary_property(dic_capacidad_dos, "id", +values.capacidad_dos, "capacidad_dos") : 'Todos los tipos';
         selection.ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
-        console.log('get_the_select_info level_val', selection);
+        // console.log('get_the_select_info level_val', selection);
         return selection;
 
 
@@ -363,7 +418,7 @@
     // TABLE FUNCTIONS
 
     function check_presencias(d, val) {
-        // console.log('check_presencias', d, val);
+        //console.log('check_presencias', d, val);
         let temp = d.values;
         let tempL = d.values.length;
         let i = 0;
@@ -381,7 +436,7 @@
 
         for (i; i < tempL; i++) {
 
-            if (temp[i].ambito_id === +val) {
+            if (+temp[i].ambito_id === +val) {
 
                 if (i === 0) {
                     result.ambito_id = +val;
@@ -393,8 +448,8 @@
                 }
 
                 result.subambitos.push({
-                    "suambito_id": temp[i].subambito_id,
-                    "presencia": temp[i].presencia
+                    "suambito_id": +temp[i].subambito_id,
+                    "presencia": +temp[i].presencia
                 });
 
             }
@@ -416,7 +471,7 @@
 
         let theClass = 'star-icon--gray percent-0';
 
-        if (values_counter.presencias != 0) {
+        if (!!values_counter.presencias && values_counter.presencias != 0) {
             theClass = 'star-icon--green percent-' + ((values_counter.presencias * 100) / values_counter.children).toFixed(0) + " " + values_counter.presencias + "_" + values_counter.children;
         }
         return theClass;
@@ -562,7 +617,7 @@
 
         table_main
             .html(function(d, i) {
-                // console.log('d', d);
+                //console.log('addClass_to_star d', d);
 
                 let titulo_obj = get_dictionary_obj(dic.titulos, "cod", d.values[0].cod);
                 let titulo = titulo_obj.titulo;
@@ -628,6 +683,35 @@
 
     } // end DRAW TABLE
 
+	function init_star_tooltip(){
+		
+		let green_star = d3.selectAll('.star-icon--green');
+		let tooltip = d3.select("#star_tooltip");
+		
+		//console.log('green_star',green_star);
+		
+		
+		green_star.on("mouseover", function() {
+			let el = d3.select(this);
+			let temp = d3.select(this.dataset)._groups[0][0].star;
+							
+			console.log('d', temp);
+            tooltip.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            tooltip.html(temp)
+                .style("left", (d3.event.pageX - 100) + "px")		
+                .style("top", (d3.event.pageY - 80) + "px");	
+            })					
+        .on("mouseout", function() {		
+            tooltip.transition()		
+                .duration(200)		
+                .style("opacity", 0);	
+        });			
+			
+	}	
+
+
 
     function init_table(gune, dic) {
         console.log('init_table.....');
@@ -652,6 +736,465 @@
     }
 
 
+    // tree functions
+	/**** --- DRAW COLLAPSIBLE TREE  ***/
+	
+	
+	
+	function get_capacidad_color(val){
+		
+		let colors = [
+			
+			{"name": "Formación", "color": "#009fdf", "json": "formacion"},
+			{"name": "Investigación", "color": "#8e6aad", "json": "investigacion"},
+			{"name": "Instalaciones y equipos", "color": "#e88604", "json": "instalaciones_y_equipos"},
+			{"name": "Transferencia", "color": "#df503e", "json": "transferencia"}
+			
+			
+		];	
+		
+		let colorsL = colors.length;
+		let i = 0;
+		
+		for(i; i < colorsL; i++ ){
+			
+			if(colors[i].name === val){
+				return colors[i].color;
+			}
+			
+		}
+	}
+	function draw_collapsible_tree(data, select_values, dic){
+		
+		console.log('draw_collapsible_tree', data.length);
+        var guneTree = {
+            'key': "4GUNE",
+            "values": nest_tree_data(data)
+
+        };
+        
+        //var guneList = nest_list_data(data);
+		//results_partial = get_results_numbers(guneList);
+		
+		//console.log('draw_collapsible_tree results_partial', results_partial);
+		//draw_result_numbers(results_partial, select_values, dic.mejoras);
+        
+        
+        //console.log('guneTree:: ', guneTree, dic);
+
+		
+
+
+        var root = d3.hierarchy(guneTree, function(d) {
+            //console.log('d from hierarchy', d);
+            return d.values;
+
+        });
+        // console.log('root:: ', root);
+
+
+        var margin = {
+                top: 20,
+                right: 90,
+                bottom: 30,
+                left: 90
+            },
+            width = 960 - margin.left - margin.right,
+            height = 750 - margin.top - margin.bottom;
+
+        var colorScale = d3.scaleLinear()
+            .domain([0, 1])
+            .range(['red', 'green']);
+        var widthScale = d3.scaleLinear()
+            .domain([1, 80])
+            .range([1, 10]);
+
+
+        var i = 0,
+            duration = 750;
+
+        // declares a tree layout and assigns the size
+        var treemap = d3.tree().size([height, width]);
+        root.x0 = height / 2;
+        root.y0 = 0;
+
+        // Collapse after the second level
+        root.children.forEach(collapse);
+		
+		
+        // append the svg object to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        
+        
+		d3.select("#tree_container").selectAll("*").remove().exit();
+
+        var svg = d3.select("#tree_container").append("svg")
+            .attr("width", width + margin.right + margin.left)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" +
+                margin.left + "," + margin.top + ")");
+
+
+        update(root);
+        // Collapse the node and all it's children
+        function collapse(d) {
+            if (d.children) {
+                d._children = d.children
+                d._children.forEach(collapse)
+                d.children = null
+            }
+        }
+
+        function update(source) {
+
+            // Assigns the x and y position for the nodes
+            var treeData = treemap(root);
+
+            //console.log('treeData', treeData);
+
+            // Compute the new tree layout.
+            var nodes = treeData.descendants(),
+                links = treeData.descendants().slice(1);
+
+            // Normalize for fixed-depth.
+            nodes.forEach(function(d) {
+
+                //console.log('nodes', nodes);
+                d.y = d.depth * 180
+            });
+
+            // ****************** Nodes section ***************************
+
+            // Update the nodes...
+            var node = svg.selectAll('g.node')
+                .data(nodes, function(d) {
+
+                   // console.log('nodes d', d, d.depth);
+                    return d.id || (d.id = ++i);
+                });
+            // Enter any new modes at the parent's previous position.
+            var nodeEnter = node.enter().append('g')
+                .attr('class', 'node')
+                .attr("transform", function(d) {
+                    return "translate(" + source.y0 + "," + source.x0 + ")";
+                })
+                .on('click', click);
+
+            // Add Circle for the nodes
+            nodeEnter.append('circle')
+                .attr('class', 'node')
+                .attr('r', 1e-6)
+                .style("fill", function(d) {
+	                
+	               //console.log('fill', d.depth);
+	                
+					switch(d.depth){
+						case 0:
+						case 1:
+							return d._children ? "chocolate" : "#fff";
+							break;
+						case 2:
+							return "chocolate";
+							break;
+						case 3:
+							return "chocolate";
+							break;
+						default:
+							return 'red';	
+					} // --> end swicth
+					
+			                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+                    
+                })
+                .style("stroke", function(d) {
+                    return colorScale(d.data.female / (d.data.female + d.data.male))
+                });
+
+            // Add labels for the nodes
+            nodeEnter.append('text')
+                .attr("dy", ".35em")
+                .attr("x", function(d) {
+                    // return d.children || d._children ? -13 : 13;
+                    return d.depth <=2 ? -13 : 13;
+                })
+                .attr("text-anchor", function(d) {
+	                // console.log('d text', d.depth);
+                    // return d.children || d._children ? "end" : "start";
+                    return d.depth <=2 ? "end" : "start";
+                })
+                .text(function(d) {
+	                
+	                const reg = /^\d+$/;
+	                let temp = null;
+	                
+	                if(reg.test(d.data.key)){
+		                console.log('numberss....');
+		                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
+		                return temp;
+		                
+	                }else{
+		                return d.data.key;
+	                }
+	                //console.log('text d', d.data.key);
+                    
+                })
+                .style("fill", function(d) {
+                    return colorScale(d.data.female / (d.data.value))
+                });
+
+            // UPDATE
+            var nodeUpdate = nodeEnter.merge(node);
+
+            // Transition to the proper position for the node
+            nodeUpdate.transition()
+                .duration(duration)
+                .attr("transform", function(d) {
+                    return "translate(" + d.y + "," + d.x + ")";
+                });
+
+            // Update the node attributes and style
+            nodeUpdate.select('circle.node')
+                .attr('r', 10)
+                .style("fill", function(d) {
+                   
+	                // console.log('fill', d.depth);
+	                
+					switch(d.depth){
+						case 0:
+						case 1:
+							return d._children ? "#D3D3D3" : "#fff";
+							break;
+						case 2:
+							let case_two_fill = get_capacidad_color(d.data.values[0].values[0].capacidad_uno);
+							//console.log('case 2:',  d.data.key, d.data.values[0].values[0].capacidad_uno);
+							return case_two_fill;
+							break;
+						case 3:
+							let case_three_fill = get_capacidad_color(d.data.values[0].capacidad_uno);
+
+							//console.log('case 3:',  d.data.key, d.data.values[0].capacidad_uno);
+							return case_three_fill;
+							break;
+						default:
+							return 'red';	
+					} // --> end swicth
+                   
+                   
+                   
+                   
+                   
+                })
+                .attr('cursor', 'pointer');
+
+
+            // Remove any exiting nodes
+            var nodeExit = node.exit().transition()
+                .duration(duration)
+                .attr("transform", function(d) {
+                    return "translate(" + source.y + "," + source.x + ")";
+                })
+                .remove();
+
+            // On exit reduce the node circles size to 0
+            nodeExit.select('circle')
+                .attr('r', 1e-6);
+
+            // On exit reduce the opacity of text labels
+            nodeExit.select('text')
+                .style('fill-opacity', 1e-6);
+
+            // ****************** links section ***************************
+
+            // Update the links...
+            var link = svg.selectAll('path.link')
+                .data(links, function(d) {
+                    return d.id;
+                })
+                .style('stroke-width', function(d) {
+                    return widthScale(d.data.value)
+                });
+
+            // Enter any new links at the parent's previous position.
+            var linkEnter = link.enter().insert('path', "g")
+                .attr("class", "link")
+                .attr('d', function(d) {
+                    var o = {
+                        x: source.x0,
+                        y: source.y0
+                    }
+                    return diagonal(o, o)
+                })
+                .style('stroke-width', function(d) {
+                    return widthScale(d.data.value)
+                });
+
+            // UPDATE
+            var linkUpdate = linkEnter.merge(link);
+
+            // Transition back to the parent element position
+            linkUpdate.transition()
+                .duration(duration)
+                .attr('d', function(d) {
+                    return diagonal(d, d.parent)
+                });
+
+            // Remove any exiting links
+            var linkExit = link.exit().transition()
+                .duration(duration)
+                .attr('d', function(d) {
+                    var o = {
+                        x: source.x,
+                        y: source.y
+                    }
+                    return diagonal(o, o)
+                })
+                .style('stroke-width', function(d) {
+                    return widthScale(d.data.value)
+                })
+                .remove();
+
+            // Store the old positions for transition.
+            nodes.forEach(function(d) {
+                d.x0 = d.x;
+                d.y0 = d.y;
+            });
+
+            // Creates a curved (diagonal) path from parent to the child nodes
+            function diagonal(s, d) {
+
+                var path = `M ${s.y} ${s.x}
+            C ${(s.y + d.y) / 2} ${s.x},
+              ${(s.y + d.y) / 2} ${d.x},
+              ${d.y} ${d.x}`
+
+                return path
+            }
+
+            // Toggle children on click.
+            function click(d) {
+                console.log('click', d);
+
+                if (d.depth <= 2) {
+                    if (d.children) {
+                        d._children = d.children;
+                        d.children = null;
+                    } else {
+                        d.children = d._children;
+                        d._children = null;
+                    }
+                    update(d);
+
+                }
+                if(d.depth === 3){
+	              /*  
+				let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", d.values[0].direccion_id);// falta
+				let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
+				let web_info = checkWebInfo(titulo_obj.web);
+				let descripcion = titulo_obj.desc;
+				*/
+	                
+	                
+	                
+	                
+	                
+	                
+	                
+	                //console.log('d tree', d);
+	                let cod = +d.data.key;
+	                let all_values = d.data.values[0];
+	                let titulo = get_dictionary_obj(dic.titulos, "cod", cod);
+					let univ = get_dictionary_obj(dic.universidades, "univ_id", all_values.univ_id);
+					
+					console.log(titulo.desc);
+
+	                
+	                // variables
+					let capacidad_dos = all_values.capacidad_dos;
+					let capacidad_color = get_capacidad_color(all_values.capacidad_uno);
+					let titulo_name = titulo.titulo;
+					let titulo_email = titulo.email;
+					let univ_centro = all_values.centro;
+					let titulo_responsable = titulo.responsable;
+					let titulo_web =  titulo.web.indexOf('http') != -1 ? titulo.web : "javascript:void(0);";
+					let univ_name = univ.univ;
+					let univ_url = univ.univ_url;
+					let email_info = getEmailInfo(titulo);
+					let univ_logo = url_img + 'univ/'+ univ.univ_short_name +"-color@2x.png";
+					let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", all_values.direccion_id);
+					let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
+					let description = titulo.desc;
+						
+					
+					
+
+
+	                 
+	                 // console.log('d tree all_values, univ', all_values, univ);
+	                 
+	                 // assign
+	                 d3.select('#capacidad_dos').html(capacidad_dos);
+	                 d3.select('#capacidad_color').style("color", capacidad_color);
+	                 d3.select('#titulo_name').html(titulo_name);
+	                 d3.select('#univ_name').html(univ_name);
+	                 d3.select('#univ_centro').html(univ_centro);
+	                 // d3.select('#titulo_responsable').html(titulo_responsable);
+	                 d3.select('#email_info').html(email_info);
+	                 d3.select('#univ_url').attr('href', univ_url);
+	                 d3.select('#univ_logo').attr('src', univ_logo);
+	                 d3.select('#titulo_url').attr('href', titulo_web);
+	                 d3.select('#titulo_direccion').html(ubicacion);
+	                 
+	                 
+	                 d3.select('#titulo_description').html(description);
+	                 
+	                 
+	                 
+	                 // modal window
+	                $("#myModalFullscreen").modal();
+                }
+            }
+        } // --> update source ends
+		
+		
+	};
+
+	
+    
+    
+    
+    
+    
+    
+	function init_overall_tree(gune, val, dic){
+		//console.log('init_overall_tree', data, values);
+
+		let filter_data = get_filter_data(gune, val, dic);
+
+		console.log('init_overall_tree filter_data', filter_data);
+		
+		
+		if(filter_data.length){
+			draw_collapsible_tree(filter_data, val, dic);
+		}else{
+			d3.select("#tree_container").selectAll("*").remove().exit();
+
+			// console.log('NO DATA');
+		}
+		
+		
+		
+	}
+
     function init_pill_tabs(data, dic) {
 
         const pill_list_tab = d3.select('#pills-list-tab');
@@ -660,16 +1203,19 @@
 
         pill_list_tab.on('click', function() {
 
-
+			tree_counter = false;
             console.log('pill_list_tab', tree_counter);
-
-
 
         });
 
         pill_tree_tab.on('click', function() {
+			tree_counter = true;
 
-
+			console.log('pill_tree_tab', tree_counter);
+			
+			let element = document.getElementById('ambito_select');
+			element.dispatchEvent(new Event("change")); 
+			
 
         });
 
@@ -678,13 +1224,13 @@
     }
     function init_counter(gune, val, dic){
 	    
-	    let filter_data = init_filter_counter(gune, val, dic);
+	    let filter_data = get_filter_data(gune, val, dic);
 	    
-	    console.log('init_counter filter_data', filter_data)
+	    //console.log('init_counter filter_data', filter_data)
 	    draw_counter(filter_data);
 	    
     }
-
+    
 
 
     let init = function(error, gune, dic) {
@@ -699,8 +1245,11 @@
 
         build_selects(gune, dic);
         init_table(gune, dic);
+		init_star_tooltip() ;      
         init_ver_mas();
         init_counter(gune, val, dic);
+		init_pill_tabs(gune, dic);
+
 
     } // --> init ends            
 
