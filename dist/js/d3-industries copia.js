@@ -316,7 +316,7 @@
 						})
 						.text(function (d) { 
 							// console.log('option', d);
-							return d.subambito_short_name;
+							return d.sub_sort_name;
 						});
 						// console.log('options', options);
 					 

@@ -1,206 +1,707 @@
 !(function(window, d3) {
 
     'use strict';
-    
 
-	let url_img= '../../img/';
-	let url_data = '../../data/';
-	let tree_counter = false;
-	let selectValues = null;
-	
+
+    let url_img = '../../img/';
+    let url_data = '../../data/';
+    let tree_counter = false;
+    let selectValues = null;
+
     window.onload = function() {
-	    d3.queue()
-		.defer(d3.json, url_data + 'data_final_unicode.json')
-		.defer(d3.json, url_data + 'dictionary.json')
-		.await(init);
+        d3.queue()
+            .defer(d3.json, url_data + 'data_final_unicode.json')
+            .defer(d3.json, url_data + 'dictionary.json')
+            .await(init);
 
-	    
+
     };
-    
-	/**** --- NEST DATA: data nest for tree ***/
 
-	function nest_list_data (data){
-		
-		let nested_list_data = d3.nest()
+    /**** --- NEST DATA: data nest for list ***/
+
+    function nest_list_data(data) {
+
+        let nested_list_data = d3.nest()
             .key(function(d) {
                 return d["cod"];
             })
             .entries(data)
-            .sort(function(a,b) { return d3.ascending(a.values[0].capacidad_dos,b.values[0].capacidad_dos); });
-            
-        return nested_list_data;    
+            .sort(function(a, b) {
+                return d3.ascending(a.values[0].capacidad_dos, b.values[0].capacidad_dos);
+            });
+
+        return nested_list_data;
+
+
+    }
+
+    function get_dictionary_obj(dic, key_to_check, value_to_check) {
+        //console.log('get_dictionary_property', dic, key_to_check, value_to_check, key_to_return);
+        const dic_length = dic.length;
+        let i = 0;
+        let result = null;
+
+        for (i; i < dic_length; i++) {
+
+            if (dic[i][key_to_check] === value_to_check) {
+                result = dic[i];
+            }
+        }
+        // console.log('get_dictionary_obj', result);
+        return result;
+
+
+
+    }
+
+    function get_dictionary_property(dic, key_to_check, value_to_check, key_to_return) {
+        //console.log('get_dictionary_property', dic, key_to_check, value_to_check, key_to_return);
+        const dic_length = dic.length;
+        let i = 0;
+        let result = null;
+
+        for (i; i < dic_length; i++) {
+
+            if (dic[i][key_to_check] === value_to_check) {
+                result = dic[i][key_to_return];
+            }
+        }
+        // console.log('get_dictionary_property', result);
+        return result;
+
+
+    }
+
+
+
+
+    function get_capacidad_obj(select, dic) {
+
+        //console.log('get_capacidad_obj', id, dic);
+        let temp = dic.filter(function(d) {
+            //console.log('d', d.parent_id);
+            return +d.parent_id === +select.capacidad_uno;
+
+        });
+        //console.log('temp', temp);
+        temp.unshift({
+            id: 0,
+            capacidad_dos: "Todos los tipos",
+            json: "todos",
+            capacidad_uno: "Todas",
+            parent_id: 0
+        });
+
+        //console.log('get_capacidad_obj temp', temp);
+        return temp;
+    }
+
+	function init_filter_counter(data, select_values, dic){
+		console.log('init_filter_counter', data, select_values, dic);
+		let selection_names = get_the_select_info(select_values, dic);
+		console.log('init_filter_counter selection_names', selection_names);
 		
+		let c1_obj = data.filter(function(d, i){
+			
+			if(select_values.capacidad_uno != 0 ){ return d.capacidad_uno === selection_names.capacidad_uno; } 
+			else { return d; }
+			
+		});
+		console.log('init_filter_counter c1_obj', c1_obj);
+		
+		let c2_obj = c1_obj.filter(function(d, i){
+			
+			if(select_values.capacidad_dos != 0 ){ return d.capacidad_dos === selection_names.capacidad_dos; } 
+			else { return d; }
+			
+		});
+		
+		console.log('init_filter_counter c2_obj', c2_obj);
+		
+		let a1_obj = c2_obj.filter(function(d, i){
+			
+			if(select_values.ambito != 0 ){ return +d.ambito_id === +select_values.ambito; } 
+			else { return d; }
+			
+		});
+				console.log('init_filter_counter a1_obj', a1_obj);
+		let a2_obj = a1_obj.filter(function(d, i){
+			
+			if(d.presencia != 0 ){ return d; } 
+			
+		});
+				console.log('init_filter_counter a2_obj', a2_obj);
+		
+		//Para contador y árbol		
+		return a2_obj;
 		
 	}
 	
-
-
-
-
-
-
-
-	function get_capacidad_obj(id, dic){
-			
-			//console.log('get_capacidad_obj', id, dic);
-				
-				let temp = dic.filter(function(d) { 
-					//console.log('d', d.parent_id);
-					return +d.parent_id === +id;
-					
-					});
-				//console.log('temp', temp);
-				// console.log('get_capacidad_obj temp', temp);
-				return temp;
-		}
-
-	/**** --- BUILD SELECTS ***/
 	
-	
-
-	function build_selects(data, dic){
+	function draw_counter(d){
 		
-		console.log('building selects.....');
-		const dic_capacidad_uno = dic.capacidades.capacidades_uno;
-		const dic_capacidad_dos = dic.capacidades.capacidades_dos;
-		const dic_ambitos = dic.industria_4.ambitos;
-		console.log('building selects', dic_capacidad_uno, dic_capacidad_dos, dic_ambitos);
+		let nest_data_counter =  nest_list_data(d);
+		let nest_data_counter_l = nest_data_counter.length;
+		let results_total = d3.select('#results_total').html(nest_data_counter_l);
+		console.log('draw_counter nest_data_counter', nest_data_counter);
+	}
+    /**** --- BUILD SELECTS ***/
 
 
-		const capacidad_uno_select = d3.select('#capacidad_uno_select').on('change',onchange);
-		const capacidad_dos_select = d3.select('#capacidad_dos_select').on('change',onchange);
-		const ambito__select = d3.select('#ambito_select').on('change',onchange); // now doing nothing! only log values
 
-		
+    function build_selects(data, dic) {
+
+        console.log('building selects.....');
+        const dic_capacidad_uno = dic.capacidades.capacidades_uno;
+        const dic_capacidad_dos = dic.capacidades.capacidades_dos;
+        const dic_ambitos = dic.industria_4.ambitos;
+        console.log('building selects', dic_capacidad_uno, dic_capacidad_dos, dic_ambitos);
+
+
+        const capacidad_uno_select = d3.select('#capacidad_uno_select').on('change', onchange);
+        const capacidad_dos_select = d3.select('#capacidad_dos_select').on('change', onchange);
+        const ambito__select = d3.select('#ambito_select').on('change', onchange); // now doing nothing! only log values
+
+
         function updateSelect() {
 
-                return{
+            return {
 
-                    capacidad_uno: capacidad_uno_select.property('selectedOptions')[0].value,
-                    capacidad_dos: capacidad_dos_select.property('selectedOptions')[0].value,
-                    ambito: ambito__select.property('selectedOptions')[0].value
+                capacidad_uno: capacidad_uno_select.property('selectedOptions')[0].value,
+                capacidad_dos: capacidad_dos_select.property('selectedOptions')[0].value,
+                ambito: ambito__select.property('selectedOptions')[0].value
 
-                };
+            };
+        }
+
+
+
+
+        function onchange() {
+
+            let capacidad_dos_obj = null;
+
+            selectValues = updateSelect();
+            capacidad_dos_obj = get_capacidad_obj(selectValues, dic_capacidad_dos);
+
+
+
+
+            if (this.dataset.select === "capacidad_uno_select") {
+                // console.log('enter onchange parent select....');
+                // console.log('this.dataset.select', this.dataset.select);
+                // console.log('onchange this.value', this.value);
+
+                let options = capacidad_dos_select
+                    .selectAll('option')
+                    .remove()
+                    .exit()
+                    .data(capacidad_dos_obj)
+                    .enter()
+                    .append('option')
+                    .each(function(d, i) {
+                        //console.log('dd, ii', d, i);
+                        if (i === 0) {
+                            d3.select(this).attr('selected', 'selected');
+                        }
+                        /*
+                        if( d.subambito_id === +select_subambito + 1){
+                        	d3.select(this).attr('selected', 'selected');
+                        }
+                        */
+                    })
+
+                    .attr('value', function(d) {
+                        //console.log('d.subambito_id', d.subambito_id, d); 
+                        return d.id ? d.id : '0';
+                    })
+                    .text(function(d) {
+                        // console.log('option', d);
+                        return d.capacidad_dos;
+                    });
+                // console.log('options', options);
+                selectValues = updateSelect();
+
+
+            } //  --> if ends
+
+            console.log('onchange capacidad_dos_obj', capacidad_dos_obj);
+
+
+            show_selected_titles(selectValues, dic);
+            draw_title_selector(get_the_select_info(selectValues, dic));
+			init_counter(data,selectValues, dic);
+
+            console.log('selectValues', selectValues);
+
+
+
+        }
+
+
+    }
+
+
+    function draw_title_selector(select_obj) {
+
+        d3.select('#title_ambito').html(arguments[0].capacidad_uno);
+        d3.select('#title_subambito').html(arguments[0].capacidad_dos);
+        d3.select('#title_mejora').html(arguments[0].ambito);
+        //console.log('select_obj', select_obj);
+        return '';
+
+    }
+
+    function show_selected_titles(select_values, dic) {
+
+        let c1 = +select_values.capacidad_uno;
+        let c2 = +select_values.capacidad_dos;
+        let a1 = select_values.ambito;
+
+        let select_values_names = get_the_select_info(select_values, dic);
+        console.log('show_selected_titles c1, c2, a1', c1, c2, a1, select_values_names);
+
+
+        let capacidades = get_capacidad_obj(select_values, dic.capacidades.capacidades_dos);
+        let capacidadesL = capacidades.length;
+        var j = 0;
+        console.log('capacidades', capacidades);
+        let all_rows = d3.selectAll('.table-row-parent');
+        let c1_rows;
+        let c2_rows;
+        let a1_rows = null;
+
+        //console.log('all_rows', all_rows);
+		// si no son todas las capacidades
+        if (capacidadesL > 1) {
+	        // escondemos todas los títulos
+            all_rows.classed('hidden', true);
+            
+             // Filtramos los títulos que tienen la capacidad_uno
+            c1_rows = all_rows.filter(function(d, i) {
+                j = 0;
+                //console.log('all_rows.filter d', d);
+                for (j; j < capacidadesL; j++) {
+
+                    if ( j > 0 ) {
+
+                        if (d.values[0].capacidad_uno === capacidades[j].capacidad_uno) { return d; }
+                    }
+                }
+            });
+			
+			 // Filtramos los títulos que tienen la capacidad_dos
+            c2_rows = c1_rows.filter(function(d, i) {
+                // console.log('c2_rows d', d);
+                if ( c2 === 0 ) { return d; }
+                if ( d.values[0].capacidad_dos === select_values_names.capacidad_dos ) { return d; };
+            });
+            c2_rows.classed('hidden', false);
+
+
+            //console.log('c1_rows', c1_rows);
+            // console.log('c2_rows', c2_rows);
+            //console.log('a1_rows', a1_rows);
+        } else {
+            all_rows.classed('hidden', false);
+            c1_rows = all_rows;
+            c2_rows = all_rows;
+        }
+
+		// Filtramos los ámbitos si la opción no son todos los ámbitos
+        if ( +a1 != 0 ) {
+            // console.log('+a1 != 0', a1, +a1 != 0);
+
+            a1_rows = c2_rows.selectAll('.table-row');
+            a1_rows.classed('hidden', true);
+
+            let green_stars = d3.selectAll('.star_' + a1 + " i.star-icon--green");
+            green_stars.each(function(d, i) {
+                let el = this.parentNode.parentNode.parentNode;
+                //console.log('green_stars el ', el);
+                d3.select(el).classed('hidden', false);
+            });
+            //console.log('a1_rows', a1_rows, green_stars);
+            //c2_rows.selectAll('.star_' + a1).classed('hidden',false);
+		// Filtramos los ámbitos si la opción son todos los ámbitos
+	
+        }else{
+            a1_rows = c2_rows.selectAll('.table-row');
+            a1_rows.classed('hidden', false);
+        }
+
+    }
+
+
+
+
+    function get_the_select_info(values, dic) {
+
+        // {capacidad_uno: "1", capacidad_dos: "0", ambito: "0"}
+        // console.log('get_the_select_info', values, dic);
+        let selection = {
+            "capacidad_uno": null,
+            "capacidad_dos": null,
+            "ambito": null
+        };
+
+        let dic_capacidad_uno = dic.capacidades.capacidades_uno;
+        let dic_capacidad_dos = dic.capacidades.capacidades_dos;
+        let dic_ambitos = dic.industria_4.ambitos;
+
+        selection.capacidad_uno = +values.capacidad_uno != 0 ? get_dictionary_property(dic_capacidad_uno, "id", +values.capacidad_uno, "capacidad_uno") : 'Todas las capacidades';
+        selection.capacidad_dos = +values.capacidad_dos != 0 ? get_dictionary_property(dic_capacidad_dos, "id", +values.capacidad_dos, "capacidad_dos") : 'Todos los tipos';
+        selection.ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
+        console.log('get_the_select_info level_val', selection);
+        return selection;
+
+
+
+    }
+
+
+    // TABLE FUNCTIONS
+
+    function check_presencias(d, val) {
+        // console.log('check_presencias', d, val);
+        let temp = d.values;
+        let tempL = d.values.length;
+        let i = 0;
+        let result = {
+
+            "ambito_id": null,
+            "children": 0,
+            "presencias": 0,
+            "subambitos": [
+
+
+            ]
+
+        };
+
+        for (i; i < tempL; i++) {
+
+            if (temp[i].ambito_id === +val) {
+
+                if (i === 0) {
+                    result.ambito_id = +val;
+                }
+                result.children += 1;
+
+                if (+temp[i].presencia === 1) {
+                    result.presencias += 1;
+                }
+
+                result.subambitos.push({
+                    "suambito_id": temp[i].subambito_id,
+                    "presencia": temp[i].presencia
+                });
+
             }
+        }
+
+        // console.log('check_presencias result', result);
+        return result;
+
+
+
+    }
+
+    function addClass_to_star(d, val) {
+        //console.log('addClass_to_star', d);
+
+        let values_counter = check_presencias(d, val);
+        //console.log('values_counter result', values_counter);
+
+
+        let theClass = 'star-icon--gray percent-0';
+
+        if (values_counter.presencias != 0) {
+            theClass = 'star-icon--green percent-' + ((values_counter.presencias * 100) / values_counter.children).toFixed(0) + " " + values_counter.presencias + "_" + values_counter.children;
+        }
+        return theClass;
+
+        //return "star-icon--gray"
+    }
+
+    /*** --- Check web info ---*/
+    function checkWebInfo(val) {
+        //console.log('checkWebInfo',val);
+        if (val.indexOf('http') != -1) {
+            return '<i class="fa">&#xf13d;</i><a href="' + val + '"';
+        } else {
+            return '<a href="javascript:void(0);" class="hidden"';
+        }
+    }
+
+    /*** --- Check email info ---*/
+    function getEmailInfo(val) {
+        // console.log('getEmailInfo',val);
+        // <i class="fa">&#xf0e0;</i><span>&nbsp;<a href="mailto:example@example.com?subject=4GUNE Clúster Industria 4.0">Iñaki Vázquez</a> </span>
+
+        let email = val.email.trim().replace('(at)', "@");
+        let responsable = val.responsable.trim();
+        const emailRe = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        let emailIsOk = emailRe.test(email);
+        // console.log('getEmailInfo',email, emailIsOk, responsable);
+
+        if (emailIsOk) {
+            if (responsable && responsable != "NO DISPONIBLE") {
+                return '<i class="fa">&#xf0e0;</i><span>&nbsp;<a href="mailto:' + email + '?subject=4GUNE Clúster Industria 4.0">' + responsable + '</a> </span>';
+            } else {
+                return '<i class="fa">&#xf0e0;</i><span>&nbsp;<a href="mailto:' + email + '?subject=4GUNE Clúster Industria 4.0">' + 'Contacto' + '</a> </span>';
+            }
+        }
+        if (!emailIsOk) {
+            if (responsable && responsable != "NO DISPONIBLE") {
+                return '<i class="fa">&#xf0e0;</i><span>&nbsp;' + responsable + '</a> </span>';
+            } else {
+                return '';
+            }
+        }
+    }
+
+    function addClass_to_bullet(d) {
+        //console.log('addClass_to_bullet', d);
+        let bullet = 'class="fa">&#xf111;';
+
+        switch (d) {
+            case "Transferencia":
+                return 'class="fa redColor">&#xf111;'; // pinta TODOS los títulos en los que exista presencia de alguna mejora.
+                break;
+            case "Formación":
+                return 'class="fa blueColor">&#xf111;';
+                break;
+            case "Investigación":
+                return 'class="fa purpleColor">&#xf111;';
+                break;
+            case "Instalaciones y equipos":
+                return 'class="fa orangeColor">&#xf111;';
+                break;
+            default:
+                return bullet;
+        } // --> end swicth
+
+
+        return bullet;
+
+
+    }
+    /*
+    function addAttrDataName_to_row(d){
+    	//console.log('addAttrDataName_to_row', d);
+    	
+    	switch(d){
+    		case "Transferencia":
+    			return 'transferencia'; // pinta TODOS los títulos en los que exista presencia de alguna mejora.
+    			break;
+    		case "Formación":
+    			return 'formacion';
+    			break;
+    		case "Investigación":
+    			return 'investigacion';
+    			break;
+    		case "Instalaciones y equipos":
+    			return 'instalaciones_y_equipos';
+    			break;
+    		default:
+    			return '';	
+    	} // --> end swicth
+    	
+    }
+    */
+    function init_ver_mas() {
+        var x = document.getElementsByTagName("BODY")[0].addEventListener('click', function(e) {
+            // do nothing if the target does not have the class drawnLine
+            //if (!e.target.classList.contains("drawnLine")) return;
+
+            if (e.target.id.indexOf("link_") > -1) {
+
+                console.log('e.target.dataset', e.target.dataset);
+                let el = e.target;
+                let temp = el.id.split('_')[1];
+
+                let tab = d3.select('#more_' + temp)
+                console.log(temp, d3.select('#more_' + temp));
+                // el.attr("class", "hidden");
+
+                tab.classed("hidden", tab.classed("hidden") ? false : true);
+
+                console.log(d3.select(el).html());
+                d3.select(el).html() === '&nbsp;Ver menos' ? d3.select(el).html('&nbsp;Ver más') : d3.select(el).html('&nbsp;Ver menos');
+
+            }
+        });
+
+    }
+
+    function draw_table(nested_list_data, dic) {
+
+        console.log('draw_table t', nested_list_data);
+        let table_container = d3.select('#table_container');
+
+        table_container.selectAll("*").remove().exit();
+
+
+        let table_main = table_container
+            .selectAll('div')
+            .data(nested_list_data)
+            .enter()
+            .append('div')
+            .attr('class', 'col-sm-12 col-md-6 col-lg-12 table-row-parent hidden')
+            .attr('data-capacidad', function(d, i) {
+
+                return d.values[0].capacidad_uno;
+
+            })
+            .attr('data-tipo', function(d, i) {
+
+                return d.values[0].capacidad_dos;
+
+            });
+
+        table_main
+            .html(function(d, i) {
+                // console.log('d', d);
+
+                let titulo_obj = get_dictionary_obj(dic.titulos, "cod", d.values[0].cod);
+                let titulo = titulo_obj.titulo;
+                let bullet_class = addClass_to_bullet(d.values[0].capacidad_uno);
+                let capacidad_dos = d.values[0].capacidad_dos;
+                let icon_url = url_img + 'icons/icon-' + get_dictionary_property(dic.direcciones, "direccion_id", d.values[0].direccion_id, "provincia").toLowerCase();
+                let centro = d.values[0].centro;
+                let email = getEmailInfo(titulo_obj);
+                let ubicacion_obj = get_dictionary_obj(dic.direcciones, "direccion_id", d.values[0].direccion_id);
+                let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' + ubicacion_obj.provincia;
+                let univ_obj = get_dictionary_obj(dic.universidades, "univ_id", d.values[0].univ_id);
+                let univ = univ_obj.univ;
+                let univ_url = univ_obj.univ_url;
+                let univ_logo = url_img + 'univ/' + univ_obj.univ_short_name;
+                let web_info = checkWebInfo(titulo_obj.web);
+                let descripcion = titulo_obj.desc;
+
+
+
+                return '<div class="table-row table-border--gray padding-box--regular">' +
+                    '<div class="cell type first-child">' +
+                    '<p><i ' + bullet_class + '</i> <span>&nbsp;' + capacidad_dos + '</span></p>' +
+                    '<div class="icon-map-container hidden-mobile">&nbsp;<img class="icon-map" src="' + icon_url + '.svg" /></div>' +
+                    '</div>' +
+                    '<div class="cell title">' +
+                    '<p class="title-name"><span>' + titulo + '</span></p>' +
+                    '<div class="univ-container">' +
+                    '<div class="univ-name">' +
+                    '<p class="margin-bottom--0"><i class="fa">&#xf19c;</i><span>&nbsp;' + univ + '</span></p>' +
+                    '<p class="margin-bottom--0"><i class="fa">&#xf19d;</i><span>&nbsp;' + centro + '</span></p>' +
+                    '<p class="margin-bottom--0">' + email + '</p>' +
+                    '<p class="hidden-screen"><i class="fa">&#xf041;</i>&nbsp;' + ubicacion + '.</p>' +
+                    '</div>' +
+                    '<div class="univ-logo">' +
+                    '<a href="' + univ_url + '" target="_blank"><img class="icon-univ-logo" src="' + univ_logo + '-color.png" /></a>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="univ-links">' +
+                    '<span class="univ-links-ver hidden-mobile"><i class="fa">&#xf0d7;</i><a href="javascript:void(0);" id="link_' + i + '">&nbsp;Ver más</a></span>' +
+                    '<span class="univ-links-web">' + web_info + ' target="_blank">&nbsp;Sitio web</a></span>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="cell star star_1"><span class="star-text--container hidden-screen">Fabricación Avanzada</span><span class="star-icon--container"><i data-star="Fabricación Avanzada" class="fa star-icon ' + addClass_to_star(d, 1) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_2"><span class="star-text--container hidden-screen">RV & RA</span><span class="star-icon--container"><i data-star="RV & RA" class="fa star-icon ' + addClass_to_star(d, 2) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_3"><span class="star-text--container hidden-screen">Ciberseguridad</span><span class="star-icon--container"><i data-star="Ciberseguridad" class="fa star-icon ' + addClass_to_star(d, 3) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_4"><span class="star-text--container hidden-screen">Cloud computing</span><span class="star-icon--container"><i data-star="Cloud computing" class="fa star-icon ' + addClass_to_star(d, 4) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_5"><span class="star-text--container hidden-screen">Big Data</span><span class="star-icon--container"><i data-star="Big Data" class="fa star-icon ' + addClass_to_star(d, 5) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_6"><span class="star-text--container hidden-screen">Internet of Things</span><span class="star-icon--container"><i data-star="Internet of Things" class="fa star-icon ' + addClass_to_star(d, 6) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_7"><span class="star-text--container hidden-screen">Sistemas IT</span><span class="star-icon--container"><i data-star="Sistemas IT" class="fa star-icon ' + addClass_to_star(d, 7) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_8"><span class="star-text--container hidden-screen">Fabricación Aditiva</span><span class="star-icon--container"><i data-star="Fabricación Aditiva" class="fa star-icon ' + addClass_to_star(d, 8) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_9"><span class="star-text--container hidden-screen">Materiales & procesos</span><span class="star-icon--container"><i data-star="Materiales & procesos" class="fa star-icon ' + addClass_to_star(d, 9) + '">&#xf005;</i></span></div>' +
+                    '<div class="cell star star_10"><span class="star-text--container hidden-screen">Modelos de negocio</span><span class="star-icon--container"><i data-star="Modelos de negocio" class="fa star-icon ' + addClass_to_star(d, 10) + '">&#xf005;</i></span></div>' +
+                    '</div>' +
+                    '<div class="table-outside-section hidden-mobile hidden" id="more_' + i + '">' +
+                    '<p>' + descripcion + '</p>' +
+                    '<p><i class="fa">&#xf041;</i>&nbsp;' + ubicacion + '.</p>' +
+
+                    '</div>';
+            });
 
 
 
 
+    } // end DRAW TABLE
+
+
+    function init_table(gune, dic) {
+        console.log('init_table.....');
+
+        let titulos = nest_list_data(gune);
+        draw_title_selector(get_the_select_info({
+            "capacidad_uno": 0,
+            "capacidad_dos": 0,
+            "ambito": 0
+        }, dic));
+
+        draw_table(titulos, dic);
+        show_selected_titles({
+            "capacidad_uno": 0,
+            "capacidad_dos": 0,
+            "ambito": 0
+        }, dic);
 
 
 
 
-		function onchange(){
-			
-			
-				if(this.dataset.select === "capacidad_uno_select" ){
-					// console.log('enter onchange parent select....');
-					// console.log('this.dataset.select', this.dataset.select);
-					// console.log('onchange this.value', this.value);
-					let capacidad_dos_obj = null;
-					
-					if(this.value === "0" || this.value ==="" ){
-						capacidad_dos_obj = [{id: 0, capacidad_dos: "Todas los tipos", json: "todos", parent_id: null, capacidad_uno: "Todas", parent_id: 0 }];
-					}else{
-						capacidad_dos_obj = get_capacidad_obj(this.value, dic_capacidad_dos);	
-					}
-					
-					// console.log('onchange capacidad_dos_obj', capacidad_dos_obj );
-					
-					
-					let options = capacidad_dos_select
-						.selectAll('option')
-						.remove()
-						.exit()
-						.data(capacidad_dos_obj)
-						.enter()
-						.append('option')
-						.each(function(d, i){
-							//console.log('dd, ii', d, i);
-							/*
-							if( d.subambito_id === +select_subambito + 1){
-								d3.select(this).attr('selected', 'selected');
-							}
-							*/
-						})	
-	
-						.attr('value', function(d){ 
-							//console.log('d.subambito_id', d.subambito_id, d); 
-							return d.id ? d.id : '0';
-						})
-						.text(function (d) { 
-							// console.log('option', d);
-							return d.capacidad_dos;
-						});
-						// console.log('options', options);
-					 
-				} //  --> if ends
-				
-				selectValues = updateSelect();
-				console.log('selectValues', selectValues);
+    }
 
-		
-		
-		}
-		
-		
-	}	
+
+    function init_pill_tabs(data, dic) {
+
+        const pill_list_tab = d3.select('#pills-list-tab');
+        const pill_tree_tab = d3.select('#pills-tree-tab');
+
+
+        pill_list_tab.on('click', function() {
+
+
+            console.log('pill_list_tab', tree_counter);
 
 
 
-	function draw_table(t, dic){
-		
-		console.log('draw_table t', t);
-	}
-	
-	
-	function init_table(gune, dic){
-		console.log('init_table.....');
-		
-		let titulos = nest_list_data(gune);
-		draw_table(titulos, dic);
-		
+        });
+
+        pill_tree_tab.on('click', function() {
 
 
 
-	}
-	
-	
-	function init_pill_tabs(data, dic){
-		
-		const pill_list_tab = d3.select('#pills-list-tab');
-		const pill_tree_tab = d3.select('#pills-tree-tab');
-		
-		
-		pill_list_tab.on('click', function(){
-
-			
-			console.log('pill_list_tab', tree_counter);
-
-			
-			
-		});
-
-		pill_tree_tab.on('click', function(){
-			
-			
-			
-		});
+        });
 
 
 
-	}
-	
-	
-	
+    }
+    function init_counter(gune, val, dic){
+	    
+	    let filter_data = init_filter_counter(gune, val, dic);
+	    
+	    console.log('init_counter filter_data', filter_data)
+	    draw_counter(filter_data);
+	    
+    }
+
+
+
     let init = function(error, gune, dic) {
-		
-		//console.log('hello from D3', gune, dic);
-		if (error) throw error;
-		
-	    build_selects(gune, dic);
-	    init_table(gune, dic);
+        console.log('hello from D3', gune, dic);
+        if (error) throw error;
+	    
+		let val = {
+            "capacidad_uno": 0,
+            "capacidad_dos": 0,
+            "ambito": 0
+        };
 
-    }	// --> init ends            
+        build_selects(gune, dic);
+        init_table(gune, dic);
+        init_ver_mas();
+        init_counter(gune, val, dic);
+
+    } // --> init ends            
 
 })(window, d3);

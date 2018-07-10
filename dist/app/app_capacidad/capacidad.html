@@ -60,9 +60,9 @@
             <div class="col-sm">
                <select name="capacidad_uno_select" id="capacidad_uno_select" data-select="capacidad_uno_select" class="form-control form-control-lg margin-bottom--24">
 <!--                   <option selected="true" disabled="disabled" value="">Ámbito Industria 4.0</option> -->
-				  <option value="0" selected="true">Todos las capacidades</option>
+				  <option value="0" selected="true">Todas las capacidades</option>
                   <option value="1">Formación</option>
-                  <option value="2">Instalación y equipos</option>
+                  <option value="2">Instalaciones y equipos</option>
                   <option value="3">Investigación</option>
                   <option value="4">Transferencia</option>
 			</select>
@@ -88,7 +88,7 @@
             <div class="col-sm">
                <select name="ambito_select" id="ambito_select" class="form-control form-control-lg margin-bottom--24" data-select="ambito_select">
 <!--                   <option selected="true" disabled="disabled" value="">Mejora en...</option> -->
-                  <option value="0" selected="true">Todas las presencias</option>
+                  <option value="0" selected="true">Todos los ámbitos</option>
                   <option value="1">Fabricación avanzada</option>
                   <option value="2">RV & RA</option>
                   <option value="3">Ciberseguridad</option>
@@ -152,29 +152,29 @@
 				            <div class="col-sm text-aling--center">
 					            
 					            <p class="margin-bottom--0"><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
-					            <p><small>Ordenados por el tipo de capacidad. Las fases con la estrella verde quieren decir que puedo mejorar esa fase en mi industria.</small></p>
+					            <p><small>Ordenados por el tipo de capacidad. Las fases con la estrella verde quieren decir que el título puedo mejorar ese ámbito en mi industria.</small></p>
 							</div>
 				         </div>
 					      
-				         <div class="row table-keys list-active" id="table-keys"> 
+				         <div class="row table-keys" id="table-keys"> 
 					         
 				            <div class="col-sm">
 					            
-					            <p class="table-key--active"><small><i class="fa blueColor">&#xf111;</i> <span id="formacion" class="table-keys--key">Formación (<span id="results_formacion"></span>)</span></small></p>
+					            <p class="table-key--active"><small><i class="fa blueColor">&#xf111;</i> <span id="formacion" class="table-keys--key">Formación</span></small></p>
 							</div>
 							
 				            <div class="col-sm">
 					            
-					            <p class="table-key--active"><small><i class="fa purpleColor">&#xf111;</i> <span id="investigacion" class="table-keys--key">Investigación (<span id="results_investigacion"></span>)</span></small></p>
+					            <p class="table-key--active"><small><i class="fa purpleColor">&#xf111;</i> <span id="investigacion" class="table-keys--key">Investigación</span></small></p>
 							</div>
 							
 				            <div class="col-sm">
 					            
-					            <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia (<span id="results_transferencia"></span>)</span></small></p>
+					            <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia</span></small></p>
 							</div>
 				            <div class="col-sm">
 					            
-					            <p class="table-key--active"><small><i class="fa orangeColor">&#xf111;</i> <span id="instalaciones_y_equipos" class="table-keys--key">Instalaciones y equipos (<span id="results_instalaciones_y_equipos"></span>)</span></small></p>
+					            <p class="table-key--active"><small><i class="fa orangeColor">&#xf111;</i> <span id="instalaciones_y_equipos" class="table-keys--key">Instalaciones y equipos</span></small></p>
 							</div>
 					         
 					         
@@ -217,14 +217,16 @@
 				               <div class="table-row table-border--gray padding-box--regular">
 				                  <div class="cell type rotate-text--container">Capacidad</div>
 				                  <div class="cell title rotate-text--container">Título</div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">I+D</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Producción</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Suministros y compras</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Almacenamiento y logística</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Marketing</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Ventas</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Servicios</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Administración</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Fabricación Avanzada</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">RV & RA</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Ciberseguridad</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Cloud computing</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Big Data</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Internet of Things</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Sistemas IT</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Fabricación Aditiva</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Materiales & procesos</p></div>
+				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Modelos de negocio</p></div>
 				               </div>
 				
 				            </div><!-- col-sm table-head -->
