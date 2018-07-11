@@ -31,31 +31,75 @@
       
       
       <div class="container">
-         <div class="row border-bottom--2">
+         <div class="row">
             <div class="col-12">
                <h1 class="color--main">Diccionario de términos de la 'Industria 4.0'</h1>
                <p>Principales términos utilizados en este Clúster.</p>
             </div>
          </div>
       </div>
-      <!-- / TABLE DICTIONARY -->
-      <div class="container text-aling--center">
+      
+      
+      
+      <!-- / SELECTS -->
+      <div class="container margin-top--24 margin-bottom--24">
          <div class="row">
-            <div class="col-12">
-               <img class="img-fluid" src="../../img/ambitos/ambito_1.jpg" alt="Fabricación avanzada">
+            <div class="col-sm">
+               <select name="parent_selection" id="ambito_select" data-select="parent_select" class="form-control form-control-lg margin-bottom--24">
+<!--                   <option selected="true" disabled="disabled" value="">Ámbito Industria 4.0</option> -->
+				  <option value="0" selected="true">Todos los ámbitos Industria 4.0</option>
+                  <option value="1">Fabricación Avanzada</option>
+                  <option value="2">RV & RA</option>
+                  <option value="3">Ciberseguridad</option>
+                  <option value="4">Cloud computing</option>
+                  <option value="5">Big Data</option>
+                  <option value="6">Internet of Things</option>
+                  <option value="7">Sistemas IT</option>
+                  <option value="8">Fabricación Aditiva</option>
+                  <option value="9">Materiales & procesos</option>
+                  <option value="10">Modelos de negocio</option>
+               </select>
+            </div>
+            <div class="col-sm">
+               <select name="child_selection" id="subambito_select" class="form-control form-control-lg margin-bottom--24" data-select="child_select">
+				 		<option value="0" selected="true">Todos los subámbitos</option>
+               </select>
+               
+               
+
+                  
+               
+               
+               
+               
+               
+               
+               
             </div>
          </div>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-12">
-               <h1 class="title-ambito green-container" id="title_ambito"><span class="icon-image icon_ambito_1"></span>Fabricación Avanzada (flexible, autonoma, inteligente, y cooperativa)</h1>
-            </div>
-         </div>
-      </div>
-      <h1 class="title-ambito" id="title_ambito">Todas las capacidades</h1>
-      <h2 class="title-subambito" id="title_subambito">Todos los tipos</h2>
-      <h2 class="title-mejora" id="title_mejora">Todos los ámbitos</h2>
+      
+
+      
+				      <!-- / TABLE CONTAINER important!!!!! -->
+				      <div class="container">
+				         <div class="row" id="table_container">
+				         </div>
+				      </div>          
+      
+				      <!-- / FOOTER important!!!!! -->
+				      <div class="container">
+				         <div class="row">
+					         
+					         	    		<div class="gune_logo-footer margin-bottom--24"></div>					
+
+				         </div>
+				      </div>          
+      
+      
+      
+      
+      
       <script src="../../js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

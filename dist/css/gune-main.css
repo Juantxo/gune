@@ -400,12 +400,22 @@ html.clusterGune.withImage {
 	height: 84px;
     background-size: 14%;
 }
+.gune_logo-footer{
+	
+	background-image: url('../img/univ/gune-color.svg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center; 
+	height: 84px;
+    background-size: 14%;
+    width: 100%
 
+}
 .clusterGune .nav_container{
 	text-align: center;
 	overflow: hidden;
 	padding: 16px;
-	background-color: rgba(238, 238, 238, 0.9);
+	background-color: rgba(238, 238, 238, 0.2);
 	
 }
 
@@ -429,7 +439,7 @@ html.clusterGune.withImage {
     
 }
 .clusterGune .nav_container a:hover{
-	opacity: 0.7;
+	opacity: 0.9;
 	    background: #9e005f;
 
 	
@@ -990,16 +1000,19 @@ box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
     color: white;
     font-size: 18px;
     vertical-align: middle;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     margin-top: 16px;
+    
 }
 .clusterGune h1 span.icon-image{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-right: 8px;
  }
+
 
 
 .clusterGune h1 span.icon_ambito_1{
@@ -1007,9 +1020,17 @@ box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
 	
 }
 
+.clusterGune .subtile-ambito, .clusterGune .title-subambito{
+	font-size: 16px;
+	font-weight: 900;
+	color: #808080;
+}
 
-
-
+.clusterGune .subtile-subambito{
+	font-size: 18px;
+	color: #009E8E;
+	font-weight: 900
+}
 /**/
 /* ==========================================================================
   EXAMPLE Media Queries for Responsive Design.
