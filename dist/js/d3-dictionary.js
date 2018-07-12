@@ -18,7 +18,7 @@
     
     function update_list(select_values){
 	    
-	    console.log('update_list',select_values );
+	    //console.log('update_list',select_values );
 		let table_container = d3.select('#table_container').selectAll('.ambito-container').classed('hidden', true);
 		
 		if(select_values.ambito === "0"){ 
@@ -51,7 +51,7 @@
 	
 	function build_selects(dic){
 		
-		console.log('building selects.....', dic);
+		//console.log('building selects.....', dic);
 		const dic_ambitos = dic.industria_4.ambitos;
 		const dic_subambitos = dic.industria_4.subambitos;
 		
@@ -160,6 +160,15 @@
 				
 				update_list(selectValues);
 				
+				if(!!selectValues.ambito){
+					
+					if(selectValues.ambito ==='0'){
+						
+					}
+					
+				}
+				jump(selectValues.ambito !='0' ? "ambito_banner_" + selectValues.ambito : "ambito_banner_1");
+				
 			
 	
 				
@@ -211,7 +220,7 @@
 	}
 
 	function draw_table(dic, select_values){
-		console.log('draw_table select_values', select_values);
+		//console.log('draw_table select_values', select_values);
 		
 		const dic_ambitos = dic.industria_4.ambitos;
 		const dic_subambitos = dic.industria_4.subambitos;
@@ -219,7 +228,7 @@
 		
 		let nested_list_data = nest_list_data(dic_subambitos);
 		nested_list_data.shift();
-		console.log('nested_list_data', nested_list_data);
+		//console.log('nested_list_data', nested_list_data);
 
 		let ambito_main = table_container
 			.selectAll('div')
@@ -311,13 +320,18 @@
 			
 		
 	}
+	
 
 
-
+	function jump(h){
+		console.log(h);
+		let top = document.getElementById(h).offsetTop;
+		animateScrollTo(top);	
+	}
 
 
     let init = function(error, dic) {
-        console.log('hello from D3', dic);
+        console.log('hello from D3', window);
         if (error) throw error;
 	    build_selects(dic);
 	    draw_table(dic, { "ambito": 0, "subambito": 0 });

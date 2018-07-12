@@ -243,6 +243,12 @@ textarea {
 .margin-bottom--24{
 	margin-bottom: 24px;
 }
+.margin-bottom--40{
+	margin-bottom: 80px;
+}
+.margin-bottom--80{
+	margin-bottom: 80px;
+}
 .margin-bottom--160{
 	margin-bottom: 160px;
 }
@@ -261,6 +267,9 @@ textarea {
 }
 .margin-top--24{
 	margin-top: 24px;
+}
+.margin-top--80{
+	margin-top:80px;
 }
 
 .margin-top--160{
@@ -370,7 +379,7 @@ html.clusterGune.withImage {
  background-repeat: no-repeat;
  background-position: center top;
  background-attachment: fixed; 
- background-size:100%
+ background-size:cover;
 }
 
 
@@ -400,6 +409,10 @@ html.clusterGune.withImage {
 	height: 84px;
     background-size: 14%;
 }
+
+.clusterGune .main-title--container{
+	padding: 0px 16px;
+}
 .gune_logo-footer{
 	
 	background-image: url('../img/univ/gune-color.svg');
@@ -414,14 +427,17 @@ html.clusterGune.withImage {
 .clusterGune .nav_container{
 	text-align: center;
 	overflow: hidden;
-	padding: 16px;
+	padding: 32px 16px;
 	background-color: rgba(238, 238, 238, 0.2);
+	border-radius: 16px;
+	margin-bottom: 16px;
+
 	
 }
 
 .clusterGune .nav_container a {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     display: inline-block;
     text-align: center;
     margin: 0 auto 16px auto;
@@ -429,7 +445,7 @@ html.clusterGune.withImage {
     background: #009E8E;
     /* overflow: hidden; */
     opacity: 1;
-	border-radius: 100px;
+	border-radius: 110px;
 	opacity: 1;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
@@ -440,7 +456,8 @@ html.clusterGune.withImage {
 }
 .clusterGune .nav_container a:hover{
 	opacity: 0.9;
-	    background: #9e005f;
+	background: #9e005f;
+
 
 	
 }
@@ -552,6 +569,11 @@ html.clusterGune.withImage {
 	
 
 @media (min-width: 768px){
+	
+	.clusterGune .main-title--container{
+		padding: 0px 80px;
+	}
+
 	
 }
 
