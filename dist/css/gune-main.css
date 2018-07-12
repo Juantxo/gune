@@ -1027,20 +1027,78 @@ box-shadow: 1px 5px 10px 0px rgba(227,227,227,1);
     
 }
 .clusterGune h1 span.icon-image{
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 8px;
+    background-position: center;
  }
 
 
 
 .clusterGune h1 span.icon_ambito_1{
-    background-image:  url(../img/ambitos/icon_1@2x.png);
+    background-image:  url(../img/ambitos/icon_ambito_white_1@2x.png);
 	
 }
+
+.clusterGune h1 span.icon_ambito_2{
+    background-image:  url(../img/ambitos/icon_ambito_white_2@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_3{
+    background-image:  url(../img/ambitos/icon_ambito_white_3@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_4{
+    background-image:  url(../img/ambitos/icon_ambito_white_4@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_5{
+    background-image:  url(../img/ambitos/icon_ambito_white_5@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_6{
+    background-image:  url(../img/ambitos/icon_ambito_white_6@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_7{
+    background-image:  url(../img/ambitos/icon_ambito_white_7@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_8{
+    background-image:  url(../img/ambitos/icon_ambito_white_8@2x.png);
+	
+}
+.clusterGune h1 span.icon_ambito_9{
+    background-image:  url(../img/ambitos/icon_ambito_white_9@2x.png);
+	
+}
+
+.clusterGune h1 span.icon_ambito_10{
+    background-image:  url(../img/ambitos/icon_ambito_white_10@2x.png);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .clusterGune .subtile-ambito, .clusterGune .title-subambito{
 	font-size: 16px;

@@ -94,7 +94,7 @@
 
 				//console.log('enter onchange....');
 				selectValues = updateSelect();
-				console.log('selectValues',selectValues);
+				//console.log('selectValues',selectValues);
 				let ambito_id = +selectValues.ambito;
 				// let select_subambito = selectValues.subambito - 1; 
 				let subambito_obj = [];
@@ -268,7 +268,7 @@
 						'<div class="row">' +
 				            '<div class="col-12">' +
 								'<img class="img-fluid" src="../../img/ambitos/ambito_' + d.key + '.jpg" alt="Fabricación avanzada">' +
-								'<h1 class="title-ambito green-container"><span class="icon-image icon_ambito_1"></span>'+ original_name + '</h1>' +
+								'<h1 class="title-ambito green-container"><span class="icon-image icon_ambito_' + d.key + '"></span>'+ original_name + '</h1>' +
 								'<h2 class="subtile-ambito"><span>' + ambito_short_name + '</span></h2>' +
 								'<p><strong> ' + description + '</strong></p>' +
 							'</div>'+
@@ -324,14 +324,14 @@
 
 
 	function jump(h){
-		console.log(h);
+		//console.log(h);
 		let top = document.getElementById(h).offsetTop;
 		animateScrollTo(top);	
 	}
 
 
     let init = function(error, dic) {
-        console.log('hello from D3', window);
+        //console.log('hello from D3', window);
         if (error) throw error;
 	    build_selects(dic);
 	    draw_table(dic, { "ambito": 0, "subambito": 0 });

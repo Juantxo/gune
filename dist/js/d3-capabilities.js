@@ -191,11 +191,11 @@
 
     function build_selects(data, dic) {
 
-        console.log('building selects.....');
+        //console.log('building selects.....');
         const dic_capacidad_uno = dic.capacidades.capacidades_uno;
         const dic_capacidad_dos = dic.capacidades.capacidades_dos;
         const dic_ambitos = dic.industria_4.ambitos;
-        console.log('building selects', dic_capacidad_uno, dic_capacidad_dos, dic_ambitos);
+        //console.log('building selects', dic_capacidad_uno, dic_capacidad_dos, dic_ambitos);
 
 
         const capacidad_uno_select = d3.select('#capacidad_uno_select').on('change', onchange);
@@ -261,6 +261,8 @@
                     });
                 // console.log('options', options);
                 selectValues = updateSelect();
+                
+
 
 
             } //  --> if ends
@@ -283,7 +285,7 @@
 
             //console.log('selectValues', selectValues);
             
-            
+				jump("jump_banner");
             
             
 
@@ -572,17 +574,17 @@
 
             if (e.target.id.indexOf("link_") > -1) {
 
-                console.log('e.target.dataset', e.target.dataset);
+                //console.log('e.target.dataset', e.target.dataset);
                 let el = e.target;
                 let temp = el.id.split('_')[1];
 
                 let tab = d3.select('#more_' + temp)
-                console.log(temp, d3.select('#more_' + temp));
+                //console.log(temp, d3.select('#more_' + temp));
                 // el.attr("class", "hidden");
 
                 tab.classed("hidden", tab.classed("hidden") ? false : true);
 
-                console.log(d3.select(el).html());
+                //console.log(d3.select(el).html());
                 d3.select(el).html() === '&nbsp;Ver menos' ? d3.select(el).html('&nbsp;Ver más') : d3.select(el).html('&nbsp;Ver menos');
 
             }
@@ -592,7 +594,7 @@
 
     function draw_table(nested_list_data, dic) {
 
-        console.log('draw_table t', nested_list_data);
+        //console.log('draw_table t', nested_list_data);
         let table_container = d3.select('#table_container');
 
         table_container.selectAll("*").remove().exit();
@@ -695,7 +697,7 @@
 			let el = d3.select(this);
 			let temp = d3.select(this.dataset)._groups[0][0].star;
 							
-			console.log('d', temp);
+			//console.log('d', temp);
             tooltip.transition()		
                 .duration(200)		
                 .style("opacity", .9);		
@@ -714,7 +716,7 @@
 
 
     function init_table(gune, dic) {
-        console.log('init_table.....');
+        //console.log('init_table.....');
 
         let titulos = nest_list_data(gune);
         draw_title_selector(get_the_select_info({
@@ -766,7 +768,7 @@
 	}
 	function draw_collapsible_tree(data, select_values, dic){
 		
-		console.log('draw_collapsible_tree', data.length);
+		//console.log('draw_collapsible_tree', data.length);
         var guneTree = {
             'key': "4GUNE",
             "values": nest_tree_data(data)
@@ -938,7 +940,7 @@
 	                let temp = null;
 	                
 	                if(reg.test(d.data.key)){
-		                console.log('numberss....');
+		                //console.log('numberss....');
 		                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
 		                return temp;
 		                
@@ -1082,7 +1084,7 @@
 
             // Toggle children on click.
             function click(d) {
-                console.log('click', d);
+                //console.log('click', d);
 
                 if (d.depth <= 2) {
                     if (d.children) {
@@ -1115,7 +1117,7 @@
 	                let titulo = get_dictionary_obj(dic.titulos, "cod", cod);
 					let univ = get_dictionary_obj(dic.universidades, "univ_id", all_values.univ_id);
 					
-					console.log(titulo.desc);
+					//console.log(titulo.desc);
 
 	                
 	                // variables
@@ -1180,7 +1182,7 @@
 
 		let filter_data = get_filter_data(gune, val, dic);
 
-		console.log('init_overall_tree filter_data', filter_data);
+		//console.log('init_overall_tree filter_data', filter_data);
 		
 		
 		if(filter_data.length){
@@ -1194,6 +1196,17 @@
 		
 		
 	}
+	
+	function jump(h){
+		//console.log(h);
+		let top = document.getElementById(h).offsetTop;
+		animateScrollTo(top);	
+	}
+
+	
+	
+	
+	
 
     function init_pill_tabs(data, dic) {
 
@@ -1204,14 +1217,14 @@
         pill_list_tab.on('click', function() {
 
 			tree_counter = false;
-            console.log('pill_list_tab', tree_counter);
+            //console.log('pill_list_tab', tree_counter);
 
         });
 
         pill_tree_tab.on('click', function() {
 			tree_counter = true;
 
-			console.log('pill_tree_tab', tree_counter);
+			//console.log('pill_tree_tab', tree_counter);
 			
 			let element = document.getElementById('ambito_select');
 			element.dispatchEvent(new Event("change")); 
@@ -1234,7 +1247,7 @@
 
 
     let init = function(error, gune, dic) {
-        console.log('hello from D3', gune, dic);
+        //console.log('hello from D3', gune, dic);
         if (error) throw error;
 	    
 		let val = {
