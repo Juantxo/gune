@@ -7,6 +7,7 @@
 	let url_data = '../../data/';
 	let tree_counter = false;
 	let selectValues = null;
+	let jump_banner = false;
 	
     window.onload = function() {
 	    d3.queue()
@@ -316,9 +317,14 @@
 						})
 						.text(function (d) { 
 							// console.log('option', d);
-							return d.sub_sort_name;
+							return d.subambito_short_name;
 						});
 						// console.log('options', options);
+						
+						
+						 
+						
+
 					 
 				} //  --> if ends
 				
@@ -350,11 +356,11 @@
 					let element = document.getElementById('mejora_select');
 					element.dispatchEvent(new Event("change")); 
 					
-
+					
 					
 				//}			
 					
-	
+
 				
 				
 			} // if(!tree_counter) ENDS
@@ -370,7 +376,13 @@
 					
 			}// if(tree_counter) ENDS
 			
-			
+			if(!jump_banner){
+				
+				if(selectValues.ambito !=1 || selectValues.subambito !=1){ 
+					jump("jump_banner"); 
+					jump_banner = true; 
+				}
+			}
 			
 			
 			
@@ -845,7 +857,7 @@
 		keys.on('click', function(){
 
 			if(!tree_counter){
-				console.log('init_table_keys', this.id, this.parentNode.parentNode);
+				//console.log('init_table_keys', this.id, this.parentNode.parentNode);
 				let key_id = this.id;
 				let parent = this.parentNode.parentNode;
 				let table_rows = d3.selectAll('.table-row-parent').filter(function(d){
@@ -904,7 +916,7 @@
 	}
 	function draw_collapsible_tree(data, select_values, dic){
 		
-		console.log('draw_collapsible_tree', data.length);
+		// console.log('draw_collapsible_tree', data.length);
         var guneTree = {
             'key': "4GUNE",
             "values": nest_tree_data(data)
@@ -940,9 +952,6 @@
             width = 960 - margin.left - margin.right,
             height = 750 - margin.top - margin.bottom;
 
-        var colorScale = d3.scaleLinear()
-            .domain([0, 1])
-            .range(['red', 'green']);
         var widthScale = d3.scaleLinear()
             .domain([1, 80])
             .range([1, 10]);
@@ -1031,31 +1040,28 @@
 					switch(d.depth){
 						case 0:
 						case 1:
-							return d._children ? "chocolate" : "#fff";
+							return d._children ? "#D3D3D3" : "#fff";
 							break;
 						case 2:
-							return "chocolate";
+							let case_two_fill = get_capacidad_color(d.data.values[0].values[0].capacidad_uno);
+							//console.log('case 2:',  d.data.key, d.data.values[0].values[0].capacidad_uno);
+							return case_two_fill;
 							break;
 						case 3:
-							return "chocolate";
+							let case_three_fill = get_capacidad_color(d.data.values[0].capacidad_uno);
+
+							//console.log('case 3:',  d.data.key, d.data.values[0].capacidad_uno);
+							return case_three_fill;
 							break;
 						default:
 							return 'red';	
 					} // --> end swicth
-					
 			                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
                     
                 })
                 .style("stroke", function(d) {
-                    return colorScale(d.data.female / (d.data.female + d.data.male))
+					return 'rgb(0, 0, 0)';
+
                 });
 
             // Add labels for the nodes
@@ -1076,7 +1082,7 @@
 	                let temp = null;
 	                
 	                if(reg.test(d.data.key)){
-		                console.log('numberss....');
+		                // console.log('numberss....');
 		                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
 		                return temp;
 		                
@@ -1087,8 +1093,9 @@
                     
                 })
                 .style("fill", function(d) {
-                    return colorScale(d.data.female / (d.data.value))
+                    return 'rgb(0, 0, 0)';
                 });
+
 
             // UPDATE
             var nodeUpdate = nodeEnter.merge(node);
@@ -1220,7 +1227,7 @@
 
             // Toggle children on click.
             function click(d) {
-                console.log('click', d);
+                //console.log('click', d);
 
                 if (d.depth <= 2) {
                     if (d.children) {
@@ -1241,13 +1248,7 @@
 				let descripcion = titulo_obj.desc;
 				*/
 	                
-	                
-	                
-	                
-	                
-	                
-	                
-	                console.log('d tree', d);
+	                //console.log('d tree', d);
 	                let cod = +d.data.key;
 	                let all_values = d.data.values[0];
 	                let titulo = get_dictionary_obj(dic.titulos, "cod", cod);
@@ -1279,7 +1280,7 @@
 					let modal_star_servicios = d3.select('#modal_star_servicios').classed("star-icon--green", all_values.servicios === 1 ? true : false);
 					let modal_star_administracion = d3.select('#modal_star_administracion').classed("star-icon--green", all_values.administracion === 1 ? true : false);
 	                
-	                 console.log('d tree', all_values, univ);
+	                 //console.log('d tree', all_values, univ);
 	                 
 	                 // assign
 	                 d3.select('#capacidad_dos').html(capacidad_dos);
@@ -1352,7 +1353,7 @@
 			let el = d3.select(this);
 			let temp = d3.select(this.dataset)._groups[0][0].star;
 							
-			console.log('d', temp);
+			//console.log('d', temp);
             tooltip.transition()		
                 .duration(200)		
                 .style("opacity", .9);		
@@ -1367,25 +1368,6 @@
         });			
 			
 			
-		/*
-		var x = document.getElementsByTagName("BODY")[0].addEventListener('mouseover', function(e) {
-			// do nothing if the target does not have the class drawnLine
-				if (e.target.classList.contains("star-icon--green")) {
-					//console.log('e.target', e.target.dataset.star );
-					let tooltip = d3.select("#star_tooltip");
-					tooltip.transition()		
-						.duration(200)		
-						.style("opacity", .9);		
-					
-					tooltip.html(e.target.dataset.star)	
-						.style("position", "absolute")
-						.style("left", (e.pageX) + "px")		
-						.style("top", (e.pageY - 28) + "px");;	
-				}
-		});
-
-		*/
-
 
 
 	}
@@ -1399,23 +1381,30 @@
 				
 				if(e.target.id.indexOf("link_") > -1){
 					
-					console.log('e.target.dataset', e.target.dataset);
+					//console.log('e.target.dataset', e.target.dataset);
 					let el = e.target;
 					let temp = el.id.split('_')[1];
 					
 					let tab  = d3.select('#more_' + temp)
-					console.log(temp, d3.select('#more_' + temp));
+					//console.log(temp, d3.select('#more_' + temp));
 					// el.attr("class", "hidden");
 					
 					tab.classed("hidden", tab.classed("hidden") ? false : true);
 					
-					console.log(d3.select(el).html());
+					//console.log(d3.select(el).html());
 					d3.select(el).html() === '&nbsp;Ver menos' ? d3.select(el).html('&nbsp;Ver más') : d3.select(el).html('&nbsp;Ver menos'); 
 
 				}
 		});
 		
 	}
+	
+	function jump(h){
+		//console.log(h);
+		let top = document.getElementById(h).offsetTop;
+		animateScrollTo(top);	
+	}
+	
 	
 	function init_table(){
 		//console.log('init_table.....');
@@ -1437,7 +1426,7 @@
 		
 		pill_list_tab.on('click', function(){
 			tree_counter = false;
-
+			jump_banner = false;
 			
 			//console.log('pill_list_tab', tree_counter);
 			init_table();
@@ -1449,6 +1438,7 @@
 		pill_tree_tab.on('click', function(){
 			
 			tree_counter = true;
+			jump_banner = false;
 			//console.log('pill_tree_tab', tree_counter);
 			//console.log('pill_tree_tab.on select_values', selectValues);
 			init_overall_tree(data, selectValues, dic);

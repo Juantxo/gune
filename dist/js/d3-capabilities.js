@@ -129,7 +129,7 @@
 
 	function get_filter_data(data, select_values, dic){
 		//console.log('get_filter_data', data, select_values, dic);
-		let selection_names = get_the_select_info(select_values, dic);
+		let selection_names = get_the_select_info(select_values, dic)[0];
 		//console.log('get_filter_data selection_names', selection_names);
 		
 		let c1_obj = data.filter(function(d, i){
@@ -300,11 +300,17 @@
 
 
     function draw_title_selector(select_obj) {
-
-        d3.select('#title_ambito').html(arguments[0].capacidad_uno);
-        d3.select('#title_subambito').html(arguments[0].capacidad_dos);
-        d3.select('#title_mejora').html(arguments[0].ambito);
-        //console.log('select_obj', select_obj);
+        // console.log('select_obj', select_obj);
+        
+        
+        if(select_obj[1].ambito_id === 0){
+			d3.select('#title_img').attr("src", url_img + 'icons/icon-capacidad-black@2x.png');
+        }else{
+			d3.select('#title_img').attr("src", url_img + 'ambitos/icon_ambito_' + select_obj[1].ambito_id + '@2x.png');
+        }
+        d3.select('#title_ambito').html(select_obj[0].capacidad_uno);
+        d3.select('#title_subambito').html(select_obj[0].capacidad_dos);
+        d3.select('#title_mejora').html(select_obj[0].ambito);
         return '';
 
     }
@@ -315,7 +321,7 @@
         let c2 = +select_values.capacidad_dos;
         let a1 = select_values.ambito;
 
-        let select_values_names = get_the_select_info(select_values, dic);
+        let select_values_names = get_the_select_info(select_values, dic)[0];
         // console.log('show_selected_titles c1, c2, a1', c1, c2, a1, select_values_names);
 
 
@@ -396,19 +402,22 @@
 
         // {capacidad_uno: "1", capacidad_dos: "0", ambito: "0"}
         // console.log('get_the_select_info', values, dic);
-        let selection = {
+        let selection = [{
             "capacidad_uno": null,
             "capacidad_dos": null,
             "ambito": null
-        };
+        }, { "capacidad_uno_id": +values.capacidad_uno,
+            "capacidad_dos_id": +values.capacidad_dos,
+            "ambito_id": +values.ambito
+		}];
 
         let dic_capacidad_uno = dic.capacidades.capacidades_uno;
         let dic_capacidad_dos = dic.capacidades.capacidades_dos;
         let dic_ambitos = dic.industria_4.ambitos;
 
-        selection.capacidad_uno = +values.capacidad_uno != 0 ? get_dictionary_property(dic_capacidad_uno, "id", +values.capacidad_uno, "capacidad_uno") : 'Todas las capacidades';
-        selection.capacidad_dos = +values.capacidad_dos != 0 ? get_dictionary_property(dic_capacidad_dos, "id", +values.capacidad_dos, "capacidad_dos") : 'Todos los tipos';
-        selection.ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
+        selection[0].capacidad_uno = +values.capacidad_uno != 0 ? get_dictionary_property(dic_capacidad_uno, "id", +values.capacidad_uno, "capacidad_uno") : 'Todas las capacidades';
+        selection[0].capacidad_dos = +values.capacidad_dos != 0 ? get_dictionary_property(dic_capacidad_dos, "id", +values.capacidad_dos, "capacidad_dos") : 'Todos los tipos';
+        selection[0].ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
         // console.log('get_the_select_info level_val', selection);
         return selection;
 
@@ -804,9 +813,6 @@
             width = 960 - margin.left - margin.right,
             height = 750 - margin.top - margin.bottom;
 
-        var colorScale = d3.scaleLinear()
-            .domain([0, 1])
-            .range(['red', 'green']);
         var widthScale = d3.scaleLinear()
             .domain([1, 80])
             .range([1, 10]);
@@ -895,31 +901,28 @@
 					switch(d.depth){
 						case 0:
 						case 1:
-							return d._children ? "chocolate" : "#fff";
+							return d._children ? "#D3D3D3" : "#fff";
 							break;
 						case 2:
-							return "chocolate";
+							let case_two_fill = get_capacidad_color(d.data.values[0].values[0].capacidad_uno);
+							//console.log('case 2:',  d.data.key, d.data.values[0].values[0].capacidad_uno);
+							return case_two_fill;
 							break;
 						case 3:
-							return "chocolate";
+							let case_three_fill = get_capacidad_color(d.data.values[0].capacidad_uno);
+
+							//console.log('case 3:',  d.data.key, d.data.values[0].capacidad_uno);
+							return case_three_fill;
 							break;
 						default:
 							return 'red';	
 					} // --> end swicth
-					
-			                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
+                   
                     
                 })
                 .style("stroke", function(d) {
-                    return colorScale(d.data.female / (d.data.female + d.data.male))
+					return 'rgb(0, 0, 0)';
+
                 });
 
             // Add labels for the nodes
@@ -935,23 +938,36 @@
                     return d.depth <=2 ? "end" : "start";
                 })
                 .text(function(d) {
-	                
-	                const reg = /^\d+$/;
-	                let temp = null;
-	                
-	                if(reg.test(d.data.key)){
-		                //console.log('numberss....');
-		                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
-		                return temp;
+	                if(d.depth === 1){ 
 		                
-	                }else{
-		                return d.data.key;
-	                }
-	                //console.log('text d', d.data.key);
+		                let centro = get_dictionary_property(dic.centros, 'centro', d.data.key, 'centro_corto');
+		                return centro;
+
+		                //console.log('text d', d.data.key, d.depth, centro); 
+		                
+		             }else{
+		                const reg = /^\d+$/;
+		                let temp = null;
+		                
+		                if(reg.test(d.data.key)){
+			                // console.log('numberss....');
+			                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
+			                return temp;
+			                
+		                }else{
+			                return d.data.key;
+		                }
+		                //console.log('text d', d.data.key);
+
+
+			             
+		             }
+					
+
                     
                 })
                 .style("fill", function(d) {
-                    return colorScale(d.data.female / (d.data.value))
+                    return 'rgb(0, 0, 0)';
                 });
 
             // UPDATE
@@ -991,10 +1007,6 @@
 							return 'red';	
 					} // --> end swicth
                    
-                   
-                   
-                   
-                   
                 })
                 .attr('cursor', 'pointer');
 
@@ -1023,7 +1035,7 @@
                     return d.id;
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 });
 
             // Enter any new links at the parent's previous position.
@@ -1037,7 +1049,7 @@
                     return diagonal(o, o)
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 });
 
             // UPDATE
@@ -1061,7 +1073,7 @@
                     return diagonal(o, o)
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 })
                 .remove();
 
@@ -1104,13 +1116,6 @@
 				let web_info = checkWebInfo(titulo_obj.web);
 				let descripcion = titulo_obj.desc;
 				*/
-	                
-	                
-	                
-	                
-	                
-	                
-	                
 	                //console.log('d tree', d);
 	                let cod = +d.data.key;
 	                let all_values = d.data.values[0];
@@ -1136,10 +1141,6 @@
 					let ubicacion = ubicacion_obj.direccion + ', ' + ubicacion_obj.cp + ' ' + ubicacion_obj.localidad + ', ' +  ubicacion_obj.provincia;
 					let description = titulo.desc;
 						
-					
-					
-
-
 	                 
 	                 // console.log('d tree all_values, univ', all_values, univ);
 	                 

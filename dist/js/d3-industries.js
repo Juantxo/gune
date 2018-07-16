@@ -676,9 +676,10 @@
 	
 	function draw_title_selector(select_obj){
 		
-		d3.select('#title_ambito').html(arguments[0].ambito);
-		d3.select('#title_subambito').html(arguments[0].subambito);
-		d3.select('#title_mejora').html(arguments[0].mejora);
+		d3.select('#title_img').attr("src", url_img + 'ambitos/icon_ambito_' + select_obj[1].ambito_id + '@2x.png');
+		d3.select('#title_ambito').html(select_obj[0].ambito);
+		d3.select('#title_subambito').html(select_obj[0].subambito);
+		d3.select('#title_mejora').html(select_obj[0].mejora);
 		//console.log('select_obj', select_obj);
 		return '';
 		
@@ -694,15 +695,18 @@
 	
 	function get_the_select_info(values, dic){
 		// console.log('get_the_select_info', values, dic);
-		let selection = { "ambito": null, "subambito": null, "mejora": null };
+		let selection = [ 
+			{"ambito": null, "subambito": null, "mejora": null}, 
+			{"ambito_id": +values.ambito, "subambito_id": +values.subambito, "mejora_id": +values.mejora }
+		];
 		
 		let dic_ambitos = dic.industria_4.ambitos;
 		let dic_subambitos = dic.industria_4.subambitos;
 		let dic_mejoras = dic.mejoras;
 		
-		selection.ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
-		selection.subambito = get_dictionary_property(dic_subambitos, "subambito_id", +values.subambito, "subambito");
-		selection.mejora = get_dictionary_property(dic_mejoras, "id", +values.mejora, "nombre");
+		selection[0].ambito = get_dictionary_property(dic_ambitos, "ambito_id", +values.ambito, "ambito");
+		selection[0].subambito = get_dictionary_property(dic_subambitos, "subambito_id", +values.subambito, "subambito");
+		selection[0].mejora = get_dictionary_property(dic_mejoras, "id", +values.mejora, "nombre");
 		//console.log('get_the_select_info level_val', selection);
 		return selection;
 		
@@ -728,7 +732,7 @@
 		//console.log('draw_table nested_list_data', nested_list_data, nested_list_data.length);
 		
 		//console.log('draw_table results_partial', results_partial);
-		let select_info = get_the_select_info(select_values, dic); 
+		let select_info = get_the_select_info(select_values, dic)[0]; 
 		
 		// let values_counter = check_mejoras(nested_list_data[0]);
 		let table_container = d3.select('#table_container');
@@ -952,9 +956,6 @@
             width = 960 - margin.left - margin.right,
             height = 750 - margin.top - margin.bottom;
 
-        var colorScale = d3.scaleLinear()
-            .domain([0, 1])
-            .range(['red', 'green']);
         var widthScale = d3.scaleLinear()
             .domain([1, 80])
             .range([1, 10]);
@@ -1043,31 +1044,28 @@
 					switch(d.depth){
 						case 0:
 						case 1:
-							return d._children ? "chocolate" : "#fff";
+							return d._children ? "#D3D3D3" : "#fff";
 							break;
 						case 2:
-							return "chocolate";
+							let case_two_fill = get_capacidad_color(d.data.values[0].values[0].capacidad_uno);
+							//console.log('case 2:',  d.data.key, d.data.values[0].values[0].capacidad_uno);
+							return case_two_fill;
 							break;
 						case 3:
-							return "chocolate";
+							let case_three_fill = get_capacidad_color(d.data.values[0].capacidad_uno);
+
+							//console.log('case 3:',  d.data.key, d.data.values[0].capacidad_uno);
+							return case_three_fill;
 							break;
 						default:
 							return 'red';	
 					} // --> end swicth
-					
 			                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
-	                
                     
                 })
                 .style("stroke", function(d) {
-                    return colorScale(d.data.female / (d.data.female + d.data.male))
+					return 'rgb(0, 0, 0)';
+
                 });
 
             // Add labels for the nodes
@@ -1083,24 +1081,33 @@
                     return d.depth <=2 ? "end" : "start";
                 })
                 .text(function(d) {
-	                
-	                const reg = /^\d+$/;
-	                let temp = null;
-	                
-	                if(reg.test(d.data.key)){
-		                // console.log('numberss....');
-		                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
-		                return temp;
+	                if(d.depth === 1){ 
 		                
-	                }else{
-		                return d.data.key;
-	                }
-	                //console.log('text d', d.data.key);
+		                let centro = get_dictionary_property(dic.centros, 'centro', d.data.key, 'centro_corto');
+		                return centro;
+
+		                //console.log('text d', d.data.key, d.depth, centro); 
+		                
+		             }else{
+		                const reg = /^\d+$/;
+		                let temp = null;
+		                
+		                if(reg.test(d.data.key)){
+			                // console.log('numberss....');
+			                temp = get_dictionary_property(dic.titulos, 'cod', +d.data.key, 'titulo_short_name');
+			                return temp;
+			                
+		                }else{
+			                return d.data.key;
+		                }
+		                //console.log('text d', d.data.key);
+		             }
                     
                 })
                 .style("fill", function(d) {
-                    return colorScale(d.data.female / (d.data.value))
+                    return 'rgb(0, 0, 0)';
                 });
+
 
             // UPDATE
             var nodeUpdate = nodeEnter.merge(node);
@@ -1168,10 +1175,11 @@
             // Update the links...
             var link = svg.selectAll('path.link')
                 .data(links, function(d) {
+	               //console.log('path link', d);
                     return d.id;
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 });
 
             // Enter any new links at the parent's previous position.
@@ -1185,7 +1193,7 @@
                     return diagonal(o, o)
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 });
 
             // UPDATE
@@ -1209,7 +1217,7 @@
                     return diagonal(o, o)
                 })
                 .style('stroke-width', function(d) {
-                    return widthScale(d.data.value)
+                    return widthScale(d.data.depth)
                 })
                 .remove();
 
@@ -1373,25 +1381,6 @@
         });			
 			
 			
-		/*
-		var x = document.getElementsByTagName("BODY")[0].addEventListener('mouseover', function(e) {
-			// do nothing if the target does not have the class drawnLine
-				if (e.target.classList.contains("star-icon--green")) {
-					//console.log('e.target', e.target.dataset.star );
-					let tooltip = d3.select("#star_tooltip");
-					tooltip.transition()		
-						.duration(200)		
-						.style("opacity", .9);		
-					
-					tooltip.html(e.target.dataset.star)	
-						.style("position", "absolute")
-						.style("left", (e.pageX) + "px")		
-						.style("top", (e.pageY - 28) + "px");;	
-				}
-		});
-
-		*/
-
 
 
 	}

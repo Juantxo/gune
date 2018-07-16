@@ -489,6 +489,16 @@ html.clusterGune.withImage {
 
 }
 
+.clusterGune img.icon-image{
+    width: 28px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+ }
+
+
+
 .clusterGune .title-ambito{
 	color: 	#808080;
 	font-size: 1em;

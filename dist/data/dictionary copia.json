@@ -83,308 +83,467 @@
     }
 ],
 
-		"subambitos": [{
-				"subambito": "Dise\u00f1o, investigaci\u00f3n, implantaci\u00f3n comunicaci\u00f3n M2M",
-				"subambito_id": 1,
-				"sub_sort_name": "M2M",
-				"ambito_id": 1
-			},
-			{
-				"subambito": "Dise\u00f1o, investigaci\u00f3n de interfases persona-m\u00e1quina (HMI: human machine interface; Human in the loop)",
-				"subambito_id": 2,
-				"sub_sort_name": "HMI",
-				"ambito_id": 1
-			},
-			{
-				"subambito": "Programaci\u00f3n, simulaci\u00f3n y puesta en marcha de robots industriales inteligentes, conectadas, flexibles y reconfigurables",
-				"subambito_id": 3,
-				"sub_sort_name": "Robots ",
-				"ambito_id": 1
-			},
-			{
-				"subambito": "Monitorizaci\u00f3n de datos, an\u00e1lisis y su aplicaci\u00f3n en la fabricaci\u00f3n",
-				"subambito_id": 4,
-				"sub_sort_name": "Monitorizaci\u00f3n datos",
-				"ambito_id": 1
-			},
-			{
-				"subambito": "Entornos de fabricaci\u00f3n din\u00e1mica para su integraci\u00f3n \u00e1gil e inteligente",
-				"subambito_id": 5,
-				"sub_sort_name": "Fab. Din\u00e1mica",
-				"ambito_id": 1
-			},
-			{
-				"subambito": "Dise\u00f1o digital y sistemas virtuales de simulaci\u00f3n y control de procesos y planta",
-				"subambito_id": 6,
-				"sub_sort_name": "Sistemas virtuales",
-				"ambito_id": 2
-			},
-			{
-				"subambito": "Realidad virtual para optimizaci\u00f3n de dise\u00f1os",
-				"subambito_id": 7,
-				"sub_sort_name": "RV dise\u00f1o",
-				"ambito_id": 2
-			},
-			{
-				"subambito": "Realidad aumentada para el mantenimiento y control de planta",
-				"subambito_id": 8,
-				"sub_sort_name": "RV planta",
-				"ambito_id": 2
-			},
-			{
-				"subambito": "Realidad virtual para training de operaciones y formaci\u00f3n de operarios",
-				"subambito_id": 9,
-				"sub_sort_name": "RV operarios",
-				"ambito_id": 2
-			},
-			{
-				"subambito": "Realidad aumentada para asistencia y resoluci\u00f3n de incidencias",
-				"subambito_id": 10,
-				"sub_sort_name": "RA incidencias",
-				"ambito_id": 2
-			},
-			{
-				"subambito": "Prevenci\u00f3n y control de ataques y amenazas ",
-				"subambito_id": 11,
-				"sub_sort_name": "Prevenci\u00f3n ataques",
-				"ambito_id": 3
-			},
-			{
-				"subambito": "Detecci\u00f3n de amenazas mediante an\u00e1lisis de comportamiento",
-				"subambito_id": 12,
-				"sub_sort_name": "Detecci\u00f3n amenazas",
-				"ambito_id": 3
-			},
-			{
-				"subambito": "Microsegmentaci\u00f3n en el endpoint, microsegmentaci\u00f3n en datacenter",
-				"subambito_id": 13,
-				"sub_sort_name": "Microsegmentaci\u00f3n",
-				"ambito_id": 3
-			},
-			{
-				"subambito": "T\u00e9cnicas de aislamiento por virtualizaci\u00f3n de la red y correspondientes funciones operativas",
-				"subambito_id": 14,
-				"sub_sort_name": "Aislamiento de la red",
-				"ambito_id": 3
-			},
-			{
-				"subambito": "Aplicaci\u00f3n de t\u00e9cnicas de inteligencia artificial para combatir el cibercrimen",
-				"subambito_id": 15,
-				"sub_sort_name": "IA cibercrimen",
-				"ambito_id": 3
-			},
-			{
-				"subambito": "Virtualizaci\u00f3n de sistemas",
-				"subambito_id": 16,
-				"sub_sort_name": "Virtualizaci\u00f3n sist.",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Grandes almacenes de datos en la nube",
-				"subambito_id": 17,
-				"sub_sort_name": "Datos nube",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Computaci\u00f3n de altas prestaciones",
-				"subambito_id": 18,
-				"sub_sort_name": "Computaci\u00f3n",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Sistemas streaming",
-				"subambito_id": 19,
-				"sub_sort_name": "Streaming",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Comunicaciones entre sistemas",
-				"subambito_id": 20,
-				"sub_sort_name": "Comunicaciones",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Sistemas de informaci\u00f3n industriales",
-				"subambito_id": 21,
-				"sub_sort_name": "Informaci\u00f3n industrial",
-				"ambito_id": 4
-			},
-			{
-				"subambito": "Sistemas anal\u00edticos especializados y soluciones software ",
-				"subambito_id": 22,
-				"sub_sort_name": "Soluciones software",
-				"ambito_id": 5
-			},
-			{
-				"subambito": "T\u00e9cnicas de anal\u00edtica avanzada, Machine learning and deep learning",
-				"subambito_id": 23,
-				"sub_sort_name": "Deep Learning",
-				"ambito_id": 5
-			},
-			{
-				"subambito": "Estudio de la mejora del rendimiento con bases de datos NoSQL",
-				"subambito_id": 24,
-				"sub_sort_name": "NoSQL",
-				"ambito_id": 5
-			},
-			{
-				"subambito": "Computaci\u00f3n del altas prestaciones",
-				"subambito_id": 25,
-				"sub_sort_name": "Computaci\u00f3n",
-				"ambito_id": 5
-			},
-			{
-				"subambito": "Sens\u00f3rica, controles y sistemas embebidos",
-				"subambito_id": 26,
-				"sub_sort_name": "Sens\u00f3rica",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Networking, conectividad e interoperatividad de dispositivos inteligentes",
-				"subambito_id": 27,
-				"sub_sort_name": "Networking",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Gesti\u00f3n de Infraestructura",
-				"subambito_id": 28,
-				"sub_sort_name": "Infraestructuras",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Tecnolog\u00edas de habilitaci\u00f3n para IoT",
-				"subambito_id": 29,
-				"sub_sort_name": "Ihabitalizaci\u00f3n IoT",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Modelizaci\u00f3n y simulaci\u00f3n de IoT",
-				"subambito_id": 30,
-				"sub_sort_name": "Modelizaci\u00f3n IoT",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Acceso seguro a sensores y dispositivos de prestaciones reducidas",
-				"subambito_id": 31,
-				"sub_sort_name": "Sensores",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Integraci\u00f3n de nuevas tecnolog\u00edas de comunicaci\u00f3n en IoT",
-				"subambito_id": 32,
-				"sub_sort_name": "Integraci\u00f3n IoT",
-				"ambito_id": 6
-			},
-			{
-				"subambito": "Sistemas para la integraci\u00f3n vertical ",
-				"subambito_id": 33,
-				"sub_sort_name": "Integraci\u00f3n vertical",
-				"ambito_id": 7
-			},
-			{
-				"subambito": "Sistemas para la integraci\u00f3n horizontal: smart supply chain management, smart logistic, etc.",
-				"subambito_id": 34,
-				"sub_sort_name": "Integraci\u00f3n horizontal",
-				"ambito_id": 7
-			},
-			{
-				"subambito": "Integracion Inter-organizational",
-				"subambito_id": 35,
-				"sub_sort_name": "Integraci\u00f3n inter-org.",
-				"ambito_id": 7
-			},
-			{
-				"subambito": "Impresi\u00f3n 3D",
-				"subambito_id": 36,
-				"sub_sort_name": "Impresi\u00f3n 3D",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Fusi\u00f3n de lecho de polvo: Powder Bed Fusion (PBF)",
-				"subambito_id": 37,
-				"sub_sort_name": "Leche en polvo",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Modelado por deposici\u00f3n fundida: Fused Deposition Modeling (FDM)",
-				"subambito_id": 38,
-				"sub_sort_name": "FDM",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Material Jetting",
-				"subambito_id": 39,
-				"sub_sort_name": "Material Jetting",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Procesos de aporte directo (Direct Material Deposition - DMD)",
-				"subambito_id": 40,
-				"sub_sort_name": "DMD",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Integraci\u00f3n de procesos de Fabricaci\u00f3n Aditiva en M\u00e1quina Herramienta",
-				"subambito_id": 41,
-				"sub_sort_name": "M\u00e1quina herramienta",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Design for Additive Manufacturing",
-				"subambito_id": 42,
-				"sub_sort_name": "Additive Manufacturing",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "Mass & Taylored production",
-				"subambito_id": 43,
-				"sub_sort_name": "M&T production",
-				"ambito_id": 8
-			},
-			{
-				"subambito": "I+D sobre materiales",
-				"subambito_id": 44,
-				"sub_sort_name": "I+D materiales",
-				"ambito_id": 9
-			},
-			{
-				"subambito": "I+D de procesos de fabricaci\u00f3n eficientes para materiales avanzados",
-				"subambito_id": 45,
-				"sub_sort_name": "I+D procesos",
-				"ambito_id": 9
-			},
-			{
-				"subambito": "Servicios tecnol\u00f3gicos avanzados",
-				"subambito_id": 46,
-				"sub_sort_name": "Serv. Tecnol\u00f3gicos",
-				"ambito_id": 9
-			},
-			{
-				"subambito": "Gesti\u00f3n del ciclo de vida de producto para materiales avanzados y no avanzados",
-				"subambito_id": 47,
-				"sub_sort_name": "Ciclo vida producto",
-				"ambito_id": 9
-			},
-			{
-				"subambito": "Soluciones de fabricaci\u00f3n para productos modulares, actualizables, reconfigurables y desmontables",
-				"subambito_id": 48,
-				"sub_sort_name": "Productos modulares",
-				"ambito_id": 9
-			},
-			{
-				"subambito": "Redefinici\u00f3n de procesos, productos y servicios",
-				"subambito_id": 49,
-				"sub_sort_name": "Redefinici\u00f3n procesos",
-				"ambito_id": 10
-			},
-			{
-				"subambito": "Gesti\u00f3n de la propiedad intelectual",
-				"subambito_id": 50,
-				"sub_sort_name": "Propiedad intelectual",
-				"ambito_id": 10
-			}
-		]
-
+		"subambitos": [
+    {
+        "ambito": "Todos los \u00e1mbitos",
+        "ambito_id": 0,
+        "subambito": "null",
+        "subambito_id": 0,
+        "subambito_short_name": "null",
+        "original_name": "null",
+        "description": "null"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+        "ambito_id": 1,
+        "subambito": "Dise\u00f1o, investigaci\u00f3n, implantaci\u00f3n comunicaci\u00f3n M2M",
+        "subambito_id": 1,
+        "subambito_short_name": "Comunicaci\u00f3n M2M",
+        "original_name": "1.1 Dise\u00f1o, investigaci\u00f3n, implantaci\u00f3n comunicaci\u00f3n M2M",
+        "description": "Programaci\u00f3n intuitiva y multimodal, autoaprendizaje y flexibilidad\nInteracci\u00f3n maquina . Machine to Machine, que es el t\u00e9rmino completo de M2M, hace referencia a la comunicaci\u00f3n e intercambio de informaci\u00f3n entre m\u00e1quinas remotas. Estas comunicaciones re"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+        "ambito_id": 1,
+        "subambito": "Dise\u00f1o, investigaci\u00f3n de interfases persona-m\u00e1quina (HMI: human machine interface; Human in the loop)",
+        "subambito_id": 2,
+        "subambito_short_name": "Interfases persona-m\u00e1quina",
+        "original_name": "1.2 Dise\u00f1o, investigaci\u00f3n de interfases persona-m\u00e1quina (HMI: human machine interface; Human in the loop)",
+        "description": "Interfaces \u00e1giles Hombre-M\u00e1quina (HM), \"man in the loop\". Es la interfaz de usuario que conecta un operador con el controlador de un sistema industrial. Los sistemas de control industrial (ICS) son hardware y software integrados dise\u00f1ados para monitorizar"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+        "ambito_id": 1,
+        "subambito": "Programaci\u00f3n, simulaci\u00f3n y puesta en marcha de robots industriales inteligentes, conectadas, flexibles y reconfigurables",
+        "subambito_id": 3,
+        "subambito_short_name": "Robots industriales",
+        "original_name": "1.3 Programaci\u00f3n, simulaci\u00f3n y puesta en marcha de robots industriales inteligentes, conectadas, flexibles y reconfigurables",
+        "description": "M\u00e1quinas/equipos h\u00edbridos y/o multitasking y M\u00e1quinas/equipos y utillajes flexibles, inteligentes y conectados"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+        "ambito_id": 1,
+        "subambito": "Monitorizaci\u00f3n de datos, an\u00e1lisis y su aplicaci\u00f3n en la fabricaci\u00f3n",
+        "subambito_id": 4,
+        "subambito_short_name": "Monitorizaci\u00f3n de datos",
+        "original_name": "1.4 Monitorizaci\u00f3n de datos, an\u00e1lisis y su aplicaci\u00f3n en la fabricaci\u00f3n",
+        "description": "Sistemas de recolecci\u00f3n, visualizaci\u00f3n, an\u00e1lisis y gesti\u00f3n de datos y Monitorizaci\u00f3n de equipos y procesos, e implementaci\u00f3n en los procesos productivos"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n Avanzada (flexible, autonoma, inteligente, y cooperativa)",
+        "ambito_id": 1,
+        "subambito": "Entornos de fabricaci\u00f3n din\u00e1mica para su integraci\u00f3n \u00e1gil e inteligente",
+        "subambito_id": 5,
+        "subambito_short_name": "Entornos de Fab. Din\u00e1mica",
+        "original_name": "1.5 Entornos de fabricaci\u00f3n din\u00e1mica para su integraci\u00f3n \u00e1gil e inteligente",
+        "description": "Sistemas de comunicaci\u00f3n entre equipos de procesos productivos consecutivos y Sistemas inteligentes para la gesti\u00f3n integral de la cadena de suministros"
+    },
+    {
+        "ambito": "Realidad Virtual y Realidad aumentada",
+        "ambito_id": 2,
+        "subambito": "Dise\u00f1o digital y sistemas virtuales de simulaci\u00f3n y control de procesos y planta",
+        "subambito_id": 6,
+        "subambito_short_name": "Control y simulacion de procesos",
+        "original_name": "2.1 Dise\u00f1o digital y sistemas virtuales de simulaci\u00f3n y control de procesos y planta",
+        "description": "Simulaciones 3-D de productos, materiales y procesos de producci\u00f3n, pero tambi\u00e9n en operaciones de planta."
+    },
+    {
+        "ambito": "Realidad Virtual y Realidad aumentada",
+        "ambito_id": 2,
+        "subambito": "Realidad virtual para optimizaci\u00f3n de dise\u00f1os",
+        "subambito_id": 7,
+        "subambito_short_name": "RV para dise\u00f1o",
+        "original_name": "2.2 Realidad virtual para optimizaci\u00f3n de dise\u00f1os",
+        "description": "Prototipado industrial con Realidad Virtual y Montaje y dise\u00f1o de instalaciones con Realidad Aumentada"
+    },
+    {
+        "ambito": "Realidad Virtual y Realidad aumentada",
+        "ambito_id": 2,
+        "subambito": "Realidad aumentada para el mantenimiento y control de planta",
+        "subambito_id": 8,
+        "subambito_short_name": "RA para planta",
+        "original_name": "2.3 Realidad aumentada para el mantenimiento y control de planta",
+        "description": "Realidad Aumentada para el mantenimiento y reparaci\u00f3n de maquinaria. Normalmente, en el momento que se produce la aver\u00eda, el operario no tiene a mano los manuales de instrucciones de la m\u00e1quina en cuesti\u00f3n para proceder a la reparaci\u00f3n. Debe buscarlos, o "
+    },
+    {
+        "ambito": "Realidad Virtual y Realidad aumentada",
+        "ambito_id": 2,
+        "subambito": "Realidad virtual para training de operaciones y formaci\u00f3n de operarios",
+        "subambito_id": 9,
+        "subambito_short_name": "RV para operarios",
+        "original_name": "2.4 Realidad virtual para training de operaciones y formaci\u00f3n de operarios",
+        "description": "El \u00e1mbito de la formaci\u00f3n de t\u00e9cnicos especializados en la manipulaci\u00f3n de maquinaria industrial es otra de las aplicaciones de la tecnolog\u00eda de Realidad Virtual. Igual que podemos generar entornos donde visualizar las m\u00e1quinas funcionando de manera real,"
+    },
+    {
+        "ambito": "Realidad Virtual y Realidad aumentada",
+        "ambito_id": 2,
+        "subambito": "Realidad aumentada para asistencia y resoluci\u00f3n de incidencias",
+        "subambito_id": 10,
+        "subambito_short_name": "RA para incidencias",
+        "original_name": "2.5 Realidad aumentada para asistencia y resoluci\u00f3n de incidencias",
+        "description": "Las aplicaciones de teleasistencia con Realidad Aumentada suponen un paso m\u00e1s en las labores de mantenimiento y reparaci\u00f3n de maquinaria; pues, en este caso, el operario de f\u00e1brica es guiado durante el proceso de resoluci\u00f3n de incidencias por el t\u00e9cnico e"
+    },
+    {
+        "ambito": "Ciberseguridad",
+        "ambito_id": 3,
+        "subambito": "Prevenci\u00f3n y control de ataques y amenazas ",
+        "subambito_id": 11,
+        "subambito_short_name": "Prevenci\u00f3n ataques",
+        "original_name": "3.1 Prevenci\u00f3n y control de ataques y amenazas ",
+        "description": "En el per\u00edmetro, en el end point, de ataques DDoS, de amenazas en redes WiFi, control en LAN-NAC,  prevenci\u00f3n en la nube p\u00fablica, prevenci\u00f3n de amenazas web, entornos ICS/SCADA, aplicaciones SaaS-CASB, etc."
+    },
+    {
+        "ambito": "Ciberseguridad",
+        "ambito_id": 3,
+        "subambito": "Detecci\u00f3n de amenazas mediante an\u00e1lisis de comportamiento",
+        "subambito_id": 12,
+        "subambito_short_name": "Detecci\u00f3n amenazas",
+        "original_name": "3.2 Detecci\u00f3n de amenazas mediante an\u00e1lisis de comportamiento",
+        "description": "Mediante el big data se pueden construir modelos para predecir el comportamiento y los patrones de actuaci\u00f3n?n de los ciberataques."
+    },
+    {
+        "ambito": "Ciberseguridad",
+        "ambito_id": 3,
+        "subambito": "Microsegmentaci\u00f3n en el endpoint, microsegmentaci\u00f3n en datacenter",
+        "subambito_id": 13,
+        "subambito_short_name": "Microsegmentaci\u00f3n en endpoint",
+        "original_name": "3.3 Microsegmentaci\u00f3n en el endpoint, microsegmentaci\u00f3n en datacenter",
+        "description": "Tecnolog\u00eda que consiste en habilitar la capacidad de filtrado de un firewall en cada uno de los interfaces de una m\u00e1quina virtual."
+    },
+    {
+        "ambito": "Ciberseguridad",
+        "ambito_id": 3,
+        "subambito": "T\u00e9cnicas de aislamiento por virtualizaci\u00f3n de la red y correspondientes funciones operativas",
+        "subambito_id": 14,
+        "subambito_short_name": "Aislamiento por virtualizaci\u00f3n",
+        "original_name": "3.4 T\u00e9cnicas de aislamiento por virtualizaci\u00f3n de la red y correspondientes funciones operativas)",
+        "description": "El uso concurrente de los recursos de comunicaci\u00f3n y computaci\u00f3n por diversas entidades y la interconexi\u00f3n de los mismos con otros actores requiere gestionar la virtualizaci\u00f3n de las funciones de red y de la infraestructura de red con objeto de asegurar e"
+    },
+    {
+        "ambito": "Ciberseguridad",
+        "ambito_id": 3,
+        "subambito": "Aplicaci\u00f3n de t\u00e9cnicas de inteligencia artificial para combatir el cibercrimen",
+        "subambito_id": 15,
+        "subambito_short_name": "IA contra el cibercrimen",
+        "original_name": "3.5 Aplicaci\u00f3n de t\u00e9cnicas de inteligencia artificial para combatir el cibercrimen",
+        "description": "La inteligencia artificial pretende solucionar fraudes inform\u00e1ticos mediante la detecci\u00f3n de amenazas, desde la reducci\u00f3n del tiempo de respuesta con t\u00e9cnicas de refinaci\u00f3n autom\u00e1ticas para distinguir los ataques que requieren atenci\u00f3n inmediata, hasta in"
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Virtualizaci\u00f3n de sistemas",
+        "subambito_id": 16,
+        "subambito_short_name": "Virtualizaci\u00f3n sistemas",
+        "original_name": "4.1 Virtualizaci\u00f3n de sistemas\n",
+        "description": "Creaci\u00f3n, a trav\u00e9s de software, de una versi\u00f3n virtual de alg\u00fan recurso tecnol\u00f3gico. El software de virtualizaci\u00f3n permite ejecutar m\u00faltiples sistemas operativos y varias aplicaciones en el mismo servidor y al mismo tiempo permite a las empresa reducir lo"
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Grandes almacenes de datos en la nube",
+        "subambito_id": 17,
+        "subambito_short_name": "Almacenamineto de datos ",
+        "original_name": "4.2 Grandes almacenes de datos en la nube\n",
+        "description": "Repositorio central de informaci\u00f3n proveniente de una o m\u00e1s fuentes de datos. Los datos se dirigen a un almac\u00e9n de datos desde sistemas transaccionales y otras bases de datos relacionales y normalmente incluyen datos estructurados, semiestructurados y no "
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Computaci\u00f3n de altas prestaciones",
+        "subambito_id": 18,
+        "subambito_short_name": "Computaci\u00f3n de altas prestaciones",
+        "original_name": "4.3 Computaci\u00f3n de altas prestaciones\n",
+        "description": "Disen?o, desarrollo, gestio?n y mejora de las tecnologi?as de hardware y software involucradas en la Computaci\u00f3n?n de Altas Prestaciones (High Performance Computing, HPC) y sus aplicaciones en Ciencia e Ingeniero?a Computacional. El concepto de Computaci\u00f3"
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Sistemas streaming",
+        "subambito_id": 19,
+        "subambito_short_name": "Sistemas streaming",
+        "original_name": "4.4 Sistemas streaming\n",
+        "description": "Soluci\u00f3n de distribuci\u00f3n para contenido multimedia a trav\u00e9s de una red de ordenadores de manera continua, de tal forma que el usuario final puede visualizar los contenidos al mismo tiempo que los descarga."
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Comunicaciones entre sistemas",
+        "subambito_id": 20,
+        "subambito_short_name": "Comunicaciones",
+        "original_name": "4.5 Comunicaciones entre sistemas",
+        "description": "Intercambio de informaci\u00f3n entre sistemas y productos, capturar datos, coordinar sistemas y desplegar servicios remotos. "
+    },
+    {
+        "ambito": "Cloud Computing y Edge Computing",
+        "ambito_id": 4,
+        "subambito": "Sistemas de informaci\u00f3n industriales",
+        "subambito_id": 21,
+        "subambito_short_name": "Sistemas de informaci\u00f3n",
+        "original_name": "4.6 Sistemas de informaci\u00f3n industriales",
+        "description": "Sistemas de procesamiento de transacciones, Sistemas de control de procesos de negocio, Sistemas de colaboraci\u00f3n empresarial, Sistemas de Informaci\u00f3n de Gesti\u00f3n, Sistemas de apoyo a la toma de decisiones, Sistemas de Informaci\u00f3n Ejecutiva, etc."
+    },
+    {
+        "ambito": "Big Data: an\u00e1lisis, evaluaci\u00f3n y aplicaci\u00f3n",
+        "ambito_id": 5,
+        "subambito": "Sistemas anal\u00edticos especializados y soluciones software ",
+        "subambito_id": 22,
+        "subambito_short_name": "Soluciones software",
+        "original_name": "5.1 Sistemas anal\u00edticos especializados y soluciones software ",
+        "description": "Soluciones software para la anal\u00edtica avanzada. No s\u00e9 si se refiere a eso. Pero entre ellos, destacan en la actualidad R, Matlab, SAS, Stata, Julia, etc."
+    },
+    {
+        "ambito": "Big Data: an\u00e1lisis, evaluaci\u00f3n y aplicaci\u00f3n",
+        "ambito_id": 5,
+        "subambito": "T\u00e9cnicas de anal\u00edtica avanzada, Machine learning and deep learning",
+        "subambito_id": 23,
+        "subambito_short_name": "An\u00e1litica avanzada",
+        "original_name": "5.2 T\u00e9cnicas de anal\u00edtica avanzada, Machine learning and deep learning",
+        "description": "Las t\u00e9cnicas de anal\u00edtica avanzada se descomponen en tres grandes familias: (1) Descriptiva; (2) Predictiva; y (3) Prescriptivas. Adem\u00e1s, las t\u00e9cnicas de deep learning, est\u00e1n a\u00f1adiendo nuevas capacidades anteriormente nunca vistas. Y la simulaci\u00f3n y optim"
+    },
+    {
+        "ambito": "Big Data: an\u00e1lisis, evaluaci\u00f3n y aplicaci\u00f3n",
+        "ambito_id": 5,
+        "subambito": "Estudio de la mejora del rendimiento con bases de datos NoSQL",
+        "subambito_id": 24,
+        "subambito_short_name": "Rendimiento con bases de datos",
+        "original_name": "5.3 Estudio de la mejora del rendimiento con bases de datos NoSQL.",
+        "description": "Desde la perspectiva del valor a\u00f1adido para las empresas. Comparativa de los modelos de datos relacionales tradicionales (SQL) frente al modelado de datos avanzado (NoSQL)."
+    },
+    {
+        "ambito": "Big Data: an\u00e1lisis, evaluaci\u00f3n y aplicaci\u00f3n",
+        "ambito_id": 5,
+        "subambito": "Computaci\u00f3n del altas prestaciones",
+        "subambito_id": 25,
+        "subambito_short_name": "Computaci\u00f3n",
+        "original_name": "5.4 Computaci\u00f3n del altas prestaciones",
+        "description": "Capacidad de procesar en tiempos razonables cantidades grandes datos. Comparativa entre el procesamiento batch (Hadoop) y el streaming (Spark). Estudiar para una empresa la viabilidad de ambas soluciones es un proyecto en s\u00ed mismo, as\u00ed como conocer las me"
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Sens\u00f3rica, controles y sistemas embebidos",
+        "subambito_id": 26,
+        "subambito_short_name": "Sens\u00f3rica",
+        "original_name": "6.1 Sens\u00f3rica, controles y sistemas embebidos",
+        "description": "Los objetos y m\u00e1quinas contienen micro computadoras que controlan sus operaciones y permiten aplicaciones \u00fatiles. Estos sistemas integrados se unen cada vez m\u00e1s en una \"Internet de las cosas\"."
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Networking, conectividad e interoperatividad de dispositivos inteligentes",
+        "subambito_id": 27,
+        "subambito_short_name": "Networking y conectividad",
+        "original_name": "6.2 Networking, conectividad e interoperatividad de dispositivos inteligentes",
+        "description": "Red de hiperconectividad continua entre los sistemas de producci\u00f3n. Velar por que los sistemas y equipos de telecomunicaciones puedan conectarse y trabajar unos con otros"
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Gesti\u00f3n de Infraestructura",
+        "subambito_id": 28,
+        "subambito_short_name": "Gesti\u00f3n de Infraestructuras",
+        "original_name": "6.3 Gesti\u00f3n de Infraestructura",
+        "description": "El seguimiento y el control de las operaciones de infraestructuras urbanas y rurales, como puentes, v\u00edas f\u00e9rreas, parques e\u00f3licos en tierra y mar adentro, es una aplicaci\u00f3n clave del IoT.  La infraestructura de IoT se puede usar para monitorear cualquier "
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Tecnolog\u00edas de habilitaci\u00f3n para IoT",
+        "subambito_id": 29,
+        "subambito_short_name": "Tecnolog\u00edas de habitalizaci\u00f3n",
+        "original_name": "6.4 Tecnolog\u00edas de habilitaci\u00f3n para IoT",
+        "description": "Hay muchas tecnolog\u00edas que permiten IoT. Crucial para el campo es la red utilizada para comunicarse entre dispositivos de una instalaci\u00f3n de IoT, una funci\u00f3n que varias tecnolog\u00edas inal\u00e1mbricas o por cable pueden cumplir: capacidad de direccionamiento, in"
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Modelizaci\u00f3n y simulaci\u00f3n de IoT",
+        "subambito_id": 30,
+        "subambito_short_name": "Modelizaci\u00f3n y simulaci\u00f3n",
+        "original_name": "6.5 Modelizaci\u00f3n y simulaci\u00f3n de IoT",
+        "description": "Realizado en la etapa de dise\u00f1o antes del despliegue de la red. Simuladores de red como OPNET, NetSim y NS2 se pueden usar para simular redes IdC."
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Acceso seguro a sensores y dispositivos de prestaciones reducidas",
+        "subambito_id": 31,
+        "subambito_short_name": "Acceso a sensores",
+        "original_name": "6.6 Acceso seguro a sensores y dispositivos de prestaciones reducidas",
+        "description": "En muchos casos, por motivos de seguridad o incluso por razones de privacidad y protecci\u00f3n de datos el acceso a los sensores debe realizarse sin intermediarios y soportando el despliegue din\u00e1mico y flexible de pol\u00edticas de seguridad que incluyan caracter\u00ed"
+    },
+    {
+        "ambito": "Internet of Things",
+        "ambito_id": 6,
+        "subambito": "Integraci\u00f3n de nuevas tecnolog\u00edas de comunicaci\u00f3n en IoT",
+        "subambito_id": 32,
+        "subambito_short_name": "Integraci\u00f3n de tecnolog\u00edas IoT",
+        "original_name": "6.7 Integraci\u00f3n de nuevas tecnolog\u00edas de comunicaci\u00f3n en IoT",
+        "description": "Las necesidades de las nuevas necesidades de comunicaci\u00f3n de la IoT en entornos masivos con aplicaciones que tienen necesidades dispares en el \u00e1mbito del retardo, del ancho de banda, consumo o disponibilidad requerir\u00e1n el despliegue y utilizaci\u00f3n de nueva"
+    },
+    {
+        "ambito": "Integraci\u00f3n de Sistemas IT",
+        "ambito_id": 7,
+        "subambito": "Sistemas para la integraci\u00f3n vertical ",
+        "subambito_id": 33,
+        "subambito_short_name": "Integraci\u00f3n vertical",
+        "original_name": "7.1 Sistemas para la integraci\u00f3n vertical ",
+        "description": "La integraci\u00f3n vertical intra-organizaci\u00f3n tiene como objetivo integrar los sistemas implementados en diferentes niveles administrativos de una organizaci\u00f3n.\n(entrecruzamiento inteligente y la digitalizaci\u00f3n de los diferentes niveles jer\u00e1rquicos del m\u00f3dul"
+    },
+    {
+        "ambito": "Integraci\u00f3n de Sistemas IT",
+        "ambito_id": 7,
+        "subambito": "Sistemas para la integraci\u00f3n horizontal: smart supply chain management, smart logistic, etc.",
+        "subambito_id": 34,
+        "subambito_short_name": "Integraci\u00f3n horizontal",
+        "original_name": "7.2 Sistemas para la integraci\u00f3n horizontal: smart supply chain management, smart logistics?",
+        "description": "Sistemas de inspecci\u00f3n y medida integrados en el proceso productivo y conectados en l\u00ednea\nSistemas de seguimiento durante todo el ciclo de vida (trazabilidad unitaria)\nIntegraci\u00f3n horizontal significa el entrecruzamiento inteligente y la digitalizaci\u00f3n de"
+    },
+    {
+        "ambito": "Integraci\u00f3n de Sistemas IT",
+        "ambito_id": 7,
+        "subambito": "Integracion Inter-organizational",
+        "subambito_id": 35,
+        "subambito_short_name": "Integraci\u00f3n inter-organizacional",
+        "original_name": "7.3 Integraci\u00f3n Inter-organizational",
+        "description": "La tendencia entre las organizaciones hacia la fabricaci\u00f3n electr\u00f3nica del comercio tiende a cambiar los patrones de interacci\u00f3n originales entre las empresas, en particular en sus roles como clientes y proveedores. Las empresas necesitan intercambiar inf"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Impresi\u00f3n 3D",
+        "subambito_id": 36,
+        "subambito_short_name": "Impresi\u00f3n 3D",
+        "original_name": "8.1 Impresi\u00f3n 3D",
+        "description": "El desarrollo del producto se lleva a cabo mediante un conjunto definido de reglas basadas en requisitos definidos. Las reglas generalmente consisten en algoritmos. El esfuerzo humano se desplaza del proceso de desarrollo al modelado de la red de requisit"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Fusi\u00f3n de lecho de polvo: Powder Bed Fusion (PBF)",
+        "subambito_id": 37,
+        "subambito_short_name": "Fusi\u00f3n lecho de polvo",
+        "original_name": "8.2 Fusi\u00f3n de lecho de polvo: Powder Bed Fusion (PBF)",
+        "description": "Fusi\u00f3n de capas sucesivas de material en polvo, metal o pl\u00e1stico, mediante un l\u00e1ser SLM o un haz de electrones EBM. Materiales met\u00e1licos y pl\u00e1sticos."
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Modelado por deposici\u00f3n fundida: Fused Deposition Modeling (FDM)",
+        "subambito_id": 38,
+        "subambito_short_name": "Deposici\u00f3n Fundida",
+        "original_name": "8.3 Modelado por deposici\u00f3n fundida: Fused Deposition Modeling (FDM)",
+        "description": "Calentamiento de un filamento de pl\u00e1stico para su fusi\u00f3n y calibrado y, su deposici\u00f3n controlada en capas delgadas antes de su solidificaci\u00f3n. Materiales pl\u00e1sticos."
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Material Jetting",
+        "subambito_id": 39,
+        "subambito_short_name": "Material Jetting",
+        "original_name": "8.4 Material Jetting",
+        "description": "Se basa en la deposici\u00f3n selectiva de una mezcla de material fotopol\u00edmero, en gotas sobre una plataforma. Esto permite crear capas de una sola pasada para su curado y solidificaci\u00f3n mediante una luz UV."
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Procesos de aporte directo (Direct Material Deposition - DMD)",
+        "subambito_id": 40,
+        "subambito_short_name": "Aporte directo",
+        "original_name": "8.5 Procesos de aporte directo (Direct Material Deposition - DMD)",
+        "description": "Procesos que inyectan material directamente en un substrato. El material de aporte puede alimentarse en polvo o hilo y la fusi\u00f3n darse mediante l\u00e1ser (LMD - Laser Material Deposition) o arco el\u00e9ctrico (Wire Arc Additive Manucturing - WAAM). Aplicado sobre"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Integraci\u00f3n de procesos de Fabricaci\u00f3n Aditiva en M\u00e1quina Herramienta",
+        "subambito_id": 41,
+        "subambito_short_name": "Integraci\u00f3n en procesos de M\u00e1quina herramienta",
+        "original_name": "8.6 Integraci\u00f3n de procesos de Fabricaci\u00f3n Aditiva en M\u00e1quina Herramienta",
+        "description": "Integraci\u00f3n de procesos PBF o DMD en m\u00e1quinas herramienta para poder realizar operaciones de Fabricaci\u00f3n aditiva y mecanizado en el mismo sistema, evitando movimientos de pieza e hibridando procesos de fabricaci\u00f3n relacionados."
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Design for Additive Manufacturing",
+        "subambito_id": 42,
+        "subambito_short_name": "Dise\u00f1o para Fab. Aditiva",
+        "original_name": "8.7 Design for Additive Manufacturing",
+        "description": "La Fabricaci\u00f3n Aditiva est\u00e1 considerada como un 'Game Changer' debido a que las reglas de dise\u00f1o tradicionales no son aplicables a estos procesos. De hecho, el principal beneficio de la Fabricaci\u00f3n Aditiva se obtiene cuando la pieza se dise\u00f1a de forma lib"
+    },
+    {
+        "ambito": "Fabricaci\u00f3n aditiva",
+        "ambito_id": 8,
+        "subambito": "Mass & Taylored production",
+        "subambito_id": 43,
+        "subambito_short_name": "Mass & Tailored production",
+        "original_name": "8.8 Mass & Taylored production",
+        "description": "Uno de los principales retos de los procesos de Fab. Aditiva es incrementar su productividad para poder fabricar grandes vol\u00famenes de componentes pero manteniendo la individualizaci\u00f3n de cada uno. De esta manera se llegar\u00eda a una producci\u00f3n masiva de piez"
+    },
+    {
+        "ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+        "ambito_id": 9,
+        "subambito": "I+D sobre materiales",
+        "subambito_id": 44,
+        "subambito_short_name": "I+D materiales",
+        "original_name": "9.1 I+D sobre materiales",
+        "description": "Tecnolog\u00edas de uni\u00f3n para materiales avanzados y soluciones h\u00edbridas."
+    },
+    {
+        "ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+        "ambito_id": 9,
+        "subambito": "I+D de procesos de fabricaci\u00f3n eficientes para materiales avanzados",
+        "subambito_id": 45,
+        "subambito_short_name": "I+D procesos",
+        "original_name": "9.2 I+D de procesos de fabricaci\u00f3n eficientes para materiales avanzados",
+        "description": "Tecnolog\u00edas de fabricaci\u00f3n avanzadas\nEl aumento de la eficiencia de los materiales se puede desarrollar a diferentes niveles dentro del sistema de fabricaci\u00f3n a trav\u00e9s de: modificaciones del proceso, recuperaci\u00f3n y reutilizaci\u00f3n de materiales dentro del p"
+    },
+    {
+        "ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+        "ambito_id": 9,
+        "subambito": "Servicios tecnol\u00f3gicos avanzados",
+        "subambito_id": 46,
+        "subambito_short_name": "Serv. Tecnol\u00f3gicos avanzados",
+        "original_name": "9.3 Servicios tecnol\u00f3gicos avanzados ",
+        "description": "Ensayos, caracterizaciones estructurales, tratamientos, etc.."
+    },
+    {
+        "ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+        "ambito_id": 9,
+        "subambito": "Gesti\u00f3n del ciclo de vida de producto para materiales avanzados y no avanzados",
+        "subambito_id": 47,
+        "subambito_short_name": "Gesti\u00f3n del ciclo vida producto",
+        "original_name": "9.4 Gesti\u00f3n del ciclo de vida de producto para materiales avanzados y no avanzados",
+        "description": "Desarrollar soluciones entorno al dise\u00f1o, fabricaci\u00f3n, control, mantenimiento, reutilizaci\u00f3n, re-fabricaci\u00f3n y reciclaje de materiales avanzados, tal como ya est\u00e1 establecido para materiales y productos tradicionales. Adem\u00e1s, estas soluciones deben ser ca"
+    },
+    {
+        "ambito": "Materiales y procesos de fabricaci\u00f3n avanzados",
+        "ambito_id": 9,
+        "subambito": "Soluciones de fabricaci\u00f3n para productos modulares, actualizables, reconfigurables y desmontables",
+        "subambito_id": 48,
+        "subambito_short_name": "Soluciones de fabricaci\u00f3n",
+        "original_name": "9.5 Soluciones de fabricaci\u00f3n para productos modulares, actualizables, reconfigurables y desmontables",
+        "description": "La industria demanda nuevas t\u00e9cnicas de fabricaci\u00f3n que permitan, en paralelo, la personalizaci\u00f3n r\u00e1pida, montaje y fabricaci\u00f3n de productos complejos y sus piezas de repuesto, as\u00ed como la capacidad para actualizar, reconfigurar y desmontar productos de f"
+    },
+    {
+        "ambito": "Dise\u00f1o y/o optimizaci\u00f3n de modelos de negocio",
+        "ambito_id": 10,
+        "subambito": "Redefinici\u00f3n de procesos, productos y servicios",
+        "subambito_id": 49,
+        "subambito_short_name": "Redefinici\u00f3n procesos, productos, servicios",
+        "original_name": "10.1 Redefinici\u00f3n de procesos, productos y servicios",
+        "description": "Implicaciones de la Industria 4.0 en la cadena de valor."
+    },
+    {
+        "ambito": "Dise\u00f1o y/o optimizaci\u00f3n de modelos de negocio",
+        "ambito_id": 10,
+        "subambito": "Gesti\u00f3n de la propiedad intelectual",
+        "subambito_id": 50,
+        "subambito_short_name": "Propiedad intelectual",
+        "original_name": "10.2 Gesti\u00f3n de la propiedad intelectual",
+        "description": "Se redefine este campo igualmente. B\u00e1sicamente fruto de la digitalizaci\u00f3n. Quiz\u00e1s se deje de \"poseer\" (propiedad) y se empiece m\u00e1s a \"usar\". "
+    }
+]
 
 
 
@@ -770,9 +929,9 @@
 			},
 			{
 				"id": 2,
-				"capacidad_uno": "Instalación y equipos",
+				"capacidad_uno": "Instalaciones y equipos",
 				"parent_id": "0",
-				"json": "instalacion_y_equipos",
+				"json": "instalaciones_y_equipos",
 				"capacidad_color": "#e88604"
 			},
 			{
@@ -835,7 +994,7 @@
 				"capacidad_dos": "Instalación singular",
 				"json": "instalacion_singular",
 				"parent_id": 2,
-				"capacidad_uno": "Instalación y equipos",
+				"capacidad_uno": "Instalaciones y equipos",
 				"capacidad_color": "#e88604"
 			},
 			{
@@ -843,12 +1002,12 @@
 				"capacidad_dos": "Laboratorio",
 				"json": "laboratorio",
 				"parent_id": 2,
-				"capacidad_uno": "Instalación y equipos",
+				"capacidad_uno": "Instalaciones y equipos",
 				"capacidad_color": "#e88605"
 			},
 			{
 				"id": 8,
-				"capacidad_dos": "Grupo/Equipo/Unidad",
+				"capacidad_dos": "Grupo/equipo/unidad",
 				"json": "grupo_equipo_unidad",
 				"parent_id": 3,
 				"capacidad_uno": "Investigación",

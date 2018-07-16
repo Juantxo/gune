@@ -14,7 +14,6 @@
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="../../css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="../../css/animate.min.css">
       <link rel="stylesheet" href="../../css/gune-main.css?a=193834923283943842923">
       <style>
          .node circle {
@@ -36,17 +35,14 @@
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
-      
       <div class="container">
          <div class="row margin-bottom--16 margin-top--8">
             <div class="col-12">
-				<a href="../../index.html"><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-angle-double-left"></i> Volver</button></a>
-				<a href="../diccionario/diccionario.html"><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-angle-double-left"></i> Diccionario</button></a>
-			</div>
+               <a href="../../index.html"><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-angle-double-left"></i> Volver</button></a>
+               <a href="../diccionario/diccionario.html"><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa fa-angle-double-left"></i> Diccionario</button></a>
+            </div>
          </div>
       </div>
-      
-      
       <div class="container">
          <div class="row border-bottom--2">
             <div class="col-12">
@@ -60,35 +56,23 @@
          <div class="row">
             <div class="col-sm">
                <select name="capacidad_uno_select" id="capacidad_uno_select" data-select="capacidad_uno_select" class="form-control form-control-lg margin-bottom--24">
-<!--                   <option selected="true" disabled="disabled" value="">Ámbito Industria 4.0</option> -->
-				  <option value="0" selected="true">Todas las capacidades</option>
+                  <!--                   <option selected="true" disabled="disabled" value="">Ámbito Industria 4.0</option> -->
+                  <option value="0" selected="true">Todas las capacidades</option>
                   <option value="1">Formación</option>
                   <option value="2">Instalaciones y equipos</option>
                   <option value="3">Investigación</option>
                   <option value="4">Transferencia</option>
-			</select>
+               </select>
             </div>
             <div class="col-sm">
                <select name="capacidad_dos_select" id="capacidad_dos_select" class="form-control form-control-lg margin-bottom--24" data-select="capacidad_dos_select">
-<!--                   <option selected="true" disabled="disabled" value="">Subámbito</option> -->
-						<option value="0" selected="true">Todos los tipos</option>
-  
+                  <!--                   <option selected="true" disabled="disabled" value="">Subámbito</option> -->
+                  <option value="0" selected="true">Todos los tipos</option>
                </select>
-               
-               
-
-                  
-               
-               
-               
-               
-               
-               
-               
             </div>
             <div class="col-sm">
                <select name="ambito_select" id="ambito_select" class="form-control form-control-lg margin-bottom--24" data-select="ambito_select">
-<!--                   <option selected="true" disabled="disabled" value="">Mejora en...</option> -->
+                  <!--                   <option selected="true" disabled="disabled" value="">Mejora en...</option> -->
                   <option value="0" selected="true">Todos los ámbitos</option>
                   <option value="1">Fabricación avanzada</option>
                   <option value="2">RV & RA</option>
@@ -100,319 +84,200 @@
                   <option value="8">Fabricación Aditiva</option>
                   <option value="9">Materiales & procesos</option>
                   <option value="10">Modelos de negocio</option>
-                  
-                  
                </select>
             </div>
          </div>
       </div>
-      
-
-
-				      <!-- / TABLE HEADLINE AMBITO SUBAMBITO MEJORA -->
-				      <div class="container text-aling--center margin-bottom--24">
-					      
-				         <div class="row">
-					         
-				            <div class="col-sm">
-					            <h1 class="title-ambito"><span id="title_ambito">Todas las capacidades</span> | <span class="title-subambito" id="title_subambito">Todos los tipos</span></h1>
-					           
-					            <h2 class="title-mejora" id="title_mejora">Todos los ámbitos</h2>
-					        
-							
-							
-							
-							
-							</div>
-					         
-					         
-				         </div>
-				      </div>          
-					      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				      <!-- / TABLE keys -->
-				      <div class="container">
-					      
-				         <div class="row" id="table-results">
-					         
-				            <div class="col-sm text-aling--center">
-					            
-					            <p class="margin-bottom--0"><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
-					            <p><small>Ordenados por el tipo de capacidad. Las fases con la estrella verde quieren decir que el título puedo mejorar ese ámbito en mi industria.</small></p>
-							</div>
-				         </div>
-					      
-				         <div class="row table-keys" id="table-keys"> 
-					         
-				            <div class="col-sm">
-					            
-					            <p class="table-key--active"><small><i class="fa blueColor">&#xf111;</i> <span id="formacion" class="table-keys--key">Formación</span></small></p>
-							</div>
-							
-				            <div class="col-sm">
-					            
-					            <p class="table-key--active"><small><i class="fa purpleColor">&#xf111;</i> <span id="investigacion" class="table-keys--key">Investigación</span></small></p>
-							</div>
-							
-				            <div class="col-sm">
-					            
-					            <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia</span></small></p>
-							</div>
-				            <div class="col-sm">
-					            
-					            <p class="table-key--active"><small><i class="fa orangeColor">&#xf111;</i> <span id="instalaciones_y_equipos" class="table-keys--key">Instalaciones y equipos</span></small></p>
-							</div>
-					         
-					         
-				         </div>
-				      </div>          
-					      
-
-
-
-
-
+      <!-- / TABLE HEADLINE AMBITO SUBAMBITO MEJORA -->
+      <div class="container text-aling--center margin-bottom--24">
+         <div class="row">
+            <div class="col-sm">
+               <img id="title_img" class="icon-image margin-bottom--16" src="../../img/icons/icon-capacidad-black@2x.png" />
+               <h1 class="title-ambito"><span id="title_ambito">Todas las capacidades</span> | <span class="title-subambito" id="title_subambito">Todos los tipos</span></h1>
+               <h2 class="title-mejora" id="title_mejora">Todos los ámbitos</h2>
+            </div>
+         </div>
+      </div>
+      <!-- / TABLE keys -->
+      <div class="container">
+         <div class="row" id="table-results">
+            <div class="col-sm text-aling--center">
+               <p class="margin-bottom--0"><small><i class="fa">&#xf002;</i> <span>Resultados:&nbsp;</span><span id="results_total"></span></small></p>
+               <p><small>Ordenados por el tipo de capacidad. Las fases con la estrella verde quieren decir que el título puedo mejorar ese ámbito en mi industria.</small></p>
+            </div>
+         </div>
+         <div class="row table-keys" id="table-keys">
+            <div class="col-sm">
+               <p class="table-key--active"><small><i class="fa blueColor">&#xf111;</i> <span id="formacion" class="table-keys--key">Formación</span></small></p>
+            </div>
+            <div class="col-sm">
+               <p class="table-key--active"><small><i class="fa purpleColor">&#xf111;</i> <span id="investigacion" class="table-keys--key">Investigación</span></small></p>
+            </div>
+            <div class="col-sm">
+               <p class="table-key--active"><small><i class="fa redColor">&#xf111;</i> <span id="transferencia" class="table-keys--key">Transferencia</span></small></p>
+            </div>
+            <div class="col-sm">
+               <p class="table-key--active"><small><i class="fa orangeColor">&#xf111;</i> <span id="instalaciones_y_equipos" class="table-keys--key">Instalaciones y equipos</span></small></p>
+            </div>
+         </div>
+      </div>
       <div class="container">
          <div class="row">
-	        <div class="col-sm">
-		                     
-				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-				  <li class="nav-item">
-				    <a class="nav-link active" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">En detalle</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" id="pills-tree-tab" data-toggle="pill" href="#pills-tree" role="tab" aria-controls="pills-tree" aria-selected="true">Árbol</a>
-				  </li>
-				  <li class="nav-item hidden">
-				    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-				  </li>
-				</ul>
-				
-				
-				
-				<!-- / PILL TAB-CONTENT: TABLE -->
-
-				<div class="tab-content" id="pills-tabContent">
-				  <div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
-					  
-
-				      <!-- / TABLE HEAD -->
-				      <div class="container table-head" id="table_head">
-				         <div class="row">
-				            <div class="col-sm-12 col-md-6 col-lg-12">
-				               <div class="table-row table-border--gray padding-box--regular">
-				                  <div class="cell type rotate-text--container">Capacidad</div>
-				                  <div class="cell title rotate-text--container">Título</div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Fabricación Avanzada</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">RV & RA</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Ciberseguridad</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Cloud computing</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Big Data</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Internet of Things</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Sistemas IT</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Fabricación Aditiva</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Materiales & procesos</p></div>
-				                  <div class="cell star rotate-text--container"><p class="rotate-text--text">Modelos de negocio</p></div>
-				               </div>
-				
-				            </div><!-- col-sm table-head -->
-				            
-				         </div> <!-- row table-head -->
-				      </div> <!-- container table-head -->
-				
-				
-				
-				      <!-- / TABLE CONTAINER important!!!!! -->
-				      <div class="container">
-				         <div class="row" id="table_container">
-				         </div>
-				      </div>          
-					      
-					      
-					  
-				  </div> <!-- pills-list-tab -->
-				  <!-- / PILL TAB-CONTENT: TABLE ENDS -->
-
-				  
-				  
-				  
-				  <!-- / PILL TAB-CONTENT: TREE -->
-				  
-				  <div class="tab-pane fade" id="pills-tree" role="tabpanel" aria-labelledby="pills-tree-tab">
-					  
-					  
-				      <div class="container">
-				         <div class="row">
-				            <div class="col-sm-12 col-md-6 col-lg-12">
-				               <div class="tree-row" id="tree_container">
-					               
-					               
-				               </div>
-				
-				            </div><!-- col-sm table-head -->
-				            
-				         </div> <!-- row table-head -->
-				      </div> <!-- container table-head -->
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-					  
-				  </div><!-- pills-list-tab -->
-				  
-				  
-				  
-				  
-				  
-				  <!-- / PILL TAB-CONTENT: HIDDEN -->
-				  <div class="tab-pane fade hidden" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div><!-- pills-list-tab -->
-				</div>	<!-- pills-tabContentb -->	                     
-			</div> <!-- col-sm -->	
-
-	         
-	         
-	         
-	         
-	         
-	         
-	         
-	         
-	         
-         </div><!-- row -->
-      </div> <!-- container -->         
-	      
-
-
-
-
-
-
-
-
-
-         <!-- / modal container INFO -->
-         <div class="modal fade modal-fullscreen footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-            <div class="modal-dialog animated fadeInDown">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <p><i class="fa" id="capacidad_color">&#xf111;</i> <span id="capacidad_dos">Máster</span></p>
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  </div>
-                  <div class="modal-body">
-				  	<p class="title-name" id="titulo_name"><span>Gestión económica y social para el desarrollo de la economía solidaria</span></p>
-                     <div class="univ-container">
-                        <div class="univ-name">
-                           <p class="margin-bottom--0"><i class="fa">&#xf19c;</i><span id="univ_name">&nbsp;Universidad de Deusto</span></p>
-                           <p class="margin-bottom--0"><i class="fa">&#xf19d;</i><span id="univ_centro">&nbsp;Facultad de Ingeniería</span></p>
-                           <p class="margin-bottom--0" id="email_info"></p>
-                           <p><i class="fa">&#xf041;</i>&nbsp;<span id="titulo_direccion">Etorbidea Universidades, 24006, 48014 Bilbao, Vizcaya.</span> </p>
-
+            <div class="col-sm">
+               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-list" aria-selected="false">En detalle</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="pills-tree-tab" data-toggle="pill" href="#pills-tree" role="tab" aria-controls="pills-tree" aria-selected="true">Árbol</a>
+                  </li>
+                  <li class="nav-item hidden">
+                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                  </li>
+               </ul>
+               <!-- / PILL TAB-CONTENT: TABLE -->
+               <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                     <!-- / TABLE HEAD -->
+                     <div class="container table-head" id="table_head">
+                        <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-12">
+                              <div class="table-row table-border--gray padding-box--regular">
+                                 <div class="cell type rotate-text--container">Capacidad</div>
+                                 <div class="cell title rotate-text--container">Título</div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Fabricación Avanzada</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">RV & RA</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Ciberseguridad</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Cloud computing</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Big Data</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Internet of Things</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Sistemas IT</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Fabricación Aditiva</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Materiales & procesos</p>
+                                 </div>
+                                 <div class="cell star rotate-text--container">
+                                    <p class="rotate-text--text">Modelos de negocio</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- col-sm table-head -->
                         </div>
-                        <div class="univ-logo">
-                           <a id="univ_url" href="#link" target="_blank"><img id="univ_logo" class='icon-univ-logo' src="../../img/univ/deusto-color.png" /></a>
+                        <!-- row table-head -->
+                     </div>
+                     <!-- container table-head -->
+                     <!-- / TABLE CONTAINER important!!!!! -->
+                     <div class="container">
+                        <div class="row" id="table_container">
                         </div>
                      </div>
-
+                  </div>
+                  <!-- pills-list-tab -->
+                  <!-- / PILL TAB-CONTENT: TABLE ENDS -->
+                  <!-- / PILL TAB-CONTENT: TREE -->
+                  <div class="tab-pane fade" id="pills-tree" role="tabpanel" aria-labelledby="pills-tree-tab">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-12">
+                              <div class="tree-row" id="tree_container">
+                              </div>
+                           </div>
+                           <!-- col-sm table-head -->
+                        </div>
+                        <!-- row table-head -->
+                     </div>
+                     <!-- container table-head -->
+                  </div>
+                  <!-- pills-list-tab -->
+                  <!-- / PILL TAB-CONTENT: HIDDEN -->
+                  <div class="tab-pane fade hidden" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                  <!-- pills-list-tab -->
+               </div>
+               <!-- pills-tabContentb -->	                     
+            </div>
+            <!-- col-sm -->	
+         </div>
+         <!-- row -->
+      </div>
+      <!-- container -->         
+      <!-- / modal container INFO -->
+      <div class="modal fade modal-fullscreen footer-to-bottom" id="myModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+         <div class="modal-dialog animated fadeInDown">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <p><i class="fa" id="capacidad_color">&#xf111;</i> <span id="capacidad_dos">Máster</span></p>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+               </div>
+               <div class="modal-body">
+                  <p class="title-name" id="titulo_name"><span>Gestión económica y social para el desarrollo de la economía solidaria</span></p>
+                  <div class="univ-container">
+                     <div class="univ-name">
+                        <p class="margin-bottom--0"><i class="fa">&#xf19c;</i><span id="univ_name">&nbsp;Universidad de Deusto</span></p>
+                        <p class="margin-bottom--0"><i class="fa">&#xf19d;</i><span id="univ_centro">&nbsp;Facultad de Ingeniería</span></p>
+                        <p class="margin-bottom--0" id="email_info"></p>
+                        <p><i class="fa">&#xf041;</i>&nbsp;<span id="titulo_direccion">Etorbidea Universidades, 24006, 48014 Bilbao, Vizcaya.</span> </p>
+                     </div>
+                     <div class="univ-logo">
+                        <a id="univ_url" href="#link" target="_blank"><img id="univ_logo" class='icon-univ-logo' src="../../img/univ/deusto-color.png" /></a>
+                     </div>
+                  </div>
                   <p><small>Descripción:</small></p>
                   <p><small><span id="titulo_description"></span></small></p>
-                  
-	                          
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                     <a id="titulo_url" href="#link" class="btn btn-primary active" role="button" target="_blank" id="modal_foro_info">Más info</a>
-                  </div>
                </div>
-               <!-- /.modal-content -->
-            </div>
-         </div>
-       
-
-
-
-
-         <!-- / modal container NO TREE DATA -->
-         <div class="modal fade modal-fullscreen footer-to-bottom" id="NoDataModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-            <div class="modal-dialog animated fadeInDown">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <p><i class="fa fa-info-circle"></i> <span>Información</span></p>
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                  </div>
-                  <div class="modal-body">
-				  	<p class="title-name"><span>Los sentimos, no existen resultados con la selección deseada.</span></p>
-				  	<p class="title-name"><span>Pruebe con otra consulta.</span></p>
-                 </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                  </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                  <a id="titulo_url" href="#link" class="btn btn-primary active" role="button" target="_blank" id="modal_foro_info">Más info</a>
                </div>
-               <!-- /.modal-NO TREE DATA -->
-
             </div>
+            <!-- /.modal-content -->
          </div>
-       
-
-         <!-- / tooltip start container -->
-         <div id="star_tooltip" class="star-tooltip">
+      </div>
+      <!-- / modal container NO TREE DATA -->
+      <div class="modal fade modal-fullscreen footer-to-bottom" id="NoDataModalFullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+         <div class="modal-dialog animated fadeInDown">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <p><i class="fa fa-info-circle"></i> <span>Información</span></p>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+               </div>
+               <div class="modal-body">
+                  <p class="title-name"><span>Los sentimos, no existen resultados con la selección deseada.</span></p>
+                  <p class="title-name"><span>Pruebe con otra consulta.</span></p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+               </div>
+            </div>
+            <!-- /.modal-NO TREE DATA -->
          </div>
-	      
-
-
-				      <!-- / FOOTER important!!!!! -->
-				      <div class="container">
-				         <div class="row">
-					         
-					         	    		<div class="gune_logo-footer margin-bottom--24"></div>					
-
-				         </div>
-				      </div>          
-      
-      
-
-
-
-
-
-
-	      
-	      
-
-      
-      
-      
-      
-      
-      
-      
-      
+      </div>
+      <!-- / tooltip start container -->
+      <div id="star_tooltip" class="star-tooltip">
+      </div>
+      <!-- / FOOTER important!!!!! -->
+      <div class="container">
+         <div class="row">
+            <div class="gune_logo-footer margin-bottom--24"></div>
+         </div>
+      </div>
       <script src="../../js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="../../js/vendor/animated-scroll-to.js"></script>
-      
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
