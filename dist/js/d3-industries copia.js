@@ -1,16 +1,13 @@
-!(function(window, d3, Spinner) {
+!(function(window, d3) {
 
     'use strict';
-    //console.log(window);
+    
 
 	let url_img= '../../img/';
 	let url_data = '../../data/';
 	let tree_counter = false;
 	let selectValues = null;
 	let jump_banner = false;
-	
-	
-	      	
 	
     window.onload = function() {
 	    d3.queue()
@@ -1480,11 +1477,7 @@
 		init_star_tooltip();
 		// here pasar a pill tabs la data y select values para iniciar tree
 	    init_pill_tabs(gune, dic);
-		spinner.stop();
-		d3.select("#overlay").remove();
-
-	    
 
     }	// --> init ends            
 
-})(window, d3, Spinner);
+})(window, d3);

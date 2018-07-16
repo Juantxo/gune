@@ -1,4 +1,4 @@
-!(function(window, d3) {
+!(function(window, d3, Spinner) {
 
     'use strict';
 
@@ -1250,7 +1250,7 @@
     let init = function(error, gune, dic) {
         //console.log('hello from D3', gune, dic);
         if (error) throw error;
-	    
+		
 		let val = {
             "capacidad_uno": 0,
             "capacidad_dos": 0,
@@ -1263,8 +1263,10 @@
         init_ver_mas();
         init_counter(gune, val, dic);
 		init_pill_tabs(gune, dic);
+		spinner.stop();
+		d3.select("#overlay").remove();
 
 
     } // --> init ends            
 
-})(window, d3);
+})(window, d3, Spinner);

@@ -26,6 +26,14 @@ html.clusterGune {
 
 }
 
+.clusterGune  .overlay {
+    background-color: rgba(1, 1, 1, 0.7);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
 
 ::-moz-selection {
   background:#b3d4fc;
@@ -36,6 +44,22 @@ html.clusterGune {
   background:#b3d4fc;
   text-shadow: none;
 }
+* { -webkit-tap-highlight-color: transparent; }
+
+
+input:focus,
+select:focus,
+select.form-control:focus,
+textarea:focus,
+button:focus {
+	outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border:1px solid gray;
+}
+
 
 /*
  * A better looking default horizontal rule
@@ -86,6 +110,7 @@ textarea {
 /* ==========================================================================
   Bootstrap custom styles
   ========================================================================== */
+
 
 
 .clusterGune .nav-pills .nav-link.active, .nav-pills .show>.nav-link{

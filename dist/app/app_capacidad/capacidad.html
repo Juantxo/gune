@@ -30,6 +30,37 @@
          /*   stroke-width: 2px; */
          }
       </style>
+      <style>
+		@keyframes spinner-line-fade-more {
+		  0%, 100% {
+		    opacity: 0; /* minimum opacity */
+		  }
+		  1% {
+		    opacity: 1;
+		  }
+		}
+		
+		@keyframes spinner-line-fade-quick {
+		  0%, 39%, 100% {
+		    opacity: 0.25; /* minimum opacity */
+		  }
+		  40% {
+		    opacity: 1;
+		  }
+		}
+		
+		@keyframes spinner-line-fade-default {
+		  0%, 100% {
+		    opacity: 0.22; /* minimum opacity */
+		  }
+		  1% {
+		    opacity: 1;
+		  }
+		}               
+      </style>      
+      
+      
+      
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -276,6 +307,69 @@
             <div class="gune_logo-footer margin-bottom--24"></div>
          </div>
       </div>
+      
+	  <div id="overlay" class="overlay"></div>
+
+
+	  <div id="loading"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.js"></script>
+      <script>window.Spinner || document.write('<script src="../../js/vendor/spin.js"><\/script>')</script>
+      
+      <script>
+			      
+		let spinner;	      
+		!(function(window, Spinner) {
+		
+		    'use strict';
+		    
+		
+			let url_img= '../../img/';
+			let url_data = '../../data/';
+			let tree_counter = false;
+			let selectValues = null;
+			let jump_banner = false;
+			
+			
+			// spinner
+			var opts = {
+			  lines: 20, // The number of lines to draw
+			  length: 0, // The length of each line
+			  width: 15, // The line thickness
+			  radius: 42, // The radius of the inner circle
+			  scale: 0.85, // Scales overall size of the spinner
+			  corners: 1, // Corner roundness (0..1)
+			  color: '#009E8E', // CSS color or array of colors
+			  fadeColor: 'transparent', // CSS color or array of colors
+			  speed: 1, // Rounds per second
+			  fbs: 20,
+			  rotate: 0, // The rotation offset
+			  opacity: 0.05, // Opacity of the lines	  
+			  trail: 74,
+			  animation: 'spinner-line-fade-quick', // The CSS animation name for the lines
+			  direction: 1, // 1: clockwise, -1: counterclockwise
+			  zIndex: 2e9, // The z-index (defaults to 2000000000)
+			  className: 'spinner', // The CSS class to assign to the spinner
+			  top: '50%', // Top position relative to parent
+			  left: '50%', // Left position relative to parent
+			  shadow: false, // Box-shadow for the lines
+			  position: 'absolute' // Element positioning
+			};
+			
+			var target = document.getElementById('loading');
+			spinner = new Spinner(opts).spin(target);	      
+				      
+				      
+		})(window, Spinner);	      
+			      
+      
+      
+      
+      </script>
+      
+      
+      
+      
+      
       <script src="../../js/vendor/modernizr-3.6.0.min.js"></script>
       <script src="../../js/vendor/animated-scroll-to.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
